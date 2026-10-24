@@ -1,0 +1,126 @@
+{
+  "id": "ege",
+  "country": "tr",
+  "name": "Ege Üniversitesi",
+  "short": "Ege",
+  "city": "İzmir",
+  "type": "state",
+  "languages": [
+    "tr"
+  ],
+  "rankings": {
+    "yok": "A2 · 12."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Uluslararası Bilgisayar Enstitüsü güz ve baharda öğrenci alıyor. Son bilinen bahar: Uluslararası Bilgisayar Enstitüsü güz ve baharda öğrenci alıyor."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-08-17",
+          "deadline": "2027-08-27"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: Fen Bilimleri Ens.: 17–27 Ağustos 2026. Dil sınavı 10 Ağustos, mülakatlar 31 Ağustos – 1 Eylül, sonuçlar 3 Eylül, kayıt 7–9 Eylül."
+    }
+  ],
+  "admissionsSummary": "Aynı anda 1 tek disiplinli, 1 disiplinlerarası ve 1 tezsiz programa başvurulabilir.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok. II. öğretim tezsizler ücretli.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "FBE 2026-27 başvuru",
+      "url": "https://fenbilimleri.ege.edu.tr/h-27267/2026-2027_egitim-ogretim_yili_guz_yariyili_basvuru_islemleri.html"
+    },
+    {
+      "label": "Uluslararası Bilgisayar Ens.",
+      "url": "https://ube.ege.edu.tr/tr-966/egitim_programlari.html"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği (Fen Bilimleri Ens.)",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilgisayar-bilimleri",
+      "name": "Bilgisayar Bilimleri (Uluslararası Bilgisayar Ens.)",
+      "degree": "Tezli · Tezsiz · II. öğretim · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilgi-teknolojileri",
+      "name": "Bilgi Teknolojileri (Uluslararası Bilgisayar Ens.)",
+      "degree": "Tezli · Tezsiz · II. öğretim · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

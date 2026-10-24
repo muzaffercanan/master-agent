@@ -1,0 +1,76 @@
+{
+  "id": "ktu",
+  "country": "tr",
+  "name": "Karadeniz Teknik Üniversitesi",
+  "short": "KTÜ",
+  "city": "Trabzon",
+  "type": "state",
+  "languages": [
+    "tr"
+  ],
+  "rankings": {
+    "yok": "A3 · 22."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Baharda tezli YL ve doktora alımı yapılıyor; 2025-26 bahar ilanı yayımlandı."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "ikinci ilan",
+          "open": "2027-08-10",
+          "deadline": "2027-08-26"
+        }
+      ],
+      "status": "tahmin",
+      "note": "Birinci ilan Haziran'da. 2026-27 güz: 1. ilan Haziran 2026 (16 Haziran duyurusu), 2. ilan 10–26 Ağustos 2026."
+    }
+  ],
+  "admissionsSummary": "Koşullar ve kontenjanlar Fen Bilimleri Enstitüsü ilanında.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "2026-27 Güz 1. ilan",
+      "url": "https://www.ktu.edu.tr/oidb/duyuru/2026-2027-egitim-ogretim-yili-guz-yariyili-i-lisansustu-tezli-yuksek-lisans-tezsiz-yuksek-lisans-ve-doktora-basvurulari"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "notes": "Fen Bilimleri Enstitüsü kontenjan tablosunda doğrula.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

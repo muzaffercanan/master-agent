@@ -1,0 +1,315 @@
+{
+  "id": "sabanci",
+  "country": "tr",
+  "name": "Sabancı Üniversitesi",
+  "short": "Sabancı",
+  "city": "İstanbul",
+  "type": "foundation",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "A1 · 2.",
+    "csrankings": "CSRankings TR 7."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "deadline": "2026-11-27"
+        }
+      ],
+      "status": "kesin",
+      "note": "Tezli YL ve doktora; mülakatlar 7–25 Aralık 2026. Son bilinen bahar: Bahar 2026-27 (tezli YL ve doktora): SON BAŞVURU 27 KASIM 2026, mülakatlar 7–25 Aralık 2026, lisansı 29 Ocak 2027'ye kadar bitirmiş olmak gerekir."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "erken",
+          "deadline": "2027-04-06"
+        },
+        {
+          "name": "normal",
+          "deadline": "2027-06-15"
+        },
+        {
+          "name": "son",
+          "deadline": "2027-08-10"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: Tezli: erken 6 Nisan (mülakat 13–27 Nisan), normal 15 Haziran (22 Haziran – 6 Temmuz), son 10 Ağustos 2026 (17–24 Ağustos). Tezsiz: erken 22 Haziran, normal 10 Ağustos."
+    }
+  ],
+  "admissionsSummary": "Tezli: ALES SAY 65 veya GRE Q 153. İngilizce: TOEFL iBT 78, PTE 48, YDS/e-YDS/YÖKDİL 65, e-TEP 50, CAE B, CPE C. Niyet mektubu (1–2 sayfa), CV, 2 referans. Tezsiz programlarda giriş sınavı istenmez.",
+  "fundingSummary": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli.",
+  "scholarships": [
+    {
+      "name": "Sabancı lisansüstü bursu",
+      "provider": "Sabancı",
+      "coverage": "Kabul komisyonu kararıyla aylık burs ve/veya ücret muafiyeti (tezli)"
+    }
+  ],
+  "people": [
+    "Esra Erdem: YZ, bilgi temsili, robotik",
+    "Selim Balcısoy: görselleştirme, HCI",
+    "Kamer Kaya: yüksek başarımlı hesaplama",
+    "Cemal Yılmaz: yazılım mühendisliği",
+    "Albert Levi ve Erkay Savaş: güvenlik, kriptografi"
+  ],
+  "links": [
+    {
+      "label": "Başvuru duyuruları",
+      "url": "https://www.sabanciuniv.edu/en/graduate-school-engineering-and-natural-sciences-application-announcements"
+    },
+    {
+      "label": "2026-27 şartları",
+      "url": "https://www.sabanciuniv.edu/en/academic/university-registration-scholarships-and-fees/graduate-applications-requirements-2026-2027"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-bilimi-ve-muhendisligi",
+      "name": "Bilgisayar Bilimi ve Mühendisliği",
+      "degree": "Tezli MSc · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Baharda da alım var.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 65
+        },
+        "english": {
+          "note": "TOEFL 78 / YDS 65",
+          "yds": 65,
+          "toefl": 78
+        }
+      }
+    },
+    {
+      "id": "siber-guvenlik",
+      "name": "Siber Güvenlik",
+      "degree": "Tezli MSc",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "sec"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Baharda da alım var.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 65
+        },
+        "english": {
+          "note": "TOEFL 78 / YDS 65",
+          "yds": 65,
+          "toefl": 78
+        }
+      }
+    },
+    {
+      "id": "veri-bilimi",
+      "name": "Veri Bilimi",
+      "degree": "Tezli MSc",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Baharda da alım var.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 65
+        },
+        "english": {
+          "note": "TOEFL 78 / YDS 65",
+          "yds": 65,
+          "toefl": 78
+        }
+      }
+    },
+    {
+      "id": "bilgi-teknolojileri",
+      "name": "Bilgi Teknolojileri (IT)",
+      "degree": "Tezsiz MS",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Profesyonel program.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "intakes": [
+        {
+          "term": "spring",
+          "cycle": "2026-27",
+          "offered": "unknown",
+          "rounds": [],
+          "status": "tahmin"
+        },
+        {
+          "term": "fall",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "erken",
+              "deadline": "2027-06-22"
+            },
+            {
+              "name": "normal",
+              "deadline": "2027-08-10"
+            }
+          ],
+          "status": "tahmin"
+        }
+      ]
+    },
+    {
+      "id": "veri-analitigi",
+      "name": "Veri Analitiği",
+      "degree": "Tezsiz MS",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Profesyonel program.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "intakes": [
+        {
+          "term": "spring",
+          "cycle": "2026-27",
+          "offered": "unknown",
+          "rounds": [],
+          "status": "tahmin"
+        },
+        {
+          "term": "fall",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "erken",
+              "deadline": "2027-06-22"
+            },
+            {
+              "name": "normal",
+              "deadline": "2027-08-10"
+            }
+          ],
+          "status": "tahmin"
+        }
+      ]
+    },
+    {
+      "id": "mekatronik-elektronik-endustri-matematik-mbg-ve",
+      "name": "Mekatronik · Elektronik · Endüstri · Matematik · MBG ve Biyomühendislik",
+      "degree": "Tezli MSc · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "robo",
+        "comm",
+        "or",
+        "comp",
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 65
+        },
+        "english": {
+          "note": "TOEFL 78 / YDS 65",
+          "yds": 65,
+          "toefl": 78
+        }
+      }
+    }
+  ]
+}

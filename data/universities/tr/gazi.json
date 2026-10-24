@@ -1,0 +1,205 @@
+{
+  "id": "gazi",
+  "country": "tr",
+  "name": "Gazi Üniversitesi",
+  "short": "Gazi",
+  "city": "Ankara",
+  "type": "state",
+  "languages": [
+    "tr"
+  ],
+  "rankings": {
+    "yok": "A2 · 13."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2026-12-22",
+          "deadline": "2027-01-05"
+        }
+      ],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: 2025-26: 22 Aralık 2025 – 5 Ocak 2026, sınavlar 12–14 Ocak, sonuç 21 Ocak 2026. 2026-27 için benzer dönem bekleniyor."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-05-21",
+          "deadline": "2027-06-15"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: Fen Bilimleri Ens.: 21 Mayıs – 15 Haziran 2026. Bilişim Ens.: 2–12 Haziran 2026, sınavlar 17–19 Haziran."
+    }
+  ],
+  "admissionsSummary": "Yazılı ve/veya sözlü bilimsel değerlendirme. YL'de 50 puan altı yerleşemez. ALES 5 yıl geçerli.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok; tezsizler ücretli.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Bilişim Ens. 2026-27 ilanı",
+      "url": "https://be.gazi.edu.tr/view/announcement/323726"
+    },
+    {
+      "label": "FBE kriterler ve kontenjanlar",
+      "url": "https://fbe.gazi.edu.tr/view/page/298810/2026-2027-guz-donemi-basvuru-kriterleri-kontenjanlari-sinav-yer-ve-tarihleri"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği (Fen Bilimleri Ens.)",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilgisayar-bilimleri",
+      "name": "Bilgisayar Bilimleri (Bilişim Ens.)",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "adli-bilisim",
+      "name": "Adli Bilişim",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "sec"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilisim-sistemleri-yonetim-bilisim-sistemleri",
+      "name": "Bilişim Sistemleri · Yönetim Bilişim Sistemleri",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "oyun-teknolojileri",
+      "name": "Oyun Teknolojileri",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "game"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "saglik-bilisimi",
+      "name": "Sağlık Bilişimi",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "bio"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

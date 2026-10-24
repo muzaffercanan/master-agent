@@ -1,0 +1,196 @@
+{
+  "id": "tobb",
+  "country": "tr",
+  "name": "TOBB Ekonomi ve Teknoloji Üniversitesi",
+  "short": "TOBB ETÜ",
+  "city": "Ankara",
+  "type": "foundation",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "rankings": {
+    "yok": "Aday (2025)",
+    "csrankings": "CSRankings TR 9."
+  },
+  "intakes": [
+    {
+      "term": "summer",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-02-02",
+          "deadline": "2027-02-26"
+        }
+      ],
+      "status": "kesin",
+      "note": "TOBB ETÜ üç dönemli; yaz dönemi lisansüstü alımı."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-06-01",
+          "deadline": "2027-06-26"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 1–26 Haziran 2026. TOBB ETÜ İngilizce sınavı 30 Haziran, mülakatlar 13–14 Temmuz 2026."
+    }
+  ],
+  "admissionsSummary": "ALES SAY 60–85 (burs türüne göre; Bilgisayar Müh. tam burs için 80). Dil 60–75 (YDS, e-YDS, YÖKDİL, e-YÖKDİL, TOEFL iBT veya TOBB ETÜ sınavı). Lisans GNO 2.00–2.50. Niyet mektubu, 2 referans, 300 TL başvuru ücreti. CS dışı mezunlar bilimsel hazırlık alır.",
+  "fundingSummary": "Tam burs: ücret muafiyeti + aylık burs (veya kısmi burs + konut). Özel Başarı bursu (ALES 85, dil 75, GNO 3.00): tam bursun %150'si. Ücretli seçenek: 375.000 TL/yıl (2026-27).",
+  "scholarships": [
+    {
+      "name": "TOBB ETÜ tam burs",
+      "provider": "TOBB ETÜ",
+      "coverage": "Ücret muafiyeti + aylık burs (veya kısmi burs + konut)"
+    },
+    {
+      "name": "TOBB ETÜ özel başarı bursu",
+      "provider": "TOBB ETÜ",
+      "coverage": "Tam bursun %150'si; ALES 85, dil 75, GNO 3.00"
+    }
+  ],
+  "people": [
+    "Oğuz Ergin: bilgisayar mimarisi, donanım güvenliği",
+    "Mücahid Kutlu: bilgi erişimi, NLP"
+  ],
+  "links": [
+    {
+      "label": "2026-27 Güz ilanı",
+      "url": "https://www.etu.edu.tr/tr/ogrenci-isleri/duyuru/fen-bilimleri-enstitusu-2026-2027-guz-donemi-basvurulari"
+    },
+    {
+      "label": "Başvuru bilgileri",
+      "url": "https://www.etu.edu.tr/tr/enstitu/fen-bilimleri-enstitusu/basvuru-bilgileri"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL · Tezsiz YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "notes": "YZ, siber güvenlik, veri bilimi, yazılım, görü alanlarında 50'den fazla lisansüstü ders.",
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 375000,
+            "currency": "TRY",
+            "per": "year"
+          },
+          "note": "Burslu kabulde ücret muafiyeti + aylık burs (burs türüne göre)."
+        },
+        "applicationFee": {
+          "amount": 300,
+          "currency": "TRY",
+          "per": "once"
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 80
+        },
+        "gpa": {
+          "min": 2,
+          "scale": 4
+        },
+        "english": {
+          "note": "60–75 (burs türüne göre)"
+        },
+        "note": "GNO eşiği 2.00–2.50 aralığında"
+      }
+    },
+    {
+      "id": "bilgi-guvenligi",
+      "name": "Bilgi Güvenliği (Siber Güvenlik)",
+      "degree": "YL",
+      "levels": [
+        "master"
+      ],
+      "fields": [
+        "sec"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 375000,
+            "currency": "TRY",
+            "per": "year"
+          },
+          "note": "Burslu kabulde ücret muafiyeti + aylık burs (burs türüne göre)."
+        },
+        "applicationFee": {
+          "amount": 300,
+          "currency": "TRY",
+          "per": "once"
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "elektrik-elektronik-endustri-biyomedikal-matemat",
+      "name": "Elektrik-Elektronik · Endüstri · Biyomedikal · Matematik",
+      "degree": "YL · Doktora",
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "comm",
+        "or",
+        "bio",
+        "comp"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 375000,
+            "currency": "TRY",
+            "per": "year"
+          },
+          "note": "Burslu kabulde ücret muafiyeti + aylık burs (burs türüne göre)."
+        },
+        "applicationFee": {
+          "amount": 300,
+          "currency": "TRY",
+          "per": "once"
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

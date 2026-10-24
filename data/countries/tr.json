@@ -1,0 +1,307 @@
+{
+  "code": "tr",
+  "name": "Türkiye",
+  "flag": "🇹🇷",
+  "currency": "TRY",
+  "terms": {
+    "fall": {
+      "name": "Güz",
+      "starts": "Eylül"
+    },
+    "spring": {
+      "name": "Bahar",
+      "starts": "Şubat"
+    },
+    "summer": {
+      "name": "Yaz",
+      "starts": "Haziran"
+    }
+  },
+  "summary": "Devlet üniversitelerinde tezli yüksek lisans normal sürede ücretsiz; vakıf üniversitelerinin tezli programlarında çoğunlukla burs ve asistanlık var. Tezli programlarda ALES (en az 55, güçlü bölümlerde 70–85) ve İngilizce belgesi istenir. Ana alım güz dönemindedir; bahar alımı daha sınırlıdır.",
+  "facts": [
+    {
+      "label": "Giriş sınavı",
+      "value": "ALES (veya GRE/GMAT eşdeğeri); tezli YL'de yasal alt sınır 55, tezsizde çoğunlukla aranmaz",
+      "status": "kesin"
+    },
+    {
+      "label": "İngilizce",
+      "value": "YDS/e-YDS/YÖKDİL 50–80, TOEFL iBT 78–87, IELTS 6.5; kurum sınavları (ODTÜ EPE, BUEPT, İTÜ YDY)",
+      "status": "kesin"
+    },
+    {
+      "label": "Ücret",
+      "value": "Devlet: tezli normal sürede harç yok. Vakıf: tezli programlarda burs yaygın; tezsiz programlar ücretli",
+      "status": "kesin"
+    },
+    {
+      "label": "Ulusal burs",
+      "value": "TÜBİTAK 2210 (2026): 2210-A 16.500 TL/ay, 2210-C/D 19.000 TL/ay, projede 22.500 TL/ay; 24 ay",
+      "status": "kesin"
+    }
+  ],
+  "scholarships": [
+    {
+      "name": "TÜBİTAK 2210-A",
+      "provider": "TÜBİTAK BİDEB",
+      "coverage": "Genel yurt içi YL bursu, 24 ay. Şart: YL'ye kayıtlı (en geç 3. dönem), ALES ≥80, YDS ≥80",
+      "amount": {
+        "amount": 16500,
+        "currency": "TRY",
+        "per": "month"
+      },
+      "audience": "tr",
+      "link": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari",
+      "status": "kesin"
+    },
+    {
+      "name": "TÜBİTAK 2210-C",
+      "provider": "TÜBİTAK BİDEB",
+      "coverage": "Öncelikli alanlar (yapay zekâ, yeni nesil haberleşme, kuantum, yarı iletken…)",
+      "amount": {
+        "amount": 19000,
+        "currency": "TRY",
+        "per": "month"
+      },
+      "audience": "tr",
+      "status": "kesin"
+    },
+    {
+      "name": "TÜBİTAK 2210-D",
+      "provider": "TÜBİTAK BİDEB",
+      "coverage": "Sanayiye yönelik YL bursu",
+      "amount": {
+        "amount": 19000,
+        "currency": "TRY",
+        "per": "month"
+      },
+      "audience": "tr",
+      "status": "kesin"
+    }
+  ],
+  "timeline": [
+    {
+      "s": "2026-09-30",
+      "e": "2026-10-08",
+      "t": "YDS/2 başvurusu",
+      "d": "Sınav 22 Kasım, sonuç 10 Aralık. Geç başvuru 14 Ekim. 5 yıl geçerli İngilizce belgesi olarak bütün başvurularda işe yarar.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-09-30",
+      "e": "2026-10-08",
+      "t": "e-YDS 2026/11 başvurusu",
+      "d": "Sınav 17 Ekim, sonuç aynı gün. Kontenjan dolunca başvuru erken kapanır.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-10-05",
+      "e": "2026-10-27",
+      "t": "TÜBİTAK 2210 (2026/2 çağrısı)",
+      "d": "Yalnızca şu anda bir YL programına kayıtlıysan. 2210-A için ALES ≥80 ve İngilizce ≥80.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-10-07",
+      "e": "2026-10-15",
+      "t": "ALES/3 başvurusu",
+      "d": "Geç başvuru 21 Ekim. Sınav 29 Kasım, sonuç 17 Aralık. Elinde geçerli ALES yoksa Güz 2027 için en kritik tarih.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-10-27",
+      "e": "2026-11-05",
+      "t": "e-TEP 2026/4 başvurusu",
+      "d": "Sınav 14 Kasım, sonuç 11 Aralık. İTÜ ve Sabancı e-TEP 50 kabul ediyor.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-11-29",
+      "t": "ALES/3 sınavı",
+      "d": "",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-12-02",
+      "e": "2026-12-10",
+      "t": "e-YDS 2026/12 başvurusu",
+      "d": "Sınav 19 Aralık, sonuç aynı gün.",
+      "k": "kesin"
+    },
+    {
+      "s": "2026-12-17",
+      "t": "ALES/3 sonuçları",
+      "d": "Aralık sonu ve Ocak'ta kapanan bahar başvurularına yetişir.",
+      "k": "kesin"
+    },
+    {
+      "s": "2027-05-10",
+      "t": "ALES 2027/1",
+      "d": "2027 ÖSYM takvimi henüz yayımlanmadı; 2026'da ALES/1 10 Mayıs'taydı.",
+      "k": "tahmin"
+    }
+  ],
+  "sources": [
+    {
+      "label": "ÖSYM 2026 sınav takvimi (PDF)",
+      "url": "https://www.memurlar.net/common/news/documents/1151657/takvim_ostd14112025.pdf"
+    },
+    {
+      "label": "YÖK Lisansüstü Eğitim ve Öğretim Yönetmeliği",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=21510&MevzuatTur=7&MevzuatTertip=5"
+    },
+    {
+      "label": "ODTÜ ALES–GRE eşdeğerlik tablosu",
+      "url": "https://fbe.metu.edu.tr/en/ales-gre-equivalence-table"
+    },
+    {
+      "label": "ODTÜ 2026-27 güz başvuruları ve ALES/1 süreci",
+      "url": "https://fbe.metu.edu.tr/en/announcements/regarding-2026-2027-fall-semester-applications-and-ales1-2026-process"
+    },
+    {
+      "label": "ODTÜ FBE duyuruları",
+      "url": "https://fbe.metu.edu.tr/tr/announcements"
+    },
+    {
+      "label": "ODTÜ Bilgisayar Müh. şartları",
+      "url": "https://fbe.metu.edu.tr/en/computer-engineering"
+    },
+    {
+      "label": "ODTÜ Robotik",
+      "url": "https://fbe.metu.edu.tr/en/robotics"
+    },
+    {
+      "label": "ODTÜ Veri Bilişimi kabul",
+      "url": "https://di.metu.edu.tr/en/admission"
+    },
+    {
+      "label": "ODTÜ Enformatik: tarihler ve programlar",
+      "url": "https://ii.metu.edu.tr/important-dates-programs-opened-application"
+    },
+    {
+      "label": "ODTÜ YZ Mühendisliği (AA haberi)",
+      "url": "https://www.aa.com.tr/tr/egitim/odtude-yapay-zeka-muhendisligi-tezli-yuksek-lisans-programi-acildi/3665450"
+    },
+    {
+      "label": "Bilkent şartlar ve tarihler",
+      "url": "https://mfbe.bilkent.edu.tr/?page_id=17"
+    },
+    {
+      "label": "Hacettepe Bilişim Ens. program tablosu",
+      "url": "https://bilisim.hacettepe.edu.tr/tr/yuksek_lisans_programlari_bilgilendirme_tablosu-312"
+    },
+    {
+      "label": "Hacettepe FBE 2026-27 güz kontenjanları (PDF)",
+      "url": "https://fs.hacettepe.edu.tr/fenbilimleri/dosyalar/basvuru_kontenjan_kesinkayit/yeni26-27guzkontenjan.pdf"
+    },
+    {
+      "label": "TOBB ETÜ 2026-27 güz başvuruları",
+      "url": "https://www.etu.edu.tr/tr/ogrenci-isleri/duyuru/fen-bilimleri-enstitusu-2026-2027-guz-donemi-basvurulari"
+    },
+    {
+      "label": "TOBB ETÜ akademik takvim",
+      "url": "https://www.etu.edu.tr/tr/akademik-takvim"
+    },
+    {
+      "label": "Ankara Üni. YZ Enstitüsü ilanı",
+      "url": "https://yze.ankara.edu.tr/en/2026/05/04/announcement-for-applications-to-graduate-programs-for-the-fall-semester-of-the-2026-2027-academic-year/"
+    },
+    {
+      "label": "Gazi FBE 2025-26 bahar başvuruları",
+      "url": "https://fbe.gazi.edu.tr/view/announcement/320436"
+    },
+    {
+      "label": "Atılım FBE programları",
+      "url": "https://www.atilim.edu.tr/en/fbe/page/1003/programs"
+    },
+    {
+      "label": "Boğaziçi Bilgisayar Müh. başvuru",
+      "url": "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/Lisansustu/Bilgisayar_Muhendisligi"
+    },
+    {
+      "label": "Boğaziçi VBYZ programları",
+      "url": "https://bogazici.edu.tr/tr/pages/lisansustu-programlari/396"
+    },
+    {
+      "label": "Boğaziçi Yazılım Müh. tezli koşulları",
+      "url": "https://swe.bogazici.edu.tr/tr/tezli-program-basvuru-kosullari"
+    },
+    {
+      "label": "İTÜ kontenjanlar ve şartlar",
+      "url": "https://www.sis.itu.edu.tr/onkayitlar/lisansustu/basvuru/program-kontenjan-sartlar.php?level=LU"
+    },
+    {
+      "label": "İTÜ 2025-26 bahar başvuruları",
+      "url": "https://lee.itu.edu.tr/duyurular/2025/11/10/2025-2026-bahar-lisansustu-basvurulari"
+    },
+    {
+      "label": "Koç GSSE son başvuru tarihleri",
+      "url": "https://gsse.ku.edu.tr/en/application/application-deadlines/"
+    },
+    {
+      "label": "Koç KUIS AI lisansüstü",
+      "url": "https://ai.ku.edu.tr/graduate-admissions/"
+    },
+    {
+      "label": "Sabancı başvuru duyuruları",
+      "url": "https://www.sabanciuniv.edu/en/graduate-school-engineering-and-natural-sciences-application-announcements"
+    },
+    {
+      "label": "Sabancı 2026-27 şartları",
+      "url": "https://www.sabanciuniv.edu/en/academic/university-registration-scholarships-and-fees/graduate-applications-requirements-2026-2027"
+    },
+    {
+      "label": "YTÜ YZ ve Veri Müh. YL",
+      "url": "https://fbe.yildiz.edu.tr/node/27594"
+    },
+    {
+      "label": "Özyeğin başvuru ve kabul",
+      "url": "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science/application-and-admission"
+    },
+    {
+      "label": "Marmara başvuru takvimi",
+      "url": "https://fbe.marmara.edu.tr/lisansustu-basvuru/basvuru-takvimi"
+    },
+    {
+      "label": "Galatasaray Bilgisayar Müh. YL",
+      "url": "https://fbe.gsu.edu.tr/tr/bm-ylisans"
+    },
+    {
+      "label": "İYTE Bilgisayar Müh. 2026-27 duyurusu",
+      "url": "https://ceng.iyte.edu.tr/applications-for-graduate-program-admissions-for-the-fall-semester-of-the-2026-2027-academic-year/"
+    },
+    {
+      "label": "DEÜ 2026-27 güz ilan metni",
+      "url": "https://fbe.deu.edu.tr/duyurular/2026-2027-guz-donemi-lisansustu-egitim-ilan-metni/"
+    },
+    {
+      "label": "Ege FBE 2026-27 güz başvuru",
+      "url": "https://fenbilimleri.ege.edu.tr/h-27267/2026-2027_egitim-ogretim_yili_guz_yariyili_basvuru_islemleri.html"
+    },
+    {
+      "label": "GTÜ 2026-27 güz ilan metni (PDF)",
+      "url": "https://www.gtu.edu.tr/fileman/Files/UserFiles/oidb/LISANS_USTU/BASVURULAR/2026-2027%20G%C3%9CZ/2026-2027%20G%C3%9CZ%20%C4%B0LAN%20METN%C4%B0.pdf"
+    },
+    {
+      "label": "TÜBİTAK 2210 burs miktarları",
+      "url": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari"
+    },
+    {
+      "label": "TÜBİTAK 2210-A çağrı metni 2026 (PDF)",
+      "url": "https://tubitak.gov.tr/sites/default/files/2026-01/2210-A_Cagri_Duyurusu_2026-1_0.pdf"
+    },
+    {
+      "label": "YÖK Araştırma Üniversiteleri 2025",
+      "url": "https://www.yok.gov.tr/tr/news/arastirma-universiteleri-2025-siralamasi-aciklandi-WJaoS"
+    },
+    {
+      "label": "Araştırma üniversiteleri listesi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/List_of_research_universities_in_Turkey"
+    },
+    {
+      "label": "CSRankings açık veri seti",
+      "url": "https://github.com/emeryberger/CSrankings"
+    }
+  ],
+  "verifiedAt": "2026-09-26"
+}

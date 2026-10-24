@@ -1,0 +1,78 @@
+{
+  "id": "marmara",
+  "country": "tr",
+  "name": "Marmara Üniversitesi",
+  "short": "Marmara",
+  "city": "İstanbul",
+  "type": "state",
+  "languages": [
+    "tr"
+  ],
+  "rankings": {
+    "yok": "A3 · 18."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Bahar ilanı ayrıca yayımlanır (2025-26 baharında alım yapıldı)."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-06-02",
+          "deadline": "2027-06-22"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 2–22 Haziran 2026. Mesleki bilgi sınavı ve mülakat 6–8 Temmuz, sonuç 14 Temmuz, kayıt 27–29 Temmuz."
+    }
+  ],
+  "admissionsSummary": "Bilgisayar Müh. veya yakın alan lisans mezunu olmak; kabul edilen bölümler her ilanda listelenir.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Başvuru takvimi",
+      "url": "https://fbe.marmara.edu.tr/lisansustu-basvuru/basvuru-takvimi"
+    },
+    {
+      "label": "Kontenjan ve koşullar",
+      "url": "https://fbe.marmara.edu.tr/lisansustu-basvuru/lisansustu-programlarin-kontenjanlari-basvuru-bilgileri-ve-kosullari"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL (Türkçe)",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

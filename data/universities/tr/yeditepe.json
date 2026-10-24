@@ -1,0 +1,69 @@
+{
+  "id": "yeditepe",
+  "country": "tr",
+  "name": "Yeditepe Üniversitesi",
+  "short": "Yeditepe",
+  "city": "İstanbul",
+  "type": "foundation",
+  "languages": [
+    "en"
+  ],
+  "rankings": {},
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "unknown",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Enstitüden kontrol et."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "2026-27 güz: Tarihler için enstitü sayfası."
+    }
+  ],
+  "admissionsSummary": "Program bazında.",
+  "fundingSummary": "Ücretli; burs imkânları için enstitüye sor.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Program",
+      "url": "https://lee.yeditepe.edu.tr/en/masters-program-computer-engineering"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "En az 7 ders (21 kredi) ve seminer.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Ücretli; burs imkânları için enstitüye sor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

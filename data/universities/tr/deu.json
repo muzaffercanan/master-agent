@@ -1,0 +1,88 @@
+{
+  "id": "deu",
+  "country": "tr",
+  "name": "Dokuz Eylül Üniversitesi",
+  "short": "DEÜ",
+  "city": "İzmir",
+  "type": "state",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "rankings": {
+    "yok": "İzlemede (aday)"
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "unknown",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Enstitü ilanını kontrol et."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-06-01",
+          "deadline": "2027-06-30"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: T.C. vatandaşları için 1–30 Haziran 2026."
+    }
+  ],
+  "admissionsSummary": "YL: ALES SAY ≥55 (veya GRE/GMAT), İngilizce ≥50 (YDS/e-YDS/YÖKDİL). Lisans sonrası doktora: ALES 80, dil 55, GNO 3.00.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "2026-27 Güz ilan metni",
+      "url": "https://fbe.deu.edu.tr/duyurular/2026-2027-guz-donemi-lisansustu-egitim-ilan-metni/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "notes": "Diğer bilişim programları için ilan metnine bak.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ],
+  "requirements": {
+    "ales": {
+      "min": 55
+    },
+    "english": {
+      "note": "dil 50",
+      "yds": 50
+    }
+  }
+}

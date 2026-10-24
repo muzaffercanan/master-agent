@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-23",
+  "source": "TCMB (haber kaynakları üzerinden): 1 EUR = 55,70 TL, 1 USD = 49,62 TL",
+  "perEUR": {
+    "EUR": 1,
+    "TRY": 55.7,
+    "USD": 1.1225
+  }
+}

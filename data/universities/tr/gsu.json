@@ -1,0 +1,85 @@
+{
+  "id": "gsu",
+  "country": "tr",
+  "name": "Galatasaray Üniversitesi",
+  "short": "Galatasaray",
+  "city": "İstanbul",
+  "type": "state",
+  "languages": [
+    "tr"
+  ],
+  "rankings": {
+    "csrankings": "CSRankings listesinde"
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "unknown",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Bahar alımı ilanı bulunamadı."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "ikinci dönem",
+          "open": "2027-08-10",
+          "deadline": "2027-08-21"
+        }
+      ],
+      "status": "tahmin",
+      "note": "İlk başvuru dönemi yaz başında. 2026-27 güz: 2026-27 güzü için ikinci başvuru dönemi 10–21 Ağustos 2026 (ilk dönem daha önce yapıldı)."
+    }
+  ],
+  "admissionsSummary": "ALES SAY 70 veya GRE Q 153. İngilizce veya Fransızca: YDS/YÖKDİL 70, TOEFL iBT 84 ya da DALF C1. Bilgisayar Müh. dışı mezunlara 2 dönem bilimsel hazırlık (en fazla 5 kişi). Dersler hafta içi 09.00–18.00.",
+  "fundingSummary": "Devlet: normal sürede katkı payı yok.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Program sayfası",
+      "url": "https://fbe.gsu.edu.tr/tr/bm-ylisans"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "tr"
+      ],
+      "notes": "Alanlar: ML, veri bilimi, siber güvenlik, IoT, ağlar, tıp bilişimi, otonom ve gömülü sistemler.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 70
+        },
+        "english": {
+          "note": "YDS 70 / TOEFL 84 / DALF C1",
+          "yds": 70,
+          "toefl": 84
+        }
+      }
+    }
+  ]
+}

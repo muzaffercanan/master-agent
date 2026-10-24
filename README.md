@@ -1,62 +1,69 @@
-# Bilgisayar Master Atlası
+# Master Atlası
 
-Türkiye'de bilgisayar bilimleri mezunları için yüksek lisans programları, güz/bahar başvuru takvimleri, başvuru şartları ve araştırma gücü rehberi.
-
-- Canlı sayfa: https://claude.ai/artifact/TDQSei9aMwaf6bSnmJhwTj
-- Veri durumu: Eylül 2026 ilanları (`kesin`) + geçen yılın takvimine dayalı tahminler (`tahmin`)
+Türkiye ve yurt dışındaki yüksek lisans programlarını araştırmak için yerel web uygulaması. Bir CS mezunu için hazırlandı: dönem dönem başvuru tarihleri, şartlar (GNO, ALES, IELTS/TOEFL/YDS, GRE, ders uyumu), ücretler, bölgesel ücretler ve burslar.
 
 ## Çalıştırma
 
-Gerekli: Node.js 20+. Harici paket yok, `npm install` gerekmez.
+Gerekli: Node.js 20+.
 
 ```bash
-npm run dev     # http://localhost:5173 — src/ ve data/ değişince otomatik derler, tarayıcı kendini yeniler
-npm run check   # yalnızca data/*.json doğrulaması
-npm run build   # dist/index.html (tam sayfa) + dist/artifact.html (artifact olarak yayımlamak için)
+npm install      # ilk seferde
+npm run dev      # http://localhost:5173
 ```
 
-Port doluysa: `PORT=3000 npm run dev` (PowerShell'de `$env:PORT=3000; npm run dev`).
+| Komut | Ne yapar |
+|---|---|
+| `npm run dev` | Geliştirme sunucusu; dosya kaydedince sayfa kendini günceller |
+| `npm run check` | `data/` altındaki bütün JSON'ları şemaya ve çapraz referanslara göre doğrular |
+| `npm test` | Uygunluk, not dönüşümü, maliyet, tarih ve takvim mantığının testleri |
+| `npm run build` | check + tip kontrolü + `dist/` üretimi (statik; her yerde açılır) |
+| `npm run links` | Verideki resmi bağlantıları tek tek dener, kırıkları listeler |
 
-## Yapı
+## Ekranlar
+
+- **Programlar**: bütün ülkeler tek listede. Filtreler: kapsam (Türkiye / yurt dışı), ülke, şehir/bölge, okul, alan, derece, dil, başvuru dönemi, "tek dönem alanlar", son başvuru aralığı, profiline uygunluk, ALES/GRE/IELTS/GNO eşikleri, ücret, bölgesel ücret, burs. Filtreler adres çubuğunda saklanır.
+- **Okullar / Okul sayfası**: okul geneli takvim, şartlar, programlar, burslar, araştırmacılar.
+- **Program sayfası**: şart listesi (her satırda senin durumun), dönemler ve turlar, yıllık maliyet dökümü, burslar.
+- **Ülkeler**: dönem sistemi, temel bilgiler, not dönüşümü, bölgesel ücretler, ulusal burslar. Türkiye sayfasında eski rehber (şartlar, YÖK/CSRankings, strateji, alan rehberi) var.
+- **Takvim**: sınavlar, burs çağrıları ve başvuru turları; `.ics` olarak dışa aktarılabilir.
+- **Profil**: GNO, ALES, dil sınavları, GRE, ECTS dağılımı. Bütün uygunluk etiketleri buradan hesaplanır. Yedekle/yükle (JSON).
+- **Karşılaştır** (en fazla 4 program) ve **Takip** (durum, belge kontrol listesi, notlar).
+
+Kullanıcı verisi (profil, kısa liste, karşılaştırma, takip) yalnızca tarayıcının `localStorage`'ında durur.
+
+## Veri yapısı
 
 ```
 data/
-  meta.json           başlık, güncelleme tarihi, üst bölümdeki "acil" kutular
-  universities.json   üniversiteler ve programları (ana veri)
-  eligibility.json    "Puanım yetiyor mu?" tablosunun satırları
-  timeline.json       sınav ve başvuru takvimi
-  fields.json         15 alanın açıklamaları
-  cities.json         şehir sırası
-  csrankings.json     araştırma gücü tablosu
-  sources.json        kaynak listesi
+  countries/{tr,de,it,at}.json       ülke: dönemler, temel bilgiler, not dönüşümü, bölgesel ücretler, ulusal burslar, takvim
+  universities/{ülke}/{okul-id}.json okul + programları (okul başına bir dosya)
+  fields.json                        alan sözlüğü (core, ai, data, sec, …)
+  fx.json                            kur (EUR bazlı, tarihli)
+  tr/csrankings.json                 Türkiye araştırma gücü tablosu
 src/
-  head.html           <title>, meta, fontlar, CSS
-  body.html           sayfa iskeleti
-  app.js              render ve etkileşim kodu (veriyi DATA olarak alır)
-scripts/
-  lib.mjs             veri yükleme, doğrulama, sayfa birleştirme
-  build.mjs           derleme ve --check
-  dev.mjs             yerel sunucu + canlı yenileme
-docs/
-  research-notes.md   yöntem ve açık işler
+  schema/index.ts                    zod şeması: verinin tek doğruluk kaynağı
+  data/                              JSON yükleme + çapraz doğrulama
+  lib/                               uygunluk, Bavyera formülü, maliyet, tarih, filtre, takvim (.ics)
+  pages/, components/, content/      arayüz
 ```
 
-## Veri nasıl güncellenir
+### Yeni okul veya program eklemek
 
-Yeni bir ilan çıktığında:
+1. `data/universities/<ülke>/<okul-id>.json` dosyası oluştur. Mevcut bir dosyayı kopyalamak en kolayı.
+2. Okul genelindeki takvimi `intakes` altına yaz. Bir program farklıysa programın kendi `intakes` alanı okulunkini ezer.
+3. Şartları `requirements` altına yaz. Okul düzeyindeki şartlar varsayılandır; program düzeyindekiler üstüne yazılır.
+4. `npm run check`, sonra commit.
 
-1. `data/universities.json` içinde üniversiteyi bul (`id` ile, ör. `"itu"`).
-2. İlgili alanı güncelle; tarih artık kesinse `"k": "tahmin"` → `"k": "kesin"` yap.
-3. Takvimde de varsa `data/timeline.json` kaydını güncelle (tarihler `YYYY-AA-GG`).
-4. `npm run check` ile doğrula, commit at.
+### Önemli alanlar
 
-### Şema notları
-
-- **Üniversite:** `id`, `name`, `short`, `city` (cities.json'da olmalı), `type`, `lang`, `yok`, `csr`, `fall {t,k}`, `spring {t,k}`, `next`, `req`, `fund`, `progs[]`, `people[]`, `links[[ad, url]]`
-- **Program:** `n` ad, `t` tür (Tezli YL, Tezsiz…), `f` alan anahtarları (fields.json'daki), `d` açıklama
-- **Uygunluk satırı:** `u` üniversite id, `p` program, `m` asgari ALES, `g` asgari GNO, `e` İngilizce şartı, `note`.
-  `m` GNO'ya bağlıysa: `{"default": 80, "tiers": [{"gpa": 2.75, "ales": 80}, {"gpa": 2.60, "ales": 85}]}` — GNO'nun karşıladığı ilk kademe geçerli olur; hiçbiri karşılanmazsa "GNO eşiğin altında".
-  `m: 0` = ALES aranmıyor.
-- **Takvim:** `s` başlangıç, `e` bitiş (opsiyonel), `t` başlık, `d` açıklama, `k` kesin|tahmin
-
-Doğrulama hatalı bir alanı dosya ve satır kaydıyla raporlar; `npm run dev` açıkken hatalar tarayıcıda listelenir.
+- **intakes[]**: `term` (fall, spring, winter, summer), `cycle` ("2027-28"), `offered` ("yes", "no", "unknown"; `no` = bu dönemde alım yok), `rounds[]` (`name`, `open`, `deadline`, `audience`: all, eu, non-eu, tr), `status` (kesin, tahmin).
+- **requirements**:
+  - `gpa {min, scale, deMax}`: `deMax` Alman not tavanıdır (Bavyera formülüyle karşılaştırılır).
+  - `english {ielts, toefl, yds, cambridge, moiAccepted}`
+  - `ales {min | {default, tiers}, notRequired}`
+  - `gre {policy, minQuant}`
+  - `ects {areas: [{area, min}]}`
+  - `documents`, `portal`, `interview`, `advisorLetter`
+- **costs**: `tuition {kind: free | paid | covered | varies | unknown, fee, feeNonEU}`, `semesterFee`, `regionalFee {region, fee, appliesTo}`, `applicationFee`.
+- **scholarships[]**: program, okul ve ülke düzeyinde tanımlanabilir. Ülke düzeyindekiler "ulusal burs" olarak ayrı gösterilir.
+- Her okulda `verifiedAt` var. 90 günden eski kayıtlar arayüzde "doğrulanmadı" etiketi alır.

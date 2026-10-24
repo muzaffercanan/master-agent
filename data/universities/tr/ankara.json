@@ -1,0 +1,166 @@
+{
+  "id": "ankara",
+  "country": "tr",
+  "name": "Ankara Üniversitesi",
+  "short": "Ankara Üni.",
+  "city": "Ankara",
+  "type": "state",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "rankings": {
+    "yok": "A2 · 10."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Bahar alımı genelde Aralık–Ocak döneminde ilan edilir."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-05-04",
+          "deadline": "2027-06-12"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 4 Mayıs – 12 Haziran 2026. Yazılı bilim sınavı 19 Haziran 2026. YZ Enstitüsü sonuçları 26 Haziran, kayıt 27 Temmuz – 7 Ağustos."
+    }
+  ],
+  "admissionsSummary": "En fazla 1 lisansüstü programa başvurulabilir. Bilimsel değerlendirmede en az 50/100 gerekir. Yedek ilanı yalnızca Bilgisayar Müh. ve Enformatik tezli YL için yapılır.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok.",
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Fen Bilimleri Ens.",
+      "url": "https://fenbilimleri.ankara.edu.tr/"
+    },
+    {
+      "label": "Yapay Zekâ Enstitüsü ilanı",
+      "url": "https://yze.ankara.edu.tr/en/2026/05/04/announcement-for-applications-to-graduate-programs-for-the-fall-semester-of-the-2026-2027-academic-year/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "enformatik",
+      "name": "Enformatik",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yapay-zeka-ve-veri-muhendisligi",
+      "name": "Yapay Zekâ ve Veri Mühendisliği",
+      "degree": "YL (bölüm programı)",
+      "levels": [
+        "master"
+      ],
+      "fields": [
+        "ai",
+        "data"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "notes": "YZ, ML, veri bilimi ve akıllı sistemler; 2026-27 güzünde açık.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yapay-zeka-ve-robotik",
+      "name": "Yapay Zekâ ve Robotik (Yapay Zekâ Enstitüsü)",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai",
+        "robo"
+      ],
+      "languages": [
+        "en",
+        "tr"
+      ],
+      "notes": "ALES 65 (SAY/SÖZ/EA), dil 50, GNO 2.00.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 65
+        },
+        "gpa": {
+          "min": 2,
+          "scale": 4
+        },
+        "english": {
+          "note": "dil 50",
+          "yds": 50
+        }
+      }
+    }
+  ]
+}

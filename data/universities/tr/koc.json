@@ -1,0 +1,233 @@
+{
+  "id": "koc",
+  "country": "tr",
+  "name": "Koç Üniversitesi",
+  "short": "Koç",
+  "city": "İstanbul",
+  "type": "foundation",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "A1 · 1.",
+    "csrankings": "CSRankings TR 1."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "unknown",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Bahar 2027 son başvuru tarihi \"ilan edilecek\". Bazı programlar yalnızca güzde, bazıları iki dönemde öğrenci alıyor."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "erken",
+          "deadline": "2027-02-15"
+        },
+        {
+          "name": "normal",
+          "deadline": "2027-05-15"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: Erken son başvuru 15 Şubat 2026, normal 15 Mayıs 2026."
+    }
+  ],
+  "admissionsSummary": "ALES 80 veya GRE Q 156. TOEFL iBT 80 veya YDS/e-YDS/YÖKDİL 80 (IELTS kabul edilmiyor). CV, transkriptler, en az 2 referans. Bütün programlar mülakat yapar; karar son başvurudan 4–6 hafta sonra.",
+  "fundingSummary": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir).",
+  "scholarships": [
+    {
+      "name": "Koç lisansüstü bursu",
+      "provider": "Koç",
+      "coverage": "Ücret muafiyeti + aylık burs + konut desteği + özel sağlık sigortası + seyahat desteği; ayrı başvuru yok"
+    },
+    {
+      "name": "KUIS AI bursu",
+      "provider": "Koç KUIS AI",
+      "coverage": "YZ alanında ek burs; ek test veya proje istenebilir"
+    }
+  ],
+  "people": [
+    "Fatma Güney: görü, otonom sürüş",
+    "Aykut Erdem: görü ve dil",
+    "Deniz Yuret: NLP",
+    "Didem Unat: yüksek başarımlı hesaplama",
+    "Yücel Yemez: görü, ML",
+    "Alptekin Küpçü: kriptografi, gizlilik",
+    "T. Metin Sezgin: insan-bilgisayar etkileşimi"
+  ],
+  "links": [
+    {
+      "label": "Son başvuru tarihleri",
+      "url": "https://gsse.ku.edu.tr/en/application/application-deadlines/"
+    },
+    {
+      "label": "KUIS AI lisansüstü",
+      "url": "https://ai.ku.edu.tr/graduate-admissions/"
+    },
+    {
+      "label": "Başvuru koşulları",
+      "url": "https://gsse.ku.edu.tr/en/application/application-requirements/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "yapay-zeka",
+      "name": "Yapay Zekâ",
+      "degree": "Tezli MS",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Yeni program; KUIS AI merkezi. Mühendislik, temel bilimler, psikoloji ve sağlık kesişiminde. En az 7 seçmeli ders.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilgisayar-bilimi-ve-muhendisligi",
+      "name": "Bilgisayar Bilimi ve Mühendisliği",
+      "degree": "Tezli MS · Tezsiz MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Lisans sonrası doğrudan doktora başvurusu mümkün.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "hesaplamali-bilimler-ve-muhendislik",
+      "name": "Hesaplamalı Bilimler ve Mühendislik",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comp"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "elektrik-elektronik-muhendisligi",
+      "name": "Elektrik-Elektronik Mühendisliği",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comm"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "endustri-muh-ve-operasyon-yonetimi",
+      "name": "Endüstri Müh. ve Operasyon Yönetimi",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "or"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "biyomedikal-bilimler-ve-muhendislik",
+      "name": "Biyomedikal Bilimler ve Mühendislik",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ],
+  "requirements": {
+    "ales": {
+      "min": 80
+    },
+    "english": {
+      "note": "TOEFL 80 / YDS 80",
+      "yds": 80,
+      "toefl": 80
+    }
+  }
+}

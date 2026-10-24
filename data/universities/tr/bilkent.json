@@ -1,0 +1,227 @@
+{
+  "id": "bilkent",
+  "country": "tr",
+  "name": "Bilkent Üniversitesi",
+  "short": "Bilkent",
+  "city": "Ankara",
+  "type": "foundation",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "A2 · 7.",
+    "csrankings": "CSRankings TR 3."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: Yılda iki kez (güz ve bahar) başvuru alınıyor; bahar tarihleri enstitü sayfasında ilan edilir."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "deadline": "2027-06-01"
+        },
+        {
+          "name": "geç",
+          "deadline": "2027-07-01"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: Normal son başvuru 1 Haziran 2026, geç son başvuru 1 Temmuz 2026. Mülakatlar 1–3 Temmuz ve 20–21 Temmuz."
+    }
+  ],
+  "admissionsSummary": "YL: ALES SAY ≥55 (yurt dışında yaşayanlar ve yabancılar GRE Q ≥157). TOEFL iBT 87 (yeni ölçekte 4,5), IELTS 6.5 (her bölüm ≥5.5) veya Bilkent PAE C. Niyet mektubu, 2 referans; davet edilirse mülakat. YL için asgari GNO yok. Başvuru STARS üzerinden.",
+  "fundingSummary": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor.",
+  "scholarships": [
+    {
+      "name": "Bilkent lisansüstü bursu",
+      "provider": "Bilkent",
+      "coverage": "Kabul edilen herkese öğrenim bursu; nitelikli adaylara asistanlık, sağlık sigortası, kampüs konutu"
+    }
+  ],
+  "people": [
+    "Ayşegül Dündar: görü, üretken modeller",
+    "Hamdi Dibeklioğlu: görü",
+    "Eray Tüzün ve Anıl Koyuncu: yazılım mühendisliği",
+    "Uğur Güdükbay: grafik, VR",
+    "Cevdet Aykanat: paralel hesaplama",
+    "A. Ercüment Çiçek ve Can Alkan: biyoenformatik",
+    "Özcan Öztürk: bilgisayar mimarisi"
+  ],
+  "links": [
+    {
+      "label": "Şartlar ve tarihler",
+      "url": "https://mfbe.bilkent.edu.tr/?page_id=17"
+    },
+    {
+      "label": "CS lisansüstü",
+      "url": "https://w3.cs.bilkent.edu.tr/graduate-programs/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core",
+        "ai",
+        "swe",
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "24 araştırma alanı: YZ, ML, NLP, görü, grafik, biyoenformatik, robotik, yazılım müh. Veri Bilimi sertifikası da var.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 55
+        },
+        "english": {
+          "note": "TOEFL 87 / IELTS 6.5",
+          "toefl": 87,
+          "ielts": 6.5
+        },
+        "note": "Asgari 55; kabul edilenler genelde çok daha yüksek"
+      }
+    },
+    {
+      "id": "elektrik-elektronik-muhendisligi",
+      "name": "Elektrik-Elektronik Mühendisliği",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comm"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "endustri-muhendisligi",
+      "name": "Endüstri Mühendisliği",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "or"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "norobilim",
+      "name": "Nörobilim",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "cogsci"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Disiplinlerarası.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "telekomunikasyon-ve-aglar",
+      "name": "Telekomünikasyon ve Ağlar",
+      "degree": "Tezsiz MS",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "comm"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "matematik-malzeme-bilimi-ve-nanoteknoloji",
+      "name": "Matematik · Malzeme Bilimi ve Nanoteknoloji",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comp"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

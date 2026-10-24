@@ -1,15 +1,35 @@
 {
   "name": "master-atlasi",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Türkiye'de CS mezunları için yüksek lisans programları rehberi",
+  "description": "Türkiye ve yurt dışı yüksek lisans programları araştırma uygulaması",
   "type": "module",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "dev": "node scripts/dev.mjs",
-    "build": "node scripts/build.mjs",
-    "check": "node scripts/build.mjs --check"
+    "dev": "vite",
+    "build": "npm run check && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check": "tsx scripts/check.ts",
+    "links": "tsx scripts/links.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
   }
 }

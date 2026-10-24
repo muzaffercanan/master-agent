@@ -1,0 +1,558 @@
+{
+  "id": "odtu",
+  "country": "tr",
+  "name": "ODTÜ (Orta Doğu Teknik Üniversitesi)",
+  "short": "ODTÜ",
+  "city": "Ankara",
+  "type": "state",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "A1 · 3.",
+    "csrankings": "CSRankings TR 2."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2026-11-24",
+          "deadline": "2026-12-19"
+        }
+      ],
+      "status": "tahmin",
+      "note": "Son bilinen bahar: 2025-26: 24 Kasım – 19 Aralık 2025. 2026-27 için Kasım sonu–Aralık bekleniyor; bazı programlar (örn. Veri ve Karar Bilimi) baharda kapalı."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-02-22",
+          "deadline": "2027-03-26"
+        },
+        {
+          "name": "ikinci aşama",
+          "open": "2027-07-06",
+          "deadline": "2027-07-22"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 23 Şubat – 27 Mart 2026. İkinci aşama 6–22 Temmuz 2026 (bazı programlar)."
+    }
+  ],
+  "admissionsSummary": "Bilgisayar Müh. tezli YL: ALES SAY 80, GNO 2.60, ODTÜ EPE (veya eşdeğeri), 2 referans, niyet mektubu. Mülakat yok. Enformatik Enstitüsü programlarının hepsi ALES veya GRE ister. Dil belgeleri 2 yıldan eski olamaz.",
+  "fundingSummary": "Devlet üniversitesi: tezli programlarda normal sürede harç yok. Tezsiz programlar ücretli. Araştırma projesi bursiyerlikleri ve TÜBİTAK 2210.",
+  "scholarships": [],
+  "people": [
+    "Sinan Kalkan: robotik, derin öğrenme",
+    "Emre Akbaş: bilgisayarlı görü",
+    "Ramazan Gökberk Cinbiş: görü, ML",
+    "Erol Şahin: robotik",
+    "Yusuf Sahillioğlu: grafik",
+    "Ebru Aydın Göl: ML, formel yöntemler"
+  ],
+  "links": [
+    {
+      "label": "Bilgisayar Müh. şartları",
+      "url": "https://fbe.metu.edu.tr/en/computer-engineering"
+    },
+    {
+      "label": "Enformatik Ens. programları",
+      "url": "https://ii.metu.edu.tr/important-dates-programs-opened-application"
+    },
+    {
+      "label": "Uygulamalı Matematik Ens.",
+      "url": "https://iam.metu.edu.tr/"
+    },
+    {
+      "label": "Başvuru sistemi",
+      "url": "https://oibs2.metu.edu.tr/Ms_Phd_Applications/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "ALES 80, GNO 2.60. Sıralama: %50 ALES + %30 GNO + %20 komisyon. Doktora: ALES 85, GNO 2.70.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 80
+        },
+        "gpa": {
+          "min": 2.6,
+          "scale": 4
+        },
+        "english": {
+          "note": "ODTÜ EPE / eşdeğeri"
+        }
+      }
+    },
+    {
+      "id": "bilgisayar-muhendisligi-2",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezsiz YL",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Ücretli; bölümün tezsiz SSS sayfasına bak.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yapay-zeka-muhendisligi",
+      "name": "Yapay Zekâ Mühendisliği (Yandex iş birliği)",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "2025'te açıldı (başvuru 1–10 Eylül 2025, Yandex bursu imkânı). 2026-27'de başvuruya kapalı.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yazilim-muhendisligi",
+      "name": "Yazılım Mühendisliği",
+      "degree": "Tezsiz YL",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "swe"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "2026-27 akademik yılında başvuruya kapalı.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "robotik",
+      "name": "Robotik",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "robo",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "ALES SAY 80, GNO 2.30. %50 ALES + %25 GNO + %25 mülakat.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 80
+        },
+        "gpa": {
+          "min": 2.3,
+          "scale": 4
+        },
+        "english": {
+          "note": "ODTÜ EPE / eşdeğeri"
+        }
+      }
+    },
+    {
+      "id": "veri-ve-karar-bilimi",
+      "name": "Veri ve Karar Bilimi",
+      "degree": "Yeni program",
+      "levels": [
+        "master"
+      ],
+      "fields": [
+        "data",
+        "or"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "2026-27 baharında başvuru alınmıyor; güz durumunu program sayfasından izle.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yoneylem-arastirmasi",
+      "name": "Yöneylem Araştırması",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "or"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "ALES 80, ODTÜ EPE 65.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 80
+        },
+        "english": {
+          "note": "EPE 65"
+        }
+      }
+    },
+    {
+      "id": "veri-bilisimi",
+      "name": "Veri Bilişimi (Enformatik Ens.)",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "ALES 75 veya GRE Q 155, EPE 65, GNO 2.50. Ön eleme %50 ALES + %50 GNO, sonra mülakat.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 75
+        },
+        "gpa": {
+          "min": 2.5,
+          "scale": 4
+        },
+        "english": {
+          "note": "EPE 65"
+        }
+      }
+    },
+    {
+      "id": "bilisim-sistemleri",
+      "name": "Bilişim Sistemleri (Enformatik Ens.)",
+      "degree": "Tezli · Tezsiz · Doktora",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Özel niyet mektubu istenir.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "siber-guvenlik",
+      "name": "Siber Güvenlik (Enformatik Ens.)",
+      "degree": "Tezsiz → tezliye geçiş",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis"
+      ],
+      "fields": [
+        "sec"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Bölüm yalnızca tezsize başvuru alıyor; eksik dersler ve 7 ders sonrası teze geçilebiliyor.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "coklu-ortam-bilisimi",
+      "name": "Çoklu Ortam Bilişimi (oyun: MMI-G)",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "game"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Başvuruda uzmanlık kolu (MMI-M veya MMI-G) seçilir.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "biyoenformatik",
+      "name": "Biyoenformatik (Enformatik Ens.)",
+      "degree": "Tezli YL",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "2026-27 güzünde açıktı.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilissel-bilim",
+      "name": "Bilişsel Bilim (Enformatik Ens.)",
+      "degree": "Tezsiz YL · Doktora",
+      "levels": [
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "cogsci"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Doktorada en fazla 4 sayfalık akademik çalışma örneği istenir.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "tip-bilisimi",
+      "name": "Tıp Bilişimi (Enformatik Ens.)",
+      "degree": "Tezsiz YL · Doktora",
+      "levels": [
+        "master-nonthesis",
+        "phd"
+      ],
+      "fields": [
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yazilim-yonetimi",
+      "name": "Yazılım Yönetimi (Enformatik Ens.)",
+      "degree": "Tezsiz YL",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "swe"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Kredi başına ücret. CS dışı mezunlarda sektör deneyimi aranır.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "modelleme-ve-simulasyon-enformatik-online",
+      "name": "Modelleme ve Simülasyon · Enformatik Online",
+      "degree": "Tezsiz YL",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "comp",
+        "is"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Tezsiz, ücretli.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilimsel-hesaplama-kriptografi-finansal-matemati",
+      "name": "Bilimsel Hesaplama · Kriptografi · Finansal Matematik · Aktüerya (Uygulamalı Matematik Ens.)",
+      "degree": "Tezli · Tezsiz",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis"
+      ],
+      "fields": [
+        "comp",
+        "sec",
+        "fin"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Program bazlı yazılı sınav (Bilimsel Hesaplama sınavı Mayıs 2026'da yapıldı).",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "elektrik-elektronik-endustri-muhendislik-yonetim",
+      "name": "Elektrik-Elektronik · Endüstri · Mühendislik Yönetimi · İstatistik · Jeodezi ve Coğrafi Bilgi Tek. · Biyomedikal",
+      "degree": "Tezli",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "comm",
+        "or",
+        "other",
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "CS mezunları için eksik ders çıkabilir.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

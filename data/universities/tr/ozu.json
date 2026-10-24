@@ -1,0 +1,166 @@
+{
+  "id": "ozu",
+  "country": "tr",
+  "name": "Özyeğin Üniversitesi",
+  "short": "Özyeğin",
+  "city": "İstanbul",
+  "type": "foundation",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "Aday (2025)",
+    "csrankings": "CSRankings TR 8."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [],
+      "status": "tahmin",
+      "note": "Bahar başvuruları sonbaharda açılır, yıl sonunda kapanır. Son bilinen bahar: Bahar başvuruları sonbaharda açılır, yıl sonunda kapanır."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-03-01",
+          "deadline": "2027-04-29"
+        },
+        {
+          "name": "geç",
+          "deadline": "2027-07-05"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 2 Mart – 29 Nisan 2026 (normal), geç başvuru 5 Temmuz 2026'ya kadar."
+    }
+  ],
+  "admissionsSummary": "ALES veya GRE. TOEFL, IELTS veya eşdeğeri; İngilizce eğitimli programlardan mezunlar muaf olabilir. Sözlü mülakat zorunlu.",
+  "fundingSummary": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs.",
+  "scholarships": [
+    {
+      "name": "Özyeğin lisansüstü bursu",
+      "provider": "Özyeğin",
+      "coverage": "Tam zamanlı tezli YL/doktora: genelde %100 ücret muafiyeti, çoğuna ek burs"
+    }
+  ],
+  "people": [
+    "Erhan Öztop: robotik, bilişsel sistemler",
+    "Emre Sefer: bilgi erişimi, ML",
+    "İsmail Aktürk: bilgisayar mimarisi",
+    "Sedat Özer: ML, görü"
+  ],
+  "links": [
+    {
+      "label": "Başvuru ve kabul",
+      "url": "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science/application-and-admission"
+    },
+    {
+      "label": "Burslar",
+      "url": "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science/scholarship-opportunities"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-bilimi",
+      "name": "Bilgisayar Bilimi",
+      "degree": "Tezli MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yapay-zeka",
+      "name": "Yapay Zekâ",
+      "degree": "Tezli MS",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Tezsiz sürümü de var.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "veri-bilimi",
+      "name": "Veri Bilimi",
+      "degree": "Tezli MS · Tezsiz MS",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis"
+      ],
+      "fields": [
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "elektrik-elektronik-endustri-matematik",
+      "name": "Elektrik-Elektronik · Endüstri · Matematik",
+      "degree": "MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comm",
+        "or",
+        "comp"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

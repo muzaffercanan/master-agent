@@ -1,0 +1,396 @@
+{
+  "id": "boun",
+  "country": "tr",
+  "name": "Boğaziçi Üniversitesi",
+  "short": "Boğaziçi",
+  "city": "İstanbul",
+  "type": "state",
+  "languages": [
+    "en"
+  ],
+  "rankings": {
+    "yok": "A1 · 5.",
+    "csrankings": "CSRankings TR 4."
+  },
+  "intakes": [
+    {
+      "term": "spring",
+      "cycle": "2026-27",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-01-02",
+          "deadline": "2027-01-09"
+        }
+      ],
+      "status": "tahmin",
+      "note": "Baharda yalnızca bazı programlar öğrenci alıyor. Son bilinen bahar: 2025-26: 2–9 Ocak 2026, yalnızca bazı programlar. Bilgisayar Müh. ilanında bahar alımı yok. Ocak 2027 başı bekleniyor."
+    },
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2027-04-15",
+          "deadline": "2027-06-11"
+        }
+      ],
+      "status": "tahmin",
+      "note": "2026-27 güz: 15 Nisan – 11 Haziran 2026 (II. öğretim 1 Nisan'da açıldı). Sınavlar 22–26 Haziran, BUEPT 2 Haziran, kayıt 31 Ağustos – 3 Eylül."
+    }
+  ],
+  "admissionsSummary": "ALES/GRE ve İngilizce belgesi olmadan başvurulabilir; kabul edilirsen kayda kadar teslim edersin. İngilizce: BUEPT C, TOEFL iBT 79 (yazma 22), IELTS 6.5 (yazma 6.5) veya CAE C. Doktorada ek olarak YDS/YÖKDİL/e-TEP ≥55.",
+  "fundingSummary": "Devlet: tezli programlarda harç yok. II. öğretim tezsiz programlar ücretli.",
+  "scholarships": [],
+  "people": [
+    "A. Taylan Cemgil: makine öğrenmesi",
+    "Emre Uğur: bilişsel ve gelişimsel robotik",
+    "Arzucan Özgür: NLP, biyomedikal metin madenciliği",
+    "Tunga Güngör: NLP",
+    "İnci M. Baytaş: ML, veri madenciliği",
+    "Doğan Ulus: formel doğrulama",
+    "Mehmet Turan: tıbbi robotik",
+    "Alper Şen: doğrulama, yazılım"
+  ],
+  "links": [
+    {
+      "label": "Bilgisayar Müh. başvuru",
+      "url": "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/Lisansustu/Bilgisayar_Muhendisligi"
+    },
+    {
+      "label": "Veri Bilimi ve YZ",
+      "url": "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/lisansustu/Veri_Bilimi_ve_Yapay_Zeka"
+    },
+    {
+      "label": "Yazılım Müh. (tezsiz)",
+      "url": "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/ii_ogretim/Yazilim_Muhendisligi"
+    },
+    {
+      "label": "Tüm programlar",
+      "url": "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/Lisansustu/Tum"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-09-26",
+  "programs": [
+    {
+      "id": "bilgisayar-muhendisligi",
+      "name": "Bilgisayar Mühendisliği",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "YL: 70 kişi (+12 hazırlık), GNO 2.50, ALES SAY 70 veya GRE Q 153. Ön değerlendirmeyi geçenlere mülakat (25 Haziran 2026). Doktora: 15+2, GNO 3.00.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "intakes": [
+        {
+          "term": "spring",
+          "cycle": "2026-27",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Bilgisayar Müh. ilanında bahar alımı yok."
+        },
+        {
+          "term": "fall",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-15",
+              "deadline": "2027-06-11"
+            }
+          ],
+          "status": "tahmin"
+        }
+      ],
+      "requirements": {
+        "ales": {
+          "min": 70
+        },
+        "gpa": {
+          "min": 2.5,
+          "scale": 4
+        },
+        "english": {
+          "note": "TOEFL 79 / IELTS 6.5 / BUEPT C",
+          "toefl": 79,
+          "ielts": 6.5
+        }
+      }
+    },
+    {
+      "id": "veri-bilimi-ve-yapay-zeka",
+      "name": "Veri Bilimi ve Yapay Zekâ (VBYZ Enstitüsü)",
+      "degree": "Tezli MS · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "ai",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "İngilizce, 2 yıl. Seçmeli dersler: büyük veri, derin öğrenme, NLP, görü, pekiştirmeli öğrenme, zaman serileri. Programlama, olasılık ve istatistik altyapısı istenir.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "yazilim-muhendisligi",
+      "name": "Yazılım Mühendisliği",
+      "degree": "II. öğretim tezsiz · tezliye geçiş",
+      "levels": [
+        "master-thesis",
+        "master-nonthesis"
+      ],
+      "fields": [
+        "swe"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Tezsiz: 50 kişi, GNO 2.00, ALES yok, İngilizce şart, temel programlama bilgisi; online mülakat 24 Haziran. Tezliye geçiş: ALES 85 veya GRE 165, tezsizde GNO 3.70 ve danışman kabulü.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "notRequired": true
+        },
+        "gpa": {
+          "min": 2,
+          "scale": 4
+        },
+        "english": {
+          "note": "TOEFL 79 / IELTS 6.5",
+          "toefl": 79,
+          "ielts": 6.5
+        },
+        "note": "ALES aranmıyor"
+      }
+    },
+    {
+      "id": "hesaplamali-bilim-ve-muhendislik",
+      "name": "Hesaplamalı Bilim ve Mühendislik",
+      "degree": "YL · Doktora",
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "comp"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "sistem-ve-kontrol-muhendisligi",
+      "name": "Sistem ve Kontrol Mühendisliği",
+      "degree": "YL · Doktora",
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "robo"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "elektrik-elektronik-muhendisligi",
+      "name": "Elektrik-Elektronik Mühendisliği",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "comm"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "85 kişi (+10), ALES 70, GNO 2.50.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 70
+        },
+        "gpa": {
+          "min": 2.5,
+          "scale": 4
+        },
+        "english": {
+          "note": "TOEFL 79 / IELTS 6.5",
+          "toefl": 79,
+          "ielts": 6.5
+        }
+      }
+    },
+    {
+      "id": "biyomedikal-muhendisligi",
+      "name": "Biyomedikal Mühendisliği",
+      "degree": "Tezli YL · Doktora",
+      "levels": [
+        "master-thesis",
+        "phd"
+      ],
+      "fields": [
+        "bio"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "30 kişi (+15), ALES 70.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": [],
+      "requirements": {
+        "ales": {
+          "min": 70
+        },
+        "gpa": {
+          "min": 2.5,
+          "scale": 4
+        },
+        "english": {
+          "note": "TOEFL 79 / IELTS 6.5",
+          "toefl": 79,
+          "ielts": 6.5
+        }
+      }
+    },
+    {
+      "id": "yonetim-bilisim-sistemleri-isletme-bilisim-siste",
+      "name": "Yönetim Bilişim Sistemleri · İşletme Bilişim Sistemleri (tezsiz)",
+      "degree": "YL · Doktora",
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "en"
+      ],
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "bilissel-bilim",
+      "name": "Bilişsel Bilim",
+      "degree": "MA",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "cogsci"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Sosyal Bilimler Enstitüsü.",
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Devlet üniversitesi: tezli programda normal sürede harç yok."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    },
+    {
+      "id": "finans-muhendisligi-tibbi-sistemler-ve-bilisim-m",
+      "name": "Finans Mühendisliği · Tıbbi Sistemler ve Bilişim · Mekatronik · Mühendislik ve Teknoloji Yönetimi",
+      "degree": "II. öğretim tezsiz",
+      "levels": [
+        "master-nonthesis"
+      ],
+      "fields": [
+        "fin",
+        "bio",
+        "robo",
+        "or"
+      ],
+      "languages": [
+        "en"
+      ],
+      "notes": "Ücretli akşam programları.",
+      "costs": {
+        "tuition": {
+          "kind": "varies",
+          "note": "Tezli kısmı ücretsiz; tezsiz / II. öğretim ücretli (tutar ilanda)."
+        }
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}
