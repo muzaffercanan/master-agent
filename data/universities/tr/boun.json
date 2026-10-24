@@ -5,6 +5,7 @@
   "short": "Boğaziçi",
   "city": "İstanbul",
   "type": "state",
+  "topTier": true,
   "languages": [
     "en"
   ],

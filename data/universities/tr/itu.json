@@ -5,6 +5,7 @@
   "short": "İTÜ",
   "city": "İstanbul",
   "type": "state",
+  "topTier": true,
   "languages": [
     "tr",
     "en"

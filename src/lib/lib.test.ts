@@ -5,6 +5,7 @@ import { yearlyCost } from "./cost";
 import { buildIcs } from "./ics";
 import { countdown, parseD } from "./dates";
 import { rankTier } from "./rank";
+import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
 import type { Country, Fx, Intake } from "../schema";
 import type { ProgramView } from "./programs";
 
@@ -118,5 +119,26 @@ describe("rankTier", () => {
     expect(rankTier("=201")).toBe("low");
     expect(rankTier("2001+")).toBe("low");
     expect(rankTier("Reporter")).toBeUndefined();
+  });
+});
+
+describe("school tier filters", () => {
+  const odtu = { topTier: true, rankings: { theWorld: { year: 2027, rank: "326–350" } } };
+  const tum = { topTier: false, rankings: { theWorld: { year: 2027, rank: "25" } } };
+  const fau = { topTier: false, rankings: { theWorld: { year: 2027, rank: "=201" } } };
+  const mef = { topTier: false, rankings: {} };
+  it("filters by the Turkish pick list or by world rank", () => {
+    expect([odtu, tum, fau, mef].map(u => matchesSchoolTier(u, true, null))).toEqual([true, false, false, false]);
+    expect([odtu, tum, fau, mef].map(u => matchesSchoolTier(u, false, 250))).toEqual([false, true, true, false]);
+    expect([odtu, tum, fau, mef].map(u => matchesSchoolTier(u, false, 100))).toEqual([false, true, false, false]);
+  });
+  it("with both on, either one is enough", () => {
+    expect([odtu, tum, fau, mef].map(u => matchesSchoolTier(u, true, 250))).toEqual([true, true, true, false]);
+    expect(matchesSchoolTier(mef, false, null)).toBe(true);
+  });
+  it("round-trips through the URL", () => {
+    const f = { ...DEFAULT_FILTERS, top: true, rank: 250 };
+    expect(serializeFilters(f).toString()).toBe("top=1&rank=250");
+    expect(parseFilters(serializeFilters(f))).toEqual(f);
   });
 });

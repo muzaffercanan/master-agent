@@ -5,6 +5,7 @@
   "short": "TOBB ETÜ",
   "city": "Ankara",
   "type": "foundation",
+  "topTier": true,
   "languages": [
     "tr",
     "en"

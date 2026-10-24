@@ -5,6 +5,7 @@
   "short": "ODTÜ",
   "city": "Ankara",
   "type": "state",
+  "topTier": true,
   "languages": [
     "en"
   ],

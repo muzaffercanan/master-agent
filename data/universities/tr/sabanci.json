@@ -5,6 +5,7 @@
   "short": "Sabancı",
   "city": "İstanbul",
   "type": "foundation",
+  "topTier": true,
   "languages": [
     "en"
   ],

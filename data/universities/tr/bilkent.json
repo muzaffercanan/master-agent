@@ -5,6 +5,7 @@
   "short": "Bilkent",
   "city": "Ankara",
   "type": "foundation",
+  "topTier": true,
   "languages": [
     "en"
   ],

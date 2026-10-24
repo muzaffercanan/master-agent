@@ -1,6 +1,6 @@
 import { useId, useMemo, useState, type ReactNode } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { applyFilters, DEFAULT_FILTERS, derive, parseFilters, serializeFilters, type Filters } from "../lib/filters";
+import { applyFilters, DEFAULT_FILTERS, derive, matchesSchoolTier, parseFilters, serializeFilters, type Filters } from "../lib/filters";
 import { today } from "../lib/dates";
 import { LANG_LABEL, LEVEL_LABEL, TERM_LABEL } from "../lib/text";
 import { countries, data, views } from "../state/data";
@@ -56,6 +56,9 @@ export function ProgramsPage() {
   const fieldCounts = count(scoped, v => v.program.fields);
   const unis = [...new Map(inCity.map(v => [v.uni.id, v.uni])).values()].sort((a, b) => a.short.localeCompare(b.short, "tr"));
   const hasForeign = views.some(v => v.uni.country !== "tr");
+  const topCount = scoped.filter(v => v.uni.topTier).length;
+  const topNames = [...new Set(views.filter(v => v.uni.topTier).map(v => v.uni.short))].sort((a, b) => a.localeCompare(b, "tr")).join(", ");
+  const RANKS = [100, 250, 500];
 
   const chips = (k: ListKey, opts: [string, ReactNode, number?][]) => (
     <div className="chips">
@@ -94,6 +97,8 @@ export function ProgramsPage() {
   if (f.noGre) active.push(["GRE zorunlu olmayan", () => set({ noGre: false })]);
   if (f.maxIelts != null) active.push([`IELTS şartı ≤ ${f.maxIelts}`, () => set({ maxIelts: null })]);
   if (f.maxGpa != null) active.push([`GNO şartı ≤ ${f.maxGpa}`, () => set({ maxGpa: null })]);
+  if (f.top) active.push(["Seçkin Türk okulları", () => set({ top: false })]);
+  if (f.rank != null) active.push([`THE ilk ${f.rank}`, () => set({ rank: null })]);
   if (f.sl) active.push(["Kısa listem", () => set({ sl: false })]);
   if (f.q) active.push([`“${f.q}”`, () => set({ q: "" })]);
 
@@ -130,6 +135,28 @@ export function ProgramsPage() {
             </select>,
             undefined,
             f.uni.length,
+          )}
+          {group(
+            "Okul düzeyi",
+            <>
+              <div className="chips">
+                <button type="button" className="chipbtn" aria-pressed={f.top} onClick={() => set({ top: !f.top })} disabled={!f.top && !topCount} title={topNames}>
+                  Seçkin Türk okulları<span className="n">{topCount}</span>
+                </button>
+              </div>
+              <span className="hint">{topNames}</span>
+              <span className="hint">THE dünya sırası</span>
+              <div className="chips">
+                {RANKS.map(r => (
+                  <button key={r} type="button" className="chipbtn" aria-pressed={f.rank === r} onClick={() => set({ rank: f.rank === r ? null : r })}>
+                    İlk {r}<span className="n">{scoped.filter(v => matchesSchoolTier(v.uni, false, r)).length}</span>
+                  </button>
+                ))}
+              </div>
+              {f.top && f.rank != null && <span className="hint">İkisi birden seçili: seçkin Türk okulları ve THE sırası ilk {f.rank} içinde olan okullar birlikte listelenir.</span>}
+            </>,
+            f.top || f.rank != null ? () => set({ top: false, rank: null }) : undefined,
+            (f.top ? 1 : 0) + (f.rank != null ? 1 : 0),
           )}
           {group("Alan", chips("field", Object.keys(data.fields).filter(k => fieldCounts.has(k)).map(k => [k, data.fields[k].n.split(" / ")[0].split(":")[0], fieldCounts.get(k)])), f.field.length ? () => set({ field: [] }) : undefined, f.field.length, false)}
           {group("Derece", chips("level", (["master-thesis", "master-nonthesis", "phd"] as const).map(k => [k, LEVEL_LABEL[k]])), undefined, f.level.length)}

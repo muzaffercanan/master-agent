@@ -162,6 +162,8 @@ export const University = z.object({
   city: z.string(),
   region: z.string().optional(),
   type: z.enum(["state", "foundation", "private"]),
+  /** on the user's own shortlist of Turkey's strongest CS faculties (a hand-picked list, not a ranking) */
+  topTier: z.boolean().default(false),
   languages: z.array(Lang).min(1),
   rankings: z
     .object({

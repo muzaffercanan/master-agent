@@ -1,10 +1,11 @@
 // Program explorer filters. State lives in the URL (shareable links); this module is pure.
-import type { Fx } from "../schema";
+import type { Fx, University } from "../schema";
 import { checkRequirements, minAles, type CheckResult, type Profile } from "./eligibility";
 import { yearlyCost, type CostSummary } from "./cost";
 import { nextDeadline, offeredTerms, singleTermOnly, type NextDate, type ProgramView } from "./programs";
 import { daysBetween, parseD } from "./dates";
 import { norm } from "./text";
+import { rankPos } from "./rank";
 
 export interface Filters {
   scope: "" | "tr" | "abroad";
@@ -26,6 +27,10 @@ export interface Filters {
   noGre: boolean;
   maxIelts: number | null;
   maxGpa: number | null;
+  /** Turkey's hand-picked strongest schools (University.topTier) */
+  top: boolean;
+  /** THE world rank at most this (bands count by their best position) */
+  rank: number | null;
   sl: boolean;
   q: string;
   sort: "deadline" | "cost" | "name" | "uni";
@@ -33,12 +38,12 @@ export interface Filters {
 
 export const DEFAULT_FILTERS: Filters = {
   scope: "", country: [], city: [], uni: [], field: [], level: [], lang: [], term: [], single: false, due: null, elig: "",
-  free: false, maxEur: null, regional: "", schol: false, noAles: false, noGre: false, maxIelts: null, maxGpa: null, sl: false, q: "", sort: "deadline",
+  free: false, maxEur: null, regional: "", schol: false, noAles: false, noGre: false, maxIelts: null, maxGpa: null, top: false, rank: null, sl: false, q: "", sort: "deadline",
 };
 
 const LISTS = ["country", "city", "uni", "field", "level", "lang", "term"] as const;
-const BOOLS = ["single", "free", "schol", "noAles", "noGre", "sl"] as const;
-const NUMS = ["due", "maxEur", "maxIelts", "maxGpa"] as const;
+const BOOLS = ["single", "free", "schol", "noAles", "noGre", "top", "sl"] as const;
+const NUMS = ["due", "maxEur", "maxIelts", "maxGpa", "rank"] as const;
 
 export function parseFilters(sp: URLSearchParams): Filters {
   const f: Filters = { ...DEFAULT_FILTERS };
@@ -96,6 +101,17 @@ export function matchesQuery(v: ProgramView, q: string): boolean {
   return n.split(/\s+/).every(t => hay.includes(t));
 }
 
+/** School-level filters. With both on, a school passes if it meets either one (a Turkish pick or a world-ranked school). */
+export function matchesSchoolTier(uni: Pick<University, "topTier" | "rankings">, top: boolean, rank: number | null): boolean {
+  if (!top && rank == null) return true;
+  if (top && uni.topTier) return true;
+  if (rank != null) {
+    const n = uni.rankings.theWorld ? rankPos(uni.rankings.theWorld.rank) : undefined;
+    if (n != null && n <= rank) return true;
+  }
+  return false;
+}
+
 export function applyFilters(items: Derived[], f: Filters, ctx: { shortlist: string[]; T: Date }): Derived[] {
   const out = items.filter(({ view: v, next, cost, check }) => {
     if (f.scope === "tr" && v.uni.country !== "tr") return false;
@@ -126,6 +142,7 @@ export function applyFilters(items: Derived[], f: Filters, ctx: { shortlist: str
     if (f.noGre && r.gre?.policy === "required") return false;
     if (f.maxIelts != null && r.english?.ielts != null && r.english.ielts > f.maxIelts) return false;
     if (f.maxGpa != null && r.gpa?.min != null && (r.gpa.scale ?? 4) === 4 && r.gpa.min > f.maxGpa) return false;
+    if (!matchesSchoolTier(v.uni, f.top, f.rank)) return false;
     if (f.sl && !ctx.shortlist.includes(v.key)) return false;
     return matchesQuery(v, f.q);
   });

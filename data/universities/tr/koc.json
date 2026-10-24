@@ -5,6 +5,7 @@
   "short": "Koç",
   "city": "İstanbul",
   "type": "foundation",
+  "topTier": true,
   "languages": [
     "en"
   ],

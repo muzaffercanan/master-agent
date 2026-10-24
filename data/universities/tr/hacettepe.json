@@ -5,6 +5,7 @@
   "short": "Hacettepe",
   "city": "Ankara",
   "type": "state",
+  "topTier": true,
   "languages": [
     "tr",
     "en"
