@@ -1,0 +1,72 @@
+[
+  {
+    "i": "Koç",
+    "a": 12.4,
+    "b": 9.2,
+    "p": 34,
+    "people": "Fatma Güney (görü), Aykut Erdem (görü, dil), Didem Unat (HPC), Deniz Yuret (NLP), Yücel Yemez (görü, ML), Alptekin Küpçü (gizlilik)"
+  },
+  {
+    "i": "ODTÜ",
+    "a": 11.1,
+    "b": 6.6,
+    "p": 25,
+    "people": "Sinan Kalkan (robotik), Emre Akbaş (görü), R. Gökberk Cinbiş (görü), Erol Şahin (robotik), Yusuf Sahillioğlu (grafik)"
+  },
+  {
+    "i": "Bilkent",
+    "a": 9.1,
+    "b": 5.4,
+    "p": 24,
+    "people": "Ayşegül Dündar (görü, ML), Hamdi Dibeklioğlu (görü), Anıl Koyuncu ve Eray Tüzün (yazılım müh.), Özgür Ulusoy (veritabanı, biyoenformatik), Uğur Güdükbay (grafik)"
+  },
+  {
+    "i": "Boğaziçi",
+    "a": 8,
+    "b": 1.9,
+    "p": 10,
+    "people": "A. Taylan Cemgil (ML), Emre Uğur (robotik), Doğan Ulus (doğrulama), Arzucan Özgür (NLP), İnci Baytaş (veri madenciliği)"
+  },
+  {
+    "i": "Hacettepe",
+    "a": 5.4,
+    "b": 2.8,
+    "p": 15,
+    "people": "Erkut Erdem (görü, dil), Özgür Erkent (robotik), Nazlı İkizler Cinbiş (görü), Pınar Duygulu (görü)"
+  },
+  {
+    "i": "İTÜ",
+    "a": 3,
+    "b": 1.5,
+    "p": 5,
+    "people": "Sanem Sarıel (robotik), Gülşen Eryiğit (NLP), Hazım Kemal Ekenel (görü), Gözde Ünal (ML)"
+  },
+  {
+    "i": "Sabancı",
+    "a": 2.7,
+    "b": 1.5,
+    "p": 5,
+    "people": "Esra Erdem (YZ), Selim Balcısoy (görselleştirme), Kamer Kaya (HPC), Cemal Yılmaz (yazılım)"
+  },
+  {
+    "i": "Özyeğin",
+    "a": 2.6,
+    "b": 0.9,
+    "p": 3,
+    "people": "İsmail Aktürk (mimari), Erhan Öztop (robotik), Emre Sefer (bilgi erişimi)"
+  },
+  {
+    "i": "TOBB ETÜ",
+    "a": 1.9,
+    "b": 1,
+    "p": 8,
+    "people": "Oğuz Ergin (mimari), Mücahid Kutlu (bilgi erişimi)"
+  },
+  {
+    "i": "İYTE",
+    "a": 0.5,
+    "b": 0.5,
+    "p": 1,
+    "people": "Selma Tekir (NLP)"
+  }
+]

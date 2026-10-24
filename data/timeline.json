@@ -1,0 +1,203 @@
+[
+  {
+    "s": "2026-09-30",
+    "e": "2026-10-08",
+    "t": "YDS/2 başvurusu",
+    "d": "Sınav 22 Kasım, sonuç 10 Aralık. Geç başvuru 14 Ekim. 5 yıl geçerli İngilizce belgesi olarak bütün başvurularda işe yarar.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-09-30",
+    "e": "2026-10-08",
+    "t": "e-YDS 2026/11 başvurusu",
+    "d": "Sınav 17 Ekim, sonuç aynı gün. Kontenjan dolunca başvuru erken kapanır.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-10-05",
+    "e": "2026-10-27",
+    "t": "TÜBİTAK 2210 (2026/2 çağrısı)",
+    "d": "Yalnızca şu anda bir YL programına kayıtlıysan. 2210-A için ALES ≥80 ve İngilizce ≥80.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-10-07",
+    "e": "2026-10-15",
+    "t": "ALES/3 başvurusu",
+    "d": "Geç başvuru 21 Ekim. Sınav 29 Kasım, sonuç 17 Aralık. Elinde geçerli ALES yoksa Güz 2027 için en kritik tarih.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-10-27",
+    "e": "2026-11-05",
+    "t": "e-TEP 2026/4 başvurusu",
+    "d": "Sınav 14 Kasım, sonuç 11 Aralık. İTÜ ve Sabancı e-TEP 50 kabul ediyor.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-11-10",
+    "t": "İTÜ bahar başvurularının açılması",
+    "d": "2025-26 baharında başvurular 10 Kasım'da açılmıştı.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2026-11-24",
+    "e": "2026-12-19",
+    "t": "ODTÜ bahar başvuruları",
+    "d": "Geçen yıl 24 Kasım – 19 Aralık. Hangi programların açık olduğu program sayfalarında yazar.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2026-11-27",
+    "t": "Sabancı bahar son başvurusu",
+    "d": "Tezli YL ve doktora; mülakatlar 7–25 Aralık. Bilgisayar, Siber Güvenlik ve Veri Bilimi dahil.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-11-29",
+    "t": "ALES/3 sınavı",
+    "d": "",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-12-01",
+    "e": "2027-01-28",
+    "t": "Atılım bahar başvuruları",
+    "d": "Geçen yıl 1 Aralık – 28 Ocak.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2026-12-02",
+    "e": "2026-12-10",
+    "t": "e-YDS 2026/12 başvurusu",
+    "d": "Sınav 19 Aralık, sonuç aynı gün.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-12-17",
+    "t": "ALES/3 sonuçları",
+    "d": "Aralık sonu ve Ocak'ta kapanan bahar başvurularına yetişir.",
+    "k": "kesin"
+  },
+  {
+    "s": "2026-12-22",
+    "e": "2027-01-05",
+    "t": "Gazi bahar başvuruları",
+    "d": "Geçen yıl 22 Aralık – 5 Ocak; sınavlar Ocak ortasında.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-01-02",
+    "e": "2027-01-09",
+    "t": "Boğaziçi bahar başvuruları (sınırlı program)",
+    "d": "Geçen yıl 2–9 Ocak. Bilgisayar Müh. ilanında bahar alımı yok.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-01-04",
+    "e": "2027-01-25",
+    "t": "Hacettepe bahar başvuruları",
+    "d": "Son yayımlanmış bahar dönemi 1–24 Ocak 2025.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-02-02",
+    "e": "2027-02-26",
+    "t": "TOBB ETÜ yaz dönemi lisansüstü başvuruları",
+    "d": "Üç dönemli sistem; akademik takvimde ilan edildi.",
+    "k": "kesin"
+  },
+  {
+    "s": "2027-02-15",
+    "t": "Koç erken son başvuru",
+    "d": "2026'da 15 Şubat'tı; normal son başvuru 15 Mayıs.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-02-22",
+    "e": "2027-03-26",
+    "t": "ODTÜ güz başvuruları",
+    "d": "2026'da 23 Şubat – 27 Mart, 2025'te 2 Nisan – 16 Mayıs. Tarih değişken; Ocak'ta duyuruyu kontrol et.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-03-01",
+    "e": "2027-04-29",
+    "t": "Özyeğin güz başvuruları (normal)",
+    "d": "2026'da 2 Mart – 29 Nisan, geç başvuru 5 Temmuz.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-04-06",
+    "t": "Sabancı güz erken son başvuru",
+    "d": "Normal 15 Haziran, son 10 Ağustos.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-04-10",
+    "e": "2027-07-06",
+    "t": "İYTE güz başvuruları",
+    "d": "",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-04-15",
+    "e": "2027-06-11",
+    "t": "Boğaziçi güz başvuruları",
+    "d": "Sınavlar Haziran sonunda.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-04-24",
+    "e": "2027-06-26",
+    "t": "İTÜ güz başvuruları",
+    "d": "Kabul mektubu için öğretim üyelerine Mart'ta yaz.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-05-04",
+    "e": "2027-06-18",
+    "t": "GTÜ ve Ankara Üni. güz başvuruları",
+    "d": "",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-05-10",
+    "t": "ALES 2027/1",
+    "d": "2027 ÖSYM takvimi henüz yayımlanmadı; 2026'da ALES/1 10 Mayıs'taydı.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-05-15",
+    "t": "Koç normal son başvuru",
+    "d": "",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-06-01",
+    "t": "Bilkent normal son başvuru",
+    "d": "Geç son başvuru 1 Temmuz.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-06-01",
+    "e": "2027-06-30",
+    "t": "Haziran yoğunluğu: TOBB, Marmara, DEÜ, YTÜ, Gazi, ESTÜ",
+    "d": "2026 takvimlerine göre.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-06-22",
+    "e": "2027-07-03",
+    "t": "Hacettepe güz başvuruları",
+    "d": "Eylül başında ek tur.",
+    "k": "tahmin"
+  },
+  {
+    "s": "2027-08-17",
+    "e": "2027-08-27",
+    "t": "Ege güz başvuruları",
+    "d": "",
+    "k": "tahmin"
+  }
+]

@@ -1,0 +1,330 @@
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brand"><span class="mark">YL</span><span class="full">Bilgisayar Master Atlası</span></span>
+    <div class="searchbox">
+      <span class="ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span>
+      <input id="q" type="search" placeholder="Üniversite, program, şehir ara…" autocomplete="off" aria-label="Üniversite ve program ara">
+      <button class="clr" id="qClear" type="button" hidden aria-label="Aramayı temizle">×</button>
+    </div>
+    <button class="iconbtn" id="favBtn" type="button" aria-pressed="false" title="Sadece favorileri göster">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.6l2.6 5.3 5.9.85-4.25 4.15 1 5.9L12 17l-5.25 2.8 1-5.9L3.5 9.75l5.9-.85z"/></svg>
+      <span class="lbl">Favoriler</span><span class="n" id="favCount">0</span>
+    </button>
+    <button class="iconbtn" id="themeBtn" type="button" title="Açık / koyu tema">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2M12 19.4v2M2.6 12h2M19.4 12h2M5.4 5.4l1.4 1.4M17.2 17.2l1.4 1.4M18.6 5.4l-1.4 1.4M6.8 17.2l-1.4 1.4"/></svg>
+      <span class="lbl" id="themeLbl">Tema</span>
+    </button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="eyebrow">Yüksek lisans rehberi · Bilgisayar bilimleri mezunları için · Güncelleme: 26 Eylül 2026</div>
+      <h1>Bilgisayar Master Atlası</h1>
+      <p class="lede">Türkiye'nin önde gelen üniversitelerinde bir CS mezununun başvurabileceği yüksek lisans programları: şehir şehir, alan alan. Tarihler üniversitelerin 2026 ilanlarından alındı.</p>
+      <div class="hero-legend"><span class="pill kesin">kesin</span> <span>yayımlanmış ilan</span> <span class="pill tahmin">tahmin</span> <span>geçen yılın takvimi, ilan çıkınca doğrula</span></div>
+    </div>
+    <div class="statrail">
+      <div><span class="n" id="uniCount">–</span><span class="l">üniversite</span></div>
+      <div><span class="n" id="progCount">–</span><span class="l">program kaydı</span></div>
+      <div><span class="n">15</span><span class="l">alan</span></div>
+      <div><span class="n" id="cityCount">–</span><span class="l">şehir</span></div>
+      <div><span class="n date" id="todayStr">–</span><span class="l">bugün</span></div>
+    </div>
+    <div class="urgent" id="urgent"></div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Bölümler">
+  <div class="wrap">
+    <a href="#takvim">Takvim</a>
+    <a href="#guz-bahar">Güz / Bahar</a>
+    <a href="#sartlar">Başvuru şartları</a>
+    <a href="#kontrol">Puanım yetiyor mu?</a>
+    <a href="#sehirler">Şehir şehir</a>
+    <a href="#alanlar">Alan alan</a>
+    <a href="#hocalar">Hocalar ve araştırma</a>
+    <a href="#strateji">Strateji</a>
+    <a href="#kaynaklar">Kapsam ve kaynaklar</a>
+  </div>
+</nav>
+<main>
+<section id="takvim">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Önümüzdeki 12 ay</div>
+      <h2>Başvuru ve sınav takvimi</h2>
+      <p class="lede">Eylül 2026'dan Ağustos 2027'ye kadar sırayla. Sınav tarihleri ÖSYM 2026 takviminden, üniversite tarihleri ilanlardan. Kalan gün sayısı sayfayı açtığın güne göre hesaplanır.</p>
+    </div>
+    <div class="callout warn" style="margin-bottom:20px"><b>En kritik iki adım:</b> YDS/2 başvurusu 8 Ekim'de, ALES/3 başvurusu 15 Ekim'de (geç başvuru 21 Ekim) kapanıyor. 2027'nin ilk ALES'i Mayıs'ta yapılacağı için, Koç (Şubat) ve ODTÜ (Şubat–Mart) gibi erken güz başvurularında 29 Kasım ALES/3 sonucun elinde olmalı.</div>
+    <div class="tl" id="timeline"></div>
+  </div>
+</section>
+
+<section id="guz-bahar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Dönem seçimi</div>
+      <h2>Güz mü, bahar mı?</h2>
+      <p class="lede">Güz (Eylül'de başlayan dönem) ana alım dönemidir: bütün programlar açılır, kontenjanlar ve burslar en geniştir. Bahar (Şubat'ta başlayan dönem) alımı daha sınırlıdır. Bazı güçlü bölümler baharda hiç öğrenci almaz (örneğin Boğaziçi Bilgisayar Mühendisliği ilanında bahar alımı yok). Bahar başvuruları Kasım–Ocak arasında toplanır.</p>
+    </div>
+    <div class="tbl-wrap"><table id="calTable">
+      <thead><tr><th>Üniversite</th><th>Güz 2026-27 (gerçekleşen)</th><th>Bahar 2026-27 (Şubat 2027 başlangıç)</th><th>Güz 2027-28 beklentisi</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:12px">Güz 2027 beklentileri, 2026'daki takvimin bir yıl ileri kaydırılmasıyla tahmin edildi. ODTÜ'nün takvimi iki yılda çok değişti (2025: 2 Nisan–16 Mayıs, 2026: 23 Şubat–27 Mart); bu yüzden Ocak 2027'den itibaren duyuruları takip et.</p>
+  </div>
+</section>
+
+<section id="sartlar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Ortak kurallar</div>
+      <h2>Başvuru şartları</h2>
+      <p class="lede">YÖK'ün Lisansüstü Eğitim ve Öğretim Yönetmeliği asgari şartları koyar, üniversiteler bunun üstüne kendi eşiklerini ekler. Bir CS mezunu bilgisayar programlarının çoğunda "alan içi" sayılır ve bilimsel hazırlık almaz.</p>
+    </div>
+    <div class="grid2">
+      <div class="box">
+        <h3>ALES (veya GRE/GMAT)</h3>
+        <ul>
+          <li>Tezli yüksek lisansta yasal alt sınır: ilgili puan türünde <b class="num">55</b>. Güçlü bölümler çok daha yüksek ister: ODTÜ Bilgisayar ve Koç <b class="num">80</b>, İTÜ Bilgisayar <b class="num">80–85</b>, Boğaziçi ve Galatasaray <b class="num">70</b>, Sabancı <b class="num">65</b>.</li>
+          <li>Bilgisayar ve mühendislik programları çoğunlukla <b>Sayısal (SAY)</b> puan ister. Bazı bilişim/YZ programları EA ve SÖZ de kabul eder (Hacettepe Bilişim YZ, Ankara Üni. YZ Enstitüsü, GTÜ YBS).</li>
+          <li>Tezsiz programların büyük kısmında ALES aranmaz (Boğaziçi Yazılım, Hacettepe Bilişim tezsizleri, Sabancı IT ve Veri Analitiği, YTÜ, Atılım).</li>
+          <li>ALES ve GRE sonuçları 5 yıl geçerli. Değerlendirmede ALES'in ağırlığı en az %50'dir.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>ALES ↔ GRE Sayısal karşılıkları</h3>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>ALES SAY</th><th>GRE Quant. (yeni)</th><th>Nerede geçer</th></tr></thead>
+          <tbody>
+            <tr><td class="num">55</td><td class="num">149</td><td>YÖK alt sınırı, Bilkent (yabancılar için GRE 157)</td></tr>
+            <tr><td class="num">65</td><td class="num">≈151</td><td>Sabancı tezli (GRE 153 istiyor)</td></tr>
+            <tr><td class="num">70</td><td class="num">153</td><td>Boğaziçi, Galatasaray, GTÜ</td></tr>
+            <tr><td class="num">75</td><td class="num">155</td><td>ODTÜ Veri Bilişimi</td></tr>
+            <tr><td class="num">80</td><td class="num">156</td><td>ODTÜ Bilgisayar, Koç, İTÜ</td></tr>
+            <tr><td class="num">85</td><td class="num">158</td><td>İTÜ (GNO 2.60–2.74 ise), ODTÜ doktora</td></tr>
+          </tbody>
+        </table></div>
+        <p class="small muted">Kaynak: ODTÜ ve İTÜ dönüşüm tabloları; ≈ işaretli satır aradeğerdir. Her üniversite kendi tablosunu kullanır.</p>
+      </div>
+      <div class="box">
+        <h3>İngilizce</h3>
+        <ul>
+          <li>ÖSYM sınavları: YDS / e-YDS / YÖKDİL tipik eşik <b class="num">50–80</b> (DEÜ 50, Hacettepe YZ 55, İTÜ ve Sabancı 65, Galatasaray 70, AGÜ 73, Koç 80). YDS 5 yıl geçerli.</li>
+          <li>TOEFL iBT: <b class="num">78–87</b> (İTÜ ve Sabancı 78, Boğaziçi 79 + yazma 22, Koç 80, Bilkent ve AGÜ 87). Ocak 2026'dan itibaren TOEFL yeni 1–6 ölçeğine geçti: İTÜ 4, Bilkent 4,5 istiyor. TOEFL 2 yıl geçerli.</li>
+          <li>IELTS 6.5 çoğu yerde geçer, <b>Koç IELTS kabul etmiyor</b>.</li>
+          <li>Kurum sınavları: ODTÜ EPE (65), Boğaziçi BUEPT (C), İTÜ YDY (65), GTÜ İngilizce (60), TOBB ETÜ sınavı.</li>
+          <li>Boğaziçi ve İTÜ'ye dil belgesi olmadan başvurulabiliyor; belgeyi kayıttan (İTÜ'de ders almadan) önce getirmek gerekiyor.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Not ortalaması ve değerlendirme</h3>
+        <ul>
+          <li>İlan edilen GNO eşikleri 2.00–2.80/4.00 arası (ODTÜ Bilgisayar 2.60, Boğaziçi 2.50, Hacettepe Bilgisayar 2.80, Atılım tezli 2.50). Rekabetçi programlarda kabul edilenlerin ortalaması eşiğin belirgin üstündedir.</li>
+          <li>Ağırlıklar programa göre değişir. ODTÜ Bilgisayar: %50 ALES + %30 GNO + %20 komisyon, mülakat yok. Hacettepe Bilişim YZ: %50 ALES + %10 dil + %10 GNO + %30 mülakat. Atılım tezli: %50 ALES + %50 GNO.</li>
+          <li>Yazılı ya da sözlü bilimsel değerlendirme yapan yerlerde (Hacettepe, Gazi, Ankara Üni.) sınavdan 100 üzerinden en az 50 almak gerekir. Hacettepe Bilgisayar'ın yazılı sınavı bütün lisans müfredatını kapsar.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Belgeler</h3>
+        <ul>
+          <li>Transkript ve diploma ya da mezuniyet belgesi (e-Devlet barkodlu).</li>
+          <li>ALES/GRE sonuç belgesi ve İngilizce belgesi.</li>
+          <li>Niyet mektubu (statement of purpose). Hacettepe Bilgisayar en fazla 500 kelimelik İngilizce metin istiyor.</li>
+          <li>En az 2 referans mektubu (İTÜ'de biri akademik olmalı), CV, fotoğraf.</li>
+          <li>Bazı yerlerde başvuru ücreti var (TOBB ETÜ 300 TL, ODTÜ program başına).</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Danışman kabul mektubu</h3>
+        <ul>
+          <li><b>İTÜ Bilgisayar Mühendisliği</b>: programdaki bir öğretim üyesinden kabul mektubu <b>zorunlu</b>, yoksa başvuru reddediliyor.</li>
+          <li><b>İTÜ Bilgisayar Bilimleri</b>: destek mektubu öneriliyor.</li>
+          <li><b>Hacettepe Bilgisayar</b>: bölüm yönergesi, çalışılacak öğretim üyesinden kabul mektubu alınmasını istiyor.</li>
+          <li><b>GTÜ doktora</b> ve <b>Boğaziçi Yazılım (tezliye geçiş)</b>: öğretim üyesiyle önceden görüşme bekleniyor.</li>
+          <li>Diğer yerlerde zorunlu değil, ama başvurudan önce 1–2 hocaya kısa ve somut bir e-posta atmak kabul şansını belirgin artırır.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Tezli mi, tezsiz mi?</h3>
+        <ul>
+          <li><b>Tezli</b>: genelde 4 dönem (azami 6), 7 ders + seminer + tez. Doktora ve akademi için gerekli. Devlet üniversitelerinde normal sürede harç alınmaz. Vakıf üniversitelerinde çoğunlukla ücret muafiyeti ve aylık burs ya da asistanlık verilir.</li>
+          <li><b>Tezsiz</b>: 10 ders + dönem projesi, 3 dönem civarı. Çoğu akşam veya hibrit ve ücretli. Genelde ALES istenmez. Çalışanlar için uygundur ama doktoraya doğrudan kapı açmaz.</li>
+          <li>Aynı anda yalnızca bir tezli programa kayıtlı olunabilir. Tezsiz programlar bu kuralın dışındadır.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>"Bilgisayar Bilimleri" diploman varsa</h3>
+        <ul>
+          <li>Diploman "Bilgisayar Mühendisliği" değil de "Bilgisayar Bilimleri" ise her programın <i>başvurabilecek bölümler</i> listesine bak.</li>
+          <li>İTÜ Bilgisayar Bilimleri ve Bilgisayar Mühendisliği listelerinde Bilgisayar Bilimleri açıkça var.</li>
+          <li>YTÜ Yapay Zeka ve Veri Müh. programı Bilgisayar Bilimleri'ni <i>alan dışı</i> sayıyor. GTÜ Bilgisayar Müh. 1. şube yalnızca Mühendislik Fakültesi Bilgisayar Müh. mezunlarını alıyor; diğerleri en fazla 5 kişilik 2. şubeye giriyor ve bilimsel hazırlık alabiliyor.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Burs ve finansman</h3>
+        <ul>
+          <li><b>TÜBİTAK 2210</b> (1 Ocak 2026 tutarları): 2210-A tam burs <b class="num">16.500 TL/ay</b>. 2210-C (öncelikli alanlar, <b>yapay zekâ</b> ve yeni nesil haberleşme dahil) ve 2210-D (sanayi) <b class="num">19.000 TL/ay</b>. TÜBİTAK projesinde çalışana <b class="num">22.500 TL/ay</b>, süre 24 ay. Yılda iki çağrı var (2026/2: 5–27 Ekim). Başvurmak için bir YL programına kayıtlı olmak (en geç 3. dönem), <b>ALES ≥80</b> ve <b>YDS ≥80</b> gerekir (2210-A).</li>
+          <li><b>Vakıf üniversiteleri</b>: Bilkent'te kabul edilen herkese öğrenim bursu verilir. Koç'ta ücret muafiyeti, aylık burs, konut, sağlık sigortası ve seyahat desteği var. Sabancı ve Özyeğin'de ücret muafiyeti ve/veya aylık burs. TOBB ETÜ'de tam burs veya %150 özel başarı bursu.</li>
+          <li><b>Sektör iş birlikleri</b>: ASELSAN Akademi kontenjanları (Hacettepe Bilgisayar 30, GTÜ YZ 20; ASELSAN çalışanlarına yönelik), ODTÜ YZ Mühendisliği için Yandex bursu (2025), Koç KUIS AI bursu.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontrol">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Hızlı eleme</div>
+      <h2>Puanım yetiyor mu?</h2>
+      <p class="lede">ALES Sayısal puanını ve 4'lük not ortalamanı gir. Tablo, ilan edilmiş <b>asgari</b> şartlarla karşılaştırır. Asgari şartı geçmek kabul anlamına gelmez; rekabetçi programlarda kabul alanların puanı genelde eşiğin 5–15 puan üstündedir.</p>
+    </div>
+    <div class="checker">
+      <form class="checker-form" id="checkForm" onsubmit="return false">
+        <div class="field"><label for="alesIn">ALES SAY</label><input id="alesIn" type="number" min="0" max="100" step="0.01" value="75" inputmode="decimal"></div>
+        <div class="field"><label for="gpaIn">GNO (4'lük)</label><input id="gpaIn" type="number" min="0" max="4" step="0.01" value="3.00" inputmode="decimal"></div>
+        <div class="field"><label for="cityIn">Şehir</label><select id="cityIn"><option value="">Tümü</option></select></div>
+        <div class="summary-line" id="checkSummary"></div>
+      </form>
+      <div class="tbl-wrap"><table id="checkTable">
+        <thead><tr><th>Durum</th><th>Program</th><th>Üniversite</th><th>Asgari ALES</th><th>Asgari GNO</th><th>İngilizce</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section id="sehirler">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Ana bölüm</div>
+      <h2>Şehir şehir üniversiteler ve programlar</h2>
+      <p class="lede">Her kartta tarihler, şartlar, programlar, finansman ve öne çıkan araştırmacılar var. Alan filtresi seçildiğinde o alandaki programlar vurgulanır. Yıldız düğmesi üniversiteyi kısa listene ekler; üstteki arama kutusu program adlarına kadar arar.</p>
+    </div>
+    <div class="filters">
+      <div class="frow" id="cityFilters"><span class="lbl">Şehir</span></div>
+      <div class="frow" id="fieldFilters"><span class="lbl">Alan</span></div>
+    </div>
+    <div class="count-line" id="uniCountLine"></div>
+    <div id="uniList"></div>
+  </div>
+</section>
+
+<section id="alanlar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">CS mezunu olarak seçenekler</div>
+      <h2>Alan alan: nerede ne okuyabilirsin?</h2>
+      <p class="lede">Bir CS lisansı 15 farklı yüksek lisans alanına kapı açar. Aşağıdaki listeler bu rapordaki program kayıtlarından otomatik üretilir.</p>
+    </div>
+    <div class="fields" id="fieldList"></div>
+  </div>
+</section>
+
+<section id="hocalar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Öğretim üyesi kalitesi</div>
+      <h2>Hocalar ve araştırma gücü</h2>
+      <p class="lede">"İyi hoca"yı tek bir sayı ölçmez. Burada iki bağımsız gösterge var: YÖK'ün kurum geneli araştırma performansı ve CSRankings'in bilgisayar bilimine özel, öğretim üyesi bazlı yayın verisi. İkisini birlikte oku, sonra danışman adaylarının kendi sayfalarına bak.</p>
+    </div>
+    <div class="grid2" style="margin-bottom:22px">
+      <div class="box">
+        <h3>YÖK Araştırma Üniversiteleri 2025</h3>
+        <p class="small muted">Kurum genelinde (tüm alanlar) araştırma performansı. Parantezdeki sayı 23 üniversite içindeki sıradır.</p>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>Grup</th><th>Üniversiteler</th></tr></thead>
+          <tbody>
+            <tr><td><span class="pill kesin">A1</span></td><td>Koç (1), Sabancı (2), ODTÜ (3), İTÜ (4), Boğaziçi (5)</td></tr>
+            <tr><td><span class="pill na">A2</span></td><td>YTÜ (6), Bilkent (7), Hacettepe (8), İYTE (9), Ankara (10), İstanbul (11), Ege (12), Gazi (13), Erciyes (14), Sakarya (15), Atatürk (16), İÜ-Cerrahpaşa (17)</td></tr>
+            <tr><td><span class="pill na">A3</span></td><td>Marmara (18), Gebze Teknik (19), Çukurova (20), Fırat (21), KTÜ (22), Bursa Uludağ (23)</td></tr>
+            <tr><td><span class="pill tahmin">Aday</span></td><td>2025'te ilk kez aday: TOBB ETÜ, Özyeğin, İstinye, Medipol, RTEÜ. İzlemede: Akdeniz, Dokuz Eylül, Kocaeli, Ondokuz Mayıs, Selçuk</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="box">
+        <h3>İyi bir danışmanı nasıl anlarsın?</h3>
+        <ul>
+          <li>Son 3 yılda yayını var mı? Google Scholar veya DBLP'de kontrol et.</li>
+          <li>Aktif projesi var mı (TÜBİTAK 1001, ARDEB, AB/ERC, sanayi)? Proje, bursiyerlik ve maaş demek.</li>
+          <li>Kaç öğrencisi var, mezunları nereye gitti? Laboratuvar sayfasında "alumni" kısmına bak.</li>
+          <li>Hocaya konu önerisi, kısa CV ve bir iki cümlelik ilgi alanı içeren kısa bir e-posta at. İTÜ ve Hacettepe'de bu adım zaten başvurunun parçası.</li>
+          <li>Mümkünse mevcut öğrencilerinden biriyle konuş. Danışman ilişkisi, üniversitenin sıralamasından daha belirleyicidir.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 style="margin:10px 0 8px">CSRankings verisine göre Türk bilgisayar bölümleri</h3>
+    <p class="small muted" style="max-width:80ch;margin-bottom:14px">Yalnızca seçici üst düzey konferanslardaki makaleler sayılır (NeurIPS, CVPR, ACL, ICSE, IEEE S&amp;P, ISCA gibi). Her makale yazar sayısına bölünür ("ağırlıklı yayın"). Veri, CSRankings açık veri setinden 26 Eylül 2026'da çekildi. Dergi yayınlarını ve bu listede olmayan konferansları kapsamaz, kurum listesi de eksik olabilir (örneğin GTÜ ve Bahçeşehir listede yok). Güçlü bir sinyaldir ama tek başına hüküm değildir.</p>
+    <div class="tbl-wrap"><table id="csrTable">
+      <thead><tr><th>Kurum</th><th>2016–2026</th><th>2021–2026</th><th>Makale (2021–26)</th><th>Öne çıkan araştırmacılar (alan)</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <p class="small muted" style="margin-top:12px">Galatasaray, İÜ-Cerrahpaşa ve YTÜ CSRankings kurum listesinde var, ancak bu dönemde sayılan konferanslarda ağırlıklı yayınları yok. Alan kısaltmaları: görü = bilgisayarlı görü; NLP = doğal dil işleme; ML = makine öğrenmesi; HPC = yüksek başarımlı hesaplama.</p>
+  </div>
+</section>
+
+<section id="strateji">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Profiline göre</div>
+      <h2>Strateji önerileri</h2>
+    </div>
+    <div class="grid2">
+      <div class="box">
+        <h3>Akademi veya yurt dışı doktora hedefi</h3>
+        <p class="small muted">Tezli, araştırma yoğun, danışman odaklı</p>
+        <ul>
+          <li>Hedef liste: Koç, ODTÜ, Bilkent, Boğaziçi, Sabancı, İTÜ, Hacettepe. Buna İYTE ve Özyeğin'i ekle.</li>
+          <li>ALES 80+ (GRE Q 156+) ve TOEFL 80+ ya da YDS 80+ ile hepsinin eşiğini geçersin. YDS 80 aynı zamanda TÜBİTAK 2210-A şartı.</li>
+          <li>Sıralama: Koç erken (Şubat) → ODTÜ (Şubat–Mart) → Sabancı erken (Nisan) → Boğaziçi ve İTÜ (Nisan–Haziran) → Bilkent (1 Haziran).</li>
+          <li>Başvurudan 1–2 ay önce danışman adaylarına yaz. İTÜ Bilgisayar'da bu zorunlu.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>ALES 60–75 aralığındaysan</h3>
+        <p class="small muted">Tezli ama eşiği daha erişilebilir programlar</p>
+        <ul>
+          <li>70 ve üstü: Boğaziçi Bilgisayar (70, GNO 2.50), Galatasaray (70), GTÜ Bilgisayar ve Siber Güvenlik (70), ODTÜ Veri Bilişimi (75).</li>
+          <li>60–69: Sabancı (65), Ankara Üni. YZ ve Robotik (65), Hacettepe Bilişim YZ (60), GTÜ YZ (60).</li>
+          <li>55–59: YTÜ YZ ve Veri Müh. (55), Bilkent (asgari 55, ama rekabetçi), DEÜ (55), ESTÜ (55), Atılım (55).</li>
+          <li>Kasım'daki ALES/3'e girip puanını 5–10 puan artırmak, seçenek listeni belirgin genişletir.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Çalışarak okumak istiyorsan</h3>
+        <p class="small muted">Tezsiz, akşam veya hibrit, çoğunlukla ALES'siz</p>
+        <ul>
+          <li>Boğaziçi Yazılım Mühendisliği II. öğretim: ALES yok, GNO 2.00, İngilizce şart, 50 kişi.</li>
+          <li>Hacettepe Bilişim Enstitüsü tezsizleri: Yazılım, Veri ve Bilgi Müh., Bilgi Güvenliği, Oyun. ALES ve dil yok; %30 GNO + %70 mülakat.</li>
+          <li>ODTÜ Enformatik tezsizleri: Siber Güvenlik, Bilişim Sistemleri, Yazılım Yönetimi, Modelleme ve Simülasyon, Online.</li>
+          <li>İTÜ Büyük Veri ve İş Analitiği II. öğretim; Sabancı Bilgi Teknolojileri ve Veri Analitiği; MEF Büyük Veri; Bahçeşehir, Kadir Has ve GTÜ YBS II. öğretim.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Şubat 2027'de başlamak istiyorsan</h3>
+        <p class="small muted">Bahar alımı yapan yerler</p>
+        <ul>
+          <li><b>Sabancı</b>: son başvuru 27 Kasım 2026 (kesin). Bilgisayar, Siber Güvenlik ve Veri Bilimi dahil.</li>
+          <li>İTÜ (Kasım'da açılması bekleniyor), ODTÜ (Kasım sonu–Aralık), Gazi (Aralık sonu), Hacettepe ve Boğaziçi (Ocak, Boğaziçi'nde sınırlı program), Atılım (Aralık–Ocak), Koç (ilan bekleniyor), Özyeğin, Ege UBE, KTÜ.</li>
+          <li>ALES/3 sonucu 17 Aralık'ta açıklanacak. Sabancı ve ODTÜ bahar başvurularında ALES'in şimdiden elinde olmalı (ya da GRE). Aralık sonu ve Ocak'ta kapanan başvurulara ALES/3 ile yetişebilirsin.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:18px">Farklı üniversitelere aynı anda başvurabilirsin. Bazı üniversiteler kendi içinde program sayısını sınırlar: Ankara Üni. 1 program, Hacettepe Bilişim en fazla 3, Ege 1 tek disiplinli + 1 disiplinlerarası + 1 tezsiz. 6–10 başvuruluk dengeli bir liste (2–3 iddialı, 3–4 hedef, 2–3 güvenli) iyi bir başlangıçtır.</div>
+  </div>
+</section>
+</main>
+
+<footer id="kaynaklar">
+  <div class="wrap" style="display:grid;gap:18px;padding-block:0">
+    <div class="eyebrow">Kapsam ve kaynaklar</div>
+    <h2 style="color:var(--ink)">Kapsam ve kaynaklar</h2>
+    <p style="max-width:80ch">Bu rapor 26 Eylül 2026'da üniversitelerin enstitü ilanlarından, kontenjan tablolarından ve ÖSYM, TÜBİTAK, YÖK ve CSRankings verilerinden derlendi. Derinlemesine incelenenler: ODTÜ, Bilkent, Hacettepe, TOBB ETÜ, Ankara, Gazi, Atılım, Boğaziçi, İTÜ, Koç, Sabancı, YTÜ, Özyeğin, Marmara, Galatasaray, Bahçeşehir, Kadir Has, MEF, İYTE, Dokuz Eylül, Ege, Gebze Teknik, AGÜ ve ESTÜ. Daha az ayrıntıyla verilenler: KTÜ, Sakarya, Bursa Uludağ, BTÜ, Selçuk, KTÜN, Yeditepe, İÜ-Cerrahpaşa. <b>İncelenmeyenler</b> (programlarını kendin kontrol et): İstanbul Üniversitesi, Bilgi, Işık, Medipol, İzmir Ekonomi, Yaşar, Çankaya, Başkent, TED, Kocaeli, Erciyes, Atatürk, Çukurova, Akdeniz, Pamukkale, Ondokuz Mayıs. Ücretler ve burs tutarları her yıl değişir. Başvurmadan önce ilgili ilanın güncel halini mutlaka oku.</p>
+    <ul class="srcs" id="srcList"></ul>
+  </div>
+</footer>
+

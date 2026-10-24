@@ -1,0 +1,77 @@
+{
+  "core": {
+    "n": "Bilgisayar Mühendisliği / Bilgisayar Bilimleri",
+    "d": "En geniş seçenek. Tez konusu serbesttir: yapay zekâ, sistemler, ağlar, teori, grafik. Akademi ve Ar-Ge için en güvenli tercih.",
+    "note": "CS mezunu için doğal devam, bilimsel hazırlık gerekmez. \"Bilgisayar Bilimleri\" diplomasında başvurabilecek bölümler listesine bak."
+  },
+  "ai": {
+    "n": "Yapay Zekâ / YZ Mühendisliği",
+    "d": "Son üç yılda hızla açılan programlar: makine öğrenmesi, derin öğrenme, büyük dil modelleri, görü.",
+    "note": "Yeni programlarda öğretim kadrosu bilgisayar bölümüyle ortaktır, danışman havuzunu incele. TÜBİTAK 2210-C öncelikli alanında olduğu için burs daha yüksek."
+  },
+  "data": {
+    "n": "Veri Bilimi / Büyük Veri / Analitik",
+    "d": "İstatistik, makine öğrenmesi ve veri mühendisliği. İş analitiği sürümleri daha çok sektöre yöneliktir.",
+    "note": "Tezli sürümler araştırma, tezsizler sektör odaklıdır."
+  },
+  "sec": {
+    "n": "Siber Güvenlik / Bilgi Güvenliği / Kriptografi",
+    "d": "Ağ ve sistem güvenliği, kriptografi, adli bilişim.",
+    "note": "Kriptografi programları (ODTÜ UME, İTÜ) ağır matematik ister. ODTÜ Siber Güvenlik bölümü yalnızca tezsize başvuru alıyor, sonra teze geçiş mümkün."
+  },
+  "swe": {
+    "n": "Yazılım Mühendisliği",
+    "d": "Yazılım mimarisi, test, süreç ve proje yönetimi.",
+    "note": "Büyük kısmı çalışanlara yönelik tezsiz akşam programı. Tezli araştırma için Bilgisayar Müh. altında yazılım müh. danışmanı seçmek genelde daha iyi."
+  },
+  "is": {
+    "n": "Bilişim Sistemleri / YBS / Bilgi Teknolojileri",
+    "d": "Bilgi sistemleri, kurumsal BT, dijital dönüşüm.",
+    "note": "Bazıları EA/SÖZ puanını da kabul eder. Kariyer daha çok BT yönetimine yöneliktir."
+  },
+  "game": {
+    "n": "Oyun / Çoklu Ortam / Animasyon",
+    "d": "Oyun geliştirme, grafik, etkileşim tasarımı.",
+    "note": "Portföy ve proje deneyimi mülakatta önemlidir."
+  },
+  "bio": {
+    "n": "Biyoenformatik / Sağlık ve Tıp Bilişimi / Biyomedikal",
+    "d": "Genomik veri, tıbbi görüntü, sağlık bilgi sistemleri.",
+    "note": "Biyoloji altyapısı beklenebilir, ilk dönemde eksik dersler verilebilir."
+  },
+  "cogsci": {
+    "n": "Bilişsel Bilim / Nörobilim",
+    "d": "İnsan zihni ve hesaplamalı modelleme; disiplinlerarası.",
+    "note": "ODTÜ (tezsiz ve doktora), Bilkent Nörobilim, Boğaziçi Bilişsel Bilim (MA)."
+  },
+  "comp": {
+    "n": "Hesaplamalı Bilim / Bilimsel Hesaplama / Modelleme",
+    "d": "Sayısal yöntemler, paralel hesaplama, simülasyon.",
+    "note": "Güçlü matematik ve programlama ister; HPC ilgisi olan CS mezunları için uygun."
+  },
+  "robo": {
+    "n": "Robotik / Mekatronik / Kontrol",
+    "d": "Robot öğrenmesi, otonom sistemler, kontrol teorisi.",
+    "note": "Kontrol ve mekatronik programları mühendislik altyapısı bekleyebilir. ODTÜ Robotik CS mezunlarına açık (GNO 2.30)."
+  },
+  "comm": {
+    "n": "Haberleşme / Ağlar / Uydu",
+    "d": "Kablosuz ağlar, telekom, uzaktan algılama.",
+    "note": "Elektrik-elektronik altyapısı beklenir, bilimsel hazırlık çıkabilir. Bilkent Telekomünikasyon ve Ağlar tezsiz programı daha erişilebilir."
+  },
+  "fin": {
+    "n": "Finans Müh. / Finansal Matematik / FinTech / Aktüerya",
+    "d": "Nicel finans, risk, algoritmik işlem.",
+    "note": "Olasılık ve istatistik ağırlıklı; ODTÜ UME'de yazılı sınav var."
+  },
+  "or": {
+    "n": "Endüstri / Yöneylem / Karar Bilimi / Sistem Müh.",
+    "d": "Optimizasyon, tedarik zinciri, karar destek.",
+    "note": "CS mezunları optimizasyon ve algoritma altyapısıyla güçlü aday olur, bazı yerlerde eksik ders verilir."
+  },
+  "other": {
+    "n": "Diğer: CBS, Savunma, Eğitim Tek., Bilişim Hukuku, Mimari Bilişim",
+    "d": "Coğrafi bilgi teknolojileri, savunma teknolojileri, eğitim teknolojisi, bilişim ve fikri mülkiyet hukuku, hesaplamalı tasarım.",
+    "note": "Niş kariyer yolları; kontenjanları küçük."
+  }
+}

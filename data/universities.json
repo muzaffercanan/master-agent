@@ -1,0 +1,2159 @@
+[
+  {
+    "id": "odtu",
+    "name": "ODTÜ (Orta Doğu Teknik Üniversitesi)",
+    "short": "ODTÜ",
+    "city": "Ankara",
+    "type": "Devlet",
+    "lang": "İngilizce",
+    "yok": "A1 · 3.",
+    "csr": "CSRankings TR 2.",
+    "fall": {
+      "t": "23 Şubat – 27 Mart 2026. İkinci aşama 6–22 Temmuz 2026 (bazı programlar).",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "2025-26: 24 Kasım – 19 Aralık 2025. 2026-27 için Kasım sonu–Aralık bekleniyor; bazı programlar (örn. Veri ve Karar Bilimi) baharda kapalı.",
+      "k": "tahmin"
+    },
+    "next": "Şubat–Mart 2027 (2025'te Nisan–Mayıs idi; değişken)",
+    "req": "Bilgisayar Müh. tezli YL: ALES SAY 80, GNO 2.60, ODTÜ EPE (veya eşdeğeri), 2 referans, niyet mektubu. Mülakat yok. Enformatik Enstitüsü programlarının hepsi ALES veya GRE ister. Dil belgeleri 2 yıldan eski olamaz.",
+    "fund": "Devlet üniversitesi: tezli programlarda normal sürede harç yok. Tezsiz programlar ücretli. Araştırma projesi bursiyerlikleri ve TÜBİTAK 2210.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "ALES 80, GNO 2.60. Sıralama: %50 ALES + %30 GNO + %20 komisyon. Doktora: ALES 85, GNO 2.70."
+      },
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezsiz YL",
+        "f": [
+          "core"
+        ],
+        "d": "Ücretli; bölümün tezsiz SSS sayfasına bak."
+      },
+      {
+        "n": "Yapay Zekâ Mühendisliği (Yandex iş birliği)",
+        "t": "Tezli YL",
+        "f": [
+          "ai"
+        ],
+        "d": "2025'te açıldı (başvuru 1–10 Eylül 2025, Yandex bursu imkânı). 2026-27'de başvuruya kapalı."
+      },
+      {
+        "n": "Yazılım Mühendisliği",
+        "t": "Tezsiz YL",
+        "f": [
+          "swe"
+        ],
+        "d": "2026-27 akademik yılında başvuruya kapalı."
+      },
+      {
+        "n": "Robotik",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "robo",
+          "ai"
+        ],
+        "d": "ALES SAY 80, GNO 2.30. %50 ALES + %25 GNO + %25 mülakat."
+      },
+      {
+        "n": "Veri ve Karar Bilimi",
+        "t": "Yeni program",
+        "f": [
+          "data",
+          "or"
+        ],
+        "d": "2026-27 baharında başvuru alınmıyor; güz durumunu program sayfasından izle."
+      },
+      {
+        "n": "Yöneylem Araştırması",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "or"
+        ],
+        "d": "ALES 80, ODTÜ EPE 65."
+      },
+      {
+        "n": "Veri Bilişimi (Enformatik Ens.)",
+        "t": "Tezli YL",
+        "f": [
+          "data"
+        ],
+        "d": "ALES 75 veya GRE Q 155, EPE 65, GNO 2.50. Ön eleme %50 ALES + %50 GNO, sonra mülakat."
+      },
+      {
+        "n": "Bilişim Sistemleri (Enformatik Ens.)",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "is"
+        ],
+        "d": "Özel niyet mektubu istenir."
+      },
+      {
+        "n": "Siber Güvenlik (Enformatik Ens.)",
+        "t": "Tezsiz → tezliye geçiş",
+        "f": [
+          "sec"
+        ],
+        "d": "Bölüm yalnızca tezsize başvuru alıyor; eksik dersler ve 7 ders sonrası teze geçilebiliyor."
+      },
+      {
+        "n": "Çoklu Ortam Bilişimi (oyun: MMI-G)",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "game"
+        ],
+        "d": "Başvuruda uzmanlık kolu (MMI-M veya MMI-G) seçilir."
+      },
+      {
+        "n": "Biyoenformatik (Enformatik Ens.)",
+        "t": "Tezli YL",
+        "f": [
+          "bio"
+        ],
+        "d": "2026-27 güzünde açıktı."
+      },
+      {
+        "n": "Bilişsel Bilim (Enformatik Ens.)",
+        "t": "Tezsiz YL · Doktora",
+        "f": [
+          "cogsci"
+        ],
+        "d": "Doktorada en fazla 4 sayfalık akademik çalışma örneği istenir."
+      },
+      {
+        "n": "Tıp Bilişimi (Enformatik Ens.)",
+        "t": "Tezsiz YL · Doktora",
+        "f": [
+          "bio"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yazılım Yönetimi (Enformatik Ens.)",
+        "t": "Tezsiz YL",
+        "f": [
+          "swe"
+        ],
+        "d": "Kredi başına ücret. CS dışı mezunlarda sektör deneyimi aranır."
+      },
+      {
+        "n": "Modelleme ve Simülasyon · Enformatik Online",
+        "t": "Tezsiz YL",
+        "f": [
+          "comp",
+          "is"
+        ],
+        "d": "Tezsiz, ücretli."
+      },
+      {
+        "n": "Bilimsel Hesaplama · Kriptografi · Finansal Matematik · Aktüerya (Uygulamalı Matematik Ens.)",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "comp",
+          "sec",
+          "fin"
+        ],
+        "d": "Program bazlı yazılı sınav (Bilimsel Hesaplama sınavı Mayıs 2026'da yapıldı)."
+      },
+      {
+        "n": "Elektrik-Elektronik · Endüstri · Mühendislik Yönetimi · İstatistik · Jeodezi ve Coğrafi Bilgi Tek. · Biyomedikal",
+        "t": "Tezli",
+        "f": [
+          "comm",
+          "or",
+          "other",
+          "bio"
+        ],
+        "d": "CS mezunları için eksik ders çıkabilir."
+      }
+    ],
+    "people": [
+      "Sinan Kalkan: robotik, derin öğrenme",
+      "Emre Akbaş: bilgisayarlı görü",
+      "Ramazan Gökberk Cinbiş: görü, ML",
+      "Erol Şahin: robotik",
+      "Yusuf Sahillioğlu: grafik",
+      "Ebru Aydın Göl: ML, formel yöntemler"
+    ],
+    "links": [
+      [
+        "Bilgisayar Müh. şartları",
+        "https://fbe.metu.edu.tr/en/computer-engineering"
+      ],
+      [
+        "Enformatik Ens. programları",
+        "https://ii.metu.edu.tr/important-dates-programs-opened-application"
+      ],
+      [
+        "Uygulamalı Matematik Ens.",
+        "https://iam.metu.edu.tr/"
+      ],
+      [
+        "Başvuru sistemi",
+        "https://oibs2.metu.edu.tr/Ms_Phd_Applications/"
+      ]
+    ]
+  },
+  {
+    "id": "bilkent",
+    "name": "Bilkent Üniversitesi",
+    "short": "Bilkent",
+    "city": "Ankara",
+    "type": "Vakıf",
+    "lang": "İngilizce",
+    "yok": "A2 · 7.",
+    "csr": "CSRankings TR 3.",
+    "fall": {
+      "t": "Normal son başvuru 1 Haziran 2026, geç son başvuru 1 Temmuz 2026. Mülakatlar 1–3 Temmuz ve 20–21 Temmuz.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Yılda iki kez (güz ve bahar) başvuru alınıyor; bahar tarihleri enstitü sayfasında ilan edilir.",
+      "k": "tahmin"
+    },
+    "next": "Son başvuru ≈ 1 Haziran 2027 (geç: 1 Temmuz)",
+    "req": "YL: ALES SAY ≥55 (yurt dışında yaşayanlar ve yabancılar GRE Q ≥157). TOEFL iBT 87 (yeni ölçekte 4,5), IELTS 6.5 (her bölüm ≥5.5) veya Bilkent PAE C. Niyet mektubu, 2 referans; davet edilirse mülakat. YL için asgari GNO yok. Başvuru STARS üzerinden.",
+    "fund": "Kabul edilen herkese öğrenim bursu. Nitelikli adaylara araştırma asistanlığı, sağlık sigortası ve kampüs konutu. Aylık tutar sitede yayımlanmıyor.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "MS · Doktora",
+        "f": [
+          "core",
+          "ai",
+          "swe",
+          "bio"
+        ],
+        "d": "24 araştırma alanı: YZ, ML, NLP, görü, grafik, biyoenformatik, robotik, yazılım müh. Veri Bilimi sertifikası da var."
+      },
+      {
+        "n": "Elektrik-Elektronik Mühendisliği",
+        "t": "MS · Doktora",
+        "f": [
+          "comm"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Endüstri Mühendisliği",
+        "t": "MS · Doktora",
+        "f": [
+          "or"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Nörobilim",
+        "t": "MS · Doktora",
+        "f": [
+          "cogsci"
+        ],
+        "d": "Disiplinlerarası."
+      },
+      {
+        "n": "Telekomünikasyon ve Ağlar",
+        "t": "Tezsiz MS",
+        "f": [
+          "comm"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Matematik · Malzeme Bilimi ve Nanoteknoloji",
+        "t": "MS · Doktora",
+        "f": [
+          "comp"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Ayşegül Dündar: görü, üretken modeller",
+      "Hamdi Dibeklioğlu: görü",
+      "Eray Tüzün ve Anıl Koyuncu: yazılım mühendisliği",
+      "Uğur Güdükbay: grafik, VR",
+      "Cevdet Aykanat: paralel hesaplama",
+      "A. Ercüment Çiçek ve Can Alkan: biyoenformatik",
+      "Özcan Öztürk: bilgisayar mimarisi"
+    ],
+    "links": [
+      [
+        "Şartlar ve tarihler",
+        "https://mfbe.bilkent.edu.tr/?page_id=17"
+      ],
+      [
+        "CS lisansüstü",
+        "https://w3.cs.bilkent.edu.tr/graduate-programs/"
+      ]
+    ]
+  },
+  {
+    "id": "hacettepe",
+    "name": "Hacettepe Üniversitesi",
+    "short": "Hacettepe",
+    "city": "Ankara",
+    "type": "Devlet",
+    "lang": "İngilizce / Türkçe",
+    "yok": "A2 · 8.",
+    "csr": "CSRankings TR 5.",
+    "fall": {
+      "t": "Fen Bilimleri Ens.: 22 Haziran – 3 Temmuz 2026, ikinci başvuru 1–3 Eylül 2026. Bilişim Ens. aynı dönemde.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Son yayımlanmış bahar dönemi: 1–24 Ocak 2025. 2026-27 için Ocak 2027 bekleniyor. Bilgisayar Müh. güz ve baharda alım yapıyor.",
+      "k": "tahmin"
+    },
+    "next": "Haziran sonu – Temmuz başı 2027 (+ Eylül ek tur)",
+    "req": "Bilgisayar Müh. (İngilizce): bölüm SSS'sine göre GNO ≥2.80 (YL), yazılı sınav (bütün lisans müfredatı) ve sözlü sınav, 2 referans, 500 kelimeyi aşmayan İngilizce niyet mektubu, çalışılacak hocadan kabul mektubu. ALES/GRE/GMAT ile YDS/e-YDS/YÖKDİL/TOEFL kabul edilir. SSS birkaç yıllık; güncel eşikler enstitünün Başvuru Koşulları belgesinde.",
+    "fund": "Tezli programlarda normal sürede harç yok. Tezsiz ve II. öğretim ücretli. ASELSAN Akademi kontenjanı (Bilgisayar Müh. 30) ASELSAN çalışanlarına yönelik.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği (İng.)",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "Güz 2026-27 kontenjanları: tezli YL 30, YL sonrası doktora 10, lisans sonrası doktora 2."
+      },
+      {
+        "n": "Yapay Zekâ (Bilişim Ens.)",
+        "t": "Tezli YL (İng.)",
+        "f": [
+          "ai"
+        ],
+        "d": "10 kişi. ALES 60 (EA/SAY/SÖZ), YDS 55, GNO 2.20. %50 ALES + %10 dil + %10 GNO + %30 mülakat."
+      },
+      {
+        "n": "Sistem Mühendisliği (Bilişim Ens.)",
+        "t": "Tezli YL (İng.) · Tezsiz",
+        "f": [
+          "or"
+        ],
+        "d": "Tezli 10 kişi (ALES 60, dil 55); tezsiz 40 kişi."
+      },
+      {
+        "n": "Bilgisayar Animasyonu ve Oyun Teknolojileri",
+        "t": "Tezli YL (TR) · Tezsiz",
+        "f": [
+          "game"
+        ],
+        "d": "Tezli 10 kişi (ALES 60, dil 60); tezsiz 50 kişi."
+      },
+      {
+        "n": "Sağlık Bilişimi",
+        "t": "Tezli YL (İng.)",
+        "f": [
+          "bio"
+        ],
+        "d": "5 kişi. ALES 70, dil 70."
+      },
+      {
+        "n": "Yazılım Mühendisliği",
+        "t": "Tezsiz (akşam)",
+        "f": [
+          "swe"
+        ],
+        "d": "50 kişi. ALES ve dil yok; %30 GNO + %70 mülakat."
+      },
+      {
+        "n": "Veri ve Bilgi Mühendisliği",
+        "t": "Tezsiz (akşam)",
+        "f": [
+          "data"
+        ],
+        "d": "50 kişi. ALES ve dil yok."
+      },
+      {
+        "n": "Bilgi Güvenliği",
+        "t": "Tezsiz (akşam)",
+        "f": [
+          "sec"
+        ],
+        "d": "30 kişi. ALES ve dil yok."
+      },
+      {
+        "n": "Bilişim Sistemleri · Bilgi Yönetimi",
+        "t": "Tezsiz (akşam)",
+        "f": [
+          "is"
+        ],
+        "d": "30 ve 50 kişi."
+      },
+      {
+        "n": "Eğitim Teknolojisi · Bilişim ve Fikri Mülkiyet Hukuku",
+        "t": "Tezsiz",
+        "f": [
+          "other"
+        ],
+        "d": "50 ve 40 kişi."
+      },
+      {
+        "n": "İstatistik: Veri Bilimi",
+        "t": "Tezsiz II. öğretim",
+        "f": [
+          "data"
+        ],
+        "d": "20 kişi."
+      },
+      {
+        "n": "Elektrik-Elektronik · Endüstri · Mühendislik Yönetimi (tezsiz) · Aktüerya · Geomatik",
+        "t": "Tezli / Tezsiz",
+        "f": [
+          "comm",
+          "or",
+          "fin",
+          "other"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Erkut Erdem: görü ve dil",
+      "Nazlı İkizler Cinbiş: görü",
+      "Pınar Duygulu: görü",
+      "Özgür Erkent: robotik, otonom sürüş",
+      "Ufuk Çelikcan: grafik",
+      "Tunca Doğan: biyoenformatik"
+    ],
+    "links": [
+      [
+        "Fen Bilimleri Ens. başvuru",
+        "https://fenbilimleri.hacettepe.edu.tr/tr/menu/basvuru_islemleri-44"
+      ],
+      [
+        "Bilişim Ens. program tablosu",
+        "https://bilisim.hacettepe.edu.tr/tr/yuksek_lisans_programlari_bilgilendirme_tablosu-312"
+      ],
+      [
+        "Bilgisayar Müh. SSS (PDF)",
+        "http://cs.hacettepe.edu.tr/files/Lisansustu_Basvuru_Sikca_Sorulan_Sorular.pdf"
+      ]
+    ]
+  },
+  {
+    "id": "tobb",
+    "name": "TOBB Ekonomi ve Teknoloji Üniversitesi",
+    "short": "TOBB ETÜ",
+    "city": "Ankara",
+    "type": "Vakıf",
+    "lang": "İngilizce / Türkçe",
+    "yok": "Aday (2025)",
+    "csr": "CSRankings TR 9.",
+    "fall": {
+      "t": "1–26 Haziran 2026. TOBB ETÜ İngilizce sınavı 30 Haziran, mülakatlar 13–14 Temmuz 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Üç dönemli sistem. 2026-27 Yaz dönemi lisansüstü başvuruları: 2–26 Şubat 2027.",
+      "k": "kesin"
+    },
+    "next": "Haziran 2027",
+    "req": "ALES SAY 60–85 (burs türüne göre; Bilgisayar Müh. tam burs için 80). Dil 60–75 (YDS, e-YDS, YÖKDİL, e-YÖKDİL, TOEFL iBT veya TOBB ETÜ sınavı). Lisans GNO 2.00–2.50. Niyet mektubu, 2 referans, 300 TL başvuru ücreti. CS dışı mezunlar bilimsel hazırlık alır.",
+    "fund": "Tam burs: ücret muafiyeti + aylık burs (veya kısmi burs + konut). Özel Başarı bursu (ALES 85, dil 75, GNO 3.00): tam bursun %150'si. Ücretli seçenek: 375.000 TL/yıl (2026-27).",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Tezsiz YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "YZ, siber güvenlik, veri bilimi, yazılım, görü alanlarında 50'den fazla lisansüstü ders."
+      },
+      {
+        "n": "Bilgi Güvenliği (Siber Güvenlik)",
+        "t": "YL",
+        "f": [
+          "sec"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektrik-Elektronik · Endüstri · Biyomedikal · Matematik",
+        "t": "YL · Doktora",
+        "f": [
+          "comm",
+          "or",
+          "bio",
+          "comp"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Oğuz Ergin: bilgisayar mimarisi, donanım güvenliği",
+      "Mücahid Kutlu: bilgi erişimi, NLP"
+    ],
+    "links": [
+      [
+        "2026-27 Güz ilanı",
+        "https://www.etu.edu.tr/tr/ogrenci-isleri/duyuru/fen-bilimleri-enstitusu-2026-2027-guz-donemi-basvurulari"
+      ],
+      [
+        "Başvuru bilgileri",
+        "https://www.etu.edu.tr/tr/enstitu/fen-bilimleri-enstitusu/basvuru-bilgileri"
+      ]
+    ]
+  },
+  {
+    "id": "ankara",
+    "name": "Ankara Üniversitesi",
+    "short": "Ankara Üni.",
+    "city": "Ankara",
+    "type": "Devlet",
+    "lang": "Türkçe / İngilizce",
+    "yok": "A2 · 10.",
+    "csr": "–",
+    "fall": {
+      "t": "4 Mayıs – 12 Haziran 2026. Yazılı bilim sınavı 19 Haziran 2026. YZ Enstitüsü sonuçları 26 Haziran, kayıt 27 Temmuz – 7 Ağustos.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar alımı genelde Aralık–Ocak döneminde ilan edilir.",
+      "k": "tahmin"
+    },
+    "next": "Mayıs – Haziran 2027",
+    "req": "En fazla 1 lisansüstü programa başvurulabilir. Bilimsel değerlendirmede en az 50/100 gerekir. Yedek ilanı yalnızca Bilgisayar Müh. ve Enformatik tezli YL için yapılır.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Enformatik",
+        "t": "Tezli YL",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yapay Zekâ ve Veri Mühendisliği",
+        "t": "YL (bölüm programı)",
+        "f": [
+          "ai",
+          "data"
+        ],
+        "d": "YZ, ML, veri bilimi ve akıllı sistemler; 2026-27 güzünde açık."
+      },
+      {
+        "n": "Yapay Zekâ ve Robotik (Yapay Zekâ Enstitüsü)",
+        "t": "Tezli YL",
+        "f": [
+          "ai",
+          "robo"
+        ],
+        "d": "ALES 65 (SAY/SÖZ/EA), dil 50, GNO 2.00."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Fen Bilimleri Ens.",
+        "https://fenbilimleri.ankara.edu.tr/"
+      ],
+      [
+        "Yapay Zekâ Enstitüsü ilanı",
+        "https://yze.ankara.edu.tr/en/2026/05/04/announcement-for-applications-to-graduate-programs-for-the-fall-semester-of-the-2026-2027-academic-year/"
+      ]
+    ]
+  },
+  {
+    "id": "gazi",
+    "name": "Gazi Üniversitesi",
+    "short": "Gazi",
+    "city": "Ankara",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "A2 · 13.",
+    "csr": "–",
+    "fall": {
+      "t": "Fen Bilimleri Ens.: 21 Mayıs – 15 Haziran 2026. Bilişim Ens.: 2–12 Haziran 2026, sınavlar 17–19 Haziran.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "2025-26: 22 Aralık 2025 – 5 Ocak 2026, sınavlar 12–14 Ocak, sonuç 21 Ocak 2026. 2026-27 için benzer dönem bekleniyor.",
+      "k": "tahmin"
+    },
+    "next": "Mayıs sonu – Haziran 2027",
+    "req": "Yazılı ve/veya sözlü bilimsel değerlendirme. YL'de 50 puan altı yerleşemez. ALES 5 yıl geçerli.",
+    "fund": "Devlet: tezli programlarda harç yok; tezsizler ücretli.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği (Fen Bilimleri Ens.)",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilgisayar Bilimleri (Bilişim Ens.)",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Adli Bilişim",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "sec"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilişim Sistemleri · Yönetim Bilişim Sistemleri",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Oyun Teknolojileri",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "game"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Sağlık Bilişimi",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "bio"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Bilişim Ens. 2026-27 ilanı",
+        "https://be.gazi.edu.tr/view/announcement/323726"
+      ],
+      [
+        "FBE kriterler ve kontenjanlar",
+        "https://fbe.gazi.edu.tr/view/page/298810/2026-2027-guz-donemi-basvuru-kriterleri-kontenjanlari-sinav-yer-ve-tarihleri"
+      ]
+    ]
+  },
+  {
+    "id": "atilim",
+    "name": "Atılım Üniversitesi",
+    "short": "Atılım",
+    "city": "Ankara",
+    "type": "Vakıf",
+    "lang": "İngilizce / Türkçe",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "8 Haziran – 27 Ağustos 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "2025-26 Bahar: 1 Aralık 2025 – 28 Ocak 2026. Benzer dönem bekleniyor.",
+      "k": "tahmin"
+    },
+    "next": "Haziran – Ağustos 2027",
+    "req": "Tezli: ALES 55, GNO 2.50, İngilizce yeterlik; %50 ALES + %50 GNO. Tezsiz: ALES yok, GNO 2.00; %100 GNO.",
+    "fund": "Ücretli; burs imkânları için enstitüye sor.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yazılım Mühendisliği",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "swe"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilişim Sistemleri Mühendisliği",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektrik-Elektronik Mühendisliği",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "comm"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Programlar",
+        "https://www.atilim.edu.tr/en/fbe/page/1003/programs"
+      ]
+    ]
+  },
+  {
+    "id": "boun",
+    "name": "Boğaziçi Üniversitesi",
+    "short": "Boğaziçi",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "İngilizce",
+    "yok": "A1 · 5.",
+    "csr": "CSRankings TR 4.",
+    "fall": {
+      "t": "15 Nisan – 11 Haziran 2026 (II. öğretim 1 Nisan'da açıldı). Sınavlar 22–26 Haziran, BUEPT 2 Haziran, kayıt 31 Ağustos – 3 Eylül.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "2025-26: 2–9 Ocak 2026, yalnızca bazı programlar. Bilgisayar Müh. ilanında bahar alımı yok. Ocak 2027 başı bekleniyor.",
+      "k": "tahmin"
+    },
+    "next": "Nisan ortası – Haziran ortası 2027",
+    "req": "ALES/GRE ve İngilizce belgesi olmadan başvurulabilir; kabul edilirsen kayda kadar teslim edersin. İngilizce: BUEPT C, TOEFL iBT 79 (yazma 22), IELTS 6.5 (yazma 6.5) veya CAE C. Doktorada ek olarak YDS/YÖKDİL/e-TEP ≥55.",
+    "fund": "Devlet: tezli programlarda harç yok. II. öğretim tezsiz programlar ücretli.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "YL: 70 kişi (+12 hazırlık), GNO 2.50, ALES SAY 70 veya GRE Q 153. Ön değerlendirmeyi geçenlere mülakat (25 Haziran 2026). Doktora: 15+2, GNO 3.00."
+      },
+      {
+        "n": "Veri Bilimi ve Yapay Zekâ (VBYZ Enstitüsü)",
+        "t": "Tezli MS · Doktora",
+        "f": [
+          "ai",
+          "data"
+        ],
+        "d": "İngilizce, 2 yıl. Seçmeli dersler: büyük veri, derin öğrenme, NLP, görü, pekiştirmeli öğrenme, zaman serileri. Programlama, olasılık ve istatistik altyapısı istenir."
+      },
+      {
+        "n": "Yazılım Mühendisliği",
+        "t": "II. öğretim tezsiz · tezliye geçiş",
+        "f": [
+          "swe"
+        ],
+        "d": "Tezsiz: 50 kişi, GNO 2.00, ALES yok, İngilizce şart, temel programlama bilgisi; online mülakat 24 Haziran. Tezliye geçiş: ALES 85 veya GRE 165, tezsizde GNO 3.70 ve danışman kabulü."
+      },
+      {
+        "n": "Hesaplamalı Bilim ve Mühendislik",
+        "t": "YL · Doktora",
+        "f": [
+          "comp"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Sistem ve Kontrol Mühendisliği",
+        "t": "YL · Doktora",
+        "f": [
+          "robo"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektrik-Elektronik Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "comm"
+        ],
+        "d": "85 kişi (+10), ALES 70, GNO 2.50."
+      },
+      {
+        "n": "Biyomedikal Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "bio"
+        ],
+        "d": "30 kişi (+15), ALES 70."
+      },
+      {
+        "n": "Yönetim Bilişim Sistemleri · İşletme Bilişim Sistemleri (tezsiz)",
+        "t": "YL · Doktora",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilişsel Bilim",
+        "t": "MA",
+        "f": [
+          "cogsci"
+        ],
+        "d": "Sosyal Bilimler Enstitüsü."
+      },
+      {
+        "n": "Finans Mühendisliği · Tıbbi Sistemler ve Bilişim · Mekatronik · Mühendislik ve Teknoloji Yönetimi",
+        "t": "II. öğretim tezsiz",
+        "f": [
+          "fin",
+          "bio",
+          "robo",
+          "or"
+        ],
+        "d": "Ücretli akşam programları."
+      }
+    ],
+    "people": [
+      "A. Taylan Cemgil: makine öğrenmesi",
+      "Emre Uğur: bilişsel ve gelişimsel robotik",
+      "Arzucan Özgür: NLP, biyomedikal metin madenciliği",
+      "Tunga Güngör: NLP",
+      "İnci M. Baytaş: ML, veri madenciliği",
+      "Doğan Ulus: formel doğrulama",
+      "Mehmet Turan: tıbbi robotik",
+      "Alper Şen: doğrulama, yazılım"
+    ],
+    "links": [
+      [
+        "Bilgisayar Müh. başvuru",
+        "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/Lisansustu/Bilgisayar_Muhendisligi"
+      ],
+      [
+        "Veri Bilimi ve YZ",
+        "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/lisansustu/Veri_Bilimi_ve_Yapay_Zeka"
+      ],
+      [
+        "Yazılım Müh. (tezsiz)",
+        "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/ii_ogretim/Yazilim_Muhendisligi"
+      ],
+      [
+        "Tüm programlar",
+        "https://adaylar.bogazici.edu.tr/tr-TR/Sayfa/Basvuru/Lisansustu/Tum"
+      ]
+    ]
+  },
+  {
+    "id": "itu",
+    "name": "İstanbul Teknik Üniversitesi",
+    "short": "İTÜ",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "İngilizce / Türkçe",
+    "yok": "A1 · 4.",
+    "csr": "CSRankings TR 6.",
+    "fall": {
+      "t": "24 Nisan – 26 Haziran 2026. Bilgisayar Müh. mülakatları 1–3 Temmuz, sonuçlar 8 Temmuz 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "2025-26 Bahar başvuruları 10 Kasım 2025'te açıldı (duyuruya göre 26 Ocak 2026'ya kadar), sonuçlar 5 Şubat 2026. Kasım 2026'da açılması bekleniyor.",
+      "k": "tahmin"
+    },
+    "next": "Nisan sonu – Haziran sonu 2027",
+    "req": "ALES veya GRE zorunlu. Başvuruda İngilizce belgesi şart değil; belge verene kadar ders alınamaz. Eşikler: İTÜ YDY 65, YDS/YÖKDİL 65, TOEFL iBT 78 (yeni ölçekte 4), PTE 67, e-TEP 50. Transkript, CV, niyet mektubu, en az 2 referans (biri akademik).",
+    "fund": "Devlet: tezli programlarda harç yok. II. öğretim tezsizler ücretli.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "55 kişi (+17 uluslararası). GNO 2.60–2.74 → ALES 85 (GRE 158); GNO ≥2.75 → ALES 80 (GRE 156). Öğretim üyesinden kabul mektubu ZORUNLU. Doktora 25 kişi."
+      },
+      {
+        "n": "Bilgisayar Bilimleri (Bilişim)",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "20 kişi (+8). GNO 2.50–2.74 → ALES 85; ≥2.75 → ALES 83. Bilgisayar Bilimleri mezunları açıkça başvurabilir. Destek mektubu öneriliyor."
+      },
+      {
+        "n": "Büyük Veri ve İş Analitiği",
+        "t": "Tezli YL · II. öğretim tezsiz",
+        "f": [
+          "data"
+        ],
+        "d": "Tezli: 20 kişi (+6). GNO 2.50–2.59 → ALES 85; ≥2.60 → ALES 80."
+      },
+      {
+        "n": "Bilgi Güvenliği Mühendisliği ve Kriptografi",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "sec"
+        ],
+        "d": "YL 10, doktora 5 kişi."
+      },
+      {
+        "n": "Hesaplamalı Bilim ve Mühendislik",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "comp"
+        ],
+        "d": "YL 20, doktora 6 kişi."
+      },
+      {
+        "n": "Oyun ve Etkileşim Teknolojileri",
+        "t": "Tezli YL",
+        "f": [
+          "game"
+        ],
+        "d": "18 kişi."
+      },
+      {
+        "n": "Bilgi ve Haberleşme Müh. · Telekomünikasyon · Uydu Haberleşmesi ve Uzaktan Algılama",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "comm"
+        ],
+        "d": "20, 45 ve 15 kişi."
+      },
+      {
+        "n": "Kontrol ve Otomasyon · Mekatronik",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "robo"
+        ],
+        "d": "35 ve 25 kişi."
+      },
+      {
+        "n": "Matematik Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "comp"
+        ],
+        "d": "20 kişi."
+      },
+      {
+        "n": "Savunma Teknolojileri · Coğrafi Bilgi Teknolojileri · Mimari Tasarımda Bilişim",
+        "t": "Tezli YL",
+        "f": [
+          "other"
+        ],
+        "d": "40, 20 ve 20 kişi."
+      },
+      {
+        "n": "Endüstri · İşletme Müh. · Mühendislik Yönetimi · Biyomedikal",
+        "t": "Tezli YL",
+        "f": [
+          "or",
+          "bio"
+        ],
+        "d": "36, 30, 25 ve 20 kişi."
+      }
+    ],
+    "people": [
+      "Sanem Sarıel: robotik, yapay zekâ",
+      "Gülşen Eryiğit: NLP (Türkçe)",
+      "Gözde Ünal: görü, ML",
+      "Hazım Kemal Ekenel: görü, yüz analizi",
+      "A. Cüneyd Tantuğ: NLP",
+      "Gökhan İnce: robotik"
+    ],
+    "links": [
+      [
+        "Kontenjan ve şartlar",
+        "https://www.sis.itu.edu.tr/onkayitlar/lisansustu/basvuru/program-kontenjan-sartlar.php?level=LU"
+      ],
+      [
+        "Bilgisayar Müh. şartları",
+        "https://www.sis.itu.edu.tr/onkayitlar/lisansustu/basvuru/program-kontenjan-sartlar_bilgileri.php?program=BLG_BG_YL&uygulama_kodu=LU"
+      ],
+      [
+        "LEE duyuruları",
+        "https://lee.itu.edu.tr/"
+      ]
+    ]
+  },
+  {
+    "id": "koc",
+    "name": "Koç Üniversitesi",
+    "short": "Koç",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce",
+    "yok": "A1 · 1.",
+    "csr": "CSRankings TR 1.",
+    "fall": {
+      "t": "Erken son başvuru 15 Şubat 2026, normal 15 Mayıs 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar 2027 son başvuru tarihi \"ilan edilecek\". Bazı programlar yalnızca güzde, bazıları iki dönemde öğrenci alıyor.",
+      "k": "tahmin"
+    },
+    "next": "Erken ≈ 15 Şubat 2027, normal ≈ 15 Mayıs 2027",
+    "req": "ALES 80 veya GRE Q 156. TOEFL iBT 80 veya YDS/e-YDS/YÖKDİL 80 (IELTS kabul edilmiyor). CV, transkriptler, en az 2 referans. Bütün programlar mülakat yapar; karar son başvurudan 4–6 hafta sonra.",
+    "fund": "Koç bursu: ücret muafiyeti, aylık burs, konut desteği (veya ücretsiz paylaşımlı konut), özel sağlık sigortası, seyahat desteği. Ayrı burs başvurusu yok. KUIS AI ek bursu (ek test ya da proje istenebilir).",
+    "progs": [
+      {
+        "n": "Yapay Zekâ",
+        "t": "Tezli MS",
+        "f": [
+          "ai"
+        ],
+        "d": "Yeni program; KUIS AI merkezi. Mühendislik, temel bilimler, psikoloji ve sağlık kesişiminde. En az 7 seçmeli ders."
+      },
+      {
+        "n": "Bilgisayar Bilimi ve Mühendisliği",
+        "t": "Tezli MS · Tezsiz MS · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "Lisans sonrası doğrudan doktora başvurusu mümkün."
+      },
+      {
+        "n": "Hesaplamalı Bilimler ve Mühendislik",
+        "t": "MS · Doktora",
+        "f": [
+          "comp"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektrik-Elektronik Mühendisliği",
+        "t": "MS · Doktora",
+        "f": [
+          "comm"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Endüstri Müh. ve Operasyon Yönetimi",
+        "t": "MS · Doktora",
+        "f": [
+          "or"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Biyomedikal Bilimler ve Mühendislik",
+        "t": "MS · Doktora",
+        "f": [
+          "bio"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Fatma Güney: görü, otonom sürüş",
+      "Aykut Erdem: görü ve dil",
+      "Deniz Yuret: NLP",
+      "Didem Unat: yüksek başarımlı hesaplama",
+      "Yücel Yemez: görü, ML",
+      "Alptekin Küpçü: kriptografi, gizlilik",
+      "T. Metin Sezgin: insan-bilgisayar etkileşimi"
+    ],
+    "links": [
+      [
+        "Son başvuru tarihleri",
+        "https://gsse.ku.edu.tr/en/application/application-deadlines/"
+      ],
+      [
+        "KUIS AI lisansüstü",
+        "https://ai.ku.edu.tr/graduate-admissions/"
+      ],
+      [
+        "Başvuru koşulları",
+        "https://gsse.ku.edu.tr/en/application/application-requirements/"
+      ]
+    ]
+  },
+  {
+    "id": "sabanci",
+    "name": "Sabancı Üniversitesi",
+    "short": "Sabancı",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce",
+    "yok": "A1 · 2.",
+    "csr": "CSRankings TR 7.",
+    "fall": {
+      "t": "Tezli: erken 6 Nisan (mülakat 13–27 Nisan), normal 15 Haziran (22 Haziran – 6 Temmuz), son 10 Ağustos 2026 (17–24 Ağustos). Tezsiz: erken 22 Haziran, normal 10 Ağustos.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar 2026-27 (tezli YL ve doktora): SON BAŞVURU 27 KASIM 2026, mülakatlar 7–25 Aralık 2026, lisansı 29 Ocak 2027'ye kadar bitirmiş olmak gerekir.",
+      "k": "kesin"
+    },
+    "next": "Erken ≈ Nisan başı, normal ≈ Haziran ortası 2027",
+    "req": "Tezli: ALES SAY 65 veya GRE Q 153. İngilizce: TOEFL iBT 78, PTE 48, YDS/e-YDS/YÖKDİL 65, e-TEP 50, CAE B, CPE C. Niyet mektubu (1–2 sayfa), CV, 2 referans. Tezsiz programlarda giriş sınavı istenmez.",
+    "fund": "Kabul komisyonunun kararıyla aylık burs ve/veya ücret muafiyeti. Tezsiz profesyonel programlar ücretli.",
+    "progs": [
+      {
+        "n": "Bilgisayar Bilimi ve Mühendisliği",
+        "t": "Tezli MSc · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "Baharda da alım var."
+      },
+      {
+        "n": "Siber Güvenlik",
+        "t": "Tezli MSc",
+        "f": [
+          "sec"
+        ],
+        "d": "Baharda da alım var."
+      },
+      {
+        "n": "Veri Bilimi",
+        "t": "Tezli MSc",
+        "f": [
+          "data",
+          "ai"
+        ],
+        "d": "Baharda da alım var."
+      },
+      {
+        "n": "Bilgi Teknolojileri (IT)",
+        "t": "Tezsiz MS",
+        "f": [
+          "is"
+        ],
+        "d": "Profesyonel program."
+      },
+      {
+        "n": "Veri Analitiği",
+        "t": "Tezsiz MS",
+        "f": [
+          "data"
+        ],
+        "d": "Profesyonel program."
+      },
+      {
+        "n": "Mekatronik · Elektronik · Endüstri · Matematik · MBG ve Biyomühendislik",
+        "t": "Tezli MSc · Doktora",
+        "f": [
+          "robo",
+          "comm",
+          "or",
+          "comp",
+          "bio"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Esra Erdem: YZ, bilgi temsili, robotik",
+      "Selim Balcısoy: görselleştirme, HCI",
+      "Kamer Kaya: yüksek başarımlı hesaplama",
+      "Cemal Yılmaz: yazılım mühendisliği",
+      "Albert Levi ve Erkay Savaş: güvenlik, kriptografi"
+    ],
+    "links": [
+      [
+        "Başvuru duyuruları",
+        "https://www.sabanciuniv.edu/en/graduate-school-engineering-and-natural-sciences-application-announcements"
+      ],
+      [
+        "2026-27 şartları",
+        "https://www.sabanciuniv.edu/en/academic/university-registration-scholarships-and-fees/graduate-applications-requirements-2026-2027"
+      ]
+    ]
+  },
+  {
+    "id": "ytu",
+    "name": "Yıldız Teknik Üniversitesi",
+    "short": "YTÜ",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "Türkçe / İngilizce",
+    "yok": "A2 · 6.",
+    "csr": "CSRankings listesinde",
+    "fall": {
+      "t": "1 Haziran – 7 Temmuz 2026. Değerlendirme sonuçları 14 Temmuz, kayıt turları 21–29 Temmuz.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar alımı genelde Aralık–Ocak döneminde ilan edilir.",
+      "k": "tahmin"
+    },
+    "next": "Haziran – Temmuz başı 2027",
+    "req": "Tezsiz programlarda ALES yok, değerlendirme GNO ile. 2025-26 güzünden itibaren Türkçe YL programlarında da yabancı dil şartı var.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yapay Zekâ ve Veri Mühendisliği (İng.)",
+        "t": "Tezli YL",
+        "f": [
+          "ai",
+          "data"
+        ],
+        "d": "ALES SAY 55, dil 55. Alan içi: Bilgisayar, Matematik, YZ, Yazılım Müh. Bilgisayar Bilimleri alan dışı sayılıyor. Seçmeliler: derin öğrenme, büyük dil modelleri, optimizasyon, robotik, bulut."
+      },
+      {
+        "n": "Siber Güvenlik ve Kriptografi",
+        "t": "Tezli YL",
+        "f": [
+          "sec"
+        ],
+        "d": "ALES SAY 80, dil 50."
+      },
+      {
+        "n": "Matematik Mühendisliği · Kontrol ve Otomasyon · Elektrik-Elektronik · Endüstri",
+        "t": "Tezli YL",
+        "f": [
+          "comp",
+          "robo",
+          "comm",
+          "or"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Fen Bilimleri Ens.",
+        "https://fbe.yildiz.edu.tr/en/announcements"
+      ],
+      [
+        "YZ ve Veri Müh. YL",
+        "https://fbe.yildiz.edu.tr/node/27594"
+      ],
+      [
+        "Siber Güvenlik ve Kriptografi",
+        "https://fbe.yildiz.edu.tr/node/27537"
+      ]
+    ]
+  },
+  {
+    "id": "ozu",
+    "name": "Özyeğin Üniversitesi",
+    "short": "Özyeğin",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce",
+    "yok": "Aday (2025)",
+    "csr": "CSRankings TR 8.",
+    "fall": {
+      "t": "2 Mart – 29 Nisan 2026 (normal), geç başvuru 5 Temmuz 2026'ya kadar.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar başvuruları sonbaharda açılır, yıl sonunda kapanır.",
+      "k": "tahmin"
+    },
+    "next": "Mart – Nisan sonu 2027 (geç: Temmuz başı)",
+    "req": "ALES veya GRE. TOEFL, IELTS veya eşdeğeri; İngilizce eğitimli programlardan mezunlar muaf olabilir. Sözlü mülakat zorunlu.",
+    "fund": "Tam zamanlı tezli YL ve doktora öğrencilerine genelde %100 ücret muafiyeti. Çoğuna ek olarak OzU veya proje kaynaklı burs.",
+    "progs": [
+      {
+        "n": "Bilgisayar Bilimi",
+        "t": "Tezli MS · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yapay Zekâ",
+        "t": "Tezli MS",
+        "f": [
+          "ai"
+        ],
+        "d": "Tezsiz sürümü de var."
+      },
+      {
+        "n": "Veri Bilimi",
+        "t": "Tezli MS · Tezsiz MS",
+        "f": [
+          "data"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektrik-Elektronik · Endüstri · Matematik",
+        "t": "MS · Doktora",
+        "f": [
+          "comm",
+          "or",
+          "comp"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [
+      "Erhan Öztop: robotik, bilişsel sistemler",
+      "Emre Sefer: bilgi erişimi, ML",
+      "İsmail Aktürk: bilgisayar mimarisi",
+      "Sedat Özer: ML, görü"
+    ],
+    "links": [
+      [
+        "Başvuru ve kabul",
+        "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science/application-and-admission"
+      ],
+      [
+        "Burslar",
+        "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science/scholarship-opportunities"
+      ]
+    ]
+  },
+  {
+    "id": "marmara",
+    "name": "Marmara Üniversitesi",
+    "short": "Marmara",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "A3 · 18.",
+    "csr": "–",
+    "fall": {
+      "t": "2–22 Haziran 2026. Mesleki bilgi sınavı ve mülakat 6–8 Temmuz, sonuç 14 Temmuz, kayıt 27–29 Temmuz.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar ilanı ayrıca yayımlanır (2025-26 baharında alım yapıldı).",
+      "k": "tahmin"
+    },
+    "next": "Haziran 2027",
+    "req": "Bilgisayar Müh. veya yakın alan lisans mezunu olmak; kabul edilen bölümler her ilanda listelenir.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL (Türkçe)",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Başvuru takvimi",
+        "https://fbe.marmara.edu.tr/lisansustu-basvuru/basvuru-takvimi"
+      ],
+      [
+        "Kontenjan ve koşullar",
+        "https://fbe.marmara.edu.tr/lisansustu-basvuru/lisansustu-programlarin-kontenjanlari-basvuru-bilgileri-ve-kosullari"
+      ]
+    ]
+  },
+  {
+    "id": "gsu",
+    "name": "Galatasaray Üniversitesi",
+    "short": "Galatasaray",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "–",
+    "csr": "CSRankings listesinde",
+    "fall": {
+      "t": "2026-27 güzü için ikinci başvuru dönemi 10–21 Ağustos 2026 (ilk dönem daha önce yapıldı).",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar alımı ilanı bulunamadı.",
+      "k": "tahmin"
+    },
+    "next": "Yaz 2027 (iki dönem)",
+    "req": "ALES SAY 70 veya GRE Q 153. İngilizce veya Fransızca: YDS/YÖKDİL 70, TOEFL iBT 84 ya da DALF C1. Bilgisayar Müh. dışı mezunlara 2 dönem bilimsel hazırlık (en fazla 5 kişi). Dersler hafta içi 09.00–18.00.",
+    "fund": "Devlet: normal sürede katkı payı yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": "Alanlar: ML, veri bilimi, siber güvenlik, IoT, ağlar, tıp bilişimi, otonom ve gömülü sistemler."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Program sayfası",
+        "https://fbe.gsu.edu.tr/tr/bm-ylisans"
+      ]
+    ]
+  },
+  {
+    "id": "bau",
+    "name": "Bahçeşehir Üniversitesi (BAU)",
+    "short": "Bahçeşehir",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce / Türkçe",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "2026-27 güzünde aşağıdaki programlar başvuruya açıktı; tarihler için yukseklisans.bau.edu.tr.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Bahar alımı yapılır; tarihleri enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Program bazında. Tezsiz programlar paket ücretli ve en fazla 3 dönem.",
+    "fund": "Ücretli. Peşin ödemede %10 indirim.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli · Tezsiz (İng.)",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yapay Zekâ",
+        "t": "Tezli · Tezsiz (İng.)",
+        "f": [
+          "ai"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Büyük Veri Analitiği ve Yönetimi",
+        "t": "Tezli · Tezsiz (İng.)",
+        "f": [
+          "data"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Siber Güvenlik",
+        "t": "Tezli · Tezsiz (İng.)",
+        "f": [
+          "sec"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilgi Teknolojileri · Yönetim Bilişim Sistemleri",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Finansal Teknoloji",
+        "t": "Tezli · Tezsiz (İng.)",
+        "f": [
+          "fin"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Oyun Tasarımı",
+        "t": "Tezli",
+        "f": [
+          "game"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Eğitimde YZ Teknolojileri · Endüstri · Biyomühendislik",
+        "t": "Tezli / Tezsiz",
+        "f": [
+          "other",
+          "or",
+          "bio"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Açık programlar",
+        "https://bau.edu.tr/icerik/17894-2024-2025-guz-donemi-basvuruya-acik-yuksek-lisans-programlari"
+      ],
+      [
+        "Ücretler",
+        "https://bau.edu.tr/icerik/15849-yuksek-lisans-ve-doktora-program-ucretleri"
+      ]
+    ]
+  },
+  {
+    "id": "khas",
+    "name": "Kadir Has Üniversitesi",
+    "short": "Kadir Has",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce / Türkçe",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "Tarihler için enstitü sayfası.",
+      "k": "tahmin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Program bazında.",
+    "fund": "Ücretli; burs imkânları program bazında.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Siber Güvenlik (disiplinlerarası)",
+        "t": "Tezli · Tezsiz",
+        "f": [
+          "sec"
+        ],
+        "d": "Siber Güvenlik ve Kritik Altyapı Koruma Merkezi."
+      },
+      {
+        "n": "Hesaplamalı Bilimler ve Mühendislik",
+        "t": "Tezli",
+        "f": [
+          "comp"
+        ],
+        "d": ""
+      },
+      {
+        "n": "İş Zekâsı ve Analitiği",
+        "t": "Tezsiz",
+        "f": [
+          "data"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yönetim Bilişim Sistemleri",
+        "t": "Tezli",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Elektronik · Endüstri",
+        "t": "Tezli",
+        "f": [
+          "comm",
+          "or"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "YL programları",
+        "https://bologna.khas.edu.tr/yuksek-lisans"
+      ]
+    ]
+  },
+  {
+    "id": "mef",
+    "name": "MEF Üniversitesi",
+    "short": "MEF",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "Türkçe / İngilizce",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "Tarihler için enstitü sayfası.",
+      "k": "tahmin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Program bazında.",
+    "fund": "Ücretli.",
+    "progs": [
+      {
+        "n": "Büyük Veri Analitiği",
+        "t": "Tezsiz YL",
+        "f": [
+          "data"
+        ],
+        "d": "10 ders ve 1 proje, 3 dönem (yaz dönemiyle 1 yıl). Hibrit: haftada iki akşam kampüste, geri kalanı online."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Program",
+        "https://www.mef.edu.tr/tr/fakulteler/lisansustu-egitim-enstitusu/programlar/yuksek-lisans/buyuk-veri-analitigi-y-l-programlari"
+      ]
+    ]
+  },
+  {
+    "id": "yeditepe",
+    "name": "Yeditepe Üniversitesi",
+    "short": "Yeditepe",
+    "city": "İstanbul",
+    "type": "Vakıf",
+    "lang": "İngilizce",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "Tarihler için enstitü sayfası.",
+      "k": "tahmin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Program bazında.",
+    "fund": "Ücretli; burs imkânları için enstitüye sor.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "En az 7 ders (21 kredi) ve seminer."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Program",
+        "https://lee.yeditepe.edu.tr/en/masters-program-computer-engineering"
+      ]
+    ]
+  },
+  {
+    "id": "iuc",
+    "name": "İstanbul Üniversitesi-Cerrahpaşa",
+    "short": "İÜ-Cerrahpaşa",
+    "city": "İstanbul",
+    "type": "Devlet",
+    "lang": "Türkçe / İngilizce",
+    "yok": "A2 · 17.",
+    "csr": "CSRankings listesinde",
+    "fall": {
+      "t": "Tarihler için Lisansüstü Eğitim Enstitüsü.",
+      "k": "tahmin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Lisansüstü başvuru kılavuzuna göre.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Lisansüstü Eğitim Ens.",
+        "https://lisansustuegitim.iuc.edu.tr/"
+      ]
+    ]
+  },
+  {
+    "id": "iyte",
+    "name": "İzmir Yüksek Teknoloji Enstitüsü",
+    "short": "İYTE",
+    "city": "İzmir",
+    "type": "Devlet",
+    "lang": "İngilizce",
+    "yok": "A2 · 9.",
+    "csr": "CSRankings TR 10.",
+    "fall": {
+      "t": "10 Nisan – 6 Temmuz 2026. Uygunluk sonuçları 22 Temmuz, jüri sonuçları 12 Ağustos, İngilizce muafiyet belgeleri 17–21 Ağustos.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitü ilanını kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "Nisan – Temmuz başı 2027",
+    "req": "Programın asgari ALES/GRE puanı ve mezuniyet şartı. Belgeler yalnızca online ve PDF olarak kabul edilir.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli MS · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yazılım Mühendisliği ve Veri Bilimi (SEDS)",
+        "t": "MS",
+        "f": [
+          "swe",
+          "data"
+        ],
+        "d": "Dersler: ileri veritabanı ve büyük veri, nesne yönelimli tasarım, veri yapıları, bilgi güvenliği."
+      }
+    ],
+    "people": [
+      "Selma Tekir: NLP"
+    ],
+    "links": [
+      [
+        "Bilgisayar Müh. 2026-27 duyurusu",
+        "https://ceng.iyte.edu.tr/applications-for-graduate-program-admissions-for-the-fall-semester-of-the-2026-2027-academic-year/"
+      ],
+      [
+        "LEE",
+        "https://lee.iyte.edu.tr/"
+      ]
+    ]
+  },
+  {
+    "id": "deu",
+    "name": "Dokuz Eylül Üniversitesi",
+    "short": "DEÜ",
+    "city": "İzmir",
+    "type": "Devlet",
+    "lang": "Türkçe / İngilizce",
+    "yok": "İzlemede (aday)",
+    "csr": "–",
+    "fall": {
+      "t": "T.C. vatandaşları için 1–30 Haziran 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitü ilanını kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "Haziran 2027",
+    "req": "YL: ALES SAY ≥55 (veya GRE/GMAT), İngilizce ≥50 (YDS/e-YDS/YÖKDİL). Lisans sonrası doktora: ALES 80, dil 55, GNO 3.00.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli · Tezsiz · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "Diğer bilişim programları için ilan metnine bak."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "2026-27 Güz ilan metni",
+        "https://fbe.deu.edu.tr/duyurular/2026-2027-guz-donemi-lisansustu-egitim-ilan-metni/"
+      ]
+    ]
+  },
+  {
+    "id": "ege",
+    "name": "Ege Üniversitesi",
+    "short": "Ege",
+    "city": "İzmir",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "A2 · 12.",
+    "csr": "–",
+    "fall": {
+      "t": "Fen Bilimleri Ens.: 17–27 Ağustos 2026. Dil sınavı 10 Ağustos, mülakatlar 31 Ağustos – 1 Eylül, sonuçlar 3 Eylül, kayıt 7–9 Eylül.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Uluslararası Bilgisayar Enstitüsü güz ve baharda öğrenci alıyor.",
+      "k": "tahmin"
+    },
+    "next": "Ağustos 2027",
+    "req": "Aynı anda 1 tek disiplinli, 1 disiplinlerarası ve 1 tezsiz programa başvurulabilir.",
+    "fund": "Devlet: tezli programlarda harç yok. II. öğretim tezsizler ücretli.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği (Fen Bilimleri Ens.)",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilgisayar Bilimleri (Uluslararası Bilgisayar Ens.)",
+        "t": "Tezli · Tezsiz · II. öğretim · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Bilgi Teknolojileri (Uluslararası Bilgisayar Ens.)",
+        "t": "Tezli · Tezsiz · II. öğretim · Doktora",
+        "f": [
+          "is"
+        ],
+        "d": ""
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "FBE 2026-27 başvuru",
+        "https://fenbilimleri.ege.edu.tr/h-27267/2026-2027_egitim-ogretim_yili_guz_yariyili_basvuru_islemleri.html"
+      ],
+      [
+        "Uluslararası Bilgisayar Ens.",
+        "https://ube.ege.edu.tr/tr-966/egitim_programlari.html"
+      ]
+    ]
+  },
+  {
+    "id": "gtu",
+    "name": "Gebze Teknik Üniversitesi",
+    "short": "GTÜ",
+    "city": "Kocaeli",
+    "type": "Devlet",
+    "lang": "%30 İngilizce / İngilizce",
+    "yok": "A3 · 19.",
+    "csr": "–",
+    "fall": {
+      "t": "4 Mayıs – 18 Haziran 2026. GTÜ İngilizce sınavı 23 Haziran, giriş sınavları 1–2 Temmuz, sonuçlar 13 Temmuz, kayıt 20 Temmuz – 7 Ağustos. Ek tur: 3–26 Ağustos 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitü ilanını kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "Mayıs – Haziran ortası 2027 (+ Ağustos ek tur)",
+    "req": "ALES (eşdeğer GRE/GMAT). YDS/YÖKDİL veya GTÜ İngilizce sınavı. Türkçe programlarda giriş sınavına 40 ve üstü alan girer.",
+    "fund": "Devlet: tezli programlarda harç yok. II. öğretim ücretli. ASELSAN Akademi kontenjanları.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "15 kişi. ALES SAY 70, YDS 55 veya GTÜ İngilizce 60. 1. şube: Mühendislik Fak. Bilgisayar Müh. mezunu. 2. şube (en fazla 5): diğer mühendislik, fizik, matematik, bilişim sistemleri; bilimsel hazırlık olabilir. Sınav 2 Temmuz. Doktora: ALES 70, YDS 60."
+      },
+      {
+        "n": "Yapay Zekâ",
+        "t": "Tezli YL (İng.)",
+        "f": [
+          "ai"
+        ],
+        "d": "10 kişi + ASELSAN Akademi 20. ALES 60, YDS 55 veya GTÜ 60. Her lisans mezunu başvurabilir."
+      },
+      {
+        "n": "Siber Güvenlik",
+        "t": "Tezli YL (%30 İng.)",
+        "f": [
+          "sec"
+        ],
+        "d": "5 kişi. ALES 70, YDS 55."
+      },
+      {
+        "n": "Yönetim Bilişim Sistemleri",
+        "t": "Tezli YL · II. öğretim tezsiz",
+        "f": [
+          "is"
+        ],
+        "d": "Tezli 20 kişi (ALES 70, SAY/SÖZ/EA); tezsiz 50 kişi, online sınav."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "2026-27 Güz ilan metni (PDF)",
+        "https://www.gtu.edu.tr/fileman/Files/UserFiles/oidb/LISANS_USTU/BASVURULAR/2026-2027%20G%C3%9CZ/2026-2027%20G%C3%9CZ%20%C4%B0LAN%20METN%C4%B0.pdf"
+      ],
+      [
+        "Ek başvuru",
+        "https://www.gtu.edu.tr/icerik/1747/31285/display.aspx"
+      ]
+    ]
+  },
+  {
+    "id": "agu",
+    "name": "Abdullah Gül Üniversitesi",
+    "short": "AGÜ",
+    "city": "Kayseri",
+    "type": "Devlet",
+    "lang": "İngilizce",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "Son başvuru 6 Temmuz 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "Temmuz başı 2027",
+    "req": "Bilgisayar Müh.: TOEFL iBT 87 veya YDS/e-YDS 73. Başvuru gs.agu.edu.tr üzerinden.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": "İngilizce eğitim veren araştırma odaklı devlet üniversitesi."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Başvuru bilgileri",
+        "http://fbe.agu.edu.tr/basvuru-bilgileri"
+      ]
+    ]
+  },
+  {
+    "id": "estu",
+    "name": "Eskişehir Teknik Üniversitesi",
+    "short": "ESTÜ",
+    "city": "Eskişehir",
+    "type": "Devlet",
+    "lang": "İngilizce",
+    "yok": "–",
+    "csr": "–",
+    "fall": {
+      "t": "1 Haziran – 10 Temmuz 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "Haziran – Temmuz 2027",
+    "req": "Tezli: ALES 55 (programın puan türünde), GNO 2.00.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği (İng.)",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": ""
+      },
+      {
+        "n": "Yapay Zekâ (İng.)",
+        "t": "Tezli YL",
+        "f": [
+          "ai"
+        ],
+        "d": "2023-24'ten beri İngilizce; ML, derin öğrenme, veri bilimi. 4 dönem, azami 6."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "2026-27 Güz duyurusu",
+        "https://lee.eskisehir.edu.tr/tr/Duyuru/Detay/2026-2027-akademik-yili-guz-donemi-lisansustu-programlara-basvuru-duyurusu-hakkinda"
+      ]
+    ]
+  },
+  {
+    "id": "ktu",
+    "name": "Karadeniz Teknik Üniversitesi",
+    "short": "KTÜ",
+    "city": "Trabzon",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "A3 · 22.",
+    "csr": "–",
+    "fall": {
+      "t": "1. ilan Haziran 2026 (16 Haziran duyurusu), 2. ilan 10–26 Ağustos 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Baharda tezli YL ve doktora alımı yapılıyor; 2025-26 bahar ilanı yayımlandı.",
+      "k": "tahmin"
+    },
+    "next": "Haziran 2027 (+ Ağustos 2. ilan)",
+    "req": "Koşullar ve kontenjanlar Fen Bilimleri Enstitüsü ilanında.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL · Doktora",
+        "f": [
+          "core"
+        ],
+        "d": "Fen Bilimleri Enstitüsü kontenjan tablosunda doğrula."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "2026-27 Güz 1. ilan",
+        "https://www.ktu.edu.tr/oidb/duyuru/2026-2027-egitim-ogretim-yili-guz-yariyili-i-lisansustu-tezli-yuksek-lisans-tezsiz-yuksek-lisans-ve-doktora-basvurulari"
+      ]
+    ]
+  },
+  {
+    "id": "sakarya",
+    "name": "Sakarya Üniversitesi",
+    "short": "Sakarya",
+    "city": "Sakarya",
+    "type": "Devlet",
+    "lang": "Türkçe / İngilizce",
+    "yok": "A2 · 15. (2025'te araştırma üniversitesi oldu)",
+    "csr": "–",
+    "fall": {
+      "t": "2026-27 güz koşul, kontenjan ve takvim ilanı yayımlandı.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitüden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "Fen Bilimleri Enstitüsü ilanına göre.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar ve Bilişim Mühendisliği",
+        "t": "YL",
+        "f": [
+          "core"
+        ],
+        "d": "İlan ve kontenjan tablosunda doğrula."
+      },
+      {
+        "n": "Yazılım Mühendisliği (İng.)",
+        "t": "YL",
+        "f": [
+          "swe"
+        ],
+        "d": "İlan ve kontenjan tablosunda doğrula."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "2026-27 Güz ilanı",
+        "https://fbe.sakarya.edu.tr/tr/duyuru/goster/158847/2026-2027-guz-donemi-lisansustu-ogrenci-alimi-basvuru-kosul-ve-kontenjanlar-takvimi"
+      ]
+    ]
+  },
+  {
+    "id": "bursa",
+    "name": "Bursa Uludağ Üniversitesi · Bursa Teknik Üniversitesi",
+    "short": "Bursa (BUÜ, BTÜ)",
+    "city": "Bursa",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "BUÜ: A3 · 23.",
+    "csr": "–",
+    "fall": {
+      "t": "BUÜ 2026-27 güzü için tek başvuru dönemi yaptı (lubasvuru.uludag.edu.tr). BTÜ tezli ve tezsiz YL başvurusu aldı.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitülerden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "İlan ve kontenjan tablolarına göre.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": "İki üniversitenin de bilgisayar mühendisliği bölümü var; 2026-27 kontenjan tablolarında programın açık olduğunu doğrula."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "BUÜ kontenjan ve koşullar",
+        "https://uludag.edu.tr/oidb/lisansustu-kontenjanlar-ve-basvuru-kosullari-2026-2027-guz-yariyili-96365"
+      ],
+      [
+        "BTÜ ilanı",
+        "https://enstitu.btu.edu.tr/tr/duyuru/detay/54610/2026-2027-g%C3%BCz-yar%C4%B1y%C4%B1l%C4%B1-lisans%C3%BCst%C3%BC-%C3%B6%C4%9Frenci-ba%C5%9Fvurular%C4%B1"
+      ]
+    ]
+  },
+  {
+    "id": "konya",
+    "name": "Selçuk Üniversitesi · Konya Teknik Üniversitesi",
+    "short": "Konya (Selçuk, KTÜN)",
+    "city": "Konya",
+    "type": "Devlet",
+    "lang": "Türkçe",
+    "yok": "Selçuk: izlemede (aday)",
+    "csr": "–",
+    "fall": {
+      "t": "Selçuk tezli YL ve doktora ilanı yayımladı (ensbis.selcuk.edu.tr). KTÜN kesin kayıt 10–14 Ağustos 2026.",
+      "k": "kesin"
+    },
+    "spring": {
+      "t": "Enstitülerden kontrol et.",
+      "k": "tahmin"
+    },
+    "next": "İlan dönemine göre",
+    "req": "İlana göre.",
+    "fund": "Devlet: tezli programlarda harç yok.",
+    "progs": [
+      {
+        "n": "Bilgisayar Mühendisliği",
+        "t": "Tezli YL",
+        "f": [
+          "core"
+        ],
+        "d": "Selçuk'ta 2026-27 ilanıyla doğrulandı; KTÜN için kontenjan tablosuna bak."
+      }
+    ],
+    "people": [],
+    "links": [
+      [
+        "Selçuk ilanı",
+        "https://selcuk.edu.tr/birim/icerik/5323/2026-2027-guz-yariyili-tezli-yuksek-lisans-ve-doktora-ogrenci-basvuru-ilani-80441"
+      ],
+      [
+        "KTÜN duyurusu",
+        "https://www.ktun.edu.tr/tr/Birim/DuyuruDetay/2026_2027_eGItIm_OGretIm_yili_gUz_yariyili_tezlI__8603"
+      ]
+    ]
+  }
+]
