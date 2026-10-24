@@ -104,7 +104,12 @@
           "status": "kesin",
           "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
         },
-        "note": "Dönem katkı payı yaklaşık 184 € (rapordaki değer; doğrulanmadı)."
+        "note": "Dönem katkı payı 184 € (80 € idari + 96,50 € Studierendenwerk + 7,50 € öğrenci birliği).",
+        "semesterFee": {
+          "amount": 184,
+          "currency": "EUR",
+          "per": "semester"
+        }
       }
     },
     {
@@ -180,7 +185,12 @@
           "status": "kesin",
           "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
         },
-        "note": "Dönem katkı payı yaklaşık 185 € (rapordaki değer; doğrulanmadı)."
+        "note": "Dönem katkı payı 184 € (80 € idari + 96,50 € Studierendenwerk + 7,50 € öğrenci birliği).",
+        "semesterFee": {
+          "amount": 184,
+          "currency": "EUR",
+          "per": "semester"
+        }
       }
     },
     {
@@ -250,7 +260,13 @@
           "appliesTo": "non-eu",
           "status": "kesin",
           "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
-        }
+        },
+        "semesterFee": {
+          "amount": 184,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "Dönem katkı payı 184 € (80 € idari + 96,50 € Studierendenwerk + 7,50 € öğrenci birliği)."
       },
       "notes": "Almanca olduğu için şu an senin için uygun değil."
     }

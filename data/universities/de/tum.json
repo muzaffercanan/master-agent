@@ -55,8 +55,8 @@
               "audience": "all"
             }
           ],
-          "status": "tahmin",
-          "note": "TUM program sayfalarındaki yaz penceresi 1 Ekim – 30 Kasım. Yaz 2027 başlangıcında eski ücret (6.000 €) geçerli."
+          "status": "kesin",
+          "note": "Yaz 2027 başlangıcında eski ücret (6.000 €) geçerli."
         },
         {
           "term": "winter",
@@ -70,8 +70,8 @@
               "audience": "all"
             }
           ],
-          "status": "tahmin",
-          "note": "Kış penceresi 1 Şubat – 31 Mayıs (TUM program sayfaları)."
+          "status": "kesin",
+          "note": "TUM program sayfası: kış 1 Şubat – 31 Mayıs."
         }
       ],
       "requirements": {
@@ -99,7 +99,7 @@
           "per": "semester"
         }
       },
-      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi."
+      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi. Program bu ücret kademesinde 6.000 €; 2027/28 kışından itibaren 6.800 €."
     },
     {
       "scholarships": [],
@@ -120,13 +120,23 @@
       "durationSemesters": 4,
       "ects": 120,
       "requirements": {
-        "interview": "Müfredat eşleşme puanı (raporda 25 puan barajı) + mülakat.",
-        "note": "Rapordaki değer; resmi kaynaktan doğrulanamadı."
+        "interview": "Kontenjan sınırı yok, yetenek değerlendirmesi var (raporda müfredat eşleşme puanı + mülakat).",
+        "note": "DAAD'a göre yalnızca TUM'un İşletme Bilişimi (Wirtschaftsinformatik) lisansına denk lisansı olanlar başvurabiliyor; bir CS lisansı bu şartı karşılamayabilir."
       },
       "costs": {
         "tuition": {
           "kind": "paid",
-          "note": "AB dışı: 4.000 veya 6.000 €/dönem (2027/28'den 4.600 veya 6.800 €); bu programın kademesini program sayfasından kontrol et."
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 6800,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "Program 6.000 € kademesinde; 2027/28 kışından başlayanlar için 6.800 €/dönem."
         },
         "semesterFee": {
           "amount": 97,
@@ -134,7 +144,30 @@
           "per": "semester"
         }
       },
-      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi. Bazı dersler Almanca."
+      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi. Bazı dersler Almanca.",
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "Yaz alımı var; tarihleri program sayfasından kontrol et."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        }
+      ]
     }
   ]
 }

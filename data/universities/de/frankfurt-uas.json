@@ -81,7 +81,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+        "semesterFee": {
+          "amount": 406.78,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "2026/27 kışı resmi dönem ücreti 406,78 €."
       },
       "notes": "Raporda 'güvenli'. Veri bilimi bu programın bir uzmanlık kolu."
     },
@@ -115,7 +120,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+        "semesterFee": {
+          "amount": 406.78,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "2026/27 kışı resmi dönem ücreti 406,78 €."
       },
       "notes": "Bu programın bilgileri yalnızca rapordan; doğrulanmadı."
     }

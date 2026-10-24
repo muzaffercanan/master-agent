@@ -61,12 +61,13 @@
           "rounds": [
             {
               "name": "normal",
+              "open": "2027-04-01",
               "deadline": "2027-05-15",
               "audience": "all"
             }
           ],
-          "status": "tahmin",
-          "note": "15 Mayıs tahmini; resmi son tarih sayfasında doğrula."
+          "status": "kesin",
+          "note": "TU Berlin'in İngilizce kontenjanlı yüksek lisans programları için resmi pencere."
         }
       ],
       "requirements": {
@@ -100,7 +101,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+        "semesterFee": {
+          "amount": 376.36,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "2026/27 kışı: 149,56 € (ücretler) + 226,80 € Deutschlandsemesterticket."
       },
       "notes": "Raporda 'reach' (önkoşul nedeniyle)."
     },
@@ -142,11 +148,13 @@
           "rounds": [
             {
               "name": "normal",
+              "open": "2027-04-01",
               "deadline": "2027-05-15",
               "audience": "all"
             }
           ],
-          "status": "tahmin"
+          "status": "kesin",
+          "note": "İngilizce kontenjanlı programlar için resmi pencere."
         }
       ],
       "requirements": {
@@ -158,7 +166,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+        "semesterFee": {
+          "amount": 376.36,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "2026/27 kışı: 149,56 € + 226,80 € Deutschlandsemesterticket."
       }
     }
   ]

@@ -112,7 +112,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Yalnızca dönem katkı payı (raporda ~130 €; doğrulanmadı)."
+        "semesterFee": {
+          "amount": 134,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "Yaz 2027: 134 € (87 € Studierendenwerk + 47 € şehir otobüsü bileti). 2026/27 kışında 126,90 € idi."
       },
       "notes": "Raporda 'hedef/güvenli'. Not dönüşümün 2.25 olduğu için not şartını karşılıyorsun."
     }

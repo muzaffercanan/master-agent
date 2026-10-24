@@ -100,7 +100,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Dönem katkı payı yaklaşık 380 € (rapordaki değer; doğrulanmadı)."
+        "semesterFee": {
+          "amount": 402.68,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "2026/27 kışı resmi tutar 402,68 € (geç ödemede 432,68 €). AStA, 18 €'luk bir artışın eksik bildirildiğini duyurdu; kesin tutar biraz daha yüksek olabilir."
       },
       "notes": "Raporda en güçlü hedef olarak geçiyor: not yerine ders içeriğine bakıyor."
     }

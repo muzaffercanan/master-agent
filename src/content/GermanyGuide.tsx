@@ -21,7 +21,7 @@ export function GermanyGuide() {
             <ul>
               <li><b>İddialı:</b> {p("rwth", "data-science", "RWTH Data Science")} (GRE Quant ≈160+), {p("mannheim", "data-science", "Mannheim Data Science")} (GRE Q ≥162 / V ≥151 zorunlu; raporda "hedef" idi), {p("tu-berlin", "computer-science", "TU Berlin CS")} (teorik CS kredisi), {p("saarland", "computer-science", "Saarland CS")} (C1, MOI kabul edilmiyor), {p("goethe", "quantitative-finance-msq", "Goethe MSQ")}.</li>
               <li><b>Hedef:</b> {p("tu-darmstadt", "computer-science", "TU Darmstadt CS")} (not yerine ders içeriği; IELTS 7.0 / TOEFL 95), {p("stuttgart", "computer-science", "Stuttgart CS")} ve {p("stuttgart", "infotech", "INFOTECH")} (C1; INFOTECH'te seçme süreci var), {p("mannheim", "business-informatics", "Mannheim Business Informatics")} (yalnızca 30 ECTS işletme kredin varsa).</li>
-              <li><b>Güvenli:</b> {p("passau", "computer-science", "Passau CS")} (Alman notu ≤ 2.7 şartını 2.25 ile karşılıyorsun; A1 Almanca gerekli), {p("th-deggendorf", "artificial-intelligence-and-data-science", "TH Deggendorf AI & DS")} (online sınav), {p("frankfurt-uas", "general-informatics", "Frankfurt UAS General Informatics")} (not ≤ 2.8).</li>
+              <li><b>Güvenli:</b> {p("passau", "computer-science", "Passau CS")} (Alman notu ≤ 2.7 şartını 2.25 ile karşılıyorsun; A1 Almanca gerekli), {p("th-deggendorf", "artificial-intelligence-and-data-science", "TH Deggendorf AI & DS")} (online sınav; yalnızca yaz alımı, kış 2027/28 portföyüne giremez), {p("frankfurt-uas", "general-informatics", "Frankfurt UAS General Informatics")} (not ≤ 2.8).</li>
               <li><b>Listeden çıkan:</b> {p("stuttgart", "artificial-intelligence-and-data-science", "Stuttgart AI & Data Science")} Almanca öğretiliyor. TUM ücret nedeniyle elenmişti; 2027/28'den itibaren ücret 6.800 €/dönem.</li>
             </ul>
           </div>
@@ -35,7 +35,9 @@ export function GermanyGuide() {
               <li><b>Saarland:</b> dönem ücreti ~280 € değil, 412,30 €; İngilizce eğitim belgesi kabul edilmiyor.</li>
               <li><b>TU Darmstadt:</b> resmi sayfa dil belgesi olarak IELTS 7.0 / TOEFL 95 / C1 sayıyor; İngilizce eğitim belgesinden söz etmiyor.</li>
               <li><b>Goethe MSQ:</b> GRE zorunlu değil, şiddetle önerilen.</li>
-              <li><b>TUM:</b> 2027/28 kışından itibaren yeni öğrencilere 4.600 / 6.800 €/dönem.</li>
+              <li><b>TUM:</b> 2027/28 kışından itibaren yeni öğrencilere 4.600 / 6.800 €/dönem; Informatics ve Information Systems 6.800 € kademesinde. Information Systems yalnızca İşletme Bilişimi (Wirtschaftsinformatik) lisansı olanları kabul ediyor.</li>
+              <li><b>TH Deggendorf AI & DS:</b> yalnızca yaz döneminde (Mart) başlıyor. "Harçsız" da değil: AB dışı öğrencilerden dönem başına 500 € servis ücreti ve 60 € başvuru ücreti alınıyor.</li>
+              <li><b>TU Berlin:</b> İngilizce kontenjanlı programlarda kış 2027/28 penceresi 1 Nisan – 15 Mayıs 2027; dönem ücreti yaklaşık 376 €.</li>
               <li><b>Passau:</b> ilk yıl sonuna kadar A1 Almanca belgesi ve anabin'de H+ statüsü gerekiyor.</li>
             </ul>
           </div>

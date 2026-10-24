@@ -14,7 +14,7 @@
   "intakes": [],
   "scholarships": [],
   "people": [],
-  "admissionsSummary": "Uygulamalı bilimler üniversitesi (Hochschule). Yaz 2027 için başvuru penceresi 15 Ekim – 15 Kasım 2026.",
+  "admissionsSummary": "Uygulamalı bilimler üniversitesi (Hochschule). AB dışı öğrencilere dönem başına 500 € servis ücreti ve 60 € başvuru ücreti uygulanıyor (2025/26 kışından beri).",
   "links": [
     {
       "label": "Başvurular",
@@ -54,15 +54,16 @@
               "audience": "all"
             }
           ],
-          "status": "kesin"
+          "status": "kesin",
+          "note": "Mart 2027 başlangıcı."
         },
         {
           "term": "winter",
           "cycle": "2027-28",
-          "offered": "yes",
+          "offered": "no",
           "rounds": [],
-          "status": "tahmin",
-          "note": "Kış dönemi tarihleri doğrulanamadı."
+          "status": "kesin",
+          "note": "Program yalnızca yaz döneminde öğrenci alıyor. Raporda iki dönem yazıyordu."
         }
       ],
       "requirements": {
@@ -82,12 +83,32 @@
       },
       "costs": {
         "tuition": {
-          "kind": "free",
-          "note": "Öğrenim ücreti yok."
+          "kind": "paid",
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 500,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "Öğrenim ücreti yok, ama 2025/26 kışından itibaren AB dışı öğrencilerden dönem başına 500 € servis ücreti alınıyor. Raporda 'harçsız' yazıyordu."
         },
-        "note": "Dönem katkı payı yaklaşık 82 € (rapordaki değer; doğrulanmadı). Bazı listelerde AB dışı için ~500 €/dönem ücret görünüyor; doğrula."
+        "semesterFee": {
+          "amount": 87,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "applicationFee": {
+          "amount": 60,
+          "currency": "EUR",
+          "per": "once"
+        },
+        "note": "Studierendenwerk katkısı yaz 2027'de 87 €, 2027/28 kışından itibaren 92 €. AB dışı başvuru ücreti 60 €."
       },
-      "notes": "Raporda 'güvenli'."
+      "notes": "Raporda 'güvenli'. Yalnızca yaz alımı var: sıradaki pencere 15 Ekim – 15 Kasım 2026, ardından Ekim 2027."
     }
   ]
 }

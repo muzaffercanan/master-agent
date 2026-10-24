@@ -81,7 +81,12 @@
           "kind": "free",
           "note": "Öğrenim ücreti yok."
         },
-        "note": "Dönem katkı payı yaklaşık 377 € (rapordaki değer; doğrulanmadı)."
+        "semesterFee": {
+          "amount": 381.28,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "381,28 € 2025/26 kışının tutarı; 2026/27 tutarı bulunamadı (226,80 €'su Deutschlandsemesterticket)."
       },
       "notes": "Raporda 'reach'."
     }
