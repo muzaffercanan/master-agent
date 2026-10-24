@@ -33,6 +33,7 @@ export function UniversityPage() {
           {uni.rankings.yok && <span className="pill kesin">YÖK {uni.rankings.yok}</span>}
           {uni.rankings.csrankings && <span className="pill na">{uni.rankings.csrankings}</span>}
           {uni.rankings.qs && <span className="pill na">QS {uni.rankings.qs}</span>}
+          {uni.rankings.theCs && <span className="pill na">THE CS {uni.rankings.theCs.year}: {uni.rankings.theCs.rank}</span>}
           <StaleBadge verifiedAt={uni.verifiedAt} />
         </div>
       </div>

@@ -56,6 +56,7 @@ export function UniversitiesPage() {
                         <span className="chip">{TYPE_LABEL[u.type]}</span>
                         <span className="chip">{u.programs.length} program</span>
                         {u.rankings.yok && <span className="pill kesin">YÖK {u.rankings.yok}</span>}
+                        {u.rankings.theCs && <span className="pill na">THE CS {u.rankings.theCs.rank}</span>}
                       </div>
                       <TermTags intakes={u.intakes} labels={k.terms} />
                       <StaleBadge verifiedAt={u.verifiedAt} />

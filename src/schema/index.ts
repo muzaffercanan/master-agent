@@ -164,7 +164,14 @@ export const University = z.object({
   type: z.enum(["state", "foundation", "private"]),
   languages: z.array(Lang).min(1),
   rankings: z
-    .object({ yok: z.string().optional(), csrankings: z.string().optional(), qs: z.number().optional(), the: z.number().optional() })
+    .object({
+      yok: z.string().optional(),
+      csrankings: z.string().optional(),
+      qs: z.number().optional(),
+      the: z.number().optional(),
+      /** THE subject ranking for computer science, as published (bands like "101–125" are kept as text) */
+      theCs: z.object({ year: z.number(), rank: z.string() }).optional(),
+    })
     .default({}),
   /** institute-wide calendar, inherited by programs without their own intakes */
   intakes: z.array(Intake).default([]),
