@@ -10,35 +10,56 @@
     "en",
     "de"
   ],
-  "rankings": {},
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "73"
+    }
+  },
   "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 376.36,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "2026/27 kışı: 149,56 € (ücretler) + 226,80 € Deutschlandsemesterticket."
+  },
   "scholarships": [],
+  "admissionsSummary": "Yabancı diplomayla başvuruda TU Berlin için uni-assist VPD zorunlu (2026 yazından beri); VPD yoksa başvuru reddedilir. Yabancı diplomalı adaylar için son günler diğer adaylarla aynı. Açık kabullü programlar (Computer Science) ile kontenjanlı programların (ISM) pencereleri farklı. Computer Engineering M.Sc. Almanca öğretildiği için eklenmedi. Computational Neuroscience (İngilizce, başvuru Şubat – Mart) bu listeye alınmadı.",
   "people": [],
-  "admissionsSummary": "Yabancı diplomayla başvuruda uni-assist VPD zorunlu; VPD yoksa başvuru reddedilir. Kontenjanlı İngilizce yüksek lisans programlarına yalnızca kış döneminde başvurulabiliyor.",
   "links": [
     {
       "label": "Yabancı diplomayla başvuru",
       "url": "https://www.tu.berlin/en/i-a-office-of-student-affairs/masters-application-enrollment/application/applying-with-a-primary-university-degree-from-a-foreign-university"
     },
     {
-      "label": "M.Sc. ISM başvuru ve kabul",
-      "url": "https://www.tu.berlin/en/eecs/academics-teaching/study-offer/masters-programs/msc-information-systems-management-wirtschaftsinformatik/msc-ism-wi-application-admission"
+      "label": "Fakülte IV yüksek lisans programları",
+      "url": "https://www.tu.berlin/en/eecs/academics-teaching/study-offer/masters-programs"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "TU Berlin başvuru tarihleri",
+      "url": "https://www.tu.berlin/en/studying/applying-and-enrolling/dates-deadlines"
+    }
+  ],
   "verifiedAt": "2026-10-24",
   "programs": [
     {
-      "scholarships": [],
-      "links": [],
       "id": "computer-science",
-      "name": "Computer Science",
+      "name": "Computer Science (Informatik)",
       "degree": "M.Sc.",
       "levels": [
         "master-thesis"
       ],
       "fields": [
-        "core"
+        "core",
+        "ai"
       ],
       "languages": [
         "en"
@@ -49,10 +70,17 @@
         {
           "term": "summer",
           "cycle": "2027",
-          "offered": "no",
-          "rounds": [],
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-12-01",
+              "deadline": "2027-02-28",
+              "audience": "all"
+            }
+          ],
           "status": "kesin",
-          "note": "Kontenjanlı İngilizce programlara yalnızca kışın başvurulabiliyor."
+          "note": "Açık kabullü yüksek lisanslar için yaz 2027 penceresi: 1 Aralık 2026 – 28 Şubat 2027."
         },
         {
           "term": "winter",
@@ -61,58 +89,70 @@
           "rounds": [
             {
               "name": "normal",
-              "open": "2027-04-01",
-              "deadline": "2027-05-15",
+              "open": "2027-06-01",
+              "deadline": "2027-08-31",
               "audience": "all"
             }
           ],
-          "status": "kesin",
-          "note": "TU Berlin'in İngilizce kontenjanlı yüksek lisans programları için resmi pencere."
+          "status": "tahmin",
+          "note": "2026 kışında açık kabullü programlar için pencere 1 Haziran – 31 Ağustos idi; 2027 tarihleri henüz yayımlanmadı."
         }
       ],
       "requirements": {
         "english": {
-          "note": "B2 seviyesi zorunlu."
+          "note": "CEFR B2. Kabul edilen belgeler Fakülte IV İngilizce yeterlik tablosunda; belge başvuru anında hazır olmalı."
         },
         "ects": {
           "areas": [
             {
-              "area": "Bilgisayar bilimi temelleri",
-              "min": 36
+              "area": "Teorik bilgisayar bilimi (biçimsel diller, otomata, hesaplanabilirlik, karmaşıklık, mantık)",
+              "min": 12
             },
             {
-              "area": "Teorik bilgisayar bilimi",
+              "area": "Bilgisayar mühendisliği veya bilgi teknolojisi",
               "min": 12
+            },
+            {
+              "area": "Yöntemsel-pratik bilgisayar bilimi",
+              "min": 12
+            },
+            {
+              "area": "Matematik",
+              "min": 18
+            },
+            {
+              "area": "Ek bilgisayar bilimi (bitirme tezi hariç)",
+              "min": 30
             }
           ],
-          "note": "Kredi dağılımı üçüncü taraf kaynaktan; sınav yönetmeliğinden doğrula. Rapora göre son dönemlerde başvuranların %5'inden azı teorik CS şartını karşılamış."
+          "note": "İlk üç alan 36 CP'lik bilgisayar temelleri bloğunu oluşturuyor. Bölüm, son dönemlerde başvuranların %5'inden azının şartları karşıladığını, en çok teorik bilgisayar biliminin eksik çıktığını yazıyor. Ayrık matematik, algoritmalar, veri yapıları ve sayısal mantık dersleri teorik bilgisayar bilimi sayılmıyor."
         },
         "documents": [
-          "uni-assist VPD (zorunlu)",
-          "Transkript",
-          "Diploma",
-          "CV",
+          "uni-assist VPD (TU Berlin için, zorunlu)",
+          "Uygunluk değerlendirme formu (Suitability Assessment Form)",
+          "Transkript ve diploma (veya ECTS belgesi)",
           "İngilizce belgesi"
         ],
-        "portal": "uni-assist VPD + TU Berlin portalı"
+        "portal": "uni-assist VPD + TU Berlin portalı (tuPORT)"
       },
-      "costs": {
-        "tuition": {
-          "kind": "free",
-          "note": "Öğrenim ücreti yok."
+      "notes": "Açık kabul (NC yok). Program İngilizce ama bazı seçmeli alan açıklamaları şu an Almanca. VPD işlemi haftalar sürebiliyor; erken başvur.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru ve kabul",
+          "url": "https://www.tu.berlin/en/eecs/academics-teaching/organizing-your-studies/during-your-studies/msc-computer-science-informatik/msc-cs-in-application-admission"
         },
-        "semesterFee": {
-          "amount": 376.36,
-          "currency": "EUR",
-          "per": "semester"
+        {
+          "label": "Program profili",
+          "url": "https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/computer-science-informatik-m-sc"
         },
-        "note": "2026/27 kışı: 149,56 € (ücretler) + 226,80 € Deutschlandsemesterticket."
-      },
-      "notes": "Raporda 'reach' (önkoşul nedeniyle)."
+        {
+          "label": "Başvuru tarihleri",
+          "url": "https://www.tu.berlin/en/studying/applying-and-enrolling/dates-deadlines"
+        }
+      ]
     },
     {
-      "scholarships": [],
-      "links": [],
       "id": "information-systems-management",
       "name": "Information Systems Management (Wirtschaftsinformatik)",
       "degree": "M.Sc.",
@@ -135,11 +175,13 @@
           "rounds": [
             {
               "name": "normal",
+              "open": "2026-12-01",
               "deadline": "2027-01-15",
               "audience": "all"
             }
           ],
-          "status": "tahmin"
+          "status": "kesin",
+          "note": "Kontenjanlı yüksek lisanslar için yaz 2027 penceresi: 1 Aralık 2026 – 15 Ocak 2027."
         },
         {
           "term": "winter",
@@ -153,26 +195,51 @@
               "audience": "all"
             }
           ],
-          "status": "kesin",
-          "note": "İngilizce kontenjanlı programlar için resmi pencere."
+          "status": "tahmin",
+          "note": "2026 kışında İngilizce kontenjanlı programlar için pencere 1 Nisan – 15 Mayıs idi; 2027 tarihleri henüz yayımlanmadı."
         }
       ],
       "requirements": {
-        "note": "Kontenjanlı. Giriş ve kabul yönetmeliği (ZZO) 2 Mart 2026'da yenilendi (TU-AMBl. 4/2026, Almanca); seçim ölçütleri orada.",
-        "portal": "uni-assist VPD + TU Berlin portalı"
+        "english": {
+          "note": "CEFR B2. Kabul edilen belgeler Fakülte IV İngilizce yeterlik tablosunda; belge başvuru anında hazır olmalı."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Analiz ve lineer cebir",
+              "min": 12
+            },
+            {
+              "area": "Bilgisayar bilimi (en az 12 CP paralel ve dağıtık yazılım sistemleri programlama/mühendisliği)",
+              "min": 36
+            },
+            {
+              "area": "İktisat ve işletme (en az 6 CP finans ve muhasebe)",
+              "min": 18
+            }
+          ],
+          "note": "Saf CS lisansında 18 CP işletme/iktisat şartı çoğu zaman eksik kalır; transkripti kontrol et."
+        },
+        "note": "Kontenjanlı; iki aşamalı seçim. Giriş ve kabul yönetmeliği (ZZO) 2 Mart 2026'da yenilendi (TU-AMBl. 4/2026). Geçmiş dönemlerin kesme puanları TU Berlin'in 'Past selection cut-off criteria' sayfasında.",
+        "documents": [
+          "uni-assist VPD (zorunlu)",
+          "Transkript ve diploma",
+          "İngilizce belgesi"
+        ],
+        "portal": "uni-assist VPD + TU Berlin portalı (tuPORT)"
       },
-      "costs": {
-        "tuition": {
-          "kind": "free",
-          "note": "Öğrenim ücreti yok."
+      "notes": "İşletme ağırlıklı; CS mezunu için işletme kredisi şartı kritik.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru ve kabul",
+          "url": "https://www.tu.berlin/en/eecs/academics-teaching/organizing-your-studies/during-your-studies/msc-information-systems-management-wirtschaftsinformatik/msc-ism-wi-application-admission"
         },
-        "semesterFee": {
-          "amount": 376.36,
-          "currency": "EUR",
-          "per": "semester"
-        },
-        "note": "2026/27 kışı: 149,56 € + 226,80 € Deutschlandsemesterticket."
-      }
+        {
+          "label": "Geçmiş kesme puanları",
+          "url": "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/past-selection-cut-off-criteria"
+        }
+      ]
     }
   ]
 }

@@ -10,7 +10,12 @@
     "en",
     "de"
   ],
-  "rankings": {},
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "126–150"
+    }
+  },
   "intakes": [],
   "scholarships": [],
   "people": [],
@@ -57,14 +62,14 @@
           "offered": "yes",
           "rounds": [
             {
-              "name": "AB dışı",
-              "open": "2026-12-01",
+              "name": "normal",
+              "open": "2026-11-15",
               "deadline": "2027-01-15",
-              "audience": "non-eu"
+              "audience": "all"
             }
           ],
           "status": "kesin",
-          "note": "Ekim 2027 başlangıcı için son gün 15 Ocak 2027."
+          "note": "Ekim 2027 başlangıcı için pencere 15 Kasım 2026 – 15 Ocak 2027 (resmi sayfa; tüm adaylar için aynı). Sonuçlar son günden 6–7 hafta sonra C@MPUS'ta."
         },
         {
           "term": "summer",
@@ -73,6 +78,7 @@
           "rounds": [
             {
               "name": "normal",
+              "open": "2027-05-15",
               "deadline": "2027-07-15",
               "audience": "all"
             }
@@ -110,7 +116,8 @@
           "currency": "EUR",
           "per": "semester"
         }
-      }
+      },
+      "notes": "Üç ana daldan biri seçiliyor: Autonomous Systems, Service Technology and Engineering, Visual Computing. Program 9 ay önceden başvuru öneriyor."
     },
     {
       "scholarships": [],

@@ -1,0 +1,230 @@
+{
+  "id": "kit",
+  "country": "de",
+  "name": "Karlsruher Institut für Technologie",
+  "short": "KIT",
+  "city": "Karlsruhe",
+  "region": "Baden-Württemberg",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "=83"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yerine eyalet ücreti."
+    },
+    "regionalFee": {
+      "region": "Baden-Württemberg",
+      "fee": {
+        "amount": 1500,
+        "currency": "EUR",
+        "per": "semester"
+      },
+      "appliesTo": "non-eu",
+      "status": "kesin",
+      "note": "AB dışı öğrenci ücreti; Almanya'da lise diplomasıyla gelenler muaf. İkinci yüksek lisansta 650 €/dönem."
+    },
+    "semesterFee": {
+      "amount": 184,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "Dönem katkı payı 184 € (80 € idari + 92 € Studierendenwerk + 12 € öğrenci birliği). Eyalet ücreti 1.500 €/dönem."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Başvuru KIT'in kendi portalından (uni-assist yok). Computer Science kontenjanlı (yılda 100), sıralama not ve ders kredilerine göre. Türk lisansıyla GRE gerekmiyor. Almanca öğretilen 'Informatics M.Sc.' ve 'Information Systems M.Sc.' ile Almanca C1 isteyen 'Digital Economics M.Sc.' eklenmedi; HECTOR School'un ücretli executive programları iş deneyimi istediği için dışarıda.",
+  "people": [],
+  "links": [
+    {
+      "label": "KIT ücretler",
+      "url": "https://www.sle.kit.edu/english/imstudium/703.php"
+    }
+  ],
+  "sources": [
+    {
+      "label": "KIT yüksek lisans program listesi",
+      "url": "https://www.sle.kit.edu/english/vorstudium/83.php"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai",
+        "sec"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-12-01",
+              "deadline": "2027-01-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Yaz dönemi başvuru portalı 1 Aralık 2026'da açılıyor."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2027-06-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB dışı adaylar için de son gün 15 Haziran."
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "no",
+          "note": "GRE (Verbal 151, Quant 164, AW 4) yalnızca lisansı Avrupa Yükseköğretim Alanı veya Lizbon Tanıma Sözleşmesi ülkeleri dışında alanlardan isteniyor. Türkiye her ikisine de dahil, Türk lisansıyla GRE gerekmez."
+        },
+        "english": {
+          "ielts": 6.5,
+          "toefl": 90,
+          "moiAccepted": true,
+          "note": "B2. IELTS en az 6.5 ve hiçbir bölüm 5.5'in altında değil; TOEFL iBT 90; Cambridge B2 First/C1/C2, UNIcert II, PTE 58.5 de kabul. Lisans yalnızca İngilizce öğretildiyse ve bu Diploma Supplement, transkript veya diplomada açıkça yazıyorsa ayrı sınav gerekmiyor. Belge en geç kayıt sonunda verilmeli; KIT'e göre sınavların süresi dolmuş sayılmıyor."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Teorik bilgisayar bilimi",
+              "min": 15
+            },
+            {
+              "area": "Pratik bilgisayar bilimi",
+              "min": 30
+            },
+            {
+              "area": "Bilgisayar mühendisliği",
+              "min": 8
+            },
+            {
+              "area": "Matematik",
+              "min": 25
+            }
+          ],
+          "note": "Bu kredileri sağlayan doğrudan seçime girer. Dört alandan üçünde en az 15 / 20 / 6 / 20 CP olan aday İngilizce seçim mülakatıyla da girebilir. En az 3 yıllık, 180 ECTS'lik lisans gerekiyor."
+        },
+        "gpa": {
+          "note": "Asgari not yok ama sıralamada en çok ağırlık nottaki: 190 puanın 70'i lisans notundan, kalanı teorik (20), pratik (50), bilgisayar müh. (10) ve matematik (40) kredilerinden."
+        },
+        "portal": "KIT başvuru portalı (doğrudan)"
+      },
+      "quota": "Yılda 100 kişi (kontenjanlı, sıralamayla)",
+      "notes": "Tamamen İngilizce program. Zorunlu ders yok; dokuz uzmanlık alanından ikisi seçiliyor (veri bilimi, kriptografi ve güvenlik, robotik, insan merkezli makine zekâsı …). KIT'in Almanca 'Informatik M.Sc.' programı ayrıdır.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.sle.kit.edu/english/vorstudium/master-computer-science.php"
+        }
+      ]
+    },
+    {
+      "id": "computational-and-data-science",
+      "name": "Computational and Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "comp",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-01-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin"
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-07-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB vatandaşları için son gün 30 Eylül; AB dışı için 15 Temmuz."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 6.5,
+          "toefl": 90,
+          "moiAccepted": true,
+          "note": "B2. IELTS en az 6.5 ve hiçbir bölüm 5.5'in altında değil; TOEFL iBT 90; Cambridge B2 First/C1/C2, UNIcert II, PTE 58.5 de kabul. Lisans yalnızca İngilizce öğretildiyse ve bu Diploma Supplement, transkript veya diplomada açıkça yazıyorsa ayrı sınav gerekmiyor. Belge en geç kayıt sonunda verilmeli; KIT'e göre sınavların süresi dolmuş sayılmıyor."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Temel matematik (lineer cebir, analiz)",
+              "min": 20
+            }
+          ],
+          "note": "Ayrıca üç alandan birinde en az 40, diğer ikisinin her birinde en az 12 kredi: (1) uygulamalı matematik, (2) informatik, (3) doğa/mühendislik/ekonomi bilimi. CS mezunu için risk, üçüncü alanda (fizik vb.) 12 krediye ulaşmak. En az 6 kredilik bitirme tezi isteniyor. 12 krediye kadar eksik şartlı kabulle telafi edilebilir."
+        },
+        "portal": "KIT başvuru portalı (doğrudan)"
+      },
+      "notes": "Açık kabul (kontenjan yok). Matematik bölümü yürütüyor; veri bilimi ile bilimsel hesaplamayı birleştiriyor.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.sle.kit.edu/english/vorstudium/master-computational-data-science.php"
+        }
+      ]
+    }
+  ]
+}

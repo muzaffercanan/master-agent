@@ -1,0 +1,128 @@
+{
+  "id": "tu-braunschweig",
+  "country": "de",
+  "name": "Technische Universität Braunschweig",
+  "short": "TU Braunschweig",
+  "city": "Braunschweig",
+  "region": "Niedersachsen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "401–500"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 440,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "DAAD kaydına göre dönem katkı payı yaklaşık 440 € (toplu taşıma bileti dahil); TU Braunschweig sayfasından kesin tutar doğrulanmadı."
+  },
+  "scholarships": [],
+  "admissionsSummary": "TU9 üyesi. AB dışı adaylar için İngilizce yüksek lisanslarda pencere kış için 1 Şubat – 15 Mart, yaz için 1 Ağustos – 15 Eylül. Bilgisayar bölümünün 'Informatik' ve 'Wirtschaftsinformatik' yüksek lisansları Almanca olduğu için eklenmedi. UNITE! ortak programı CoDaS (Communications Engineering and Data Science) 8.000 €/dönem ücretli olduğu için eklenmedi.",
+  "people": [],
+  "links": [],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2027-02-01",
+              "deadline": "2027-03-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB dışı adaylar için İngilizce uluslararası programların özel penceresi: 1 Şubat – 15 Mart."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2027-08-01",
+              "deadline": "2027-09-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB dışı adaylar için 1 Ağustos – 15 Eylül. (Yaz 2027 penceresi 15 Eylül 2026'da kapandı.)"
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 6.5,
+          "toefl": 95,
+          "note": "C1. DAAD kaydına göre IELTS Academic 6.5 veya TOEFL iBT 95 (okuma 24, dinleme 22, konuşma 25, yazma 24). Muafiyetler program sitesinde."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Temel matematik",
+              "min": 25
+            },
+            {
+              "area": "Temel bilgisayar bilimi",
+              "min": 60
+            }
+          ],
+          "note": "CS yolu: en az 25 kredi matematik, 60 kredi bilgisayar; programlama, yazılım müh., veritabanları ve BT güvenliği / dağıtık sistemler / ağlar konularından en az ikisi. Matematik yolu: en az 75 kredi matematik (15'i bilgisayardan olabilir)."
+        },
+        "interview": "Seçme mülakatı (programa uygunluğu görmek için; Zulassungsordnung'da ayrıntı).",
+        "portal": "TU Braunschweig çevrimiçi başvuru"
+      },
+      "quota": "Kontenjanlı (besondere Zugangsvoraussetzungen)",
+      "notes": "Bilgisayar ve matematik bölümlerinin ortak programı; mühendislik, biyoloji/kimya/eczacılık, tıp, görüntü ve sinyal işleme gibi uygulama alanlarından biri seçiliyor. İlk dönemde farklı lisanslar için denkleştirme dersleri var.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.tu-braunschweig.de/en/data-science"
+        },
+        {
+          "label": "Başvuru tarihleri",
+          "url": "https://www.tu-braunschweig.de/en/application"
+        },
+        {
+          "label": "DAAD kaydı",
+          "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7660/"
+        }
+      ]
+    }
+  ]
+}

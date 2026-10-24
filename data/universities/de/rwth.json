@@ -10,23 +10,121 @@
     "en",
     "de"
   ],
-  "rankings": {},
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "62"
+    }
+  },
   "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 375.19,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "2026/27 kışı dönem katkı payı 375,19 € (128 € Studierendenwerk + 234,57 € toplu taşıma bileti + 12,62 € öğrenci birliği); tutar her dönem değişiyor."
+  },
   "scholarships": [],
+  "admissionsSummary": "AB dışı adaylar için yüksek lisans son günü kış dönemi için 1 Mart, yaz dönemi için 1 Eylül. Bilgisayar bölümünün tüm yüksek lisanslarında (Computer Science, Data Science, SSE, Media Informatics, HCIS) AB dışı adaylara GRE General zorunlu; sonuç son günden önce yüklenmeli. Computer Science (Informatik) ayrıca Almanca C1 istiyor. Business School'un DDS (7.500 €/dönem) ve Applied Health Informatics (6.650 €/dönem) programları en az 12 ay iş deneyimi istediği için eklenmedi.",
   "people": [],
-  "admissionsSummary": "AB dışı adaylar için yüksek lisans son başvurusu kış dönemi için 1 Mart, yaz dönemi için 1 Eylül. Rapora göre Computer Science yüksek lisansında da GRE isteniyor (doğrulanmadı).",
   "links": [
     {
-      "label": "Data Science SSS",
-      "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/master-data-science/faq/"
+      "label": "Bilgisayar bölümü yüksek lisans programları",
+      "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/informatik/"
     }
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "AStA dönem katkı payı tablosu",
+      "url": "https://www.asta.rwth-aachen.de/ueber-uns/finanzen/"
+    },
+    {
+      "label": "DAAD International Programmes",
+      "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/"
+    }
+  ],
   "verifiedAt": "2026-10-24",
   "programs": [
     {
+      "id": "computer-science",
+      "name": "Computer Science (Informatik)",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai"
+      ],
+      "languages": [
+        "de",
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-03-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Son gün 1 Mart; her yıl aynı kural."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-09-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin"
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "required",
+          "note": "AB/AEA vatandaşı olmayan ve lise diplomasını Almanya'da almamış adaylar için zorunlu: Quantitative 75. yüzdelik dilimin üstü, Verbal 15. yüzdelik dilimin üstü, Analytical Writing en az 3.5. Sonuç başvuruyla birlikte, son günden önce yüklenmeli; sonradan kabul edilmiyor. ETS kodu 8504."
+        },
+        "english": {
+          "note": "İngilizce B2."
+        },
+        "otherLanguage": "Almanca C1 zorunlu: zorunlu dersler ve birçok uygulama alanı yalnızca Almanca.",
+        "ects": {
+          "areas": [],
+          "note": "Pratik, teknik, teorik bilgisayar bilimi ve matematikte RWTH lisansıyla eşleşme aranıyor. En fazla 42 CP eksik varsa başvuru anlamlı; daha fazlasında kesin ret. Küçük eksikler şartlı kabulle (lisans dersleri) kapatılır."
+        },
+        "portal": "RWTHonline (International Office)"
+      },
+      "notes": "Bölümün ana yüksek lisansı ama Almanca C1 istiyor. Yalnızca İngilizce programlar: SSE, Data Science, Media Informatics, HCIS.",
       "scholarships": [],
-      "links": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bcfg/informatik-m-sc/?lidx=1"
+        },
+        {
+          "label": "Başvuru ve şartlar",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/informatik/start-ins-studium/"
+        }
+      ]
+    },
+    {
       "id": "data-science",
       "name": "Data Science",
       "degree": "M.Sc.",
@@ -50,12 +148,13 @@
           "rounds": [
             {
               "name": "AB dışı",
+              "open": "2026-12-01",
               "deadline": "2027-03-01",
               "audience": "non-eu"
             }
           ],
           "status": "kesin",
-          "note": "1 Mart'tan sonra belge eklenemiyor."
+          "note": "Başvuru Aralık – 1 Mart. Mart başvurularına cevap genelde Mayıs'tan önce gelmiyor."
         },
         {
           "term": "summer",
@@ -64,31 +163,267 @@
           "rounds": [
             {
               "name": "AB dışı",
+              "open": "2027-06-01",
               "deadline": "2027-09-01",
               "audience": "non-eu"
             }
           ],
-          "status": "tahmin"
+          "status": "kesin",
+          "note": "Başvuru Haziran – 1 Eylül."
         }
       ],
       "requirements": {
         "gre": {
           "policy": "required",
-          "note": "AB dışı adaylar için zorunlu: Quantitative ≥ 75. yüzdelik (≈160+), Verbal ≥ 15. yüzdelik, Analytical Writing ≥ 3.5. Sonuç son başvurudan önce verilmeli."
+          "note": "AB/AEA vatandaşı olmayan ve lise diplomasını Almanya'da almamış adaylar için zorunlu: Quantitative 75. yüzdelik dilimin üstü, Verbal 15. yüzdelik dilimin üstü, Analytical Writing en az 3.5. Sonuç başvuruyla birlikte, son günden önce yüklenmeli; sonradan kabul edilmiyor. ETS kodu 8504."
+        },
+        "english": {
+          "note": "B2 düzeyi. Kabul edilen sınavlar ve puanlar RWTH International Office dil şartları sayfasında; DAAD kaydı örnek olarak IELTS Academic 5.5 veriyor (puanı RWTH sayfasından teyit et). IELTS General kabul edilmez. MOI (İngilizce eğitim belgesi) genelde kabul edilmez. Dil belgesi başvuruda değil kayıtta isteniyor. Bu program için MOI açıkça kabul edilmiyor."
         },
         "ects": {
           "areas": [],
-          "note": "Algoritmalar, veri yapıları, veritabanları gibi belirli alanlarda kredi bekleniyor (rapora göre)."
-        }
-      },
-      "costs": {
-        "tuition": {
-          "kind": "free",
-          "note": "Öğrenim ücreti yok."
+          "note": "Bilgisayar bilimi profili: Programlama 8, Veri Yapıları ve Algoritmalar 7, Veritabanları 6, Yazılım Müh. 6, Bilgisayar Mimarisi 6, İşletim Sistemleri 6, Ağ ve Güvenlik 6, Hesaplama Kuramı I ve II 6+6, Matematiksel Mantık 6, Ayrık Yapılar 6, Analiz 8, Lineer Cebir 6, Olasılık 6 CP. Matematik ve fizik lisansları için ayrı profiller var."
         },
-        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+        "portal": "RWTHonline (International Office)"
       },
-      "notes": "Raporda 'reach (GRE)'."
+      "notes": "Açık kabul (NC yok); eleme GRE ve ders eşleşmesiyle.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/master-data-science/application-for-admission/"
+        },
+        {
+          "label": "SSS",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/master-data-science/faq/"
+        }
+      ]
+    },
+    {
+      "id": "software-systems-engineering",
+      "name": "Software Systems Engineering",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "swe",
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2026-12-01",
+              "deadline": "2027-03-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru Aralık – 1 Mart (kesin son gün)."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yalnızca kış döneminde birinci dönemden başlanıyor; yaz başvurusu sadece üst dönemden giriş için."
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "required",
+          "note": "AB/AEA vatandaşı olmayan ve lise diplomasını Almanya'da almamış adaylar için zorunlu: Quantitative 75. yüzdelik dilimin üstü, Verbal 15. yüzdelik dilimin üstü, Analytical Writing en az 3.5. Sonuç başvuruyla birlikte, son günden önce yüklenmeli; sonradan kabul edilmiyor. ETS kodu 8504."
+        },
+        "english": {
+          "note": "B2 düzeyi. Kabul edilen sınavlar ve puanlar RWTH International Office dil şartları sayfasında; DAAD kaydı örnek olarak IELTS Academic 5.5 veriyor (puanı RWTH sayfasından teyit et). IELTS General kabul edilmez. MOI (İngilizce eğitim belgesi) genelde kabul edilmez. Dil belgesi başvuruda değil kayıtta isteniyor."
+        },
+        "gpa": {
+          "note": "Lisans ortalamasının en az %65 olması şiddetle öneriliyor (zorunlu değil)."
+        },
+        "ects": {
+          "areas": [],
+          "note": "RWTH Informatik lisansındaki şu derslerin içerik eşleşmesi aranıyor: Matematik (Calculus, Ayrık Yapılar, Lineer Cebir, Olasılık), Pratik Bilgisayar (Programlama, Veri Yapıları ve Algoritmalar, Veritabanları, Yazılım Müh., Machine Learning'e giriş), Teknik Bilgisayar (Bilgisayar Mimarisi, İşletim Sistemleri, Veri İletişimi ve Güvenlik, BT Güvenliği), Teorik (Otomata ve Biçimsel Diller, Hesaplanabilirlik ve Karmaşıklık, Matematiksel Mantık). Küçük eksikler kabul edilebilir; kararı sınav kurulu verir. Başvuruya her dersin hangi şarta karşılık geldiğini gösteren bir kapak sayfası eklenmesi isteniyor."
+        },
+        "portal": "RWTHonline (International Office)"
+      },
+      "notes": "Açık kabul (NC yok). En az 12 CP teorik bilgisayar ve 24 CP yazılım geliştirme yöntemleri dersi alınıyor.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/sse/application-for-admission/"
+        },
+        {
+          "label": "DAAD kaydı",
+          "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3696/"
+        }
+      ]
+    },
+    {
+      "id": "media-informatics",
+      "name": "Media Informatics",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "game",
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2026-12-01",
+              "deadline": "2027-03-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru Aralık – 1 Mart."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yalnızca kış döneminde birinci dönemden başlanıyor."
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "required",
+          "note": "AB/AEA vatandaşı olmayan ve lise diplomasını Almanya'da almamış adaylar için zorunlu: Quantitative 75. yüzdelik dilimin üstü, Verbal 15. yüzdelik dilimin üstü. Sonuç başvuruyla birlikte, son günden önce yüklenmeli; sonradan kabul edilmiyor. ETS kodu 8504. Bu programda Analytical Writing şartı yazılmıyor."
+        },
+        "english": {
+          "note": "B2 düzeyi. Kabul edilen sınavlar ve puanlar RWTH International Office dil şartları sayfasında; DAAD kaydı örnek olarak IELTS Academic 5.5 veriyor (puanı RWTH sayfasından teyit et). IELTS General kabul edilmez. MOI (İngilizce eğitim belgesi) genelde kabul edilmez. Dil belgesi başvuruda değil kayıtta isteniyor."
+        },
+        "gpa": {
+          "note": "Lisans ortalamasının en az %65 olması şiddetle öneriliyor."
+        },
+        "ects": {
+          "areas": [],
+          "note": "RWTH Informatik lisansındaki şu derslerin içerik eşleşmesi aranıyor: Matematik (Calculus, Ayrık Yapılar, Lineer Cebir, Olasılık), Pratik Bilgisayar (Programlama, Veri Yapıları ve Algoritmalar, Veritabanları, Yazılım Müh., Machine Learning'e giriş), Teknik Bilgisayar (Bilgisayar Mimarisi, İşletim Sistemleri, Veri İletişimi ve Güvenlik, BT Güvenliği), Teorik (Otomata ve Biçimsel Diller, Hesaplanabilirlik ve Karmaşıklık, Matematiksel Mantık). Küçük eksikler kabul edilebilir; kararı sınav kurulu verir. Başvuruya her dersin hangi şarta karşılık geldiğini gösteren bir kapak sayfası eklenmesi isteniyor."
+        },
+        "portal": "RWTHonline (International Office)"
+      },
+      "notes": "Grafik, insan-bilgisayar etkileşimi, multimedya.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/media-informatics/application-for-admission/"
+        }
+      ]
+    },
+    {
+      "id": "human-centred-intelligent-systems",
+      "name": "Human-Centred Intelligent Systems (HCIS)",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai",
+        "core"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2027-01-01",
+              "deadline": "2027-03-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru Ocak – 1 Mart."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yalnızca kış döneminde birinci dönemden başlanıyor."
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "required",
+          "note": "AB/AEA vatandaşı olmayan ve lise diplomasını Almanya'da almamış adaylar için zorunlu: Quantitative 75. yüzdelik dilimin üstü, Verbal 15. yüzdelik dilimin üstü, Analytical Writing en az 3.5. Sonuç başvuruyla birlikte, son günden önce yüklenmeli; sonradan kabul edilmiyor. ETS kodu 8504."
+        },
+        "english": {
+          "note": "B2 düzeyi. Kabul edilen sınavlar ve puanlar RWTH International Office dil şartları sayfasında; DAAD kaydı örnek olarak IELTS Academic 5.5 veriyor (puanı RWTH sayfasından teyit et). IELTS General kabul edilmez. MOI (İngilizce eğitim belgesi) genelde kabul edilmez. Dil belgesi başvuruda değil kayıtta isteniyor."
+        },
+        "gpa": {
+          "note": "Lisans ortalamasının en az %65 olması şiddetle öneriliyor."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Uygulamalı bilgisayar bilimi",
+              "min": 28
+            },
+            {
+              "area": "Bilgisayar mühendisliği",
+              "min": 18
+            },
+            {
+              "area": "Teorik bilgisayar bilimi",
+              "min": 18
+            },
+            {
+              "area": "Matematik",
+              "min": 26
+            }
+          ],
+          "note": "DAAD kaydına göre 22 CP'den fazla eksik varsa kabul yok. Alt kırılım: programlama 8, veri yapıları 8, veritabanı 6, ML ve veri bilimine giriş 6, yazılım teknolojisi 6; işletim sistemleri 6, BT güvenliği 4, veri iletişimi 6; biçimsel sistemler, hesaplanabilirlik, mantık 6'şar; ayrık yapılar 6, analiz 8, lineer cebir 6, olasılık 6."
+        },
+        "portal": "RWTHonline (International Office)"
+      },
+      "notes": "YZ/ML, insan merkezli etkileşimli teknolojiler ve toplumsal etki blokları.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/master-hcis/hcis-application-for-admission/"
+        },
+        {
+          "label": "DAAD kaydı",
+          "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3728/"
+        }
+      ]
     }
   ]
 }
