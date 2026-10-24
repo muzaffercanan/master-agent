@@ -15,7 +15,8 @@
 
 ## Açık işler
 
-- Almanya: kullanıcının Claude sohbetindeki iki artifact'i (paylaşım linki bekleniyor) + resmi kaynaklardan doğrulama.
 - İtalya ve Avusturya: araştırma.
 - İncelenmeyen TR üniversiteleri: İstanbul Üni., Bilgi, Işık, Medipol, İzmir Ekonomi, Yaşar, Çankaya, Başkent, TED, Kocaeli, Erciyes, Atatürk, Çukurova, Akdeniz, Pamukkale, OMÜ.
-- `npm run links` (24 Ekim 2026): Boğaziçi aday sayfaları ve Gazi ilanları 404. Yeni adresleri bulunmalı. Koç 403 veriyor (bot engeli; tarayıcıda açılıyor olabilir).
+- `npm run links` (24 Ekim 2026): 116 bağlantıdan 19'u betikte hata veriyor, ancak tarayıcıyla tek tek kontrol edildi: Boğaziçi, Gazi, KTÜ, BTÜ, Koç ve Özyeğin sayfaları açılıyor (bu siteler otomatik isteklere 404/403 dönüyor). Gerçek sorunlar: Hacettepe enstitü siteleri şu an bir portala yönleniyor (geçici olabilir); AGÜ (`fbe.agu.edu.tr`) açılmıyor; PoliMi otomatik erişimi engelliyor.
+- Bahar 2026-27 ilanları (24 Ekim 2026 kontrolü): Boğaziçi 14–21 Aralık, Koç 5 Aralık, Özyeğin 14 Ekim–22 Kasım, Sabancı 27 Kasım. ODTÜ, İTÜ, Gazi, YTÜ ve Atılım henüz ilan etmedi; Hacettepe sitesi erişilemedi.
+- Almanya: kullanıcının birinci raporu doğrulanarak eklendi. Kalan doğrulanmamışlar: Frankfurt UAS kış son tarihi ve IT (M.Eng.) programı, Mannheim Social Data Science şartları, RWTH dönem ücreti. İkinci rapor ("Bilgisayar Mühendisi Profili İçin Kapsamlı Araştırma") bekleniyor.

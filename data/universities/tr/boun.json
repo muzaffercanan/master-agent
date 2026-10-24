@@ -20,12 +20,13 @@
       "rounds": [
         {
           "name": "normal",
-          "open": "2027-01-02",
-          "deadline": "2027-01-09"
+          "open": "2026-12-14",
+          "deadline": "2026-12-21",
+          "audience": "all"
         }
       ],
-      "status": "tahmin",
-      "note": "Baharda yalnızca bazı programlar öğrenci alıyor. Son bilinen bahar: 2025-26: 2–9 Ocak 2026, yalnızca bazı programlar. Bilgisayar Müh. ilanında bahar alımı yok. Ocak 2027 başı bekleniyor."
+      "status": "kesin",
+      "note": "2026/27 Bahar: online başvuru 14 Aralık 10.00 – 21 Aralık 2026 17.00; bilim sınavları 25, 28, 29 Aralık; BUEPT 24 Aralık; kayıt 11 Ocak 2027. Kontenjanlar henüz ilan edilmedi; bazı programlar baharda kontenjan açmayabilir."
     },
     {
       "term": "fall",
@@ -74,7 +75,7 @@
     }
   ],
   "sources": [],
-  "verifiedAt": "2026-09-26",
+  "verifiedAt": "2026-10-24",
   "programs": [
     {
       "id": "bilgisayar-muhendisligi",
@@ -103,10 +104,17 @@
         {
           "term": "spring",
           "cycle": "2026-27",
-          "offered": "no",
-          "rounds": [],
+          "offered": "unknown",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-12-14",
+              "deadline": "2026-12-21",
+              "audience": "all"
+            }
+          ],
           "status": "kesin",
-          "note": "Bilgisayar Müh. ilanında bahar alımı yok."
+          "note": "Genel bahar penceresi 14–21 Aralık 2026. 2025-26 bahar ilanında Bilgisayar Müh. kontenjanı yoktu; 2026-27 kontenjanları henüz ilan edilmedi."
         },
         {
           "term": "fall",

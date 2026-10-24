@@ -16,10 +16,16 @@
     {
       "term": "spring",
       "cycle": "2026-27",
-      "offered": "unknown",
-      "rounds": [],
-      "status": "tahmin",
-      "note": "Son bilinen bahar: Bahar 2027 son başvuru tarihi \"ilan edilecek\". Bazı programlar yalnızca güzde, bazıları iki dönemde öğrenci alıyor."
+      "offered": "yes",
+      "rounds": [
+        {
+          "name": "normal",
+          "deadline": "2026-12-05",
+          "audience": "all"
+        }
+      ],
+      "status": "kesin",
+      "note": "2027 Bahar son başvurusu 5 Aralık 2026 (GSSE). Bazı programlar yalnızca güzde alım yapıyor; program sayfasından kontrol et. Kararlar son başvurudan 4–6 hafta sonra."
     },
     {
       "term": "fall",
@@ -77,7 +83,7 @@
     }
   ],
   "sources": [],
-  "verifiedAt": "2026-09-26",
+  "verifiedAt": "2026-10-24",
   "programs": [
     {
       "id": "yapay-zeka",

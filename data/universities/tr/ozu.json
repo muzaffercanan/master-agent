@@ -17,9 +17,16 @@
       "term": "spring",
       "cycle": "2026-27",
       "offered": "yes",
-      "rounds": [],
-      "status": "tahmin",
-      "note": "Bahar başvuruları sonbaharda açılır, yıl sonunda kapanır. Son bilinen bahar: Bahar başvuruları sonbaharda açılır, yıl sonunda kapanır."
+      "rounds": [
+        {
+          "name": "normal",
+          "open": "2026-10-14",
+          "deadline": "2026-11-22",
+          "audience": "all"
+        }
+      ],
+      "status": "kesin",
+      "note": "2026-27 Bahar (Fen Bilimleri programları): 14 Ekim – 22 Kasım 2026."
     },
     {
       "term": "fall",
@@ -66,7 +73,7 @@
     }
   ],
   "sources": [],
-  "verifiedAt": "2026-09-26",
+  "verifiedAt": "2026-10-24",
   "programs": [
     {
       "id": "bilgisayar-bilimi",
