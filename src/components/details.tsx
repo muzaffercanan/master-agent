@@ -24,7 +24,7 @@ export function IntakeList({ intakes, country }: { intakes: Intake[]; country: C
             <div className="rounds">
               {i.rounds.map((r, k) => (
                 <div key={k}>
-                  <span className="rn">{r.name}{AUD[r.audience] ? ` · ${AUD[r.audience]}` : ""}</span>
+                  <span className="rn">{r.name}{AUD[r.audience] && !/ab dışı|ab vatandaş/i.test(r.name) ? ` · ${AUD[r.audience]}` : ""}</span>
                   <span className="num">{fmtRange(r.open, r.deadline)}</span>
                   {i.offered !== "no" && <Countdown s={r.open} e={r.deadline} />}
                 </div>

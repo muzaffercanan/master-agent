@@ -1,0 +1,63 @@
+{
+  "code": "de",
+  "name": "Almanya",
+  "flag": "🇩🇪",
+  "currency": "EUR",
+  "terms": {
+    "winter": { "name": "Kış (WiSe)", "starts": "Ekim" },
+    "summer": { "name": "Yaz (SoSe)", "starts": "Nisan" }
+  },
+  "summary": "Devlet üniversitelerinin çoğunda öğrenim ücretsiz; yalnızca dönem katkı payı (Semesterbeitrag) ödenir. İstisnalar: Baden-Württemberg'de AB dışı öğrencilere dönem başına 1.500 €, TUM'da AB dışı yeni öğrencilere 4.000–6.000 €. Vize için bloke hesap gerekir. Başvurular çoğunlukla uni-assist veya üniversite portalından yapılır; not, Bavyera formülüyle Alman sistemine çevrilir.",
+  "gpaConversion": {
+    "method": "bavarian",
+    "nMax": 4,
+    "nMin": 1,
+    "status": "tahmin",
+    "note": "Bavyera formülünde Türk 4'lük sistemi için en düşük geçer not (Nmin) üniversiteye ve anabin kaydına göre 1.0 ya da 2.0 alınabiliyor. Nmin=1 ile 2.75 → 2.25, Nmin=2 ile 2.75 → 2.88. Almanya araştırmandaki hesap 2.2–2.3 idi (Nmin=1). Hedef üniversitenin hangi değeri kullandığını kontrol et."
+  },
+  "facts": [
+    { "label": "Bloke hesap (vize)", "value": "2026 için yıllık 11.904 € (ayda 992 €). Başvuru aşamasında ya da Studienkolleg'de daha yüksek oran (~1.091 €/ay) uygulanır.", "status": "kesin" },
+    { "label": "Öğrenim ücreti", "value": "Devlet üniversitelerinin çoğunda yok; her dönem katkı payı ödenir (TUM'da 97 €). Bazı eyalet ve üniversitelerde AB dışı öğrenci ücreti var.", "status": "kesin" },
+    { "label": "Baden-Württemberg", "value": "AB/AEA dışından öğrenim için gelen öğrencilere dönem başına 1.500 € (2017/18'den beri; kaldırılmadı).", "status": "kesin" },
+    { "label": "TUM (Bavyera)", "value": "AB dışı yeni yüksek lisans öğrencilerine dönem başına 4.000 veya 6.000 €. 2027/28 kışından itibaren 4.600 veya 6.800 €. Türk vatandaşları için istisna yalnızca ebeveyn Almanya'da en az 1 yıl çalışmış ve öğrenci onunla Almanya'da yaşıyorsa.", "status": "kesin" },
+    { "label": "uni-assist ücreti", "value": "İlk başvuru 75 €, aynı dönemde her ek başvuru 30 € (VPD de aynı ücretlendirme).", "status": "tahmin" },
+    { "label": "Tipik son başvurular (AB dışı)", "value": "Kış dönemi için çoğunlukla 31 Mayıs veya 15 Temmuz; yaz dönemi için 30 Kasım veya 15 Ocak. Program sayfasından doğrula.", "status": "tahmin" }
+  ],
+  "regionalFees": [
+    {
+      "region": "Baden-Württemberg",
+      "fee": { "amount": 1500, "currency": "EUR", "per": "semester" },
+      "appliesTo": "non-eu",
+      "status": "kesin",
+      "note": "Almanya'da lise diploması alanlar muaf. İkinci yüksek lisans için 650 €/dönem."
+    }
+  ],
+  "scholarships": [
+    {
+      "name": "Deutschlandstipendium",
+      "provider": "Federal hükümet + özel bağışçılar (üniversite üzerinden)",
+      "coverage": "Gelirden bağımsız, her uyruğa açık; en az 2 dönem. Başvuru üniversiteye, tarihler üniversiteye göre değişir.",
+      "amount": { "amount": 300, "currency": "EUR", "per": "month" },
+      "audience": "all",
+      "status": "kesin"
+    },
+    {
+      "name": "DAAD Study Scholarships (yüksek lisans)",
+      "provider": "DAAD",
+      "coverage": "Aylık burs + seyahat ve sigorta desteği. Son başvuru ülkeye göre (2026 sonbaharı – Ocak 2027); Türkiye'den başvuruya açık olup olmadığını DAAD Türkiye veritabanından kontrol et.",
+      "amount": { "amount": 992, "currency": "EUR", "per": "month" },
+      "audience": "non-eu",
+      "link": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/",
+      "status": "tahmin"
+    }
+  ],
+  "timeline": [],
+  "sources": [
+    { "label": "TUM: AB dışı öğrenim ücretleri", "url": "https://www.tum.de/en/studies/fees/tuition" },
+    { "label": "Studis Online: Baden-Württemberg ücretleri", "url": "https://www.studis-online.de/studiengebuehren/bawue.php" },
+    { "label": "Auswärtiges Amt: bloke hesap", "url": "https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756" },
+    { "label": "Uni Koblenz: uni-assist ücretleri", "url": "https://www.uni-koblenz.de/de/international/incomings/vollzeistudierende/jetzt-bewerben/bewerbung-ueber-uni-assist" },
+    { "label": "DAAD burs veritabanı (Türkiye)", "url": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/" }
+  ],
+  "verifiedAt": "2026-10-24"
+}

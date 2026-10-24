@@ -1,0 +1,73 @@
+{
+  "id": "polimi",
+  "country": "it",
+  "name": "Politecnico di Milano",
+  "short": "PoliMi",
+  "city": "Milano",
+  "region": "Lombardia",
+  "type": "state",
+  "languages": ["en", "it"],
+  "rankings": {},
+  "intakes": [
+    {
+      "term": "fall",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [
+        { "name": "erken (early bird)", "open": "2026-10-01", "deadline": "2026-12-01", "audience": "all" },
+        { "name": "2. çağrı", "open": "2027-01-13", "deadline": "2027-02-26", "audience": "non-eu" }
+      ],
+      "status": "kesin",
+      "note": "Erken başvuru (1 Ekim – 1 Aralık 2026, başvuru ücreti 50 €; 2 Aralık'tan sonra 150 €) resmi sayfadan. 2. çağrı tarihleri üçüncü taraf kaynaklardan; resmi sayfada doğrula. Eylül 2027'deki ek çağrı yalnızca AEA vatandaşları ve İtalya'da yaşayanlar için."
+    },
+    { "term": "spring", "cycle": "2027-28", "offered": "unknown", "rounds": [], "status": "tahmin", "note": "Bazı programlar Şubat başlangıçlı alım yapıyor; program sayfasından kontrol et." }
+  ],
+  "requirements": {
+    "portal": "PoliMi online başvuru → kabul → Universitaly ön kaydı → vize",
+    "documents": ["Transkript", "Diploma / mezuniyet belgesi", "CV", "Niyet mektubu", "İngilizce belgesi", "DOV veya CIMEA belgesi (kayıt aşamasında)"]
+  },
+  "costs": {
+    "tuition": {
+      "kind": "paid",
+      "fee": { "amount": 3883.04, "currency": "EUR", "per": "year" },
+      "note": "2026/27 tam tutar: 880,04 € + en fazla 3.003 €. Yabancı lisans diplomalı, burssuz AB dışı YL öğrencisi tam tutarı öder."
+    },
+    "regionalFee": {
+      "region": "Lombardia",
+      "fee": { "amount": 190, "currency": "EUR", "per": "year" },
+      "appliesTo": "all",
+      "status": "kesin",
+      "note": "ISEE belgesi verilirse 130 veya 160 €."
+    },
+    "applicationFee": { "amount": 50, "currency": "EUR", "per": "once" },
+    "note": "Ayrıca 16 € damga vergisi ve yaklaşık 11 € sigorta."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Başvurular dönem başına birkaç çağrı halinde yapılır; erken çağrıda başvuru ücreti düşük. Kabul sonrasında Universitaly ön kaydı ve vize süreci başlar. PoliMi sitesi otomatik erişimi engellediği için program bazındaki şartlar (İngilizce eşiği, ön koşul dersleri) üçüncü taraf kaynaklardan; resmi program sayfasında doğrulanmalı.",
+  "people": [],
+  "links": [
+    { "label": "Program: Computer Science and Engineering", "url": "https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/computer-science-and-engineering" },
+    { "label": "Öğrenim ücretleri", "url": "https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/tuition-fees" }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science-and-engineering",
+      "name": "Computer Science and Engineering",
+      "degree": "Laurea Magistrale (MSc)",
+      "levels": ["master-thesis"],
+      "fields": ["core", "ai"],
+      "languages": ["en"],
+      "durationSemesters": 4,
+      "ects": 120,
+      "requirements": {
+        "english": { "ielts": 6, "note": "IELTS 6.0 üçüncü taraf kaynaklardan; resmi çağrıdan doğrula." },
+        "gpa": { "note": "Üçüncü taraf kaynaklara göre 4 yıllık lisansta yaklaşık %70 ortalama." },
+        "note": "Bazı kaynaklar kontenjanlı ve giriş değerlendirmeli olduğunu söylüyor; program sayfasından doğrula."
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

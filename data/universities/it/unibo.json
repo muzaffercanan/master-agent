@@ -1,0 +1,54 @@
+{
+  "id": "unibo",
+  "country": "it",
+  "name": "Alma Mater Studiorum – Università di Bologna",
+  "short": "UniBo",
+  "city": "Bologna",
+  "region": "Emilia-Romagna",
+  "type": "state",
+  "languages": ["en", "it"],
+  "rankings": {},
+  "intakes": [],
+  "costs": {
+    "tuition": { "kind": "varies", "note": "ISEE'ye göre kademeli katkı payı; AB dışı ve yabancı gelir için ISEE parificato. Tam tutarı UniBo ücret sayfasından kontrol et." },
+    "regionalFee": { "region": "Emilia-Romagna", "fee": { "amount": 140, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "tahmin" }
+  },
+  "scholarships": [],
+  "admissionsSummary": "Her programın kendi çağrı (bando) belgesi var; tarihler ve İngilizce eşiği orada. AB dışı başvurular AB vatandaşlarınınkinden önce kapanır.",
+  "people": [],
+  "links": [{ "label": "Artificial Intelligence: kayıt şartları", "url": "https://corsi.unibo.it/2cycle/artificial-intelligence/how-to-enrol" }],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "degree": "Laurea Magistrale (MSc)",
+      "levels": ["master-thesis"],
+      "fields": ["ai"],
+      "languages": ["en"],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "fall",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [{ "name": "AB dışı", "deadline": "2027-04-09", "audience": "non-eu" }],
+          "status": "tahmin",
+          "note": "Tarih MastersPortal'dan; başka bir kaynak 21 Kasım 2026 veriyor. Kesin tarih 2027/28 çağrı belgesinde. Başlangıç Ekim 2027."
+        }
+      ],
+      "requirements": {
+        "english": { "note": "Resmi sayfa programa göre IELTS 5.5–6.5 aralığı veriyor; bu program için çağrı belgesinden doğrula." },
+        "ects": { "areas": [], "note": "Bilgisayar bilimi, mühendislik veya matematik gibi listelenen bir alanda lisans gerekli." },
+        "documents": ["Transkript", "Diploma", "CV", "Lisans derslerinin özeti (syllabus, en fazla 4–5 sayfa)", "İngilizce belgesi"],
+        "interview": "Kişisel yeterlik değerlendirmesi (dosya + gerekirse görüşme).",
+        "otherLanguage": "Resmi sayfaya göre İtalyanca belgesi veya İtalyanca ders alma taahhüdü isteniyor; çağrıdan kontrol et.",
+        "portal": "UniBo Studenti Online + Universitaly ön kaydı"
+      },
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

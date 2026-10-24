@@ -1,0 +1,41 @@
+{
+  "code": "it",
+  "name": "İtalya",
+  "flag": "🇮🇹",
+  "currency": "EUR",
+  "terms": {
+    "fall": { "name": "Güz (I. semestre)", "starts": "Eylül–Ekim" },
+    "spring": { "name": "Bahar (II. semestre)", "starts": "Şubat–Mart" }
+  },
+  "summary": "Devlet üniversitelerinde katkı payı aile gelirine (ISEE) göre belirlenir. Yabancı lisans diplomasıyla gelen AB dışı öğrenciler burs almıyorsa çoğu yerde en üst tutarı öder (PoliMi'de yaklaşık 3.900 €/yıl). Üniversite başvurusuna ek olarak vize için Universitaly ön kaydı ve diploma denkliği (DOV veya CIMEA) gerekir. Her bölgenin ayrı bir 'diritto allo studio' vergisi ve gelire bağlı bölgesel bursları (DSU) var.",
+  "facts": [
+    { "label": "Başvuru yolu", "value": "Önce üniversiteye başvuru ve kabul, sonra Universitaly ön kaydı (vize için zorunlu). Son tarihler üniversiteye göre değişir.", "status": "kesin" },
+    { "label": "Vize son tarihi", "value": "Yüksek lisans için ulusal vize başvurusu 2026/27'de 30 Kasım 2026'ya kadar; 2027/28 için 31 Ekim 2027 bildiriliyor (bakanlıktan doğrula).", "status": "tahmin" },
+    { "label": "Öğrenim ücreti", "value": "ISEE'ye göre kademeli. AB dışı öğrenciler 'ISEE parificato' ile kademeye girebilir; ancak örneğin PoliMi'de yabancı diplomalı ve burssuz AB dışı YL öğrencisi tam tutarı öder.", "status": "kesin" },
+    { "label": "Bölgesel vergi", "value": "Tassa regionale per il diritto allo studio. Lombardia 2026/27: ISEE'ye göre 130 / 160 / 190 € (belge yoksa 190 €). Lazio ve Emilia-Romagna yaklaşık 140 €.", "status": "kesin" },
+    { "label": "Diploma denkliği", "value": "Dichiarazione di Valore (DOV, İtalyan konsolosluğu) ya da CIMEA karşılaştırma belgesi.", "status": "kesin" }
+  ],
+  "regionalFees": [
+    { "region": "Lombardia", "fee": { "amount": 190, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "kesin", "note": "2026/27: ISEE ≤ 26.887,93 € → 130 €, ≤ 53.775,88 € → 160 €, üstü veya belge yoksa 190 €." },
+    { "region": "Lazio", "fee": { "amount": 140, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "tahmin", "note": "Lazio DiSCo sayfasındaki tutar; yılı belirtilmemiş." },
+    { "region": "Emilia-Romagna", "fee": { "amount": 140, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "tahmin", "note": "Bölge maliye sayfası; 2026/27 güncellemesi bulunamadı." }
+  ],
+  "scholarships": [
+    {
+      "name": "Bölgesel DSU bursu (borsa di studio)",
+      "provider": "Bölgesel kurumlar (DSU Lombardia, Lazio DiSCo, ER.GO, EDISU Piemonte…)",
+      "coverage": "Gelire bağlı burs; çoğunlukla yurt ve yemek desteği ile katkı payı muafiyeti. ISEE parificato (Türkiye'deki gelir belgeleri) gerekir; başvurular genelde yaz aylarında.",
+      "audience": "all",
+      "status": "kesin"
+    }
+  ],
+  "timeline": [],
+  "sources": [
+    { "label": "PoliMi: öğrenim ücretleri 2026/27", "url": "https://www.polimi.it/en/students/tuition-fees-scholarships-and-financial-aid/tuition-fees" },
+    { "label": "UniPi: Universitaly ön kaydı (AB dışı)", "url": "https://www.unipi.it/en/education/registration/enrolment-and-registration/enrolment-for-international-students/pre-registration-on-universitaly/" },
+    { "label": "Lazio DiSCo: bölgesel vergi", "url": "https://laziodisco.it/tasse-regionali/la-tassa-per-il-diritto-allo-studio/" },
+    { "label": "Emilia-Romagna: bölgesel vergi", "url": "https://finanze.regione.emilia-romagna.it/tributi-regionali/tasse/diritto-allo-studio/come-si-paga" },
+    { "label": "Lombardia: DSU bursları 2026/27", "url": "https://www.regione.lombardia.it/istruzione-formazione-e-lavoro/universita-e-formazione-accademica/borse-di-studio-universitarie-2026-2027" }
+  ],
+  "verifiedAt": "2026-10-24"
+}

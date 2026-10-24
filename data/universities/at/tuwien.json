@@ -1,0 +1,75 @@
+{
+  "id": "tuwien",
+  "country": "at",
+  "name": "Technische Universität Wien",
+  "short": "TU Wien",
+  "city": "Viyana",
+  "region": "Wien",
+  "type": "state",
+  "languages": ["en", "de"],
+  "rankings": {},
+  "intakes": [
+    {
+      "term": "summer",
+      "cycle": "2027",
+      "offered": "yes",
+      "rounds": [{ "name": "AB dışı", "open": "2026-07-16", "deadline": "2027-01-15", "audience": "non-eu" }],
+      "status": "kesin",
+      "note": "AB/AEA vatandaşları için genel kabul dönemi 7 Ocak – 31 Mart 2027."
+    },
+    {
+      "term": "winter",
+      "cycle": "2027-28",
+      "offered": "yes",
+      "rounds": [{ "name": "AB dışı", "open": "2027-01-16", "deadline": "2027-07-15", "audience": "non-eu" }],
+      "status": "tahmin",
+      "note": "2026/27 kışı için pencere 16 Ocak – 15 Temmuz 2026 idi; 2027/28 için aynı düzen bekleniyor."
+    }
+  ],
+  "requirements": {
+    "english": { "ielts": 6.5, "toefl": 87, "cambridge": "C1 Advanced (160)", "note": "İngilizce programlar için B2. TOEFL yeni ölçekte 4,5." },
+    "ects": { "areas": [], "note": "Lisans müfredatı TU Wien'deki karşılığıyla karşılaştırılır; fark en fazla 30 ECTS ise ek derslerle kabul edilebilir (müfredat §4, Almanca)." },
+    "portal": "TU Wien online başvuru (TISS); belgeler postayla istenebilir"
+  },
+  "costs": {
+    "tuition": { "kind": "paid", "fee": { "amount": 726.72, "currency": "EUR", "per": "semester" }, "note": "AB dışı (üçüncü ülke) öğrenci ücreti." },
+    "semesterFee": { "amount": 26.2, "currency": "EUR", "per": "semester" }
+  },
+  "scholarships": [],
+  "admissionsSummary": "AB dışı başvuranlar her dönem için belirli bir pencere içinde eksiksiz başvuru yapmalı. Informatics yüksek lisans programları: Business Informatics, Data Science, Embedded Computing Systems, Logic and Artificial Intelligence, Media and Human-Centered Computing, Medical Informatics, QIST, Software Engineering, Visual Computing.",
+  "people": [],
+  "links": [
+    { "label": "Akademik takvim ve başvuru tarihleri", "url": "https://www.tuwien.at/en/studies/admission/academic-calendar" },
+    { "label": "Informatics yüksek lisans programları", "url": "https://informatics.tuwien.ac.at/master" }
+  ],
+  "sources": [{ "label": "İngilizce yeterlik", "url": "https://www.tuwien.at/en/studies/admission/masters-programmes/other-inter-national-bachelors-degree/competence-in-english" }],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "logic-and-artificial-intelligence",
+      "name": "Logic and Artificial Intelligence",
+      "degree": "MSc",
+      "levels": ["master-thesis"],
+      "fields": ["ai", "core"],
+      "languages": ["en"],
+      "durationSemesters": 4,
+      "ects": 120,
+      "notes": "İngilizce; B2 şartı resmi program sayfasında.",
+      "scholarships": [],
+      "links": [{ "label": "Program sayfası", "url": "https://informatics.tuwien.ac.at/master/logic-and-artificial-intelligence/" }]
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "degree": "MSc",
+      "levels": ["master-thesis"],
+      "fields": ["data", "ai"],
+      "languages": ["en"],
+      "durationSemesters": 4,
+      "ects": 120,
+      "notes": "Eğitim dili ve B2 şartı MastersPortal'dan; resmi program sayfasında doğrula.",
+      "scholarships": [],
+      "links": []
+    }
+  ]
+}

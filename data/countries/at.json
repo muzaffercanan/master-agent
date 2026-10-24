@@ -1,0 +1,28 @@
+{
+  "code": "at",
+  "name": "Avusturya",
+  "flag": "🇦🇹",
+  "currency": "EUR",
+  "terms": {
+    "winter": { "name": "Kış (WS)", "starts": "Ekim" },
+    "summer": { "name": "Yaz (SS)", "starts": "Mart" }
+  },
+  "summary": "Devlet üniversitelerinde AB dışı öğrenciler dönem başına 726,72 € öğrenim ücreti ve 26,20 € öğrenci birliği (ÖH) ücreti öder; yıllık toplam yaklaşık 1.506 €. Çoğu program iki dönemde de öğrenci alır. AB dışı başvuru pencereleri AB vatandaşlarınınkinden erken kapanır. İngilizce programlar genelde B2 seviyesi ister.",
+  "facts": [
+    { "label": "Öğrenim ücreti (AB dışı)", "value": "Dönem başına 726,72 €; ÖH ücretiyle birlikte 752,92 €.", "status": "kesin" },
+    { "label": "ÖH ücreti", "value": "2026/27 kış dönemi için 26,20 €.", "status": "kesin" },
+    { "label": "TU Wien AB dışı başvuru", "value": "Kış 2026/27 için 16 Ocak – 15 Temmuz 2026; yaz 2027 için 16 Temmuz 2026 – 15 Ocak 2027.", "status": "kesin" },
+    { "label": "İngilizce", "value": "TU Wien: B2 (IELTS 6.5, TOEFL iBT 87 / yeni ölçek 4,5, Cambridge C1 Advanced 160).", "status": "kesin" },
+    { "label": "Önceki eğitim uyumu", "value": "Lisans müfredatı Avusturya'daki karşılığıyla karşılaştırılır; eksikler ek ders olarak verilebilir (TU Wien'de en fazla 30 ECTS fark).", "status": "tahmin" }
+  ],
+  "regionalFees": [],
+  "scholarships": [],
+  "timeline": [],
+  "sources": [
+    { "label": "oesterreich.gv.at: Studienbeitrag", "url": "https://www.oesterreich.gv.at/de/themen/bildung_und_ausbildung/hochschulen/universitaet/1/1/1/Seite.160356" },
+    { "label": "mdw: Studienbeitrag ve ÖH", "url": "https://www.mdw.ac.at/StudienCenter/studienbeitrag/" },
+    { "label": "TU Wien: akademik takvim", "url": "https://www.tuwien.at/en/studies/admission/academic-calendar" },
+    { "label": "TU Wien: İngilizce yeterlik", "url": "https://www.tuwien.at/en/studies/admission/masters-programmes/other-inter-national-bachelors-degree/competence-in-english" }
+  ],
+  "verifiedAt": "2026-10-24"
+}
