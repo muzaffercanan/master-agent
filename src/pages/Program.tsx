@@ -22,7 +22,7 @@ export function ProgramPage() {
     <>
       <div className="page-head">
         <nav className="crumbs" aria-label="Konum">
-          <Link to="/programlar">Programlar</Link>›<Link to={`/ulke/${v.country.code}`}>{v.country.flag} {v.country.name}</Link>›<Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link>
+          <Link to="/programlar">Programlar</Link>›<Link to={`/ulke/${v.country.code}`}><span className="flag">{v.country.flag}</span> {v.country.name}</Link>›<Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link>
         </nav>
         <h1>{p.name}</h1>
         <p className="lede">{v.uni.name} · {v.uni.city}{v.uni.region ? `, ${v.uni.region}` : ""}</p>
@@ -46,7 +46,7 @@ export function ProgramPage() {
       <div className="detail">
         <div style={{ display: "grid", gap: 16 }}>
           <div className="panel">
-            <div className="btnrow" style={{ justifyContent: "space-between" }}>
+            <div className="panel-head">
               <h3>Başvuru şartları</h3>
               <EligBadge s={check.overall} />
             </div>

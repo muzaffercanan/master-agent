@@ -34,48 +34,62 @@ export function ProgramRow({ d }: { d: Derived }) {
 
   return (
     <article className={`prow${sl ? " sl" : ""}`}>
-      <div className="title">
-        <Link className="pname" to={`/program/${v.uni.id}/${v.program.id}`}>{v.program.name}</Link>
-        <span className="uni">
-          <span className="flag">{v.country.flag}</span> <Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link> · {v.uni.city}
-          {v.uni.region ? `, ${v.uni.region}` : ""}
-        </span>
-        <span className="meta">
-          <span className="chip">{v.program.degree}</span>
-          {v.program.languages.map(l => <span key={l} className="chip">{LANG_LABEL[l]}</span>)}
-          {v.program.levels.length === 1 && v.program.levels[0] !== "master" && <span className="chip">{LEVEL_LABEL[v.program.levels[0]]}</span>}
-        </span>
-      </div>
-      <div className="col">
-        <span className="k">Dönem ve son başvuru</span>
-        <TermTags intakes={v.intakes} labels={v.country.terms} />
-        {next ? (
-          <span>
-            {next.kind === "deadline" ? "Son gün" : "Açılış"} {fmt(next.date)} <Countdown s={next.kind === "open" ? next.date : undefined} e={next.kind === "deadline" ? next.date : undefined} />
-            {next.intake.status === "tahmin" && <span className="muted"> (tahmin)</span>}
+      <div className="prow-head">
+        <div className="title">
+          <Link className="pname" to={`/program/${v.uni.id}/${v.program.id}`}>{v.program.name}</Link>
+          <span className="school">
+            <span className="flag">{v.country.flag}</span> <Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link> · {v.uni.city}
+            {v.uni.region ? `, ${v.uni.region}` : ""}
           </span>
-        ) : (
-          <span className="muted">Yaklaşan tarih yok</span>
-        )}
-      </div>
-      <div className="col">
-        <span className="k">Şartlar · ücret</span>
-        <span>{reqBits.length ? reqBits.join(" · ") : <span className="muted">Şart verisi yok</span>}</span>
-        <span>
-          {costText(d)}
-          {d.cost.hasRegionalFee && <span className="muted"> · bölgesel ücret dahil</span>}
-          {v.scholarships.length > 0 && <span className="muted"> · {v.scholarships.length} burs</span>}
-        </span>
-      </div>
-      <div className="acts">
-        <EligBadge s={check.overall} short />
-        <div className="btnrow">
+          <span className="meta">
+            <span>{v.program.degree}</span>
+            {v.program.languages.map(l => <span key={l}>{LANG_LABEL[l]}</span>)}
+            {v.program.levels.length === 1 && v.program.levels[0] !== "master" && <span>{LEVEL_LABEL[v.program.levels[0]]}</span>}
+          </span>
+        </div>
+        <div className="acts">
+          <EligBadge s={check.overall} short />
           <StarButton on={sl} onClick={() => toggleShortlist(v.key)} />
           <button type="button" className={`btn sm${inCmp ? " on" : ""}`} onClick={() => toggleCompare(v.key)} disabled={!inCmp && compare.length >= 4} title={!inCmp && compare.length >= 4 ? "En fazla 4 program" : undefined}>
             {inCmp ? "Karşılaştırmada" : "Karşılaştır"}
           </button>
           {!tracker[v.key] && (
             <button type="button" className="btn sm" onClick={() => setTrack(v.key, { status: "araştırılıyor" })}>Takibe al</button>
+          )}
+        </div>
+      </div>
+      <div className="prow-facts">
+        <div className="fact">
+          <span className="k">Dönem</span>
+          <TermTags intakes={v.intakes} labels={v.country.terms} />
+        </div>
+        <div className="fact">
+          <span className="k">Sonraki tarih</span>
+          {next ? (
+            <>
+              <span className="when">
+                {next.kind === "deadline" ? "Son gün" : "Açılış"} <span className="num">{fmt(next.date)}</span>
+                {next.intake.status === "tahmin" && <span className="muted"> (tahmin)</span>}
+              </span>
+              <Countdown s={next.kind === "open" ? next.date : undefined} e={next.kind === "deadline" ? next.date : undefined} />
+            </>
+          ) : (
+            <span className="muted">Yaklaşan tarih yok</span>
+          )}
+        </div>
+        <div className="fact">
+          <span className="k">Şartlar</span>
+          <span>{reqBits.length ? reqBits.join(" · ") : <span className="muted">Şart verisi yok</span>}</span>
+        </div>
+        <div className="fact">
+          <span className="k">Yıllık ücret</span>
+          <span className="cost">{costText(d)}</span>
+          {(d.cost.hasRegionalFee || v.scholarships.length > 0) && (
+            <span className="muted small">
+              {d.cost.hasRegionalFee && "bölgesel ücret dahil"}
+              {d.cost.hasRegionalFee && v.scholarships.length > 0 && " · "}
+              {v.scholarships.length > 0 && `${v.scholarships.length} burs`}
+            </span>
           )}
         </div>
       </div>

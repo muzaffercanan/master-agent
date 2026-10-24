@@ -11,7 +11,7 @@ const AUD: Record<string, string> = { all: "", eu: "AB vatandaşları", "non-eu"
 export function IntakeList({ intakes, country }: { intakes: Intake[]; country: Country }) {
   if (!intakes.length) return <p className="muted small">Dönem ve tarih bilgisi henüz girilmedi.</p>;
   return (
-    <div style={{ display: "grid", gap: 8 }}>
+    <div className="intakes">
       {intakes.map((i, n) => (
         <div key={n} className={`intake${i.offered === "no" ? " no" : ""}`}>
           <div className="ih">

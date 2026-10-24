@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useId, useMemo, useState, type ReactNode } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { applyFilters, DEFAULT_FILTERS, derive, parseFilters, serializeFilters, type Filters } from "../lib/filters";
 import { today } from "../lib/dates";
@@ -8,6 +8,25 @@ import { useStore } from "../state/store";
 import { ProgramRow } from "../components/ProgramRow";
 
 type ListKey = "country" | "city" | "uni" | "field" | "level" | "lang" | "term";
+
+/** Collapsible filter section. Starts open when asked to, or when it holds an active filter. */
+function FilterGroup({ title, count = 0, clear, defaultOpen = true, children }: { title: string; count?: number; clear?: () => void; defaultOpen?: boolean; children: ReactNode }) {
+  const [open, setOpen] = useState(defaultOpen || count > 0);
+  const id = useId();
+  return (
+    <div className="fgroup">
+      <div className="fgroup-head">
+        <button type="button" className="fgroup-toggle" aria-expanded={open} aria-controls={id} onClick={() => setOpen(o => !o)}>
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3" /></svg>
+          {title}
+          {count > 0 && <span className="fcount" aria-label={`${count} seçili`}>{count}</span>}
+        </button>
+        {clear && <button type="button" className="fclear" onClick={clear}>temizle</button>}
+      </div>
+      <div className="fgroup-body" id={id} hidden={!open}>{children}</div>
+    </div>
+  );
+}
 
 export function ProgramsPage() {
   const [sp, setSp] = useSearchParams();
@@ -38,7 +57,7 @@ export function ProgramsPage() {
   const unis = [...new Map(inCity.map(v => [v.uni.id, v.uni])).values()].sort((a, b) => a.short.localeCompare(b.short, "tr"));
   const hasForeign = views.some(v => v.uni.country !== "tr");
 
-  const chips = (k: ListKey, opts: [string, string, number?][]) => (
+  const chips = (k: ListKey, opts: [string, ReactNode, number?][]) => (
     <div className="chips">
       {opts.map(([v, label, n]) => (
         <button key={v} type="button" className="chipbtn" aria-pressed={f[k].includes(v)} onClick={() => toggle(k, v)}>
@@ -48,14 +67,8 @@ export function ProgramsPage() {
       ))}
     </div>
   );
-  const group = (title: string, children: ReactNode, clear?: () => void) => (
-    <div className="fgroup">
-      <span className="k">
-        {title}
-        {clear && <button type="button" onClick={clear}>temizle</button>}
-      </span>
-      {children}
-    </div>
+  const group = (title: string, children: ReactNode, clear?: () => void, count = 0, defaultOpen = true) => (
+    <FilterGroup title={title} count={count} clear={clear} defaultOpen={defaultOpen}>{children}</FilterGroup>
   );
   const num = (k: "due" | "maxEur" | "maxIelts" | "maxGpa", placeholder: string, step = 1) => (
     <input type="number" step={step} min={0} placeholder={placeholder} value={f[k] ?? ""} onChange={e => set({ [k]: e.target.value === "" ? null : parseFloat(e.target.value) } as Partial<Filters>)} />
@@ -94,9 +107,8 @@ export function ProgramsPage() {
 
       <div className="explorer">
         <aside className={`fpanel${panelOpen ? " open" : ""}`} aria-label="Filtreler">
-          <div className="fgroup">
-            <span className="k">Ara</span>
-            <input type="search" value={f.q} placeholder="Program, okul, hoca…" onChange={e => set({ q: e.target.value })} />
+          <div className="fsearch">
+            <input type="search" value={f.q} placeholder="Program, okul, hoca…" aria-label="Listede ara" onChange={e => set({ q: e.target.value })} />
           </div>
           {group(
             "Kapsam",
@@ -105,19 +117,23 @@ export function ProgramsPage() {
                 <button key={v} type="button" className="chipbtn" aria-pressed={f.scope === v} onClick={() => set({ scope: v, country: [], city: [], uni: [] })} disabled={v === "abroad" && !hasForeign}>{l}</button>
               ))}
             </div>,
+            undefined,
+            f.scope ? 1 : 0,
           )}
-          {group("Ülke", chips("country", countries.filter(c => countryCounts.has(c.code)).map(c => [c.code, `${c.flag} ${c.name}`, countryCounts.get(c.code)])), f.country.length ? () => set({ country: [], city: [], uni: [] }) : undefined)}
-          {group("Şehir / bölge", chips("city", [...cityCounts.entries()].sort((a, b) => a[0].localeCompare(b[0], "tr")).map(([c, n]) => [c, c, n])), f.city.length ? () => set({ city: [], uni: [] }) : undefined)}
+          {group("Ülke", chips("country", countries.filter(c => countryCounts.has(c.code)).map(c => [c.code, <><span className="flag">{c.flag}</span> {c.name}</>, countryCounts.get(c.code)])), f.country.length ? () => set({ country: [], city: [], uni: [] }) : undefined, f.country.length)}
+          {group("Şehir / bölge", chips("city", [...cityCounts.entries()].sort((a, b) => a[0].localeCompare(b[0], "tr")).map(([c, n]) => [c, c, n])), f.city.length ? () => set({ city: [], uni: [] }) : undefined, f.city.length, false)}
           {group(
             "Okul",
             <select value="" onChange={e => e.target.value && toggle("uni", e.target.value)}>
               <option value="">Okul ekle…</option>
               {unis.filter(u => !f.uni.includes(u.id)).map(u => <option key={u.id} value={u.id}>{u.short} ({uniCounts.get(u.id)})</option>)}
             </select>,
+            undefined,
+            f.uni.length,
           )}
-          {group("Alan", chips("field", Object.keys(data.fields).filter(k => fieldCounts.has(k)).map(k => [k, data.fields[k].n.split(" / ")[0].split(":")[0], fieldCounts.get(k)])), f.field.length ? () => set({ field: [] }) : undefined)}
-          {group("Derece", chips("level", (["master-thesis", "master-nonthesis", "phd"] as const).map(k => [k, LEVEL_LABEL[k]])))}
-          {group("Eğitim dili", chips("lang", [...new Set(views.flatMap(v => v.program.languages))].map(k => [k, LANG_LABEL[k]])))}
+          {group("Alan", chips("field", Object.keys(data.fields).filter(k => fieldCounts.has(k)).map(k => [k, data.fields[k].n.split(" / ")[0].split(":")[0], fieldCounts.get(k)])), f.field.length ? () => set({ field: [] }) : undefined, f.field.length, false)}
+          {group("Derece", chips("level", (["master-thesis", "master-nonthesis", "phd"] as const).map(k => [k, LEVEL_LABEL[k]])), undefined, f.level.length)}
+          {group("Eğitim dili", chips("lang", [...new Set(views.flatMap(v => v.program.languages))].map(k => [k, LANG_LABEL[k]])), undefined, f.lang.length)}
           {group(
             "Başvuru dönemi",
             <>
@@ -130,6 +146,8 @@ export function ProgramsPage() {
               </div>
               <span className="hint">Gün filtresi: son başvurusu bu süre içinde olanlar</span>
             </>,
+            undefined,
+            f.term.length + (f.single ? 1 : 0) + (f.due != null ? 1 : 0),
           )}
           {group(
             "Şartlar",
@@ -140,33 +158,34 @@ export function ProgramsPage() {
               </div>
               <label className="check"><input type="checkbox" checked={f.noAles} onChange={e => set({ noAles: e.target.checked })} /> ALES istemeyen</label>
               <label className="check"><input type="checkbox" checked={f.noGre} onChange={e => set({ noGre: e.target.checked })} /> GRE zorunlu olmayan</label>
-              <span className="hint">IELTS şartı en fazla</span>
-              {num("maxIelts", "örn. 6.5", 0.5)}
-              <span className="hint">GNO şartı en fazla (4'lük)</span>
-              {num("maxGpa", "örn. 2.75", 0.05)}
+              <label className="subfield"><span className="hint">IELTS şartı en fazla</span>{num("maxIelts", "örn. 6.5", 0.5)}</label>
+              <label className="subfield"><span className="hint">GNO şartı en fazla (4'lük)</span>{num("maxGpa", "örn. 2.75", 0.05)}</label>
             </>,
+            undefined,
+            (f.elig ? 1 : 0) + (f.noAles ? 1 : 0) + (f.noGre ? 1 : 0) + (f.maxIelts != null ? 1 : 0) + (f.maxGpa != null ? 1 : 0),
           )}
           {group(
             "Ücret ve burs",
             <>
               <label className="check"><input type="checkbox" checked={f.free} onChange={e => set({ free: e.target.checked })} /> Ücretsiz</label>
-              <span className="hint">Yıllık toplam en fazla (€, ücret + dönem + bölgesel)</span>
-              {num("maxEur", "örn. 3000", 100)}
+              <label className="subfield"><span className="hint">Yıllık toplam en fazla (€, ücret + dönem + bölgesel)</span>{num("maxEur", "örn. 3000", 100)}</label>
               <div className="chips">
                 <button type="button" className="chipbtn" aria-pressed={f.regional === "no"} onClick={() => set({ regional: f.regional === "no" ? "" : "no" })}>Bölgesel ücret yok</button>
                 <button type="button" className="chipbtn" aria-pressed={f.regional === "yes"} onClick={() => set({ regional: f.regional === "yes" ? "" : "yes" })}>var</button>
               </div>
               <label className="check"><input type="checkbox" checked={f.schol} onChange={e => set({ schol: e.target.checked })} /> Okul veya program bursu olan</label>
             </>,
+            undefined,
+            (f.free ? 1 : 0) + (f.maxEur != null ? 1 : 0) + (f.regional ? 1 : 0) + (f.schol ? 1 : 0),
           )}
-          {group("Liste", <label className="check"><input type="checkbox" checked={f.sl} onChange={e => set({ sl: e.target.checked })} /> Yalnızca kısa listem ({shortlist.length})</label>)}
+          {group("Liste", <label className="check"><input type="checkbox" checked={f.sl} onChange={e => set({ sl: e.target.checked })} /> Yalnızca kısa listem ({shortlist.length})</label>, undefined, f.sl ? 1 : 0)}
         </aside>
 
         <section aria-label="Sonuçlar" style={{ padding: 0, border: 0 }}>
           <div className="results-bar">
             <span className="count"><b>{results.length}</b> / {views.length} program</span>
             <div className="btnrow">
-              <button type="button" className="btn sm fpanel-toggle" onClick={() => setPanelOpen(o => !o)}>{panelOpen ? "Filtreleri gizle" : "Filtreler"}</button>
+              <button type="button" className="btn sm fpanel-toggle" onClick={() => setPanelOpen(o => !o)} aria-expanded={panelOpen}>{panelOpen ? "Filtreleri gizle" : "Filtreler"}{active.length > 0 && <span className="fcount">{active.length}</span>}</button>
               <label className="small muted" htmlFor="sort">Sırala</label>
               <select id="sort" value={f.sort} onChange={e => set({ sort: e.target.value as Filters["sort"] })}>
                 <option value="deadline">Yaklaşan son başvuru</option>

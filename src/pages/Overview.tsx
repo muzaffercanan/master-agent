@@ -45,12 +45,12 @@ export function OverviewPage() {
       <div className="cards">
         <Link className="card" to="/programlar?scope=tr">
           <span className="eyebrow">Türkiye</span>
-          <h3>🇹🇷 Türkiye programları</h3>
+          <h3>Türkiye programları</h3>
           <span className="small muted">{progs(tr)} program · {tr.length} okul</span>
         </Link>
         <Link className="card" to="/programlar?scope=abroad">
           <span className="eyebrow">Yurt dışı</span>
-          <h3>🌍 Yurt dışı programları</h3>
+          <h3>Yurt dışı programları</h3>
           <span className="small muted">{abroad.length ? `${progs(abroad)} program · ${abroad.length} okul` : "Veri ekleniyor: Almanya, İtalya, Avusturya"}</span>
         </Link>
         <Link className="card" to="/programlar?elig=ok">
@@ -73,13 +73,13 @@ export function OverviewPage() {
         <div className="panel">
           <h3>Önümüzdeki 60 gün</h3>
           {upcoming.length ? (
-            <ul className="reqlist">
+            <ul className="reqlist datelist">
               {upcoming.slice(0, 14).map(e => {
                 const c = countdown(e.s, e.e, T);
                 return (
                   <li key={e.uid}>
                     <span className="rk num">{e.e ? fmtRange(e.s, e.e) : fmt(e.s)}</span>
-                    <span>{e.country.flag} {e.href ? <Link to={e.href}>{e.t}</Link> : e.t} <StatusPill k={e.k} /></span>
+                    <span><span className="flag">{e.country.flag}</span> {e.href ? <Link to={e.href}>{e.t}</Link> : e.t} <StatusPill k={e.k} /></span>
                     <span className={`deadline${c.soon ? " soon" : ""}`}>{c.text}</span>
                   </li>
                 );
@@ -96,7 +96,7 @@ export function OverviewPage() {
             <ul className="reqlist">
               {slRows.map(({ v, next, check }) => (
                 <li key={v.key}>
-                  <span className="rk">{v.country.flag} {v.uni.short}</span>
+                  <span className="rk"><span className="flag">{v.country.flag}</span> {v.uni.short}</span>
                   <span>
                     <Link to={`/program/${v.key}`}>{v.program.name}</Link>
                     <span className="small muted"> · {next ? `${next.kind === "deadline" ? "son gün" : "açılış"} ${fmt(next.date)}` : "yaklaşan tarih yok"}</span>

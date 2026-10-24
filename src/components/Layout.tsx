@@ -64,12 +64,12 @@ export function Layout() {
             <span className="ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="11" cy="11" r="7" /><path d="M20 20l-4-4" /></svg></span>
             <input type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Program, okul, şehir ara…" aria-label="Program ara" />
           </form>
-          <Link className="iconbtn" to="/programlar?sl=1" title="Kısa listem">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M12 3.6l2.6 5.3 5.9.85-4.25 4.15 1 5.9L12 17l-5.25 2.8 1-5.9L3.5 9.75l5.9-.85z" /></svg>
+          <Link className="iconbtn" to="/programlar?sl=1" title="Kısa listem" aria-label={`Kısa listem (${shortlist.length})`}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.9.85-4.25 4.15 1 5.9L12 17l-5.25 2.8 1-5.9L3.5 9.75l5.9-.85z" /></svg>
             <span className="n">{shortlist.length}</span>
           </Link>
-          <button className="iconbtn" type="button" onClick={toggle} aria-label={dark ? "Açık temaya geç" : "Koyu temaya geç"}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+          <button className="iconbtn" type="button" onClick={toggle} aria-label={dark ? "Açık temaya geç" : "Koyu temaya geç"} title={dark ? "Açık temaya geç" : "Koyu temaya geç"}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
               {dark ? <><circle cx="12" cy="12" r="4.2" /><path d={SUN} /></> : <path d="M20 14.2A8.4 8.4 0 019.8 4 8.4 8.4 0 1020 14.2z" />}
             </svg>
           </button>

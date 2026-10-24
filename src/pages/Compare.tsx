@@ -51,9 +51,9 @@ export function ComparePage() {
             <tr>
               <th />
               {cols.map(c => (
-                <th key={c.v.key} style={{ textTransform: "none", letterSpacing: 0, fontFamily: "var(--sans)", fontSize: ".9rem", whiteSpace: "normal", color: "var(--ink)" }}>
+                <th key={c.v.key} className="cmp-col">
                   <Link to={`/program/${c.v.key}`}>{c.v.program.name}</Link>
-                  <div className="small muted">{c.v.country.flag} {c.v.uni.short} · {c.v.uni.city}</div>
+                  <div className="small muted"><span className="flag">{c.v.country.flag}</span> {c.v.uni.short} · {c.v.uni.city}</div>
                   <button type="button" className="btn sm" style={{ marginTop: 6 }} onClick={() => toggleCompare(c.v.key)}>Çıkar</button>
                 </th>
               ))}

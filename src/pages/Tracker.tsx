@@ -28,7 +28,7 @@ function TrackCard({ k, e }: { k: string; e: TrackEntry }) {
     <div className="panel trow">
       <div>
         <Link to={`/program/${k}`}><b>{v.program.name}</b></Link>
-        <div className="small muted">{v.country.flag} {v.uni.short} · {v.uni.city}</div>
+        <div className="small muted"><span className="flag">{v.country.flag}</span> {v.uni.short} · {v.uni.city}</div>
       </div>
       <div className="btnrow">
         <select value={e.status} onChange={x => setTrack(k, { status: x.target.value as TrackEntry["status"] })} aria-label="Durum">

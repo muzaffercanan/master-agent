@@ -26,26 +26,26 @@ export function UniversitiesPage() {
         <h1>Okullar</h1>
         <p className="lede">Ülke ve şehre göre gruplu. Okula tıkla: bütün programları, genel şartları, takvimi, ücret ve bursları tek sayfada.</p>
       </div>
-      <div className="btnrow">
+      <div className="toolbar">
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!c} onClick={() => set("c", "")}>Tümü <span className="n">{data.universities.length}</span></button>
           {countries.map(k => (
             <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}>
-              {k.flag} {k.name} <span className="n">{data.universities.filter(u => u.country === k.code).length}</span>
+              <span className="flag">{k.flag}</span> {k.name} <span className="n">{data.universities.filter(u => u.country === k.code).length}</span>
             </button>
           ))}
         </div>
-        <input type="search" placeholder="Okul veya şehir ara…" value={q} onChange={e => set("q", e.target.value)} style={{ marginLeft: "auto" }} aria-label="Okul ara" />
+        <input type="search" placeholder="Okul veya şehir ara…" value={q} onChange={e => set("q", e.target.value)} className="push" aria-label="Okul ara" />
       </div>
 
       {countries.filter(k => list.some(u => u.country === k.code)).map(k => {
         const inC = list.filter(u => u.country === k.code);
         const cities = [...new Set(inC.map(u => u.city))];
         return (
-          <section key={k.code} style={{ padding: 0, border: 0, display: "grid", gap: 14 }}>
-            <div className="city-title"><h3>{k.flag} {k.name}</h3><span className="eyebrow">{inC.length} okul</span></div>
+          <section key={k.code} className="country-group">
+            <div className="city-title"><h3><span className="flag">{k.flag}</span> {k.name}</h3><span className="eyebrow">{inC.length} okul</span></div>
             {cities.map(city => (
-              <div key={city} style={{ display: "grid", gap: 8 }}>
+              <div key={city} className="city-group">
                 <span className="eyebrow" style={{ color: "var(--muted)" }}>{city}</span>
                 <div className="cards">
                   {inC.filter(u => u.city === city).map(u => (

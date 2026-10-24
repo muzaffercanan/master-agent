@@ -23,7 +23,7 @@ export function CountriesPage() {
           const unis = data.universities.filter(u => u.country === c.code);
           return (
             <Link key={c.code} to={`/ulke/${c.code}`} className="card">
-              <h3>{c.flag} {c.name}</h3>
+              <h3><span className="flag">{c.flag}</span> {c.name}</h3>
               <span className="big">{unis.reduce((a, u) => a + u.programs.length, 0)}</span>
               <span className="small muted">program · {unis.length} okul</span>
               <p className="small">{c.summary}</p>
@@ -47,7 +47,7 @@ export function CountryPage() {
     <>
       <div className="page-head">
         <nav className="crumbs"><Link to="/ulkeler">Ülkeler</Link></nav>
-        <h1>{c.flag} {c.name}</h1>
+        <h1><span className="flag">{c.flag}</span> {c.name}</h1>
         <p className="lede">{c.summary}</p>
         <div className="btnrow">
           <Link className="btn primary" to={`/programlar?country=${c.code}`}>{unis.reduce((a, u) => a + u.programs.length, 0)} programı listele</Link>

@@ -39,10 +39,10 @@ export function CalendarPage() {
         <h1>Takvim</h1>
         <p className="lede">Sınavlar, burs çağrıları ve başvuru dönemleri. Kalan gün sayısı bugüne göre hesaplanır. "Takvime aktar" ile görünen olayları telefonuna veya Google Takvim'e ekleyebilirsin.</p>
       </div>
-      <div className="btnrow">
+      <div className="toolbar">
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!c} onClick={() => set("c", "")}>Tüm ülkeler</button>
-          {countries.map(k => <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}>{k.flag} {k.name}</button>)}
+          {countries.map(k => <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}><span className="flag">{k.flag}</span> {k.name}</button>)}
         </div>
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!kind} onClick={() => set("kind", "")}>Hepsi</button>
@@ -51,7 +51,7 @@ export function CalendarPage() {
         </div>
         <label className="check"><input type="checkbox" checked={mine} onChange={e => set("sl", e.target.checked ? "1" : "")} /> Yalnızca kısa listemdeki okullar</label>
         <label className="check"><input type="checkbox" checked={past} onChange={e => set("past", e.target.checked ? "1" : "")} /> Geçmişi göster</label>
-        <button type="button" className="btn primary" onClick={exportIcs} disabled={!events.length} style={{ marginLeft: "auto" }}>Takvime aktar (.ics)</button>
+        <button type="button" className="btn primary push" onClick={exportIcs} disabled={!events.length}>Takvime aktar (.ics)</button>
       </div>
       <Timeline events={events} hidePast={!past} />
     </>

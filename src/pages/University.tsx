@@ -23,7 +23,7 @@ export function UniversityPage() {
     <>
       <div className="page-head">
         <nav className="crumbs" aria-label="Konum">
-          <Link to="/okullar">Okullar</Link>›<Link to={`/ulke/${country.code}`}>{country.flag} {country.name}</Link>›<span>{uni.city}</span>
+          <Link to="/okullar">Okullar</Link>›<Link to={`/ulke/${country.code}`}><span className="flag">{country.flag}</span> {country.name}</Link>›<span>{uni.city}</span>
         </nav>
         <h1>{uni.name}</h1>
         <div className="btnrow">
