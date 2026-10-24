@@ -1,0 +1,138 @@
+{
+  "id": "freiburg",
+  "country": "de",
+  "name": "Albert-Ludwigs-Universität Freiburg",
+  "short": "Freiburg Üni.",
+  "city": "Freiburg",
+  "region": "Baden-Württemberg",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "151–175"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yerine eyalet ücreti."
+    },
+    "regionalFee": {
+      "region": "Baden-Württemberg",
+      "fee": {
+        "amount": 1500,
+        "currency": "EUR",
+        "per": "semester"
+      },
+      "appliesTo": "non-eu",
+      "status": "kesin",
+      "note": "AB dışı öğrenci ücreti; Almanya'da lise diplomasıyla gelenler muaf. İkinci yüksek lisansta 650 €/dönem."
+    },
+    "semesterFee": {
+      "amount": 190,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "DAAD kaydına göre dönem katkı payı 190 € (80 € idari + 7 € öğrenci topluluğu + 103 € Studierendenwerk); AB dışı öğrenci ayrıca 1.500 €/dönem öder."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Embedded Systems Engineering (İngilizce) gömülü sistem / elektrik-elektronik lisansı ve elektrik mühendisliği bilgisi beklediği için bu listeye alınmadı; pencereleri AB dışı için yaz 1 Kasım – 15 Aralık, kış 1 Mart – 15 Mayıs.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "DAAD kaydı",
+      "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3736/"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai",
+        "robo"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2026-11-01",
+              "deadline": "2026-12-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB dışı adaylar için 1 Kasım – 15 Aralık 2026."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2027-04-15",
+              "deadline": "2027-05-31",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "AB dışı adaylar için 15 Nisan – 31 Mayıs."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 95,
+          "moiAccepted": false,
+          "note": "C1: IELTS Academic ≥ 7.0, TOEFL iBT ≥ 95, PTE ≥ 76, CAE, UNIcert III. Üniversitenin İngilizce eğitim yazısı yeterli sayılmıyor."
+        },
+        "gre": {
+          "policy": "optional",
+          "note": "İsteğe bağlı belge olarak GRE kabul ediliyor ('üç bölüm de önemli')."
+        },
+        "gpa": {
+          "note": "Asgari not yazmıyor; DAAD kaydı 'mükemmel' bir lisans ortalaması bekliyor."
+        },
+        "ects": {
+          "areas": [],
+          "note": "Bilgisayar bilimi, matematik veya yakın alan lisansı ve çok iyi matematik + teorik bilgisayar bilimi (biçimsel diller, otomata, hesaplanabilirlik, karmaşıklık, graf kuramı, algoritma tasarımı ve analizi). Kabul kurulu yönetmelikteki özel şartlara bakıyor."
+        },
+        "portal": "campus.uni-freiburg.de"
+      },
+      "notes": "Derslerin yaklaşık %5'i Almanca seçmeli; program Almanca bilmeden tamamlanabiliyor. Freiburg robotik ve ML'de güçlü.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.tf.uni-freiburg.de/mcs"
+        },
+        {
+          "label": "Kabul yönetmeliği (İngilizce çeviri, PDF)",
+          "url": "https://www.tf.uni-freiburg.de/en/studies-and-teaching/documents/ZulassungsordnungM.Sc.ComputerScience2022EN.pdf"
+        }
+      ]
+    }
+  ]
+}

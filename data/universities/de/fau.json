@@ -1,0 +1,328 @@
+{
+  "id": "fau",
+  "country": "de",
+  "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+  "short": "FAU",
+  "city": "Erlangen",
+  "region": "Bayern",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "126–150"
+    }
+  },
+  "intakes": [],
+  "scholarships": [],
+  "admissionsSummary": "FAU yaz 2027'den itibaren AB dışı yeni öğrencilerden öğrenim ücreti alıyor (programa göre 1.000–6.000 €/dönem; bu listedeki üç program 4.000 €). 'Informatik' M.Sc. Almanca (DSH 2) olduğu için eklenmedi; Computational Engineering (4.000 €), Autonomy Technologies (2.000 €), ICT ve CME (2.000 €) bu listeye alınmadı.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "FAU öğrenim ücretleri",
+      "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/"
+    },
+    {
+      "label": "FAU yüksek lisans bilgi föyü 2026 (PDF)",
+      "url": "https://www.fau.eu/wp-content/uploads/sites/6/2025/11/Master_degree_programmes_information_sheet.pdf"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2026-11-30",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru şu an açık; son gün 30 Kasım 2026. FAU, AB dışı adaylara erken başvurmalarını öneriyor."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.5,
+          "note": "Alman ölçeğinde 2,5 veya daha iyi. 2,6–2,8 arası adaylar analiz, lineer cebir, algoritmalar ve veri yapıları üzerine kısa bir çevrimiçi mülakata çağrılıyor."
+        },
+        "english": {
+          "note": "B2. Lisansı İngilizce olanlardan belge istenmiyor ama yine de sınav belgesi öneriliyor."
+        },
+        "ects": {
+          "areas": [],
+          "note": "Matematik, endüstri matematiği, bilgisayar bilimi, veri bilimi veya fizik lisansı; yetkinlik profilini başvurudan sonra kabul kurulu değerlendiriyor."
+        },
+        "portal": "campo.fau.de"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 4000,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "FAU, yaz 2027'den itibaren ilk kez kayıt olan AB dışı öğrenciden bu programda 4.000 €/dönem alıyor (Almanya'ya 'yerleşik bağı' olanlar ve bazı muafiyetler hariç). Ücret tablosu FAU sayfasında."
+        },
+        "semesterFee": {
+          "amount": 82,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "per": "once"
+        },
+        "note": "Dönem katkı payı 82 €. 2026/27 kışından beri AB dışı adaylardan başvuru başına 100 € işlem ücreti (dönem başına en fazla üç başvuru)."
+      },
+      "notes": "Matematik ve bilgisayar bölümlerinin ortak programı. Uzmanlık alanları: veriye dayalı optimizasyon, veri biliminin matematiksel temelleri, veritabanları ve bilgi temsili, ML/YZ, simülasyon ve sayısal yöntemler, istatistiksel veri analizi. Günlük hayat için B1 Almanca öneriliyor.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.fau.eu/degree-program/data-science-m-sc/"
+        },
+        {
+          "label": "Bölüm sayfası",
+          "url": "https://www.math-datascience.nat.fau.de/im-studium/master-studiengaenge/master-data-science/"
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-02-15",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "DAAD kaydına göre başvuru 15 Şubat'ta açılıyor."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yaz döneminde başlanamıyor."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "moiAccepted": true,
+          "note": "B2; ör. TOEFL (kâğıt) 560 veya lisansın İngilizce öğretildiğine dair üniversite yazısı."
+        },
+        "gre": {
+          "policy": "no",
+          "note": "GRE (veya GATE) yalnızca Lizbon Tanıma Sözleşmesi'ne taraf olmayan ülkelerin vatandaşlarından isteniyor; Türkiye taraf."
+        },
+        "ects": {
+          "areas": [],
+          "note": "'Mükemmel' bir bilgisayar bilimi (veya yakın alan / matematik) lisansı, 12 ECTS'lik bitirme tezi, sağlam programlama deneyimi ve kapsamlı matematik. Gerekli derslerin tanımları başvuruya eklenmeli."
+        },
+        "documents": [
+          "CV",
+          "Niyet mektubu",
+          "Lise diploması",
+          "Transkript",
+          "Gerekli derslerin tanımları",
+          "İngilizce belgesi"
+        ],
+        "portal": "campo.fau.de"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 4000,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "FAU, yaz 2027'den itibaren ilk kez kayıt olan AB dışı öğrenciden bu programda 4.000 €/dönem alıyor (Almanya'ya 'yerleşik bağı' olanlar ve bazı muafiyetler hariç). Ücret tablosu FAU sayfasında."
+        },
+        "semesterFee": {
+          "amount": 82,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "per": "once"
+        },
+        "note": "Dönem katkı payı 82 €. 2026/27 kışından beri AB dışı adaylardan başvuru başına 100 € işlem ücreti (dönem başına en fazla üç başvuru)."
+      },
+      "notes": "Üç ana sütun: sembolik YZ, alt-sembolik YZ (derin öğrenme, ML), YZ sistemleri ve uygulamaları; her birinden en az 10 ECTS. Tez İngilizce.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.fau.eu/degree-program/artificial-intelligence-ai-m-sc/"
+        },
+        {
+          "label": "Program sitesi",
+          "url": "https://www.ai.study.fau.eu/"
+        }
+      ]
+    },
+    {
+      "id": "international-information-systems",
+      "name": "International Information Systems (IIS)",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "is",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-15",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "DAAD kaydına göre başvuru 15 Nisan – 31 Mayıs."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yalnızca kış döneminde başlanıyor."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 100,
+          "note": "C1 (TOEFL iBT 100, IELTS 7.0)."
+        },
+        "ects": {
+          "areas": [],
+          "note": "İşletme, iktisat, mühendislik, doğa bilimleri, bilgisayar bilimi veya bilişim sistemleri lisansı."
+        },
+        "portal": "campo.fau.de"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 4000,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "FAU, yaz 2027'den itibaren ilk kez kayıt olan AB dışı öğrenciden bu programda 4.000 €/dönem alıyor (Almanya'ya 'yerleşik bağı' olanlar ve bazı muafiyetler hariç). Ücret tablosu FAU sayfasında."
+        },
+        "semesterFee": {
+          "amount": 82,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "applicationFee": {
+          "amount": 100,
+          "currency": "EUR",
+          "per": "once"
+        },
+        "note": "Dönem katkı payı 82 €. 2026/27 kışından beri AB dışı adaylardan başvuru başına 100 € işlem ücreti (dönem başına en fazla üç başvuru)."
+      },
+      "notes": "Nürnberg'de (işletme ve iktisat fakültesi). Yalnızca İngilizce derslerle tamamlanabiliyor; bazı seçmeliler Almanca.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sitesi",
+          "url": "https://iis.study.fau.eu/master/"
+        }
+      ]
+    }
+  ]
+}

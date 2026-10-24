@@ -1,0 +1,151 @@
+{
+  "id": "tuebingen",
+  "country": "de",
+  "name": "Eberhard Karls Universität Tübingen",
+  "short": "Tübingen Üni.",
+  "city": "Tübingen",
+  "region": "Baden-Württemberg",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "=89"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yerine eyalet ücreti."
+    },
+    "regionalFee": {
+      "region": "Baden-Württemberg",
+      "fee": {
+        "amount": 1500,
+        "currency": "EUR",
+        "per": "semester"
+      },
+      "appliesTo": "non-eu",
+      "status": "kesin",
+      "note": "AB dışı öğrenci ücreti; Almanya'da lise diplomasıyla gelenler muaf. İkinci yüksek lisansta 650 €/dönem."
+    },
+    "semesterFee": {
+      "amount": 200,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "Bölüm sayfasına göre dönem katkı payı yaklaşık 200 € (kesin tutar doğrulanmadı); AB dışı öğrenci ayrıca 1.500 €/dönem öder."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Computer Science M.Sc. Almanca C1 istediği için eklenmedi (İngilizce yalnızca seçmeliler). Medical Informatics (çoğunlukla İngilizce; DAAD kaydında AB dışı için 1.700 €/dönem) ve Quantitative Data Science Methods (yaklaşık 20 kredi sosyal/davranış bilimi istiyor) bu listeye alınmadı.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "DAAD International Programmes",
+      "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5634/"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-02-01",
+              "deadline": "2027-04-30",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru Şubat 2027'de açılıyor, son gün 30 Nisan 2027; geç başvuru kabul edilmiyor. Sonuçlar 4–6 hafta içinde."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Program yılda bir kez, yalnızca kış döneminde başlıyor."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.0,
+          "note": "Alman ölçeğinde en az 2,0 (2026/27 kışından itibaren; önceden daha gevşekti). Bölüm bunun kesin şart olduğunu, ML deneyiminin telafi etmediğini yazıyor."
+        },
+        "english": {
+          "ielts": 7,
+          "toefl": 100,
+          "moiAccepted": false,
+          "note": "Yalnızca IELTS Academic ≥ 7.0, TOEFL iBT ≥ 100 (yeni ölçekte 5.0), CAE ≥ 180 ya da İngilizce konuşulan ülkeden lise diploması. İngilizce eğitim belgesi (MOI) kabul edilmiyor; sertifika son günden sonra eklenemiyor."
+        },
+        "gre": {
+          "policy": "optional",
+          "note": "İstenmiyor; ek belge olarak yüklenebilir."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Matematik (tek/çok değişkenli analiz, lineer cebir, sayısal analiz veya olasılık)",
+              "min": 27
+            },
+            {
+              "area": "Bilgisayar bilimi (programlama, algoritmalar ve veri yapıları)",
+              "min": 18
+            },
+            {
+              "area": "Algoritmalar ve veri yapıları",
+              "min": 6
+            }
+          ],
+          "note": "27–33 ECTS arasında matematik derslerinin içeriğine (ispat yapabilme) bakılıyor; yalnızca ilgili ders tanımlarını yükle. Eksik dersler şartlı kabulle ya da çevrimiçi kurslarla telafi edilemiyor."
+        },
+        "documents": [
+          "Niyet mektubu (en fazla 2 sayfa)",
+          "CV (1 sayfa)",
+          "İngilizce sertifikası",
+          "Matematik, programlama ve algoritma derslerinin tanımları"
+        ],
+        "portal": "Tübingen çevrimiçi başvuru (başvuru ücreti yok)"
+      },
+      "notes": "Max Planck Akıllı Sistemler Enstitüsü ve Cyber Valley ile birlikte Avrupa'nın önde gelen ML merkezlerinden biri. GNO 2.75 (System 3) Bavyera formülüyle yaklaşık 2,25'e denk geliyor; bu programın 2,0 sınırının altında kalıyor.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Kabul ve başvuru",
+          "url": "https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/studium/studierende/lehre-studienorganisation/studiengaenge/machine-learning/admission-and-application/"
+        },
+        {
+          "label": "Program sayfası",
+          "url": "https://uni-tuebingen.de/en/140323"
+        }
+      ]
+    }
+  ]
+}

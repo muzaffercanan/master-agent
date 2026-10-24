@@ -1,0 +1,273 @@
+{
+  "id": "bonn",
+  "country": "de",
+  "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+  "short": "Bonn Üni.",
+  "city": "Bonn",
+  "region": "Nordrhein-Westfalen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "101–125"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "note": "Dönem katkı payı BASIS'te gösteriliyor; tutar doğrulanmadı."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Bölüm, AEA içinden yeterli aday olduğunda AB dışı adaylara yasal olarak az yer verebildiğini ve AB dışı kabulün bir yıl öncesine göre çok daha seçici hale geldiğini yazıyor. Life Science Informatics (b-it) ve Mobile Robotics (jeodezi) bu listeye alınmadı. Media Informatics, RWTH kaydında.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "Başvuru tarihleri",
+      "url": "https://www.informatik.uni-bonn.de/en/studies/examination-office/deadlines-at-a-glance"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "1. dönem (AB dışı dahil)",
+              "open": "2026-10-01",
+              "deadline": "2026-11-01",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru şu an açık ve 1 Kasım 2026'da kapanıyor; AB dışı adaylara karar 15 Aralık civarı. 15 Aralık – 15 Ocak ikinci dönemi yalnızca AEA adayları için."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "2027/28 kışı başvuru tarihleri henüz ilan edilmedi (bölüm 'daha sonra duyurulacak' diyor)."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 95,
+          "moiAccepted": false,
+          "note": "C1. Avrupa dışında lise ve lisans okuyanlar için: IELTS Academic ≥ 7.0, TOEFL ≥ 95 (yeni ölçekte 5.0), CAE veya üstü, PTE ≥ 76, telc C1, UNIcert III … Sertifika dönem başına kadar geçerli olmalı. Lisansın İngilizce öğretildiğini gösteren belge yetmiyor."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Matematik temelleri (mantık, ayrık yapılar, lineer cebir, analiz, sayısal, olasılık …)",
+              "min": 18
+            },
+            {
+              "area": "Algoritma kuramı, karmaşıklık ve biçimsel diller (programlama sayılmaz)",
+              "min": 14
+            },
+            {
+              "area": "Programlama, yazılım teknolojisi ve bilgi sistemleri (YZ ve grafik dahil)",
+              "min": 18
+            }
+          ],
+          "note": "Ayrıca en az 12 ECTS'lik, Bonn lisans standartlarında bilimsel bir bitirme tezi (en az ~750 satır metin) şart. AB dışı adayların çoğu tez şartı veya İngilizce belgesi yüzünden elenmiş."
+        },
+        "note": "Seçimli. 2026 kışında AB dışı başvuranlardan yalnızca kabaca ilk %1 alınmış; alınanların asgari şartların ötesinde ek algoritma/karmaşıklık, grafik/görü/ses ve matematik dersleri ve çok iyi notları varmış. Asgari şartları karşılamak yetmiyor.",
+        "portal": "Bonn bilgisayar bölümü başvuru portalı (her program için ayrı başvuru)"
+      },
+      "notes": "Aynı anda AI ve Cyber Security'ye de ayrı başvuru yapılabiliyor; içerik senkronize ediliyor.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru ve şartlar",
+          "url": "https://www.informatik.uni-bonn.de/en/studies/master-programs/master-program-application"
+        },
+        {
+          "label": "Tarihler",
+          "url": "https://www.informatik.uni-bonn.de/en/studies/examination-office/deadlines-at-a-glance"
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "2027/28 kışı başvuru tarihleri henüz ilan edilmedi (bölüm 'daha sonra duyurulacak' diyor)."
+        },
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yaz döneminde yalnızca AI programına sayılabilecek en az 15 ECTS yüksek lisans dersi olanlar kabul ediliyor."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 95,
+          "moiAccepted": false,
+          "note": "C1. Avrupa dışında lise ve lisans okuyanlar için: IELTS Academic ≥ 7.0, TOEFL ≥ 95 (yeni ölçekte 5.0), CAE veya üstü, PTE ≥ 76, telc C1, UNIcert III … Sertifika dönem başına kadar geçerli olmalı. Lisansın İngilizce öğretildiğini gösteren belge yetmiyor."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Matematik temelleri (mantık, ayrık yapılar, lineer cebir, analiz, sayısal, olasılık …)",
+              "min": 18
+            },
+            {
+              "area": "Algoritma kuramı, karmaşıklık ve biçimsel diller (programlama sayılmaz)",
+              "min": 14
+            },
+            {
+              "area": "Programlama, yazılım teknolojisi ve bilgi sistemleri (YZ ve grafik dahil)",
+              "min": 20
+            }
+          ],
+          "note": "Ayrıca en az 12 ECTS'lik, Bonn lisans standartlarında bilimsel bir bitirme tezi (en az ~750 satır metin) şart. AB dışı adayların çoğu tez şartı veya İngilizce belgesi yüzünden elenmiş."
+        },
+        "note": "Seçimli. 2026 kışında AB dışı adayların %7'si uygun bulunup kabul edilmiş. Sıralama ölçütleri arasında lisans notu (ağırlık 2) ve grafik/görü/ses/algılama ders notları var.",
+        "portal": "Bonn bilgisayar bölümü başvuru portalı"
+      },
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru ve şartlar",
+          "url": "https://www.informatik.uni-bonn.de/en/studies/master-programs/master-program-application"
+        }
+      ]
+    },
+    {
+      "id": "cyber-security",
+      "name": "Cyber Security",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "sec"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "1. dönem (AB dışı dahil)",
+              "open": "2026-10-01",
+              "deadline": "2026-11-01",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru şu an açık ve 1 Kasım 2026'da kapanıyor."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "2027/28 kışı başvuru tarihleri henüz ilan edilmedi (bölüm 'daha sonra duyurulacak' diyor)."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 95,
+          "moiAccepted": false,
+          "note": "C1. Avrupa dışında lise ve lisans okuyanlar için: IELTS Academic ≥ 7.0, TOEFL ≥ 95 (yeni ölçekte 5.0), CAE veya üstü, PTE ≥ 76, telc C1, UNIcert III … Sertifika dönem başına kadar geçerli olmalı. Lisansın İngilizce öğretildiğini gösteren belge yetmiyor."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Matematik temelleri (mantık, ayrık yapılar, lineer cebir, analiz, sayısal, olasılık …)",
+              "min": 18
+            },
+            {
+              "area": "Algoritma kuramı, karmaşıklık ve biçimsel diller (programlama sayılmaz)",
+              "min": 9
+            },
+            {
+              "area": "Programlama, yazılım teknolojisi ve bilgi sistemleri (YZ ve grafik dahil)",
+              "min": 18
+            },
+            {
+              "area": "BT güvenliği ve insan-bilgisayar etkileşimi temelleri",
+              "min": 24
+            }
+          ],
+          "note": "Ayrıca en az 12 ECTS'lik, Bonn lisans standartlarında bilimsel bir bitirme tezi (en az ~750 satır metin) şart. AB dışı adayların çoğu tez şartı veya İngilizce belgesi yüzünden elenmiş."
+        },
+        "note": "Uygun bulunan AB dışı adayların yaklaşık %30'u kabul edilmiş. Başvuranların çoğu matematik, algoritma kuramı veya 24 ECTS'lik BT güvenliği şartını karşılamadığı için reddediliyor. Yazılım mühendisliği iş deneyimi belgesi zorunlu değil ama fark yaratabiliyor. AB dışı adaylar için hassas teknoloji ihracat kontrolü yapılıyor.",
+        "portal": "Bonn bilgisayar bölümü başvuru portalı"
+      },
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.informatik.uni-bonn.de/en/studies/master-programs/master-cyber-security"
+        },
+        {
+          "label": "Başvuru ve şartlar",
+          "url": "https://www.informatik.uni-bonn.de/en/studies/master-programs/master-program-application"
+        }
+      ]
+    }
+  ]
+}

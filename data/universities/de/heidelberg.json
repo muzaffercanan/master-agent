@@ -1,0 +1,237 @@
+{
+  "id": "heidelberg",
+  "country": "de",
+  "name": "Ruprecht-Karls-Universität Heidelberg",
+  "short": "Heidelberg Üni.",
+  "city": "Heidelberg",
+  "region": "Baden-Württemberg",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "101–125"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yerine eyalet ücreti."
+    },
+    "regionalFee": {
+      "region": "Baden-Württemberg",
+      "fee": {
+        "amount": 1500,
+        "currency": "EUR",
+        "per": "semester"
+      },
+      "appliesTo": "non-eu",
+      "status": "kesin",
+      "note": "AB dışı öğrenci ücreti; Almanya'da lise diplomasıyla gelenler muaf. İkinci yüksek lisansta 650 €/dönem."
+    },
+    "semesterFee": {
+      "amount": 189.8,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "Program sayfasına göre ücret ve katkılar 189,80 €/dönem; AB dışı öğrenci ayrıca 1.500 €/dönem öder."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Mathematics of Machine Learning and Data Science (İngilizce, kış, 1 Şubat – 15 Mart) yalnızca matematik (veya bilimsel hesaplama, fizik) lisansı ve ≤ 2,3 notla kabul ettiği için eklenmedi.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "Başvuru tarihleri",
+      "url": "https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-the-masters-degree-programmes"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "data-and-computer-science",
+      "name": "Data and Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-02-01",
+              "deadline": "2027-03-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Üniversitenin merkezi tarih tablosu: kış için 1 Şubat – 15 Mart (Alman ve yabancı adaylar için aynı). Başvurmadan önce heiCO portalında kendi profiline göre teyit et."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-08-01",
+              "deadline": "2027-09-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Yaz dönemi için bir önceki yılın 1 Ağustos – 15 Eylül tarihleri."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 6.5,
+          "toefl": 90,
+          "note": "Bölüm sayfasındaki liste (B2, IELTS 6.5, TOEFL iBT 90, CAE, İngilizce lisans) Eylül 2024 öncesi yönetmeliğe ait; yeni yönetmelikte değişmiş olabilir."
+        },
+        "ects": {
+          "areas": [],
+          "note": "Eylül 2024'ten beri program kontenjanlı ve seçimli; güncel ölçütler yalnızca Almanca yönetmelikte (bakılmadı). Eski yönetmelikte: 'özellikle başarılı' bir CS/matematik/fen/mühendislik lisansı ve algoritmalar, pratik bilgisayar, teorik bilgisayar, bilgisayar mimarisi, matematik alanlarından toplam 32 CP aranıyordu."
+        },
+        "portal": "heiCO"
+      },
+      "quota": "Kontenjanlı (2024'ten beri)",
+      "notes": "Uzmanlık seçilebiliyor (bilgi sistemleri müh., bilgisayar müh., karmaşık/dağıtık sistemlerde analiz-modelleme-simülasyon). Uygulama alanı olarak matematik, iktisat, hesaplamalı dilbilim, fizik, tıp bilişimi vb.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.uni-heidelberg.de/en/study/all-subjects/computer-science/data-and-computer-science-master"
+        },
+        {
+          "label": "Bölüm başvuru bilgisi",
+          "url": "https://www.informatik.uni-heidelberg.de/studium/master/dacs/application?lang=en"
+        },
+        {
+          "label": "Başvuru tarihleri",
+          "url": "https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-the-masters-degree-programmes"
+        }
+      ]
+    },
+    {
+      "id": "scientific-computing",
+      "name": "Scientific Computing",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "comp",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "önerilen son gün",
+              "open": "2026-10-01",
+              "deadline": "2026-11-15",
+              "audience": "non-eu"
+            },
+            {
+              "name": "son gün",
+              "deadline": "2027-01-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru şu an açık. AB dışı adaylara 15 Kasım'dan önce başvurmaları öneriliyor; kesin son gün 1 Ocak. Sonrasındaki başvurular dönem başına yetişmiyor."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "önerilen son gün",
+              "open": "2027-04-01",
+              "deadline": "2027-06-15",
+              "audience": "non-eu"
+            },
+            {
+              "name": "iç son gün",
+              "deadline": "2027-07-31",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin"
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 6.5,
+          "toefl": 90,
+          "note": "B2; IELTS 6.5 veya TOEFL iBT 90 (DAAD'a göre her bölüm ≥ 20)."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Matematik (en az 6 lineer cebir, 6 analiz, 6 ileri matematik: sayısal analiz, optimizasyon, diferansiyel denklemler …)",
+              "min": 24
+            },
+            {
+              "area": "Pratik bilgisayar bilimi (en az 6 pratik CS, 6 algoritmalar, 6 ileri: görüntü işleme, grafik, paralel hesaplama, ML)",
+              "min": 24
+            },
+            {
+              "area": "Uygulama alanı (fizik, biyoloji, kimya, iktisat …)",
+              "min": 16
+            }
+          ],
+          "note": "DAAD kaydındaki asgari şartlar. CS mezunu için risk: sayısal analiz gibi ileri matematik ve 16 kredilik uygulama alanı (ör. fizik dersleri)."
+        },
+        "documents": [
+          "Transkript",
+          "Matematik ve bilgisayar derslerinin ayrı listesi (kredi ve notla)",
+          "Not sisteminin açıklaması",
+          "Tablo halinde CV",
+          "1–2 sayfa İngilizce niyet mektubu",
+          "İngilizce belgesi"
+        ],
+        "portal": "heiCO"
+      },
+      "notes": "Disiplinlerarası Bilimsel Hesaplama Merkezi (IWR) yürütüyor; matematik ve bilgisayarın kesişimi.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://mastersc.iwr.uni-heidelberg.de/application-admission/how-to-apply"
+        },
+        {
+          "label": "DAAD kaydı",
+          "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4443/"
+        }
+      ]
+    }
+  ]
+}

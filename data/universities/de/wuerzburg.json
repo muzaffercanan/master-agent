@@ -1,0 +1,141 @@
+{
+  "id": "wuerzburg",
+  "country": "de",
+  "name": "Julius-Maximilians-Universität Würzburg",
+  "short": "Würzburg Üni.",
+  "city": "Würzburg",
+  "region": "Bayern",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "151–175"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Üniversitenin uluslararası öğrenci sayfasına göre normal programlarda öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 182.1,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "2026/27 kışından itibaren dönem katkı payı 182,10 € (110,10 € toplu taşıma bileti + 72 € Studierendenwerk)."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Arama sonuçlarında görülen 'Artificial Intelligence' ve 'AI & Extended Reality' yüksek lisanslarının dil ve tarih bilgileri çelişkili çıktı; resmi sayfalardan doğrulanamadığı için eklenmedi.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "Würzburg dönem katkı payı",
+      "url": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/beitraegeundgebuehren/"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science (Informatik)",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai"
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-08-31",
+              "deadline": "2026-10-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Başvuru Ağustos sonundan 31 Ekim 2026'ya kadar (2025'ten beri). Kayda geçmemiş sınav sonuçları 15 Mart'a kadar eklenebiliyor."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-01-31",
+              "deadline": "2027-03-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Ocak sonundan 15 Mart'a kadar."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.5,
+          "note": "Alman notu 2,5 veya daha iyiyse doğrudan kabul. Daha kötüyse 30 dakikalık sözlü yetenek sınavına çağrılıyor (teorik, pratik ve teknik bilgisayar bilimi); 2,6–3,0 arası notta sınavda 4,0 yeterli."
+        },
+        "english": {
+          "moiAccepted": true,
+          "note": "İngilizce C1 (ör. IELTS) veya Almanca B2; lisansın tamamen İngilizce ya da Almanca öğretildiğini gösteren MOI belgesi de kabul. Sınav puanı eşiği sayfada yazmıyor."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Temel bilgisayar bilimi ve matematik",
+              "min": 100
+            },
+            {
+              "area": "Bunun içinde matematiksel ve teorik bilgisayar bilimi",
+              "min": 25
+            }
+          ],
+          "note": "Bilgisayar bilimi konulu en az 10 ECTS'lik bitirme tezi zorunlu."
+        },
+        "documents": [
+          "Doldurulmuş Excel formu",
+          "Transkript",
+          "Diploma",
+          "Bitirme tezi veya eşdeğer araştırma yazısı",
+          "İngilizce C1 / Almanca B2 belgesi veya MOI",
+          "Lise diploması",
+          "uni-assist VPD (Würzburg için, en fazla 1 yıllık)"
+        ],
+        "portal": "WueStudy (+ uni-assist VPD)"
+      },
+      "notes": "Öğretim dili Almanca veya İngilizce; İngilizce verilen derslerin listesi bölüm sitesinde. Hangi alanların yalnızca İngilizce derslerle tamamlanabildiğini ders listesinden kontrol et.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru ve şartlar",
+          "url": "https://www.informatik.uni-wuerzburg.de/en/studies/degree-programmes/master-computer-science/application/"
+        },
+        {
+          "label": "Program sayfası",
+          "url": "https://www.informatik.uni-wuerzburg.de/en/studies/degree-programmes/master-computer-science/"
+        }
+      ]
+    }
+  ]
+}

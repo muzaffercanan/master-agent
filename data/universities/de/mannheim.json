@@ -10,7 +10,12 @@
     "en",
     "de"
   ],
-  "rankings": {},
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "201–250"
+    }
+  },
   "intakes": [],
   "scholarships": [],
   "people": [],

@@ -1,0 +1,121 @@
+{
+  "id": "fu-berlin",
+  "country": "de",
+  "name": "Freie Universität Berlin",
+  "short": "FU Berlin",
+  "city": "Berlin",
+  "region": "Berlin",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "176–200"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 358.8,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "DAAD kaydına göre 358,80 € (50 € kayıt + 85 € studierendenWERK + 10 € öğrenci birliği + 213,80 € bilet). Berlin'de 2026/27 bileti 226,80 €'ya çıktığı için güncel tutar biraz daha yüksek olabilir; doğrulanmadı."
+  },
+  "scholarships": [],
+  "admissionsSummary": "FU'nun 'Informatik' yüksek lisansı çoğunlukla Almanca (DSH istiyor), eklenmedi. İngilizce Computational Sciences ve Bioinformatics bu listeye alınmadı.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "FU başvuru tarihleri",
+      "url": "https://www.fu-berlin.de/en/studium/bewerbung/bewerbungsfristen/index.html"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-20",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "tahmin",
+          "note": "2026 kışında FU'nun kontenjanlı yüksek lisansları için pencere 20 Nisan – 31 Mayıs idi (DAAD: 'Nisan ortası – Mayıs sonu'); 2027 tarihleri henüz yayımlanmadı. Yabancı diplomalılar için de aynı tarihler."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Yalnızca kış döneminde başlanıyor (DAAD kaydı)."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 95,
+          "note": "C1; bölüm IELTS 7 veya TOEFL iBT 95 öneriyor. Diğer kabul edilen sınavlar ve MOI durumu sayfada yazmıyor."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [],
+          "note": "CS lisansı (B.Sc.) doğrudan uygun. Başka alandan gelenler için en az 20 ECTS matematik (≥ 5 lineer cebir veya analiz, ≥ 5 olasılık veya istatistik) ve 10 ECTS bilgisayar (≥ 5 algoritmalar, ≥ 5 yüksek düzey programlama dili)."
+        },
+        "documents": [
+          "uni-assist VPD",
+          "Öz beyan formu (Self-disclosure form)",
+          "Transkript ve diploma",
+          "İngilizce belgesi"
+        ],
+        "portal": "uni-assist (VPD) + FU başvuru portalı"
+      },
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program sayfası",
+          "url": "https://www.mi.fu-berlin.de/en/data-science/index.html"
+        },
+        {
+          "label": "Başvuru tarihleri",
+          "url": "https://www.fu-berlin.de/en/studium/bewerbung/bewerbungsfristen/index.html"
+        },
+        {
+          "label": "DAAD kaydı",
+          "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7066/"
+        }
+      ]
+    }
+  ]
+}

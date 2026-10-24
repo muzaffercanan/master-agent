@@ -1,0 +1,129 @@
+{
+  "id": "lmu",
+  "country": "de",
+  "name": "Ludwig-Maximilians-Universität München",
+  "short": "LMU München",
+  "city": "Münih",
+  "region": "Bayern",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "50"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok; LMU dönem ödemesi olarak yalnızca katkı payını istiyor."
+    },
+    "semesterFee": {
+      "amount": 97,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "2026/27 kışı 97 € (yalnızca Studierendenwerk temel katkısı; dönem bileti dayanışma payı askıya alındı)."
+  },
+  "scholarships": [],
+  "admissionsSummary": "LMU'nun bilgisayar bölümünün ayrı İngilizce 'M.Sc. Data Science' programı kapatıldı; son alım 2024/25 kışıydı ve yeni başvuru dönemi açılmayacak. 'Informatik' ve 'Medieninformatik' yüksek lisansları Almanca (kayıtta yaklaşık C1 Almanca), bu yüzden eklenmedi. İngilizce seçenek istatistik bölümünün Statistics and Data Science programı.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "LMU dönem katkı payı",
+      "url": "https://www.lmu.de/de/workspace-fuer-studierende/1x1-des-studiums/rueckmeldung/"
+    },
+    {
+      "label": "Kapatılan M.Sc. Data Science",
+      "url": "https://www.m-datascience.mathematik-informatik-statistik.uni-muenchen.de/application/index.html"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "statistics-and-data-science",
+      "name": "Statistics and Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "bölüm (kesin son gün)",
+              "open": "2026-10-15",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            },
+            {
+              "name": "International Office",
+              "deadline": "2027-01-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Bölüm portalı 15 Ekim'de açıldı; bölüm son günü 15 Kasım 2026. Alman vatandaşı olmayanlar ayrıca LMU International Office'e 15 Ocak'a kadar başvurur; oradan kabul, programa kabul anlamına gelmez."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "bölüm (kesin son gün)",
+              "open": "2027-04-01",
+              "deadline": "2027-05-15",
+              "audience": "all"
+            },
+            {
+              "name": "International Office",
+              "deadline": "2027-07-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "Bölüm son günü 15 Mayıs; International Office son günü 15 Temmuz."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "moiAccepted": true,
+          "note": "B2. Yaygın B2 sertifikaları veya önceki lisansın İngilizce öğretildiğini gösteren resmî yazı kabul."
+        },
+        "ects": {
+          "total": 150,
+          "areas": [],
+          "note": "Lisansta istatistik veya veri bilimi ana dal, yan dal ya da odak olmalı (180 ECTS; başvuruda en az 150 ECTS). 1. aşama puanı: not (5), istatistiksel öğrenme ve modelleme (6; giriş dersleri sayılmaz), istatistiğin matematiksel temelleri (5), istatistik yazılımı ve programlama (4). 18–20 doğrudan kabul, 10–17 ikinci aşama (iki haftalık yazılı test + 15 dk mülakat), 0–9 ret. Saf CS lisansıyla 'istatistik odağı' şartını karşılamak zor; transkriptte istatistik/ML derslerine bak."
+        },
+        "interview": "İkinci aşamada ev ödevi şeklinde yazılı test ve 15 dakikalık mülakat.",
+        "portal": "Bölüm portalı + LMU International Office başvurusu"
+      },
+      "notes": "Odak alanları: Machine Learning, Biostatistics, Social Science and Data Science, Econometrics, Methodology and Modeling.",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Program ve başvuru",
+          "url": "https://www.stat.lmu.de/en/studies/interested-master/"
+        }
+      ]
+    }
+  ]
+}

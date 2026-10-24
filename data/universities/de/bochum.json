@@ -1,0 +1,132 @@
+{
+  "id": "bochum",
+  "country": "de",
+  "name": "Ruhr-Universität Bochum",
+  "short": "RUB Bochum",
+  "city": "Bochum",
+  "region": "Nordrhein-Westfalen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {
+    "theCs": {
+      "year": 2026,
+      "rank": "101–125"
+    }
+  },
+  "intakes": [],
+  "costs": {
+    "tuition": {
+      "kind": "free",
+      "note": "Öğrenim ücreti yok."
+    },
+    "semesterFee": {
+      "amount": 380,
+      "currency": "EUR",
+      "per": "semester"
+    },
+    "note": "2026/27 kışı 380 € (130 € AKAFÖ + 23,20 € AStA + 226,80 € dönem bileti)."
+  },
+  "scholarships": [],
+  "admissionsSummary": "Bilgisayar fakültesinin Almanca IT-Sicherheit yüksek lisansları eklenmedi. İngilizce Cognitive Science (psikoloji) listeye alınmadı.",
+  "people": [],
+  "links": [],
+  "sources": [
+    {
+      "label": "RUB dönem katkı payı",
+      "url": "https://studium.ruhr-uni-bochum.de/en/re-registration-and-social-contribution"
+    }
+  ],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "id": "computer-science",
+      "name": "Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "sec",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "ana tur",
+              "open": "2026-11-01",
+              "deadline": "2026-12-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Portal Kasım 2026 başında açılıyor; son gün 15 Aralık 2026, 23:59 (UTC+1). Sayfanın genel bölümünde Lizbon Sözleşmesi'ne uyan diplomalar için ikinci bir son gün (30 Nisan) yazıyor, ama AB dışı adaylar bölümü yalnızca 15 Aralık'ı veriyor; güvenli tarih 15 Aralık."
+        },
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "AB dışı adaylar (veya lisansı AB dışından olanlar) için başlangıç her zaman kış dönemi."
+        }
+      ],
+      "requirements": {
+        "english": {
+          "ielts": 7,
+          "toefl": 100,
+          "cambridge": "C1 Advanced 193+ / C2 Proficiency 200+",
+          "moiAccepted": false,
+          "note": "C1. İngilizce eğitim muafiyeti yalnızca İngilizce konuşulan ülkelerde yerinde okunmuş lisanslar veya sınav kurulunun ayrıca belirlediği üniversiteler için."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Bilgisayar bilimi temelleri (RUB B.Sc. modülleriyle eşdeğer)",
+              "min": 50
+            },
+            {
+              "area": "Matematik temelleri",
+              "min": 18
+            }
+          ],
+          "note": "50 CP'lik blok: Informatik 1 (12), 2 (8), 3 (8), Yazılım Müh. (5), Bilgisayar Müh. 1 ve 2 (5+5), Ağlar (5), İşletim Sistemleri (5), Veritabanı (7). Mezun değilsen 6 dönemlik lisansta en az 120 CP ile başvurulabilir."
+        },
+        "documents": [
+          "Transkript (ortalama yazılı) ve ders tanımları (İngilizce/Almanca)",
+          "Niyet mektubu (en fazla 2 sayfa)",
+          "İsteğe bağlı akademik çalışma örneği (verilmemesi olumsuz etkileyebilir)",
+          "İki öğretim üyesinin kurumsal e-posta adresi (tavsiye için)",
+          "İngilizce belgesi"
+        ],
+        "interview": "Çok aşamalı uygunluk değerlendirmesi; gerekirse sınav mülakatı.",
+        "portal": "CS Graduate Applications (apply.cs.rub.de)"
+      },
+      "notes": "Tamamen İngilizce. Uzmanlıklar: bilgisayar sistemleri, algoritmalar ve veri, bilgisayar güvenliği, yazılım müh. ve programlama dilleri, yapay zekâ. Bochum siber güvenlikte güçlü (CASA, Max Planck Güvenlik ve Gizlilik Enstitüsü).",
+      "scholarships": [],
+      "links": [
+        {
+          "label": "Başvuru",
+          "url": "https://informatik.rub.de/en/studies/application/msc-cs/"
+        },
+        {
+          "label": "Program sayfası",
+          "url": "https://informatik.rub.de/en/studies/cs/msc/"
+        }
+      ]
+    }
+  ]
+}
