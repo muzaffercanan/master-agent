@@ -7,7 +7,12 @@
   "region": "Oberösterreich",
   "type": "state",
   "languages": ["en", "de"],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "401–450"
+    }
+  },
   "intakes": [],
   "costs": {
     "tuition": { "kind": "paid", "fee": { "amount": 726.72, "currency": "EUR", "per": "semester" }, "note": "AB dışı (üçüncü ülke) öğrenci ücreti." },

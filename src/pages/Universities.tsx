@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { countries, data } from "../state/data";
 import { norm, TYPE_LABEL } from "../lib/text";
-import { StaleBadge, TermTags } from "../components/bits";
+import { StaleBadge, TermTags, WorldRank } from "../components/bits";
 
 export function UniversitiesPage() {
   const [sp, setSp] = useSearchParams();
@@ -55,6 +55,7 @@ export function UniversitiesPage() {
                       <div className="btnrow">
                         <span className="chip">{TYPE_LABEL[u.type]}</span>
                         <span className="chip">{u.programs.length} program</span>
+                        <WorldRank r={u.rankings.theWorld} />
                         {u.rankings.yok && <span className="pill kesin">YÖK {u.rankings.yok}</span>}
                         {u.rankings.theCs && <span className="pill na">THE CS {u.rankings.theCs.rank}</span>}
                       </div>

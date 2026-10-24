@@ -6,7 +6,7 @@ import { derive } from "../lib/filters";
 import { today, fmt } from "../lib/dates";
 import { TYPE_LABEL, LANG_LABEL } from "../lib/text";
 import { IntakeList, RequirementList, ScholarshipList } from "../components/details";
-import { ExtLinks, StaleBadge } from "../components/bits";
+import { ExtLinks, StaleBadge, WorldRank } from "../components/bits";
 import { ProgramRow } from "../components/ProgramRow";
 import { NotFound } from "./NotFound";
 
@@ -30,6 +30,7 @@ export function UniversityPage() {
           <span className="chip">{uni.city}{uni.region ? `, ${uni.region}` : ""}</span>
           <span className="chip">{TYPE_LABEL[uni.type]}</span>
           {uni.languages.map(l => <span key={l} className="chip">{LANG_LABEL[l]}</span>)}
+          <WorldRank r={uni.rankings.theWorld} />
           {uni.rankings.yok && <span className="pill kesin">YÖK {uni.rankings.yok}</span>}
           {uni.rankings.csrankings && <span className="pill na">{uni.rankings.csrankings}</span>}
           {uni.rankings.qs && <span className="pill na">QS {uni.rankings.qs}</span>}

@@ -7,7 +7,12 @@
   "region": "Lombardia",
   "type": "state",
   "languages": ["en", "it"],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "=157"
+    }
+  },
   "intakes": [
     {
       "term": "fall",

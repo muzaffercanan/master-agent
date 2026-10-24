@@ -4,6 +4,7 @@ import { nextDeadline, singleTermOnly } from "./programs";
 import { yearlyCost } from "./cost";
 import { buildIcs } from "./ics";
 import { countdown, parseD } from "./dates";
+import { rankTier } from "./rank";
 import type { Country, Fx, Intake } from "../schema";
 import type { ProgramView } from "./programs";
 
@@ -105,5 +106,17 @@ describe("countdown & ics", () => {
     expect(s).toContain("DTSTART;VALUE=DATE:20261127");
     expect(s).toContain("DTEND;VALUE=DATE:20261128");
     expect(s).toContain("SUMMARY:Sabancı\\, bahar");
+  });
+});
+
+describe("rankTier", () => {
+  it("splits at 100 and 200, reading ties and bands by their first number", () => {
+    expect(rankTier("25")).toBe("top");
+    expect(rankTier("=45")).toBe("top");
+    expect(rankTier("=101")).toBe("mid");
+    expect(rankTier("176–200")).toBe("mid");
+    expect(rankTier("=201")).toBe("low");
+    expect(rankTier("2001+")).toBe("low");
+    expect(rankTier("Reporter")).toBeUndefined();
   });
 });

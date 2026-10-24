@@ -8,7 +8,12 @@
   "languages": [
     "en"
   ],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "2001+"
+    }
+  },
   "intakes": [
     {
       "term": "spring",

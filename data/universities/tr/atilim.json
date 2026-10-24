@@ -9,7 +9,12 @@
     "tr",
     "en"
   ],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "1801–2000"
+    }
+  },
   "intakes": [
     {
       "term": "spring",

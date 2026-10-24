@@ -7,7 +7,12 @@
   "region": "Emilia-Romagna",
   "type": "state",
   "languages": ["en", "it"],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "=111"
+    }
+  },
   "intakes": [],
   "costs": {
     "tuition": { "kind": "varies", "note": "ISEE'ye göre kademeli katkı payı; AB dışı ve yabancı gelir için ISEE parificato. Tam tutarı UniBo ücret sayfasından kontrol et." },

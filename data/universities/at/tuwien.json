@@ -7,7 +7,12 @@
   "region": "Wien",
   "type": "state",
   "languages": ["en", "de"],
-  "rankings": {},
+  "rankings": {
+    "theWorld": {
+      "year": 2027,
+      "rank": "301–325"
+    }
+  },
   "intakes": [
     {
       "term": "summer",

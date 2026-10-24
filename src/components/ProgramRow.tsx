@@ -5,7 +5,7 @@ import { fmt } from "../lib/dates";
 import { fmtAmount } from "../lib/money";
 import { LANG_LABEL, LEVEL_LABEL } from "../lib/text";
 import { useStore } from "../state/store";
-import { Countdown, EligBadge, StarButton, TermTags } from "./bits";
+import { Countdown, EligBadge, StarButton, TermTags, WorldRank } from "./bits";
 
 export function costText(d: Derived): string {
   if (d.cost.free) return "Ücretsiz";
@@ -38,7 +38,7 @@ export function ProgramRow({ d }: { d: Derived }) {
         <div className="title">
           <Link className="pname" to={`/program/${v.uni.id}/${v.program.id}`}>{v.program.name}</Link>
           <span className="school">
-            <span className="flag">{v.country.flag}</span> <Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link> · {v.uni.city}
+            <span className="flag">{v.country.flag}</span> <Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link> <WorldRank r={v.uni.rankings.theWorld} /> · {v.uni.city}
             {v.uni.region ? `, ${v.uni.region}` : ""}
           </span>
           <span className="meta">

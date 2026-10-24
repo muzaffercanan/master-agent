@@ -144,6 +144,12 @@ textarea{width:100%;min-height:76px;resize:vertical;line-height:1.5}
 .prow .school a{color:var(--ink);font-weight:500;text-decoration-color:var(--line-2)}
 .prow .school a:hover{color:var(--accent)}
 .prow .school .flag{margin-right:3px}
+.wrank{display:inline-block;font-family:var(--mono);font-size:.72rem;font-variant-numeric:tabular-nums;line-height:1.2;padding:1px 5px;border-radius:3px;white-space:nowrap;vertical-align:1px}
+.prow .wrank::before{content:"("}
+.prow .wrank::after{content:")"}
+.wrank.top{background:var(--ok-soft);color:var(--ok)}
+.wrank.mid{background:var(--warn-soft);color:var(--warn)}
+.wrank.low{background:var(--sunk);color:var(--muted)}
 .prow .meta{display:flex;flex-wrap:wrap;font-size:.77rem;color:var(--muted);margin-top:1px}
 .prow .meta > span + span::before{content:"·";margin:0 6px;color:var(--line-2)}
 .prow .acts{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:6px;flex:0 0 auto}

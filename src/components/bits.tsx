@@ -5,9 +5,22 @@ import { countdown, daysBetween, fmt, parseD, today } from "../lib/dates";
 import { fmtMoney } from "../lib/money";
 import { TERM_LABEL } from "../lib/text";
 import { offeredTerms } from "../lib/programs";
+import { rankTier } from "../lib/rank";
 
 export function StatusPill({ k }: { k: Status }) {
   return <span className={`pill ${k}`} title={k === "kesin" ? "Yayımlanmış ilan" : "Geçen yılın takvimine göre tahmin; ilan çıkınca doğrula"}>{k}</span>;
+}
+
+/** THE world rank, tinted by tier: 1–100, 101–200, beyond 200. */
+export function WorldRank({ r }: { r?: { year: number; rank: string } }) {
+  if (!r) return null;
+  const tier = rankTier(r.rank);
+  if (!tier) return null;
+  return (
+    <span className={`wrank ${tier}`} title={`Times Higher Education Dünya Üniversite Sıralaması ${r.year}`}>
+      THE {r.rank}
+    </span>
+  );
 }
 
 const ELIG_TEXT: Record<CheckStatus | "none", string> = {

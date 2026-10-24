@@ -171,6 +171,8 @@ export const University = z.object({
       the: z.number().optional(),
       /** THE subject ranking for computer science, as published (bands like "101–125" are kept as text) */
       theCs: z.object({ year: z.number(), rank: z.string() }).optional(),
+      /** THE World University Rankings (overall), as published: "25", "=143", "301–325", "2001+" */
+      theWorld: z.object({ year: z.number(), rank: z.string() }).optional(),
     })
     .default({}),
   /** institute-wide calendar, inherited by programs without their own intakes */
