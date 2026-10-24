@@ -1,0 +1,140 @@
+{
+  "id": "tum",
+  "country": "de",
+  "name": "Technische Universität München",
+  "short": "TUM",
+  "city": "Münih",
+  "region": "Bayern",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "admissionsSummary": "AB dışı yeni öğrenciler öğrenim ücreti öder: yüksek lisansta 4.000 veya 6.000 €/dönem; 2027/28 kışından itibaren yeni başlayanlar için 4.600 veya 6.800 €. Türk vatandaşları için muafiyet yalnızca bir ebeveyn Almanya'da en az 1 yıl yasal olarak çalışmış ve öğrenci onunla Almanya'da kayıtlı yaşıyorsa. Raporunda yüksek ücret nedeniyle elenmişti.",
+  "links": [
+    {
+      "label": "TUM öğrenim ücretleri",
+      "url": "https://www.tum.de/en/studies/fees/tuition"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "informatics",
+      "name": "Informatics",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "open": "2026-10-01",
+              "deadline": "2026-11-30",
+              "audience": "all"
+            }
+          ],
+          "status": "tahmin",
+          "note": "TUM program sayfalarındaki yaz penceresi 1 Ekim – 30 Kasım. Yaz 2027 başlangıcında eski ücret (6.000 €) geçerli."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-02-01",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "tahmin",
+          "note": "Kış penceresi 1 Şubat – 31 Mayıs (TUM program sayfaları)."
+        }
+      ],
+      "requirements": {
+        "interview": "İki aşamalı yetenek değerlendirmesi (aptitude assessment): not ve yazılı belgeler puanlanır, sınırdaki adaylar mülakata çağrılır.",
+        "portal": "TUMonline (+ uni-assist VPD)"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "fee": {
+            "amount": 0,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "feeNonEU": {
+            "amount": 6800,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "note": "2027/28 kışından başlayan AB dışı öğrenci: 6.800 €/dönem (Yaz 2027 başlangıcında 6.000 €)."
+        },
+        "semesterFee": {
+          "amount": 97,
+          "currency": "EUR",
+          "per": "semester"
+        }
+      },
+      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi."
+    },
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "information-systems",
+      "name": "Information Systems",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "is"
+      ],
+      "languages": [
+        "en",
+        "de"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "requirements": {
+        "interview": "Müfredat eşleşme puanı (raporda 25 puan barajı) + mülakat.",
+        "note": "Rapordaki değer; resmi kaynaktan doğrulanamadı."
+      },
+      "costs": {
+        "tuition": {
+          "kind": "paid",
+          "note": "AB dışı: 4.000 veya 6.000 €/dönem (2027/28'den 4.600 veya 6.800 €); bu programın kademesini program sayfasından kontrol et."
+        },
+        "semesterFee": {
+          "amount": 97,
+          "currency": "EUR",
+          "per": "semester"
+        }
+      },
+      "notes": "Raporda 'ELENDİ (harç)' olarak işaretliydi. Bazı dersler Almanca."
+    }
+  ]
+}

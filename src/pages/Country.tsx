@@ -7,6 +7,7 @@ import { ExtLinks, MoneyText, StaleBadge, StatusPill } from "../components/bits"
 import { ScholarshipList } from "../components/details";
 import { Timeline } from "../components/Timeline";
 import { TurkeyGuide } from "../content/TurkeyGuide";
+import { GermanyGuide } from "../content/GermanyGuide";
 import { NotFound } from "./NotFound";
 
 export function CountriesPage() {
@@ -126,6 +127,7 @@ export function CountryPage() {
         </div>
       </div>
       {c.code === "tr" && <TurkeyGuide />}
+      {c.code === "de" && <GermanyGuide />}
     </>
   );
 }

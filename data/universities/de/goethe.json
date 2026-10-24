@@ -1,0 +1,89 @@
+{
+  "id": "goethe",
+  "country": "de",
+  "name": "Goethe-Universität Frankfurt",
+  "short": "Goethe Üni.",
+  "city": "Frankfurt",
+  "region": "Hessen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "GSEFM başvuru dosyası ve son tarihler",
+      "url": "https://www.gsefm.eu/applicants/requirements-and-deadlines.html"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "quantitative-finance-msq",
+      "name": "Quantitative Master of Science (MSQ) – Quantitative Finance",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "fin"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "1. aşama",
+              "deadline": "2027-01-31",
+              "audience": "all"
+            },
+            {
+              "name": "2. aşama",
+              "deadline": "2027-03-31",
+              "audience": "all"
+            },
+            {
+              "name": "3. aşama",
+              "deadline": "2027-05-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Kademeli değerlendirme; referans mektupları ve test sonuçları ilgili son tarihe kadar."
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "recommended",
+          "note": "Resmi GSEFM sayfasına göre GRE/GMAT zorunlu değil ama şiddetle öneriliyor; Quant'ta üst %20–25 tek başına güçlü kanıt sayılıyor. Rapor 'zorunlu, ≥75. yüzdelik' diyordu."
+        },
+        "documents": [
+          "Değerlendirme (referans) mektupları",
+          "İngilizce olmayan belgelerin onaylı çevirisi"
+        ],
+        "note": "Araştırma / doktora odaklı."
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "note": "Dönem katkı payı yaklaşık 377 € (rapordaki değer; doğrulanmadı)."
+      },
+      "notes": "Raporda 'reach'."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "rwth",
+  "country": "de",
+  "name": "RWTH Aachen",
+  "short": "RWTH Aachen",
+  "city": "Aachen",
+  "region": "Nordrhein-Westfalen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "admissionsSummary": "AB dışı adaylar için yüksek lisans son başvurusu kış dönemi için 1 Mart, yaz dönemi için 1 Eylül. Rapora göre Computer Science yüksek lisansında da GRE isteniyor (doğrulanmadı).",
+  "links": [
+    {
+      "label": "Data Science SSS",
+      "url": "https://sc.informatik.rwth-aachen.de/en/studium/master/master-data-science/faq/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "data-science",
+      "name": "Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-03-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "kesin",
+          "note": "1 Mart'tan sonra belge eklenemiyor."
+        },
+        {
+          "term": "summer",
+          "cycle": "2028",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-09-01",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "tahmin"
+        }
+      ],
+      "requirements": {
+        "gre": {
+          "policy": "required",
+          "note": "AB dışı adaylar için zorunlu: Quantitative ≥ 75. yüzdelik (≈160+), Verbal ≥ 15. yüzdelik, Analytical Writing ≥ 3.5. Sonuç son başvurudan önce verilmeli."
+        },
+        "ects": {
+          "areas": [],
+          "note": "Algoritmalar, veri yapıları, veritabanları gibi belirli alanlarda kredi bekleniyor (rapora göre)."
+        }
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+      },
+      "notes": "Raporda 'reach (GRE)'."
+    }
+  ]
+}

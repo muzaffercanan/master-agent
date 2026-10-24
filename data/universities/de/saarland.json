@@ -1,0 +1,105 @@
+{
+  "id": "saarland",
+  "country": "de",
+  "name": "Universität des Saarlandes",
+  "short": "Saarland Üni.",
+  "city": "Saarbrücken",
+  "region": "Saarland",
+  "type": "state",
+  "languages": [
+    "en"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "M.Sc. Computer Science",
+      "url": "https://saarland-informatics-campus.de/en/studium-studies/msc-computer-science/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "computer-science",
+      "name": "Computer Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "ai",
+        "sec"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2027-05-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "note": "Resmi sayfada asgari not yok; 'yeterli akademik başarı' kanıtı isteniyor. Raporda yaklaşık %75 / 3.0 ve sınıfın ilk %10'u öneriliyordu."
+        },
+        "english": {
+          "ielts": 7,
+          "note": "C1 seviyesi. İngilizce eğitim belgesi (MOI) KABUL EDİLMİYOR."
+        },
+        "documents": [
+          "Kişisel beyan",
+          "İlgili iş deneyimi bilgisi",
+          "2 akademik referans",
+          "Transkript",
+          "Diploma",
+          "İngilizce belgesi (C1)"
+        ],
+        "portal": "Doğrudan üniversiteye"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "semesterFee": {
+          "amount": 412.3,
+          "currency": "EUR",
+          "per": "semester"
+        },
+        "note": "Dönem ücreti toplu taşıma bileti dahil. Raporda ~280 € yazıyordu; resmi tutar 412,30 €."
+      },
+      "notes": "Raporda 'reach'."
+    }
+  ]
+}

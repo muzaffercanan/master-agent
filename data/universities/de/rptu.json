@@ -1,0 +1,119 @@
+{
+  "id": "rptu",
+  "country": "de",
+  "name": "RPTU Kaiserslautern-Landau",
+  "short": "RPTU",
+  "city": "Kaiserslautern",
+  "region": "Rheinland-Pfalz",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "links": [
+    {
+      "label": "Program sayfası",
+      "url": "https://math.rptu.de/en/studium/studiengaenge/msc/fvm"
+    },
+    {
+      "label": "Yüksek lisans başvurusu",
+      "url": "https://math.rptu.de/en/studies/study-programmes/msc/application-master"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "actuarial-and-financial-mathematics",
+      "name": "Actuarial and Financial Mathematics",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "fin",
+        "comp"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "deadline": "2026-10-31",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "erken",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            },
+            {
+              "name": "normal",
+              "deadline": "2027-04-30",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        }
+      ],
+      "requirements": {
+        "english": {
+          "toefl": 80,
+          "note": "TOEFL 550/213/80 veya IELTS 6 (üçüncü taraf)."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Stokastik / olasılık",
+              "min": 18
+            },
+            {
+              "area": "Ekonomi",
+              "min": 6
+            }
+          ],
+          "note": "RPTU İşletme Matematiği lisansına eşdeğer derece bekleniyor; CS mezunu için şartlı kabul + telafi dersi olası (rapora göre)."
+        },
+        "documents": [
+          "CV",
+          "Onaylı diploma",
+          "Transkript",
+          "Motivasyon mektubu"
+        ]
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "applicationFee": {
+          "amount": 60,
+          "currency": "EUR",
+          "per": "once"
+        }
+      },
+      "notes": "Raporda 'reach/hedef'. Matematik ağırlıklı."
+    }
+  ]
+}

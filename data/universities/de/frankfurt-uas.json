@@ -1,0 +1,123 @@
+{
+  "id": "frankfurt-uas",
+  "country": "de",
+  "name": "Frankfurt University of Applied Sciences",
+  "short": "Frankfurt UAS",
+  "city": "Frankfurt",
+  "region": "Hessen",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "admissionsSummary": "Uygulamalı bilimler üniversitesi (Hochschule). Uluslararası başvurular uni-assist üzerinden; şartlı kabul verilmiyor.",
+  "links": [
+    {
+      "label": "Yüksek lisans başvurusu",
+      "url": "https://www.frankfurt-university.de/en/studies/study-at-frankfurt-uas/application-for-master-studies/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "general-informatics",
+      "name": "General Informatics",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "AB dışı",
+              "deadline": "2027-01-15",
+              "audience": "non-eu"
+            }
+          ],
+          "status": "tahmin",
+          "note": "Tarih tek bir üçüncü taraf kaynaktan."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "Kış dönemi son tarihi doğrulanamadı; üniversitenin uluslararası başvuru sayfasından kontrol et."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.8,
+          "note": "En az 6 dönemlik bilgisayar bilimi lisansı."
+        },
+        "english": {
+          "note": "B2 (kayıt için)."
+        },
+        "portal": "uni-assist"
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+      },
+      "notes": "Raporda 'güvenli'. Veri bilimi bu programın bir uzmanlık kolu."
+    },
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "information-technology",
+      "name": "Information Technology",
+      "degree": "M.Eng.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "core",
+        "comm"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 3,
+      "requirements": {
+        "documents": [
+          "CV",
+          "Motivasyon mektubu"
+        ],
+        "interview": "Komisyon seçimi.",
+        "note": "Rapordaki değer; resmi kaynaktan doğrulanamadı."
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "note": "Yalnızca dönem katkı payı (tutar doğrulanmadı)."
+      },
+      "notes": "Bu programın bilgileri yalnızca rapordan; doğrulanmadı."
+    }
+  ]
+}

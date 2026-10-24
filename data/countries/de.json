@@ -12,15 +12,17 @@
     "method": "bavarian",
     "nMax": 4,
     "nMin": 1,
-    "status": "tahmin",
-    "note": "Bavyera formülünde Türk 4'lük sistemi için en düşük geçer not (Nmin) üniversiteye ve anabin kaydına göre 1.0 ya da 2.0 alınabiliyor. Nmin=1 ile 2.75 → 2.25, Nmin=2 ile 2.75 → 2.88. Almanya araştırmandaki hesap 2.2–2.3 idi (Nmin=1). Hedef üniversitenin hangi değeri kullandığını kontrol et."
+    "status": "kesin",
+    "note": "DHBW'nin Türkiye not dönüşüm tablosu (Haziran 2026) Özyeğin, Bilgi, Çağ ve Abant İzzet Baysal'ı 'System 3' grubunda listeliyor: en iyi not 4.00, en düşük geçer not 1.00. Bu gruptaki 2.75 GNO, Bavyera formülüyle 2.25'e karşılık gelir. Diğer Türk üniversiteleri farklı gruplarda olabilir; örneğin System 1'de en düşük geçer not 0.70. Bağlayıcı değer uni-assist'in VPD belgesinde çıkar."
   },
   "facts": [
     { "label": "Bloke hesap (vize)", "value": "2026 için yıllık 11.904 € (ayda 992 €). Başvuru aşamasında ya da Studienkolleg'de daha yüksek oran (~1.091 €/ay) uygulanır.", "status": "kesin" },
     { "label": "Öğrenim ücreti", "value": "Devlet üniversitelerinin çoğunda yok; her dönem katkı payı ödenir (TUM'da 97 €). Bazı eyalet ve üniversitelerde AB dışı öğrenci ücreti var.", "status": "kesin" },
     { "label": "Baden-Württemberg", "value": "AB/AEA dışından öğrenim için gelen öğrencilere dönem başına 1.500 € (2017/18'den beri; kaldırılmadı).", "status": "kesin" },
     { "label": "TUM (Bavyera)", "value": "AB dışı yeni yüksek lisans öğrencilerine dönem başına 4.000 veya 6.000 €. 2027/28 kışından itibaren 4.600 veya 6.800 €. Türk vatandaşları için istisna yalnızca ebeveyn Almanya'da en az 1 yıl çalışmış ve öğrenci onunla Almanya'da yaşıyorsa.", "status": "kesin" },
-    { "label": "uni-assist ücreti", "value": "İlk başvuru 75 €, aynı dönemde her ek başvuru 30 € (VPD de aynı ücretlendirme).", "status": "tahmin" },
+    { "label": "FAU Erlangen-Nürnberg", "value": "Yaz 2027'den itibaren yeni kaydolan AB dışı öğrencilerden programa göre dönem başına 1.000–6.000 €; 2026/27 kışından itibaren AB dışı başvuru başına 100 € başvuru ücreti.", "status": "kesin" },
+    { "label": "APS belgesi", "value": "Türkiye'de alınan diplomalar için gerekmiyor. uni-assist yalnızca Çin, Vietnam ve Hindistan'ı sayıyor; kural uyruğa değil eğitimin alındığı ülkeye bağlı.", "status": "kesin" },
+    { "label": "uni-assist ücreti", "value": "İlk başvuru 75 €, aynı dönemde her ek başvuru 30 € (VPD de aynı ücretlendirme). İşlem süresi 4–7 hafta; son tarihten en az 8 hafta önce başvur.", "status": "kesin" },
     { "label": "Tipik son başvurular (AB dışı)", "value": "Kış dönemi için çoğunlukla 31 Mayıs veya 15 Temmuz; yaz dönemi için 30 Kasım veya 15 Ocak. Program sayfasından doğrula.", "status": "tahmin" }
   ],
   "regionalFees": [
@@ -57,6 +59,9 @@
     { "label": "Studis Online: Baden-Württemberg ücretleri", "url": "https://www.studis-online.de/studiengebuehren/bawue.php" },
     { "label": "Auswärtiges Amt: bloke hesap", "url": "https://italien.diplo.de/it-de/service/visa-aktuell/2586756-2586756" },
     { "label": "Uni Koblenz: uni-assist ücretleri", "url": "https://www.uni-koblenz.de/de/international/incomings/vollzeistudierende/jetzt-bewerben/bewerbung-ueber-uni-assist" },
+    { "label": "DHBW: Türkiye not dönüşümü (PDF)", "url": "https://www.dhbw.de/fileadmin/user_upload/Dokumente/International/Notenumrechnungen/Notenumrechnung_Tuerkei.pdf" },
+    { "label": "uni-assist: APS gereken ülkeler", "url": "https://uni-assist.com/en/guides/aps-required-countries" },
+    { "label": "FAU: AB dışı öğrenim ücretleri", "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/" },
     { "label": "DAAD burs veritabanı (Türkiye)", "url": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/" }
   ],
   "verifiedAt": "2026-10-24"

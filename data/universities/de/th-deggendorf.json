@@ -1,0 +1,93 @@
+{
+  "id": "th-deggendorf",
+  "country": "de",
+  "name": "Technische Hochschule Deggendorf",
+  "short": "TH Deggendorf",
+  "city": "Deggendorf",
+  "region": "Bayern",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "admissionsSummary": "Uygulamalı bilimler üniversitesi (Hochschule). Yaz 2027 için başvuru penceresi 15 Ekim – 15 Kasım 2026.",
+  "links": [
+    {
+      "label": "Başvurular",
+      "url": "https://www.th-deg.de/en/apply"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "artificial-intelligence-and-data-science",
+      "name": "Artificial Intelligence and Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "ai",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-10-15",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin"
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [],
+          "status": "tahmin",
+          "note": "Kış dönemi tarihleri doğrulanamadı."
+        }
+      ],
+      "requirements": {
+        "ects": {
+          "areas": [
+            {
+              "area": "Yapay zekâ / veri bilimi dersleri",
+              "min": 18
+            }
+          ]
+        },
+        "english": {
+          "note": "B2."
+        },
+        "interview": "Online kabul sınavı.",
+        "note": "YZ, veri bilimi, bilgisayar bilimi veya yakın alanda lisans."
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yok."
+        },
+        "note": "Dönem katkı payı yaklaşık 82 € (rapordaki değer; doğrulanmadı). Bazı listelerde AB dışı için ~500 €/dönem ücret görünüyor; doğrula."
+      },
+      "notes": "Raporda 'güvenli'."
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "id": "mannheim",
+  "country": "de",
+  "name": "Universität Mannheim",
+  "short": "Mannheim Üni.",
+  "city": "Mannheim",
+  "region": "Baden-Württemberg",
+  "type": "state",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "rankings": {},
+  "intakes": [],
+  "scholarships": [],
+  "people": [],
+  "admissionsSummary": "Programlar Eylül (güz) ve Şubat (bahar) başlıyor. Bahar 2027 için başvurular 15 Ekim – 15 Kasım 2026 arasında açık. İngilizce belgesi 15 Ağustos / 15 Ocak'a kadar sonradan verilebilir.",
+  "links": [
+    {
+      "label": "Başvuru tarihleri",
+      "url": "https://www.uni-mannheim.de/en/academics/dates/application-deadlines/"
+    },
+    {
+      "label": "Mannheim Master in Data Science",
+      "url": "https://www.uni-mannheim.de/en/academics/before-your-studies/programs/mannheim-master-in-data-science/"
+    },
+    {
+      "label": "Business Informatics",
+      "url": "https://www.uni-mannheim.de/en/academics/before-your-studies/programs/masters-program-in-business-informatics/"
+    }
+  ],
+  "sources": [],
+  "verifiedAt": "2026-10-24",
+  "programs": [
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "data-science",
+      "name": "Mannheim Master in Data Science (MMDS)",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data",
+        "ai"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-10-15",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Şubat 2027 başlangıcı."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-01",
+              "deadline": "2027-05-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Eylül 2027 başlangıcı."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.5,
+          "note": "Bilgisayar bilimi, matematik veya ilgili alanda en az 2.5 ile lisans."
+        },
+        "gre": {
+          "policy": "required",
+          "minQuant": 162,
+          "note": "AB dışı vatandaşlar için ZORUNLU: Quant ≥ 162 ve Verbal ≥ 151, en fazla 5 yıllık. GRE gereken adaylarda seçim YALNIZCA GRE puanına göre yapılıyor. Rapor GRE şartından söz etmiyordu."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Bilgisayar bilimi / matematik / istatistik",
+              "min": 70
+            }
+          ],
+          "note": "Yabancı diplomada denklik için en az 70 ECTS bilişim, matematik veya istatistik."
+        },
+        "english": {
+          "note": "İngilizce belgesi gerekli; 15 Ağustos / 15 Ocak'a kadar verilebilir."
+        }
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yerine eyalet ücreti."
+        },
+        "regionalFee": {
+          "region": "Baden-Württemberg",
+          "fee": {
+            "amount": 1500,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "appliesTo": "non-eu",
+          "status": "kesin",
+          "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
+        },
+        "semesterFee": {
+          "amount": 194,
+          "currency": "EUR",
+          "per": "semester"
+        }
+      },
+      "notes": "Raporda 'hedef' idi; GRE şartı nedeniyle GRE Quant 162+ olmadan erişilemez."
+    },
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "business-informatics",
+      "name": "Business Informatics",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "is",
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2026-10-15",
+              "deadline": "2026-11-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Şubat 2027 başlangıcı."
+        },
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-01",
+              "deadline": "2027-05-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Eylül 2027 başlangıcı."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "note": "Asgari not şartı yok; not seçim ölçütlerinden biri."
+        },
+        "ects": {
+          "total": 180,
+          "areas": [
+            {
+              "area": "Bilişim (en az 8'i programlama)",
+              "min": 30
+            },
+            {
+              "area": "İşletme / iş bilişimi",
+              "min": 30
+            },
+            {
+              "area": "Matematik / istatistik",
+              "min": 18
+            }
+          ],
+          "note": "Hazırlık dersiyle kredi tamamlama imkânı yok. CS mezunlarında 30 ECTS işletme kredisi genelde eksik olur; transkriptini kontrol et."
+        },
+        "english": {
+          "note": "İngilizce belgesi gerekli; 15 Ağustos / 15 Ocak'a kadar verilebilir."
+        }
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yerine eyalet ücreti."
+        },
+        "regionalFee": {
+          "region": "Baden-Württemberg",
+          "fee": {
+            "amount": 1500,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "appliesTo": "non-eu",
+          "status": "kesin",
+          "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
+        },
+        "semesterFee": {
+          "amount": 194,
+          "currency": "EUR",
+          "per": "semester"
+        }
+      },
+      "notes": "Raporda 'hedef'. Belirleyici şart 30 ECTS işletme kredisi."
+    },
+    {
+      "scholarships": [],
+      "links": [],
+      "id": "social-data-science",
+      "name": "Mannheim Master in Social Data Science",
+      "degree": "M.Sc.",
+      "levels": [
+        "master-thesis"
+      ],
+      "fields": [
+        "data"
+      ],
+      "languages": [
+        "en"
+      ],
+      "durationSemesters": 4,
+      "ects": 120,
+      "intakes": [
+        {
+          "term": "winter",
+          "cycle": "2027-28",
+          "offered": "yes",
+          "rounds": [
+            {
+              "name": "normal",
+              "open": "2027-04-01",
+              "deadline": "2027-05-15",
+              "audience": "all"
+            }
+          ],
+          "status": "kesin",
+          "note": "Yalnızca güz başlangıcı."
+        },
+        {
+          "term": "summer",
+          "cycle": "2027",
+          "offered": "no",
+          "rounds": [],
+          "status": "kesin",
+          "note": "Bahar alımı yok."
+        }
+      ],
+      "requirements": {
+        "gpa": {
+          "deMax": 2.5,
+          "note": "Rapordaki değer; resmi kaynaktan doğrulanamadı."
+        },
+        "ects": {
+          "areas": [
+            {
+              "area": "Bilgisayar bilimi / matematik / istatistik",
+              "min": 48
+            }
+          ],
+          "note": "Rapordaki değer; resmi kaynaktan doğrulanamadı."
+        },
+        "documents": [
+          "5.000–10.000 kelimelik İngilizce akademik metin (rapora göre)"
+        ],
+        "note": "Sosyal bilim / işletme lisansı bekleniyor (rapora göre)."
+      },
+      "costs": {
+        "tuition": {
+          "kind": "free",
+          "note": "Öğrenim ücreti yerine eyalet ücreti."
+        },
+        "regionalFee": {
+          "region": "Baden-Württemberg",
+          "fee": {
+            "amount": 1500,
+            "currency": "EUR",
+            "per": "semester"
+          },
+          "appliesTo": "non-eu",
+          "status": "kesin",
+          "note": "AB dışı öğrenci ücreti; Almanya'da lise diploması alanlar muaf."
+        }
+      },
+      "notes": "Raporda 'reach/hedef'; şartlar doğrulanmadı."
+    }
+  ]
+}
