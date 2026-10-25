@@ -14,12 +14,16 @@ export function convert(amount: number, from: Currency, to: Currency, fx: Fx): n
   return (amount / a) * b;
 }
 
-const SYMBOL: Record<Currency, string> = { EUR: "€", TRY: "₺", USD: "$", CHF: "CHF " };
+const SYMBOL: Record<Currency, string> = { EUR: "€", TRY: "₺", USD: "$", CHF: "CHF ", HUF: "HUF", SEK: "SEK", DKK: "DKK", GBP: "£" };
+/** currencies written after the number, Turkish style: "43.700 HUF" */
+const SUFFIX = new Set<Currency>(["TRY", "HUF", "SEK", "DKK"]);
 const PER_LABEL: Record<Money["per"], string> = { semester: "/dönem", year: "/yıl", month: "/ay", total: " toplam", once: "" };
 
 export function fmtAmount(amount: number, currency: Currency): string {
-  const n = new Intl.NumberFormat("tr-TR", { maximumFractionDigits: amount < 100 ? 2 : 0 }).format(amount);
-  return currency === "TRY" ? `${n} ₺` : `${SYMBOL[currency]}${n}`;
+  // whole amounts stay whole; amounts with cents keep both digits (722,58 €), as the sources publish them
+  const digits = Number.isInteger(amount) ? 0 : 2;
+  const n = new Intl.NumberFormat("tr-TR", { minimumFractionDigits: digits, maximumFractionDigits: digits }).format(amount);
+  return SUFFIX.has(currency) ? `${n} ${SYMBOL[currency]}` : `${SYMBOL[currency]}${n}`;
 }
 export function fmtMoney(m: Money): string {
   return fmtAmount(m.amount, m.currency) + PER_LABEL[m.per];

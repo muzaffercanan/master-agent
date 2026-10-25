@@ -7,7 +7,7 @@ export const DateStr = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "tarih YYYY-AA-GG
 export const Status = z.enum(["kesin", "tahmin"]);
 /** fall/spring = Turkish güz/bahar, winter/summer = German-style Wintersemester/Sommersemester */
 export const Term = z.enum(["fall", "spring", "winter", "summer"]);
-export const Currency = z.enum(["EUR", "TRY", "USD", "CHF"]);
+export const Currency = z.enum(["EUR", "TRY", "USD", "CHF", "HUF", "SEK", "DKK", "GBP"]);
 export const Per = z.enum(["semester", "year", "month", "total", "once"]);
 /** Which applicants a rule or fee applies to */
 export const Audience = z.enum(["all", "eu", "non-eu", "tr"]);
@@ -132,6 +132,8 @@ export const Scholarship = z.object({
   audience: Audience.default("all"),
   link: z.string().url().optional(),
   status: Status.default("kesin"),
+  /** id of the full record in data/scholarships/, when there is one */
+  ref: z.string().optional(),
 });
 
 export const Program = z.object({
@@ -214,10 +216,94 @@ export const Country = z.object({
     .object({ method: z.literal("bavarian"), nMax: z.number(), nMin: z.number(), status: Status, note: z.string() })
     .optional(),
   facts: z.array(z.object({ label: z.string(), value: z.string(), status: Status.default("kesin") })).default([]),
+  /** what a non-EU student must show for the visa / residence permit */
+  proofOfFunds: z
+    .object({
+      /** blocked-account = money locked in a special account; own-funds = an ordinary account in the student's name */
+      kind: z.enum(["blocked-account", "own-funds"]),
+      amounts: z.array(z.object({ label: z.string(), money: Money })).min(1),
+      accepted: z.array(z.string()).min(1),
+      note: z.string().optional(),
+      status: Status,
+      source: Link,
+    })
+    .optional(),
   regionalFees: z.array(RegionalFee).default([]),
   scholarships: z.array(Scholarship).default([]),
   timeline: z.array(TimelineEvent).default([]),
   sources: z.array(Link).default([]),
+  verifiedAt: DateStr,
+});
+
+/** Who runs a scholarship scheme; groups the scholarships page. */
+export const FundingCategory = z.enum(["eu", "de", "it", "tr", "other"]);
+/** Lowercase ISO 3166 code of a study country; may be outside the four researched countries. */
+export const CountryCode = z.string().regex(/^[a-z]{2}$/, "ülke kodu iki küçük harf olmalı");
+
+export const FundingCall = z.object({
+  /** academic year the funded studies start, e.g. "2027-28" */
+  cycle: z.string(),
+  /** e.g. "burs turu", "ücret muafiyeti turu"; omit for a single round */
+  name: z.string().optional(),
+  open: DateStr.optional(),
+  deadline: DateStr.optional(),
+  status: Status,
+  note: z.string().optional(),
+});
+
+/** One degree programme inside an umbrella scheme (an Erasmus Mundus joint master, an AI school). */
+export const FundedProgram = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string(),
+  short: z.string(),
+  fields: z.array(z.string()).min(1),
+  countries: z.array(CountryCode).min(1),
+  partners: z.string(),
+  /** whether the next intake (2027) awards the scheme's scholarships */
+  scholarships: z.enum(["yes", "no", "unknown"]),
+  calls: z.array(FundingCall).default([]),
+  stipend: Money.optional(),
+  /** fee for students admitted without the scholarship */
+  selfFundedFee: Money.optional(),
+  requirements: z.string().optional(),
+  note: z.string().optional(),
+  link: z.string().url(),
+});
+
+export const Funding = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string(),
+  provider: z.string(),
+  category: FundingCategory,
+  hostCountries: z.array(CountryCode).min(1),
+  hostNote: z.string().optional(),
+  summary: z.string(),
+  /** full = tuition and living costs; partial = one of them or a capped share; small = a top-up */
+  level: z.enum(["full", "partial", "small"]),
+  /** covered = paid by the scholarship; waived = the school drops it; free = the school charges none anyway */
+  tuition: z.enum(["covered", "waived", "partial", "free", "not-covered", "varies"]),
+  tuitionNote: z.string().optional(),
+  stipend: Money.optional(),
+  stipendNote: z.string().optional(),
+  extras: z.array(z.string()).default([]),
+  /** whether the award letter can stand in for the blocked account / proof of funds */
+  blockedAccount: z.enum(["replaces", "partial", "no", "unknown", "na"]),
+  blockedAccountNote: z.string().optional(),
+  /** open to Turkish citizens */
+  turkish: z.enum(["yes", "no", "conditional"]),
+  /** funds a computer-science master's */
+  cs: z.enum(["yes", "limited", "no"]),
+  csNote: z.string().optional(),
+  requirements: Requirements.optional(),
+  ageMax: z.number().optional(),
+  /** service, work or repayment duties that come with the money */
+  obligation: z.string().optional(),
+  calls: z.array(FundingCall).default([]),
+  howToApply: z.array(z.string()).default([]),
+  notes: z.array(z.string()).default([]),
+  programs: z.array(FundedProgram).default([]),
+  links: z.array(Link).default([]),
+  sources: z.array(Link).min(1),
   verifiedAt: DateStr,
 });
 
@@ -249,6 +335,10 @@ export type Program = z.infer<typeof Program>;
 export type University = z.infer<typeof University>;
 export type TimelineEvent = z.infer<typeof TimelineEvent>;
 export type Country = z.infer<typeof Country>;
+export type FundingCategory = z.infer<typeof FundingCategory>;
+export type FundingCall = z.infer<typeof FundingCall>;
+export type FundedProgram = z.infer<typeof FundedProgram>;
+export type Funding = z.infer<typeof Funding>;
 export type Field = z.infer<typeof Field>;
 export type Fx = z.infer<typeof Fx>;
 export type CsrRow = z.infer<typeof CsrRow>;

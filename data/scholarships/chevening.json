@@ -1,0 +1,36 @@
+{
+  "id": "chevening",
+  "name": "Chevening (ve Chevening-TEV) bursu",
+  "provider": "Birleşik Krallık Dışişleri (FCDO); Türkiye'de TEV ortaklığı",
+  "category": "other",
+  "hostCountries": ["gb"],
+  "summary": "Birleşik Krallık'ta bir yıllık yüksek lisans için İngiliz hükümeti bursu. Chevening-TEV ortak bursunda okul ücreti ve diğer giderlerin yarısını Chevening, yarısını TEV karşılar. Ancak en az iki yıl iş deneyimi ve lisansı son başvuru tarihinden en az iki yıl önce bitirmiş olmak gerekir.",
+  "level": "full",
+  "tuition": "covered",
+  "tuitionNote": "Chevening-TEV: okul ücreti ve diğer giderlerin %50'si Chevening, %50'si TEV.",
+  "extras": [],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Birleşik Krallık vize kuralları bu araştırmada incelenmedi.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "workExperience": "Lisans sonrası en az iki yıl (2.800 saat) iş deneyimi; lisans son başvuru gününden en az iki yıl önce bitmiş olmalı.",
+    "note": "Üç farklı uygun İngiliz üniversitesi programına başvurmak ve en az birinden koşulsuz kabul almak. Burs bitince en az iki yıl ülkene dönme taahhüdü."
+  },
+  "obligation": "Burs bitince en az iki yıl Türkiye'ye dönüş.",
+  "calls": [
+    { "cycle": "2027-28", "status": "kesin", "note": "2027–28 başvuruları Ağustos 2026'da açıldı, Ekim 2026'da kapandı. Bir sonraki tur Ağustos 2027'de beklenir." }
+  ],
+  "howToApply": ["Chevening sitesinden başvur; Chevening değerlendirmesinden sonra uygun adaylar TEV başvurusuna yönlendirilir."],
+  "notes": ["Temmuz 2026'da mezun olan biri iki yıl iş deneyimi ve iki yıllık mezuniyet şartı nedeniyle en erken Ağustos–Ekim 2028 turuna (2029–30 öğretim yılı) başvurabilir."],
+  "links": [
+    { "label": "Chevening uygunluk", "url": "https://www.chevening.org/resource-hub/guidance/eligibility/" },
+    { "label": "Chevening takvimi", "url": "https://www.chevening.org/scholarships/application-timeline/" }
+  ],
+  "sources": [
+    { "label": "Chevening eligibility criteria", "url": "https://www.chevening.org/resource-hub/guidance/eligibility/" },
+    { "label": "Chevening application timeline", "url": "https://www.chevening.org/scholarships/application-timeline/" },
+    { "label": "TEV: Chevening-TEV ortak bursu", "url": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

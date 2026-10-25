@@ -43,15 +43,16 @@ Gerekli: Node.js 20+. Proje klasörü: `C:\Users\muzca\Desktop\muzo-genel\DEV\ma
 
 ```
 data/
-  countries/{tr,de,it,at}.json         ülke düzeyi bilgi, bölgesel ücretler, ulusal burslar, takvim (sınavlar)
+  countries/{tr,de,it,at}.json         ülke düzeyi bilgi, bölgesel ücretler, ulusal burslar, geçim kanıtı (proofOfFunds), takvim (sınavlar)
   universities/{ülke}/{okul-id}.json   okul + programları (okul başına bir dosya)
+  scholarships/{id}.json               burs kayıtları (Funding): kapsam, bloke hesap, çağrılar, alt programlar (Erasmus Mundus)
   fields.json                          alan sözlüğü
   fx.json                              kur (EUR bazlı, tarihli)
   tr/csrankings.json                   Türkiye araştırma gücü tablosu
 src/
   schema/index.ts                      zod şeması: VERİNİN TEK DOĞRULUK KAYNAĞI
   data/                                JSON yükleme (import.meta.glob) + çapraz doğrulama (dataset.ts)
-  lib/                                 saf mantık: eligibility, cost, filters, calendar, dates, money, ics, programs
+  lib/                                 saf mantık: eligibility, cost, filters, calendar, dates, money, ics, programs, scholarships
   state/                               store.tsx (localStorage), data.ts (türetilmiş görünümler)
   pages/ components/ content/          arayüz; content/ içinde TurkeyGuide ve GermanyGuide uzun rehber metinleri
   styles/base.css, app.css             tasarım tokenları ve bileşen stilleri
@@ -141,6 +142,7 @@ Güncel sayılar için `npm run check` çıktısına bak. Açık işler:
 - Bahar 2026-27 ilanları: Boğaziçi, Koç, Özyeğin, Sabancı işlendi. ODTÜ, İTÜ, Gazi, YTÜ, Atılım, Hacettepe ilan edince güncelle (Boğaziçi Bilgisayar Müh.'in bahar kontenjanı belirsiz).
 - Güz 2027-28 tarihleri çoğunlukla 2026 takviminin kaydırılmasıyla yazılmış `tahmin`'lerdir; ilan çıktıkça `kesin`'e çevir.
 - Bilinen küçük arayüz sorunları: detay sayfalarında üst menüde sekme seçili görünmüyor; mobilde uygunluk etiketi uzunsa "Takibe al" alt satıra iniyor; tema değişiminde 150 ms'lik geçiş; derleme 500 kB uyarısı veriyor.
+- Burslar (`/burslar`, 26 Ekim 2026): Erasmus Mundus programlarının çoğunun 2027 tarihleri Kasım–Aralık 2026'da yayımlanacak; çıkınca `programs[].calls`'a ekle. IYT, MAECI, Padova ve YLSY 2027 çağrıları henüz yok. Doğrulanamayanlar `docs/research-notes.md` → "Burslar ve geçim kanıtı".
 - Düşünülen ama yapılmayan: kırık bağlantıları otomatik tespit eden CI, GitHub Pages ile yayın.
 
 ## 8. Arayüz kuralları

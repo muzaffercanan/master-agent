@@ -16,6 +16,7 @@ try {
       .readdirSync(path.join(DATA, "universities"))
       .flatMap(c => list(`universities/${c}`))
       .map(file => ({ file, json: json(file) })),
+    fundings: list("scholarships").map(file => ({ file, json: json(file) })),
     fields: json("fields.json"),
     fx: json("fx.json"),
     csr: json("tr/csrankings.json"),
@@ -33,4 +34,4 @@ if (errors.length) {
 }
 const progs = dataset.universities.reduce((a, u) => a + u.programs.length, 0);
 const byCountry = dataset.countries.map(c => `${c.code}: ${dataset.universities.filter(u => u.country === c.code).length} okul`).join(", ");
-console.log(`✓ Veri geçerli — ${dataset.universities.length} üniversite, ${progs} program (${byCountry})`);
+console.log(`✓ Veri geçerli — ${dataset.universities.length} üniversite, ${progs} program (${byCountry}), ${dataset.fundings.length} burs`);

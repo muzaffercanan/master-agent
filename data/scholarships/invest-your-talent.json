@@ -1,0 +1,47 @@
+{
+  "id": "invest-your-talent",
+  "name": "Invest Your Talent in Italy (IYT)",
+  "provider": "İtalya Dışişleri Bakanlığı (MAECI), ICE ve Uni-Italia",
+  "category": "it",
+  "hostCountries": ["it"],
+  "hostNote": "Programa katılan 24 İtalyan üniversitesi; aralarında Politecnico di Milano, Politecnico di Torino, Padova, Trento, Genova, Milano-Bicocca, Firenze, Verona, Tor Vergata, Modena-Reggio, Calabria var.",
+  "summary": "İngilizce yüksek lisans (laurea magistrale) veya master programları için 9 aylık 10.800 € burs ve öğrenim ücreti muafiyeti. Alanlar: mühendislik ve ileri teknolojiler (bilgisayar dahil), mimarlık/tasarım, ekonomi/işletme. Programda İtalyanca kursu ve bir İtalyan şirketinde zorunlu staj var. Türkiye uygun ülkeler listesinde.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "Öğrenim ücreti muaf; bölgesel vergi (tassa regionale) yine ödenir. İkinci yıl muafiyeti ve burs yenilemesi ders başarısına ve İtalyanca kursuna devama bağlı.",
+  "stipend": { "amount": 10800, "currency": "EUR", "per": "year" },
+  "stipendNote": "9 ay için toplam 10.800 € (ayda 1.200 €), 1 Ekim'den itibaren.",
+  "extras": ["Öğrenim ücreti muafiyeti", "Şirkette zorunlu staj", "İtalyanca kursu"],
+  "blockedAccount": "replaces",
+  "blockedAccountNote": "İtalya'da bloke hesap yok. Vize için yılda en az 10.179,85 € geçim kanıtı isteniyor; burs bu tutarı aşıyor. Bursun kanıt olarak kabulünü konsoloslukla teyit et.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "'Mühendislik ve ileri teknolojiler' alanındaki İngilizce bilgisayar ve veri programları. Seçtiğin programın IYT listesinde olması şart.",
+  "requirements": {
+    "english": { "moiAccepted": true, "note": "B2 düzeyinde sertifika (IELTS, TOEFL iBT, Cambridge, PTE…). İngilizce okunmuş lisans için üniversitenin yazısı C1 sayılabilir." },
+    "otherLanguage": "İtalyanca belgesi zorunlu değil, ek puan getirir; yoksa gitmeden önce kurs taahhüdü.",
+    "note": "Yüksek lisansa kayıt için geçerli lisans diploması (mezun olmuş olmalısın; son sınıf öğrencisi başvuramaz). Seçtiğin programa üniversitenin kendi ön başvurusunu da yapmalısın. Yaş sınırı her çağrıda ayrıca belirtilir."
+  },
+  "calls": [
+    { "cycle": "2027-28", "status": "tahmin", "note": "Resmî site 'yeni başvuru 2027'de açılıyor' diyor; tarih yok. 2026–27 çağrısının son günü 11 Mayıs 2026 18:00'di." }
+  ],
+  "howToApply": [
+    "IYT kurs listesinden bir program seç ve üniversiteye IYT adayı olduğunu belirterek ön başvuru yap.",
+    "IYT portalına ayrıca başvur: transkript (not ortalamalı), İngilizce belgesi, İtalyanca belgesi veya taahhüdü, en fazla 1 sayfa CV.",
+    "Belgeler İngilizce, Fransızca veya İspanyolca olmalı; değilse yeminli çeviri."
+  ],
+  "notes": [
+    "Halen İtalya'da okuyanlar ve İtalyan diploması olanlar başvuramaz.",
+    "Bazı üniversiteler ayrıca 'Borse Ateneo' denen kendi bursunu da bu program içinden verir."
+  ],
+  "links": [
+    { "label": "IYT resmî sitesi", "url": "https://investyourtalentapplication.esteri.it/SitoIYT/EN/invest-your-talent-in-italy" },
+    { "label": "IYT sık sorulan sorular", "url": "https://investyourtalentapplication.esteri.it/SitoIYT/EN/frequently-asked-questions" }
+  ],
+  "sources": [
+    { "label": "IYT ana sayfa: uygun ülkeler (Türkiye dahil)", "url": "https://investyourtalentapplication.esteri.it/SitoIYT/EN/invest-your-talent-in-italy" },
+    { "label": "IYT SSS: 9 ay için 10.800 € ve ücret muafiyeti", "url": "https://investyourtalentapplication.esteri.it/SitoIYT/EN/frequently-asked-questions" },
+    { "label": "MAECI IYT sayfası: 2026–27 son günü", "url": "https://www.esteri.it/en/servizi-opportunita/opportunita/borse-di-studio/per-cittadini-stranieri/progetti-speciali/invest-your-talent-in-italy/" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

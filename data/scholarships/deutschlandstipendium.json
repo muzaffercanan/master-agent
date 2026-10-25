@@ -1,0 +1,38 @@
+{
+  "id": "deutschlandstipendium",
+  "name": "Deutschlandstipendium",
+  "provider": "Federal hükümet ve özel bağışçılar, üniversiteler üzerinden",
+  "category": "de",
+  "hostCountries": ["de"],
+  "summary": "Almanya'daki üniversitelerin kendi seçtiği başarılı öğrencilere ayda 300 €. Gelirden bağımsızdır, uyruk şartı yoktur, en az iki dönem verilir. Başvuru doğrudan okuduğun ya da kaydolacağın üniversiteye yapılır; tarihleri her üniversite kendi belirler.",
+  "level": "small",
+  "tuition": "not-covered",
+  "stipend": { "amount": 300, "currency": "EUR", "per": "month" },
+  "stipendNote": "150 €'yu özel bağışçı, 150 €'yu federal hükümet öder. Bağışçı daha fazla verirse fark sana eklenir.",
+  "extras": [],
+  "blockedAccount": "partial",
+  "blockedAccountNote": "300 € bloke hesap tutarının (992 €/ay) altında kalır; vize için bloke hesabın kalanını yine göstermen gerekir. Seçim kayıt sırasında veya sonrasında yapıldığı için burs belgesi vize başvurusuna yetişmeyebilir.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "note": "Üniversitenin kabul şartlarını karşılamak ve kayıtlı ya da kaydolmak üzere olmak. Seçimde notlar, sosyal sorumluluk ve kişisel engelleri aşma birlikte değerlendirilir."
+  },
+  "calls": [],
+  "howToApply": [
+    "Kabul aldığın üniversitenin Deutschlandstipendium sayfasını bul (üniversite haritası resmî sitede).",
+    "Üniversitenin istediği belgelerle, üniversitenin ilan ettiği tarihte başvur."
+  ],
+  "notes": [
+    "Doktora öğrencileri ve federal kurum yüksekokulları kapsam dışı.",
+    "2025'te yaklaşık 34.000 öğrenci aldı."
+  ],
+  "links": [
+    { "label": "Resmî site (BMFTR)", "url": "https://www.deutschlandstipendium.de/" },
+    { "label": "Katılan üniversiteler haritası", "url": "https://www.deutschlandstipendium.de/SiteGlobals/Forms/deutschlandstipendium/de/hochschullandkarte/hochschullandkarte_formular.html" }
+  ],
+  "sources": [
+    { "label": "Deutschlandstipendium SSS: 300 €/ay", "url": "https://www.deutschlandstipendium.de/deutschlandstipendium/de/studierende/haeufig-gestellte-fragen/haeufig-gestellte-fragen_node.html" },
+    { "label": "DAAD veritabanı kaydı", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000207" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

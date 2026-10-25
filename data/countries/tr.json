@@ -52,7 +52,8 @@
       },
       "audience": "tr",
       "link": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari",
-      "status": "kesin"
+      "status": "kesin",
+      "ref": "tubitak-2210"
     },
     {
       "name": "TÜBİTAK 2210-C",
@@ -64,7 +65,8 @@
         "per": "month"
       },
       "audience": "tr",
-      "status": "kesin"
+      "status": "kesin",
+      "ref": "tubitak-2210"
     },
     {
       "name": "TÜBİTAK 2210-D",
@@ -76,7 +78,8 @@
         "per": "month"
       },
       "audience": "tr",
-      "status": "kesin"
+      "status": "kesin",
+      "ref": "tubitak-2210"
     }
   ],
   "timeline": [
@@ -92,13 +95,6 @@
       "e": "2026-10-08",
       "t": "e-YDS 2026/11 başvurusu",
       "d": "Sınav 17 Ekim, sonuç aynı gün. Kontenjan dolunca başvuru erken kapanır.",
-      "k": "kesin"
-    },
-    {
-      "s": "2026-10-05",
-      "e": "2026-10-27",
-      "t": "TÜBİTAK 2210 (2026/2 çağrısı)",
-      "d": "Yalnızca şu anda bir YL programına kayıtlıysan. 2210-A için ALES ≥80 ve İngilizce ≥80.",
       "k": "kesin"
     },
     {

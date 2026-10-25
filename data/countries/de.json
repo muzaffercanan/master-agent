@@ -25,6 +25,24 @@
     { "label": "uni-assist ücreti", "value": "İlk başvuru 75 €, aynı dönemde her ek başvuru 30 € (VPD de aynı ücretlendirme). İşlem süresi 4–7 hafta; son tarihten en az 8 hafta önce başvur.", "status": "kesin" },
     { "label": "Tipik son başvurular (AB dışı)", "value": "Kış dönemi için çoğunlukla 31 Mayıs veya 15 Temmuz; yaz dönemi için 30 Kasım veya 15 Ocak. Program sayfasından doğrula.", "status": "tahmin" }
   ],
+  "proofOfFunds": {
+    "kind": "blocked-account",
+    "amounts": [
+      { "label": "Bloke hesap, öğrenci vizesi", "money": { "amount": 11904, "currency": "EUR", "per": "year" } },
+      { "label": "Her ay çekilebilen", "money": { "amount": 992, "currency": "EUR", "per": "month" } }
+    ],
+    "accepted": [
+      "Almanya'da bir bankada veya benzer bir sağlayıcıda açılan bloke hesap (sağlayıcıyı sen seçersin; hesap ücretleri ayrıca ödenir)",
+      "Almanya'da yaşayan, yeterli geliri olan birinin verdiği taahhütname (Verpflichtungserklärung, §§ 66–68 AufenthG)",
+      "Alman kamu kaynaklı burs ya da Almanya'da tanınan bir burs kuruluşunun bursu (DAAD, Erasmus Mundus, siyasi vakıflar)",
+      "Menşe ülkenin kamu kaynaklı bursu, Almanya Dışişleri, DAAD veya başka bir Alman burs kuruluşu yerleştirmeye aracılık ettiyse",
+      "Ebeveynlerin gelir ve mal varlığı belgeleri",
+      "Almanya'daki bir bankada her yıl yenilenen banka teminatı"
+    ],
+    "note": "Bloke hesap, kalan tutarı başka bir belgeyle göstermiyorsan gereken tutarın tamamı kadar olmalı; kısmi bir burs varsa farkı bloke hesap veya taahhütnameyle tamamlarsın. Ankara Büyükelçiliği'nin Türkçe sayfası yalnızca bloke hesap ve Almanya'dan alınan taahhütnameyi sayıyor; diğer yolları (özellikle ebeveyn geliri) randevudan önce elçiliğe sor. Tutar BAföG azami oranına göre belirlenir; BAföG artarsa bloke hesap tutarı da artar.",
+    "status": "kesin",
+    "source": { "label": "Almanya Dışişleri SSS: öğrenci vizesinde finansman", "url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-finanzierung-606220" }
+  },
   "regionalFees": [
     {
       "region": "Baden-Württemberg",
@@ -41,16 +59,28 @@
       "coverage": "Gelirden bağımsız, her uyruğa açık; en az 2 dönem. Başvuru üniversiteye, tarihler üniversiteye göre değişir.",
       "amount": { "amount": 300, "currency": "EUR", "per": "month" },
       "audience": "all",
-      "status": "kesin"
+      "status": "kesin",
+      "ref": "deutschlandstipendium"
     },
     {
-      "name": "DAAD Study Scholarships (yüksek lisans)",
-      "provider": "DAAD",
-      "coverage": "Aylık burs + seyahat ve sigorta desteği. Son başvuru ülkeye göre (2026 sonbaharı – Ocak 2027); Türkiye'den başvuruya açık olup olmadığını DAAD Türkiye veritabanından kontrol et.",
+      "name": "TEV-DAAD yüksek lisans bursu",
+      "provider": "DAAD ve Türk Eğitim Vakfı",
+      "coverage": "Türkiye'den bilgisayar bilimi yüksek lisansı için açık tek DAAD bursu: aylık 992 €, sigorta, yol yardımı. GNO en az 3,00/4. Başvuru TEV'e, 2027–28 için 12 Ekim 2026 – 8 Şubat 2027. DAAD'ın genel yüksek lisans bursu Türkiye için açık değil.",
       "amount": { "amount": 992, "currency": "EUR", "per": "month" },
-      "audience": "non-eu",
-      "link": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/",
-      "status": "tahmin"
+      "deadline": "2027-02-08",
+      "audience": "tr",
+      "link": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler",
+      "status": "kesin",
+      "ref": "daad-tev"
+    },
+    {
+      "name": "DAAD Konrad Zuse yapay zekâ okulları",
+      "provider": "ELIZA, relAI, SECAI (DAAD fonu)",
+      "coverage": "Yapay zekâ yüksek lisansı yapanlara yaşam bursu (SECAI 934 €/ay; ELIZA DAAD oranları). Okula ayrıca başvurulur.",
+      "amount": { "amount": 934, "currency": "EUR", "per": "month" },
+      "audience": "all",
+      "status": "kesin",
+      "ref": "konrad-zuse-ai"
     }
   ],
   "timeline": [],
@@ -62,7 +92,9 @@
     { "label": "DHBW: Türkiye not dönüşümü (PDF)", "url": "https://www.dhbw.de/fileadmin/user_upload/Dokumente/International/Notenumrechnungen/Notenumrechnung_Tuerkei.pdf" },
     { "label": "uni-assist: APS gereken ülkeler", "url": "https://uni-assist.com/en/guides/aps-required-countries" },
     { "label": "FAU: AB dışı öğrenim ücretleri", "url": "https://www.fau.eu/studying/international-students/application-and-enrollment-for-international-applicants/tuition-fees-for-students-from-non-eu-states/" },
-    { "label": "DAAD burs veritabanı (Türkiye)", "url": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/" }
+    { "label": "DAAD burs veritabanı (Türkiye)", "url": "https://www.daad-turkiye.org/en/find-funding/scholarship-database/" },
+    { "label": "Almanya Dışişleri: öğrenci vizesinde finansman kanıtı", "url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-finanzierung-606220" },
+    { "label": "Almanya Ankara Büyükelçiliği: eğitim amaçlı ikametler", "url": "https://tuerkei.diplo.de/tr-tr/service/05-visaeinreise/2728636-2728636" }
   ],
   "verifiedAt": "2026-10-24"
 }

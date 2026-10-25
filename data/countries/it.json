@@ -10,11 +10,25 @@
   "summary": "Devlet üniversitelerinde katkı payı aile gelirine (ISEE) göre belirlenir. Yabancı lisans diplomasıyla gelen AB dışı öğrenciler burs almıyorsa çoğu yerde en üst tutarı öder (PoliMi'de yaklaşık 3.900 €/yıl). Üniversite başvurusuna ek olarak vize için Universitaly ön kaydı ve diploma denkliği (DOV veya CIMEA) gerekir. Her bölgenin ayrı bir 'diritto allo studio' vergisi ve gelire bağlı bölgesel bursları (DSU) var.",
   "facts": [
     { "label": "Başvuru yolu", "value": "Önce üniversiteye başvuru ve kabul, sonra Universitaly ön kaydı (vize için zorunlu). Son tarihler üniversiteye göre değişir.", "status": "kesin" },
-    { "label": "Vize son tarihi", "value": "Yüksek lisans için ulusal vize başvurusu 2026/27'de 30 Kasım 2026'ya kadar; 2027/28 için 31 Ekim 2027 bildiriliyor (bakanlıktan doğrula).", "status": "tahmin" },
+    { "label": "Vize son tarihi", "value": "Laurea magistrale için vize başvurusu 2026/27'de 30 Kasım 2026'ya, 2027/28'de 31 Ekim 2027'ye kadar (MUR kuralları iki yıl geçerli). Master, doktora ve Erasmus için bakanlık son günü yok.", "status": "kesin" },
     { "label": "Öğrenim ücreti", "value": "ISEE'ye göre kademeli. AB dışı öğrenciler 'ISEE parificato' ile kademeye girebilir; ancak örneğin PoliMi'de yabancı diplomalı ve burssuz AB dışı YL öğrencisi tam tutarı öder.", "status": "kesin" },
     { "label": "Bölgesel vergi", "value": "Tassa regionale per il diritto allo studio. Lombardia 2026/27: ISEE'ye göre 130 / 160 / 190 € (belge yoksa 190 €). Lazio ve Emilia-Romagna yaklaşık 140 €.", "status": "kesin" },
     { "label": "Diploma denkliği", "value": "Dichiarazione di Valore (DOV, İtalyan konsolosluğu) ya da CIMEA karşılaştırma belgesi.", "status": "kesin" }
   ],
+  "proofOfFunds": {
+    "kind": "own-funds",
+    "amounts": [
+      { "label": "Geçim kanıtı, 2026/27 ve 2027/28", "money": { "amount": 10179.85, "currency": "EUR", "per": "year" } }
+    ],
+    "accepted": [
+      "Kendi ya da ailenin yasal ve izlenebilir kaynağı (banka dökümü)",
+      "İtalyan bankaları, üniversiteler, yerel yönetimler veya temsilciliğin güvenilir saydığı yabancı kurumların verdiği garanti",
+      "Verilmiş bir burs (IYT, MAECI, üniversite bursu)"
+    ],
+    "note": "Bloke hesap yok; para hesapta serbest durur ama kaynağın yasal ve izlenebilir olduğunu belgelemen gerekir. Tutar 2026/27'den itibaren geçerli yeni MUR kuralıyla belirlendi. Ayrıca uygun konut ve sağlık sigortası istenir.",
+    "status": "kesin",
+    "source": { "label": "İtalya Buenos Aires Başkonsolosluğu: 2026/27 ve 2027/28 MUR kuralları", "url": "https://consbuenosaires.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/studenti-internazionali-nuove-indicazioni-su-visto-e-immatricolazione-per-gli-anni-accademici-2026-2027-e-2027-2028/" }
+  },
   "regionalFees": [
     { "region": "Lombardia", "fee": { "amount": 190, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "kesin", "note": "2026/27: ISEE ≤ 26.887,93 € → 130 €, ≤ 53.775,88 € → 160 €, üstü veya belge yoksa 190 €." },
     { "region": "Lazio", "fee": { "amount": 140, "currency": "EUR", "per": "year" }, "appliesTo": "all", "status": "tahmin", "note": "Lazio DiSCo sayfasındaki tutar; yılı belirtilmemiş." },
@@ -24,9 +38,20 @@
     {
       "name": "Bölgesel DSU bursu (borsa di studio)",
       "provider": "Bölgesel kurumlar (DSU Lombardia, Lazio DiSCo, ER.GO, EDISU Piemonte…)",
-      "coverage": "Gelire bağlı burs; çoğunlukla yurt ve yemek desteği ile katkı payı muafiyeti. ISEE parificato (Türkiye'deki gelir belgeleri) gerekir; başvurular genelde yaz aylarında.",
+      "coverage": "Gelire bağlı burs; çoğunlukla yurt ve yemek desteği ile katkı payı muafiyeti. ISEE parificato (Türkiye'deki gelir belgeleri) gerekir; başvurular genelde yaz aylarında. PoliMi 2026/27: şehir dışından gelene yılda 5.857–8.248 €.",
       "audience": "all",
-      "status": "kesin"
+      "status": "kesin",
+      "ref": "dsu-italy"
+    },
+    {
+      "name": "Invest Your Talent in Italy",
+      "provider": "İtalya Dışişleri (MAECI), ICE, Uni-Italia",
+      "coverage": "İngilizce mühendislik/ileri teknoloji yüksek lisansları için 9 ayda 10.800 € ve harç muafiyeti; Türkiye uygun ülke. 2027 çağrısı henüz açılmadı.",
+      "amount": { "amount": 10800, "currency": "EUR", "per": "year" },
+      "audience": "non-eu",
+      "link": "https://investyourtalentapplication.esteri.it/SitoIYT/EN/invest-your-talent-in-italy",
+      "status": "kesin",
+      "ref": "invest-your-talent"
     }
   ],
   "timeline": [],
@@ -35,7 +60,8 @@
     { "label": "UniPi: Universitaly ön kaydı (AB dışı)", "url": "https://www.unipi.it/en/education/registration/enrolment-and-registration/enrolment-for-international-students/pre-registration-on-universitaly/" },
     { "label": "Lazio DiSCo: bölgesel vergi", "url": "https://laziodisco.it/tasse-regionali/la-tassa-per-il-diritto-allo-studio/" },
     { "label": "Emilia-Romagna: bölgesel vergi", "url": "https://finanze.regione.emilia-romagna.it/tributi-regionali/tasse/diritto-allo-studio/come-si-paga" },
-    { "label": "Lombardia: DSU bursları 2026/27", "url": "https://www.regione.lombardia.it/istruzione-formazione-e-lavoro/universita-e-formazione-accademica/borse-di-studio-universitarie-2026-2027" }
+    { "label": "Lombardia: DSU bursları 2026/27", "url": "https://www.regione.lombardia.it/istruzione-formazione-e-lavoro/universita-e-formazione-accademica/borse-di-studio-universitarie-2026-2027" },
+    { "label": "İtalya Buenos Aires Başkonsolosluğu: vize ve geçim kanıtı 2026/27–2027/28", "url": "https://consbuenosaires.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/studenti-internazionali-nuove-indicazioni-su-visto-e-immatricolazione-per-gli-anni-accademici-2026-2027-e-2027-2028/" }
   ],
   "verifiedAt": "2026-10-24"
 }

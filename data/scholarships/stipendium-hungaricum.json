@@ -1,0 +1,42 @@
+{
+  "id": "stipendium-hungaricum",
+  "name": "Stipendium Hungaricum",
+  "provider": "Macaristan Hükümeti (Tempus Public Foundation), Türkiye'de MEB AB ve Dış İlişkiler Genel Müdürlüğü aracılığıyla",
+  "category": "other",
+  "hostCountries": ["hu"],
+  "summary": "Macaristan'daki üniversitelerde ücretsiz yüksek lisans ve üstüne aylık burs, yurt veya kira yardımı ve sağlık katkısı. Türkiye anlaşmalı gönderici ülke; yüksek lisansta 'Bilgisayar Bilimi ve Bilişim Teknolojileri' alanı açık. Başvuru hem Macar sistemine (DreamApply) hem MEB'e yapılır.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "Öğrenim ücretinden muafiyet.",
+  "stipend": { "amount": 43700, "currency": "HUF", "per": "month" },
+  "stipendNote": "Lisans ve yüksek lisansta aylık 43.700 HUF. Yurt ya da aylık 40.000 HUF kira yardımı ve yılda 65.000 HUF sağlık katkısı ayrıca. Aylık burs tek başına yaşam giderini karşılamaz.",
+  "extras": ["Yurt veya aylık 40.000 HUF kira yardımı", "Yıllık 65.000 HUF sağlık katkısı", "Sağlık hizmeti"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Macaristan'ın oturum izni için geçim kanıtı kuralı araştırılmadı.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "note": "Türkiye için yüksek lisans alanları arasında Computer Science and Information Technology var. Başvurular basvuru.meb.gov.tr üzerinden MEB'e de yapılmalı; MEB sözlü sınav yapar (tarih abdigm.meb.gov.tr'de)."
+  },
+  "calls": [
+    { "cycle": "2027-28", "deadline": "2027-01-15", "status": "tahmin", "note": "2026–27 çağrısının son günü 15 Ocak 2026 14:00 (CET) idi; 2027–28 çağrısı henüz yayımlanmadı. MEB'in kendi son günü farklı olabilir." }
+  ],
+  "howToApply": [
+    "Stipendium Hungaricum sitesinde Türkiye için açık alanlara ve programlara bak.",
+    "DreamApply sisteminde programları seç ve son günden önce başvur.",
+    "Aynı dönemde basvuru.meb.gov.tr üzerinden MEB'e de başvur ve sözlü sınava gir.",
+    "Üniversitelerin giriş sınavları Mart–Mayıs; sonuçlar Haziran."
+  ],
+  "notes": ["Gönderici ülke tarafından aday gösterilmek gerekir; MEB'e başvurmadan burs alınmaz."],
+  "links": [
+    { "label": "Stipendium Hungaricum: başvuru", "url": "https://stipendiumhungaricum.hu/apply/" },
+    { "label": "Gönderici ülkeler ve alanlar", "url": "https://stipendiumhungaricum.hu/partners/" },
+    { "label": "MEB ABDİGM", "url": "http://abdigm.meb.gov.tr/" }
+  ],
+  "sources": [
+    { "label": "SH Operasyonel Yönetmelik: burs kalemleri (PDF)", "url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf" },
+    { "label": "SH gönderici ortaklar: Türkiye alanları ve MEB", "url": "https://stipendiumhungaricum.hu/partners/" },
+    { "label": "SH başvuru takvimi 2026/2027", "url": "https://stipendiumhungaricum.hu/apply/" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

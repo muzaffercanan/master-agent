@@ -1,0 +1,33 @@
+{
+  "id": "padova-excellence",
+  "name": "Padova International Excellence Scholarship",
+  "provider": "Università degli Studi di Padova",
+  "category": "it",
+  "hostCountries": ["it"],
+  "summary": "Padova'nın İngilizce programlarına başvuran uluslararası öğrencilere yılda 8.000 € brüt burs ve harç muafiyeti; yüksek lisansta 2 yıl. Ayrı başvuru yok: programa ilk çağrıda başvurmak seni otomatik olarak aday yapar.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "Burs süresince harç muaf; yalnızca bölgesel vergi ve damga pulu ödenir.",
+  "stipend": { "amount": 8000, "currency": "EUR", "per": "year" },
+  "stipendNote": "Yılda iki taksit, 4.000'er € brüt; akademik şartları sağladıkça.",
+  "extras": ["Harç muafiyeti"],
+  "blockedAccount": "partial",
+  "blockedAccountNote": "İtalya'da bloke hesap yok; 8.000 € geçim kanıtı eşiğinin (10.179,85 €/yıl) altında, farkı kendi kaynağınla göstermen gerekir.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "note": "Padova'nın İngilizce bir programına son gün içinde başvurmak; başka burs almıyor olmak ve kayıt yaptırmak. Burslar ağırlıkla ilk çağrıdaki adaylara verilir."
+  },
+  "calls": [
+    { "cycle": "2027-28", "status": "tahmin", "note": "2027–28 çağrıları Kasım 2026'da yayımlanacak; son günler başvuru ilanında yazacak." }
+  ],
+  "howToApply": ["Padova'nın İngilizce yüksek lisansına ilk çağrıda başvur; burs için ek belge gerekmez."],
+  "notes": ["Burs iptal edilirse alınan taksitler geri ödenir."],
+  "links": [
+    { "label": "Padova burs sayfası", "url": "https://www.unipd.it/en/padua-international-excellence-scholarship-programme" }
+  ],
+  "sources": [
+    { "label": "Padova: Padua International Excellence Scholarship Programme", "url": "https://www.unipd.it/en/padua-international-excellence-scholarship-programme" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

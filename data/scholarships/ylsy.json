@@ -1,0 +1,44 @@
+{
+  "id": "ylsy",
+  "name": "YLSY / 1416 Bursları (MEB resmî burslu yurt dışı lisansüstü)",
+  "provider": "Millî Eğitim Bakanlığı, Yükseköğretim ve Yurt Dışı Eğitim Genel Müdürlüğü",
+  "category": "tr",
+  "hostCountries": ["de", "jp", "cn", "fr", "nl", "ch", "kr", "it", "se", "es", "ca", "be", "at", "us", "gb"],
+  "hostNote": "Her kontenjan için izin verilen ülkeler tabloda yazar. 2025 tablosunda en sık geçen ülke Almanya, ardından Japonya, Çin, Fransa ve Hollanda; İtalya ve Avusturya da var.",
+  "summary": "Devlet, üniversiteler ve kamu kurumları adına yurt dışında yüksek lisans ve doktora yaptırır: okul ücreti ve aylık burs devletten. Karşılığında yurt dışında okuduğun sürenin iki katı kadar o kurumda zorunlu hizmet yaparsın. 2025 tablosunda bilgisayar ve bilişim, büyük veri, büyük dil modelleri, kuantum hesaplama, yapay zekâ ve siber güvenlik kontenjanları var; çoğu 'yüksek lisans ve doktora' birlikte.",
+  "level": "full",
+  "tuition": "covered",
+  "tuitionNote": "Okul ücreti ve aylık burs Bakanlıkça ödenir; tutarlar 'Resmî Burslu Öğrencilere Yapılacak Ödemeler Hakkında Tebliğ' ile belirlenir (Resmî Gazete, 30 Eylül 2026). Tutarlar bu araştırmada ayrıca çıkarılmadı.",
+  "extras": ["Yurt dışında dil eğitimi (1416 dil esasları)", "Askerlik tecili"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Almanya Dışişleri, 'menşe ülkenin kamu kaynaklı bursunu' DAAD veya bir Alman kurumu yerleştirmeye aracılık ettiyse geçim kanıtı sayıyor; YLSY bursiyerlerinde bu sürecin nasıl işlediğini Bakanlığa ve elçiliğe sor.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Kontenjanlar üniversitelerin ve kurumların ihtiyacına göre; her yıl tablo değişir.",
+  "requirements": {
+    "gpa": { "min": 2.5, "scale": 4, "note": "4 üzerinden en az 2,50 (100 üzerinden 65)." },
+    "ales": { "min": 75, "note": "Tercih edilen alanın puan türünde (bilişim kontenjanları EA/SAY) en az 75." },
+    "note": "T.C. vatandaşı, dört yıllık lisans mezunu (yalnızca lisans diplomasıyla başvurulur). 2025 çağrısında YL için 1995 ve sonrası doğumlu olmak. Erkekler için askerlikle ilişik olmamak. Yerleştirme puanı = ALES %40 + sözlü sınav %40 + GNO %20; 70 ve üzeri başarılı."
+  },
+  "obligation": "Yurt dışında okunan sürenin iki katı (yurt içinde okunan sürenin bir katı) kadar, adına okunan üniversite veya kamu kurumunda zorunlu hizmet. Bitirmeyen veya hizmet etmeyen, yapılan ödemeleri geri öder.",
+  "calls": [
+    { "cycle": "2027-28", "status": "tahmin", "note": "2025 çağrısı: başvuru 19–30 Aralık 2025, REBUS üzerinden. Sonraki çağrının tarihi yayımlanmadı; yyegm.meb.gov.tr'yi izle." }
+  ],
+  "howToApply": [
+    "Kılavuz ve kontenjan tablosu yyegm.meb.gov.tr'de yayımlanınca alanını ve kurumu seç.",
+    "REBUS (Resmî Burslu Öğrenci Sistemi) üzerinden başvur, ücreti öde.",
+    "Sözlü sınava gir; yerleştirilince yurt dışında kabul alma süresi başlar."
+  ],
+  "notes": [
+    "Zorunlu hizmet ciddi bir taahhüt: örneğin 2 yıllık yüksek lisans için 4 yıl. Akademisyen olmak istiyorsan en avantajlı yol.",
+    "En küçük ve en büyük yerleştirme puanları her yıl yayımlanıyor; tercih yaparken bak."
+  ],
+  "links": [
+    { "label": "MEB YYEGM", "url": "https://yyegm.meb.gov.tr/" },
+    { "label": "2025 üniversiteler tercih tablosu (PDF)", "url": "https://yyegm.meb.gov.tr/meb_iys_dosyalar/2026_03/69c119cd5bac3269258470_Tablo_%C3%9Cniversite.pdf" }
+  ],
+  "sources": [
+    { "label": "2025 Yılı 1416 Bursları Başvuru ve Tercih Kılavuzu (PDF)", "url": "https://yyegm.meb.gov.tr/meb_iys_dosyalar/2026_03/69c119b708337527740171_K%C4%B1lavuz_2025.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

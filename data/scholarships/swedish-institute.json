@@ -1,0 +1,33 @@
+{
+  "id": "swedish-institute",
+  "name": "Swedish Institute Scholarships for Global Professionals",
+  "provider": "Swedish Institute (İsveç)",
+  "category": "other",
+  "hostCountries": ["se"],
+  "summary": "İsveç'te yüksek lisans için okul ücreti, ayda 12.000 SEK ve 15.000 SEK yol bursu. Yalnızca 34 uygun ülkenin vatandaşlarına açık ve 2027 listesinde Türkiye yok. İş ve liderlik deneyimi de şart.",
+  "level": "full",
+  "tuition": "covered",
+  "stipend": { "amount": 12000, "currency": "SEK", "per": "month" },
+  "stipendNote": "Ayrıca bir kerelik 15.000 SEK yol bursu.",
+  "extras": ["Okul ücreti doğrudan üniversiteye", "Yol bursu"],
+  "blockedAccount": "unknown",
+  "turkish": "no",
+  "cs": "limited",
+  "csNote": "Bursa uygun programlar her yıl ayrıca listelenir (2027 listesi 13 Kasım 2026'da).",
+  "requirements": {
+    "workExperience": "Gösterilebilir iş deneyimi ve işyerinde, girişimcilikte ya da sivil toplumda liderlik deneyimi."
+  },
+  "calls": [
+    { "cycle": "2027-28", "open": "2027-02-08", "deadline": "2027-02-24", "status": "kesin", "note": "Önce 16 Ekim 2026 – 15 Ocak 2027 arasında University Admissions üzerinden programlara başvurulur. Türk vatandaşları uygun değil." }
+  ],
+  "howToApply": [],
+  "notes": ["2026 turunda 12.922 başvurunun yaklaşık %2'si burs aldı.", "2027 için uygun 34 ülke: Ermenistan, Azerbaycan, Bangladeş, Belarus, Bolivya, Brezilya, Kolombiya, Ekvador, Mısır, Etiyopya, Gürcistan, Guatemala, Endonezya, Irak, Ürdün, Kenya, Liberya, Malezya, Meksika, Moldova, Fas, Nijerya, Peru, Filipinler, Ruanda, Senegal, Güney Afrika, Tanzanya, Tayland, Uganda, Ukrayna, Özbekistan, Vietnam, Zambiya.","Bu kayıt, İsveç'in devlet bursunun Türkiye'ye kapalı olduğunu göstermek için tutuluyor."],
+  "links": [
+    { "label": "SI Scholarship for Global Professionals", "url": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/" }
+  ],
+  "sources": [
+    { "label": "SI çağrı sayfası", "url": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/" },
+    { "label": "SI 2026 ülkelere göre başvuru istatistiği (PDF)", "url": "https://si.se/app/uploads/2026/10/applications-by-country-tillganglighetsanpassad.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

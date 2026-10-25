@@ -1,0 +1,31 @@
+{
+  "id": "avicenna",
+  "name": "Avicenna-Studienwerk uluslararası burs programı",
+  "provider": "Avicenna-Studienwerk ve Islamkolleg Deutschland (Almanya Dışişleri fonu)",
+  "category": "de",
+  "hostCountries": ["de"],
+  "summary": "Almanya'da yüksek lisans veya doktora yapan uluslararası Müslüman öğrencilere burs. Yüksek lisans boyunca ayda 844 € ile 100 € sağlık ve 100 € yol ödeneği; seminer ve danışmanlık programı da var. Yılda 16 burs.",
+  "level": "partial",
+  "tuition": "not-covered",
+  "stipend": { "amount": 844, "currency": "EUR", "per": "month" },
+  "stipendNote": "Ek olarak aylık 100 € sağlık ve 100 € yol ödeneği (toplam 1.044 €). Aile, kitap ve baskı desteği olabilir.",
+  "extras": ["Aylık 100 € sağlık ödeneği", "Aylık 100 € yol ödeneği"],
+  "blockedAccount": "partial",
+  "blockedAccountNote": "Alman Dışişleri fonlu; ödeneklerle birlikte 1.044 €/ay. Elçiliğin aylık bursun tamamını mı yoksa yalnızca 844 €'yu mu sayacağı doğrulanmadı.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "otherLanguage": "Almanca B2 veya üstü (istisna mümkün)",
+    "note": "Almanya'da bir yüksek lisansa kayıt ya da en azından kabul. Ortalamanın üstünde akademik potansiyel ve sosyal, kültürel veya siyasi katılım."
+  },
+  "calls": [],
+  "howToApply": ["Belgeler Almanca veya İngilizce: motivasyon mektubu (en fazla 2 sayfa), tablo CV, lise diploması, üniversite belgeleri, kayıt belgesi, sosyal katılım belgesi, iki akademik referans, pasaport, transkript.", "Güncel son tarihler programın kendi sitesinde."],
+  "notes": ["Son başvuru tarihi bu araştırmada doğrulanmadı."],
+  "links": [
+    { "label": "DAAD veritabanı kaydı", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000633" }
+  ],
+  "sources": [
+    { "label": "DAAD veritabanı: International Scholarship Programme of the Avicenna Studienwerk", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000633" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

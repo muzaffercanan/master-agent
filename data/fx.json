@@ -1,9 +1,14 @@
 {
   "date": "2026-10-23",
-  "source": "TCMB (haber kaynakları üzerinden): 1 EUR = 55,70 TL, 1 USD = 49,62 TL",
+  "source": "TRY: TCMB (haber kaynakları üzerinden), 1 EUR = 55,70 TL, 1 USD = 49,62 TL. Diğerleri: ECB referans kuru, 23 Ekim 2026 (CHF 0,9227, HUF 366,73, SEK 11,1310, DKK 7,4748, GBP 0,83728)",
   "perEUR": {
     "EUR": 1,
     "TRY": 55.7,
-    "USD": 1.1225
+    "USD": 1.1225,
+    "CHF": 0.9227,
+    "HUF": 366.73,
+    "SEK": 11.131,
+    "DKK": 7.4748,
+    "GBP": 0.83728
   }
 }

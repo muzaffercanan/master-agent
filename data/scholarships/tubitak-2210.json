@@ -1,0 +1,35 @@
+{
+  "id": "tubitak-2210",
+  "name": "TÜBİTAK 2210 Yurt İçi Yüksek Lisans Bursları",
+  "provider": "TÜBİTAK BİDEB",
+  "category": "tr",
+  "hostCountries": ["tr"],
+  "summary": "Türkiye'de tezli yüksek lisans yapanlara 24 aya kadar aylık burs. 2210-A genel program; 2210-C öncelikli alanlar (yapay zekâ, yeni nesil haberleşme, kuantum, yarı iletken…) ve 2210-D sanayiye yönelik programlar daha yüksek ödüyor. Başvuru için yüksek lisansa kayıtlı olmak gerekir.",
+  "level": "small",
+  "tuition": "free",
+  "tuitionNote": "Devlet üniversitelerinde tezli yüksek lisans normal sürede harçsız; vakıf üniversitelerinde okulun kendi bursuna bak.",
+  "stipend": { "amount": 16500, "currency": "TRY", "per": "month" },
+  "stipendNote": "2210-A: 16.500 TL/ay. 2210-C ve 2210-D: 19.000 TL/ay. Projede çalışanlar için 22.500 TL/ay (2026 tutarları).",
+  "extras": [],
+  "blockedAccount": "na",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Yapay zekâ 2210-C'nin öncelikli alanları arasında.",
+  "requirements": {
+    "ales": { "min": 80, "note": "2210-A için." },
+    "english": { "yds": 80, "note": "2210-A için İngilizce ≥ 80 (YDS veya eşdeğeri)." },
+    "note": "Bir tezli yüksek lisans programına kayıtlı olmak (en geç 3. dönem)."
+  },
+  "calls": [
+    { "cycle": "2026-27", "name": "2026/2 çağrısı", "open": "2026-10-05", "deadline": "2026-10-27", "status": "kesin", "note": "Yalnızca şu anda bir yüksek lisans programına kayıtlı olanlar." }
+  ],
+  "howToApply": ["BİDEB başvuru sistemi üzerinden, çağrı açıkken."],
+  "notes": ["Kayıtlı olunca başvurulduğu için Türkiye'de yüksek lisansa başladıktan sonraki ilk çağrıyı kaçırma."],
+  "links": [
+    { "label": "TÜBİTAK 2210 burs miktarları", "url": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari" }
+  ],
+  "sources": [
+    { "label": "TÜBİTAK 2210 burs miktarı ve ödeme koşulları", "url": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari" }
+  ],
+  "verifiedAt": "2026-09-26"
+}

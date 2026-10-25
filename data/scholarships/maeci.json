@@ -1,0 +1,35 @@
+{
+  "id": "maeci",
+  "name": "İtalyan Hükümeti (MAECI) bursları",
+  "provider": "İtalya Dışişleri ve Uluslararası İşbirliği Bakanlığı (MAECI)",
+  "category": "it",
+  "hostCountries": ["it"],
+  "summary": "İtalya'daki devlet veya tanınmış kurumlarda yüksek lisans (laurea magistrale) için 9 aylık, yenilenebilir burs: toplam 10.800 €, üç taksitte. Seçim vatandaşlığa göre ülke ülke yapılır. Öğrenim ücretini burs değil, bazı üniversiteler kendi kararıyla muaf tutar.",
+  "level": "partial",
+  "tuition": "varies",
+  "tuitionNote": "Bazı üniversiteler MAECI bursiyerlerini harçtan muaf tutar; MAECI harcı geri ödemez. Bölgesel vergi her durumda öğrenciye ait.",
+  "stipend": { "amount": 10800, "currency": "EUR", "per": "year" },
+  "stipendNote": "2026–27 çağrısı: 5.500 € (Kasım), 2.300 € (Şubat), 3.000 € (Haziran, en az 27 CFU şartıyla). 15 Kasım'dan sonra İtalya'ya gelenin bursu orantılı kesilir.",
+  "extras": [],
+  "blockedAccount": "replaces",
+  "blockedAccountNote": "İtalya'da bloke hesap yok; burs 10.179,85 €/yıl geçim kanıtı eşiğini aşıyor. Taksitler İtalyan banka hesabına ödenir.",
+  "turkish": "conditional",
+  "cs": "yes",
+  "csNote": "Alan kısıtı yok; İngilizce programlarda İngilizce belgesi istenir.",
+  "ageMax": 28,
+  "requirements": {
+    "note": "Yüksek lisans için başvuru son günü itibarıyla en fazla 28 yaş (2026–27'de 27 Mart 1997 ve sonrası doğumlular). İtalyanca programlarda İtalyanca B2. Son 5 yılda MAECI araştırma bursu almamış olmak; birinci sınıfa kayıt."
+  },
+  "calls": [
+    { "cycle": "2027-28", "status": "tahmin", "note": "2026–27 çağrısının son günü 26 Mart 2026'ydı; 2027–28 çağrısı benzer dönemde beklenir, tarih yayımlanmadı." }
+  ],
+  "howToApply": ["Study in Italy portalından (studyinitaly.esteri.it) çevrim içi başvuru.", "Ayrıca seçtiğin üniversiteye ve Universitaly ön kaydına başvur."],
+  "notes": ["Uygun ülke listesi her yıl Study in Italy portalında yayımlanıyor; 2026–27 listesinde Türkiye'yi bu araştırmada doğrulayamadım."],
+  "links": [
+    { "label": "Study in Italy portalı", "url": "https://studyinitaly.esteri.it/" }
+  ],
+  "sources": [
+    { "label": "MAECI 2026–2027 burs çağrısı (İtalyanca, PDF)", "url": "https://www.esteri.it/wp-content/uploads/2026/03/Bando-26-27-ITA.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "jean-monnet",
+  "name": "Jean Monnet Burs Programı",
+  "provider": "AB Başkanlığı, Merkezi Finans ve İhale Birimi, AB Türkiye Delegasyonu (AB fonu)",
+  "category": "eu",
+  "hostCountries": ["de", "it", "at", "fr", "nl", "be", "es", "se", "fi", "dk", "ie", "pt", "pl", "cz", "hu", "gr"],
+  "hostNote": "AB üyesi herhangi bir ülkedeki üniversite. Liste örnektir; 27 üyenin hepsi geçerli.",
+  "summary": "Türkiye'den başvuranlara AB üyesi bir ülkede 3–12 aylık yüksek lisans veya araştırma bursu. Okul ücretini 22.000 €'ya kadar, yaşam giderini gidilen ülkeye göre karşılar, ayrıca bir kerelik 3.500 € verir. Ancak yalnızca AB müktesebatıyla ilgili, politika odaklı çalışmalar desteklenir: yazılım mühendisliği gibi teknik bir bilgisayar yüksek lisansı kapsam dışıdır.",
+  "level": "full",
+  "tuition": "partial",
+  "tuitionNote": "Okul ücreti 22.000 €'ya kadar ödenir; aşan kısım bursiyere aittir.",
+  "stipendNote": "Yaşam gideri gidilen ülkeye göre değişir (ab.gov.tr'deki tablo). Burs aylık ödenmez: %90'ı sözleşmeden sonra, %10'u program bitince.",
+  "extras": ["Bir kerelik 3.500 € (vize, sigorta, yol, materyal)"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Almanya'da geçim kanıtı olarak kabulü doğrulanmadı; burs aylık değil toplu ödendiği için elçiliğe sor.",
+  "turkish": "yes",
+  "cs": "no",
+  "csNote": "Duyuru açıkça yazıyor: 'Dijital Dönüşüm ve Medya' faslında yalnızca AB politikası ve programları üzerine çalışmalar desteklenir; yazılım mühendisliği ve benzeri teknik programlar desteklenmez. Dijital politika, veri hukuku, e-devlet gibi bir program seçersen uygun olabilir.",
+  "requirements": {
+    "gpa": { "min": 2.7, "scale": 4, "note": "4 üzerinden en az 2,70 (100 üzerinden 70). Altındaysan 36 ay sigortalı iş deneyimi veya bitmiş bir lisansüstü derece gerekir." },
+    "otherLanguage": "Seçtiğin AB resmî dili için son başvuru gününe kadar geçerli dil belgesi (duyurudaki tabloya göre).",
+    "note": "Başvuru anında Türkiye'de kamu veya özel sektörde sigortalı çalışıyor, Türkiye'de bir üniversitede personel ya da lisans son sınıf / lisansüstü öğrencisi olmalısın (stajyerler sayılmaz). Yazılı sınavda 100 üzerinden en az 60 gerekir. Bursların yaklaşık %50'si kamuya, %30'u üniversitelere, %20'si özel sektöre ayrılır."
+  },
+  "obligation": "Programı başarıyla bitiremeyen veya sözleşme yükümlülüklerini yerine getirmeyen bursiyerden bursun tamamı veya bir kısmı geri istenir.",
+  "calls": [
+    { "cycle": "2027-28", "open": "2026-08-27", "deadline": "2026-10-27", "status": "kesin", "note": "Başvuru belgeleri kapalı zarfla posta/kargo ya da elden Ankara'daki Merkezi Finans ve İhale Birimi'ne. Elden teslim 27 Ekim 2026 saat 17:00'ye kadar; postada gönderim tarihi esas. Yaklaşık 170 burs." }
+  ],
+  "howToApply": [
+    "Duyurudaki AB müktesebat fasıllarından birini seç; başvurudan sonra değiştirilemez.",
+    "İngilizce başvuru formu, kimlik, dil belgesi, diploma ve onaylı transkript, sektörüne göre çalışma belgesi ve SGK hizmet dökümü hazırla.",
+    "Tek dosya halinde kapalı zarfla Merkezi Finans ve İhale Birimi'ne gönder (Ankara).",
+    "Yazılı sınav ve mülakattan sonra seçilirsen AB'de bir programa yerleştirme ve sözleşme süreci başlar."
+  ],
+  "notes": [
+    "Süre en az 3, en fazla 12 ay. İki yıllık bir yüksek lisansın yalnızca 12 ayı desteklenir; kalanını sen karşılarsın ama 12 aydan uzun programlar hiç desteklenmez.",
+    "Daha önce Jean Monnet sözleşmesi imzalayanlar ve AB fonlu bir bursla lisansüstü derece almış olanlar başvuramaz.",
+    "2027–28 son günü 27 Ekim 2026; bu yılın başvurusu için çok geç olabilir. Bir sonraki çağrı yine Ağustos–Ekim döneminde beklenir."
+  ],
+  "links": [
+    { "label": "AB Türkiye Delegasyonu duyurusu", "url": "https://www.eeas.europa.eu/delegations/turkiye/jean-monnet-burs-programi-2027-2028-akademik-yili-basvurulari-basladi_tr" },
+    { "label": "Ülkelere göre yaşam gideri (ab.gov.tr)", "url": "https://www.ab.gov.tr/45645.html" }
+  ],
+  "sources": [
+    { "label": "2027–2028 Jean Monnet duyuru metni (Türkçe, PDF)", "url": "https://www.eeas.europa.eu/sites/default/files/2026/documents/Duyuru-Metni-2027-2028-Akademik-Yili_Turkce.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

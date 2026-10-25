@@ -1,0 +1,34 @@
+{
+  "id": "tev-garring-dtu",
+  "name": "TEV-ZZ Garring Vakfı Danimarka DTU Yüksek Lisans Bursu",
+  "provider": "Türk Eğitim Vakfı ve ZZ Garring Vakfı",
+  "category": "other",
+  "hostCountries": ["dk"],
+  "summary": "Danimarka Teknik Üniversitesi'nde (DTU) İngilizce yüksek lisans için tam burs: program ücreti, barınma ve diğer giderler karşılanır. Bilgisayar sistemleri, elektrik, elektronik haberleşme ve bazı diğer mühendislik alanlarında. Başvuru ve seçim TEV üzerinden.",
+  "level": "full",
+  "tuition": "covered",
+  "tuitionNote": "Yüksek lisans ücreti burs kapsamında.",
+  "extras": ["Barınma", "Diğer giderler"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Danimarka'nın oturum izni geçim kanıtı kuralı bu araştırmada incelenmedi.",
+  "turkish": "yes",
+  "cs": "limited",
+  "csNote": "Listede 'Bilgisayar Sistemleri' ve ilgili alanlar var; DTU'nun hangi programlarının sayıldığını TEV duyurusundan kontrol et.",
+  "requirements": {
+    "gpa": { "min": 3.0, "scale": 4, "note": "TEV başvuru rehberi: 4 üzerinden en az 3,00; esneklik yok." },
+    "note": "T.C. vatandaşı, lisansı Türkiye'de bitirmiş, yurt dışında yüksek lisansa başlamamış."
+  },
+  "calls": [
+    { "cycle": "2027-28", "open": "2026-10-12", "deadline": "2027-01-11", "status": "kesin", "note": "Kapanış saati TEV sayfalarında 12:00 ve 17:00 olarak çelişiyor; 12:00'yi esas al." }
+  ],
+  "howToApply": ["DTU'ya ayrıca başvur.", "TEV portalından TEV-Garring programını seçerek başvur; dosya değerlendirmesi ve mülakat."],
+  "notes": ["Tüm giderleri ZZ Garring Vakfı karşılar; seçimi TEV yapar."],
+  "links": [
+    { "label": "TEV yurt dışı bursları", "url": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler" }
+  ],
+  "sources": [
+    { "label": "TEV: devam eden programlar ve tarihler", "url": "https://www.tev.org.tr/burs/tr/25/yurt-disi-burs-basvurulari-genel-bilgiler" },
+    { "label": "TEV başvuru rehberi (PDF)", "url": "https://www.tev.org.tr/uploads/files/Yurt-Disi-Burslar-Basvuru-Rehberi.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dsu-italy",
+  "name": "İtalya bölgesel DSU bursu (diritto allo studio)",
+  "provider": "Bölge yönetimleri ve üniversiteler (Lombardia'da Politecnico di Milano)",
+  "category": "it",
+  "hostCountries": ["it"],
+  "hostNote": "Her bölgenin kendi kurumu var (Lombardia: üniversite, Emilia-Romagna: ER.GO, Lazio: DiSCo, Piemonte: EDISU). Tutarlar aşağıda PoliMi 2026–27 örneği.",
+  "summary": "Ailenin gelir ve mal varlığına göre verilen devlet bursu. Uluslararası öğrenciler de başvurur; gelir Türkiye'deki belgelerle 'ISEEU parificato' olarak hesaplanır. Bursu kazanan harçtan muaf olur, nakit para ve günlük bir ücretsiz yemek alır, şehir dışından gelene yurt veya kira desteği verilir.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "DSU bursiyerleri harç ve katkı paylarından muaftır; burs düşerse muafiyet de düşer.",
+  "stipend": { "amount": 8248, "currency": "EUR", "per": "year" },
+  "stipendNote": "PoliMi 2026–27, şehir dışından gelen (fuori sede) öğrenci, en düşük gelir kademesi: toplam 8.248 € (özel konutta 7.419 € nakit + yemek; yurtta 4.620 € nakit + yurt + yemek). 2. kademe 7.172 €, 3. kademe 5.857 €.",
+  "extras": ["Harç muafiyeti", "Günde bir ücretsiz yemek", "Yurt veya kira desteği"],
+  "blockedAccount": "replaces",
+  "blockedAccountNote": "İtalya'da bloke hesap yok. Sonuçlar yaz sonu–sonbaharda çıktığı için vize başvurusunda 10.179,85 €'yu büyük ihtimalle kendi kaynağınla göstermen gerekir.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "note": "PoliMi 2026–27: ISEE/ISEEU parificato en fazla 26.887,93 €, ISPE en fazla 58.452,06 €. ISEEU parificato yalnızca anlaşmalı CAF'lardan alınır; Türkiye'deki gelir ve mülk belgeleri gerekir. Sonraki yıllarda kredi (CFU) şartı var."
+  },
+  "calls": [
+    { "cycle": "2027-28", "deadline": "2027-08-05", "status": "tahmin", "note": "PoliMi 2026–27'de birinci sınıflar için son gün 5 Ağustos 2026 saat 12:00'ydi; 2027 tarihleri her yıl yeni bando ile çıkar. Diğer bölgelerde tarih farklı." }
+  ],
+  "howToApply": [
+    "Ailenin gelir ve mal belgelerini Türkiye'de hazırla; istenen onay ve çeviriler bando'da yazar.",
+    "Anlaşmalı bir CAF'tan ISEEU parificato al.",
+    "Üniversitenin veya bölge kurumunun DSU bando'suna yazın son gününden önce başvur; şehir dışı statüsü için kira sözleşmesi gerekir."
+  ],
+  "notes": ["Burs sayısı sınırlı: PoliMi 2026–27'de birinci sınıf yüksek lisans için 290 burs."],
+  "links": [
+    { "label": "PoliMi diritto allo studio", "url": "https://www.polimi.it/studenti/tasse-borse-e-agevolazioni/diritto-allo-studio" }
+  ],
+  "sources": [
+    { "label": "PoliMi DSU 2026–27 bando (PDF)", "url": "https://www.polimi.it/fileadmin/user_upload/studenti/tasse-borse-agevolazioni-economiche/dsu/bando_2026-2027/Bando_Benefici_DSU_2026-2027.pdf" },
+    { "label": "PoliMi DSU 2026–27 ek bando: tutarlar ve ISEE sınırı (PDF)", "url": "https://www.polimi.it/fileadmin/user_upload/studenti/tasse-borse-agevolazioni-economiche/dsu/bando_2026-2027/Bando_integrativo_DSU_aa_26_27_.pdf" },
+    { "label": "PoliMi DSU 2026–27 son tarihler (PDF)", "url": "https://www.polimi.it/fileadmin/user_upload/studenti/tasse-borse-agevolazioni-economiche/dsu/bando_2026-2027/Principali_scadenze_DSU_2026-2027.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

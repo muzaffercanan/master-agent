@@ -1,0 +1,35 @@
+{
+  "id": "tev-solen",
+  "name": "TEV-ŞÖLEN Almanya-İtalya Yüksek Lisans Bursu",
+  "provider": "Türk Eğitim Vakfı ve ŞÖLEN",
+  "category": "tr",
+  "hostCountries": ["de", "it"],
+  "summary": "2027'den itibaren Almanya ve İtalya'da elektrik-elektronik, makine, yazılım ve bilgisayar mühendisliği, robotik ve otomasyon alanlarında yüksek lisans bursu. En fazla 2 yıl. Karşılığında mezun olunca 3 yıl ŞÖLEN'de çalışmayı baştan kabul edersin.",
+  "level": "partial",
+  "tuition": "varies",
+  "tuitionNote": "Kapsam TEV'in program duyurusunda; bu araştırmada tutar ve kapsam bulunamadı.",
+  "extras": [],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Tutar bilinmediği için bloke hesabı karşılayıp karşılamadığı belli değil.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Yazılım ve bilgisayar mühendisliği açıkça listede.",
+  "requirements": {
+    "gpa": { "min": 3.0, "scale": 4, "note": "TEV başvuru rehberi: 4 üzerinden en az 3,00; esneklik yok." },
+    "note": "T.C. vatandaşı, lisansı Türkiye'de bitirmiş. Yurt dışında yüksek lisansa başlamamış olmak; güz başlangıcı."
+  },
+  "obligation": "Mezuniyetten sonra 3 yıl ŞÖLEN'de çalışma taahhüdü.",
+  "calls": [
+    { "cycle": "2027-28", "open": "2026-10-12", "deadline": "2027-03-01", "status": "kesin", "note": "TEV'in genel bilgiler sayfasındaki tarih. Kapanış saati sayfalar arasında 12:00 ve 17:00 olarak çelişiyor; 12:00'yi esas al." }
+  ],
+  "howToApply": ["TEV'in yurt dışı burs portalından TEV-ŞÖLEN programını seçerek başvur.", "Dosya değerlendirmesi ve mülakat."],
+  "notes": ["Yeni bir program; ilk bursiyerler 2027'de başlayacak."],
+  "links": [
+    { "label": "TEV yurt dışı bursları", "url": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler" }
+  ],
+  "sources": [
+    { "label": "TEV: devam eden programlar ve 2026–2027 tarihleri", "url": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler" },
+    { "label": "TEV başvuru rehberi (PDF)", "url": "https://www.tev.org.tr/uploads/files/Yurt-Disi-Burslar-Basvuru-Rehberi.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

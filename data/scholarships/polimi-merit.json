@@ -1,0 +1,35 @@
+{
+  "id": "polimi-merit",
+  "name": "Politecnico di Milano uluslararası başarı bursları",
+  "provider": "Politecnico di Milano",
+  "category": "it",
+  "hostCountries": ["it"],
+  "summary": "PoliMi'nin İngilizce yüksek lisanslarının birinci yılına başvuran uluslararası öğrencilere başarı bursu. Hepsi o yılın öğrenim ücretini siler; Platinum 10.000 €, Gold 8.000 € brüt para da verir. Yalnızca erken başvuru döneminde başvuru ücretini ödeyenler katılabilir.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "Burs yılı için tam ücret muafiyeti; yalnızca yaklaşık 190 € idari ücret ödenir.",
+  "stipend": { "amount": 10000, "currency": "EUR", "per": "year" },
+  "stipendNote": "Milano: 10 Platinum (10.000 € brüt, iki taksit) ve 18 Gold (8.000 € brüt). Piacenza Gold 5.000 €, Bronze 2.500 €; Cremona/Lecco/Mantova/Piacenza Silver yalnızca ücret muafiyeti.",
+  "extras": ["Öğrenim ücreti muafiyeti"],
+  "blockedAccount": "partial",
+  "blockedAccountNote": "İtalya'da bloke hesap yok. Platinum ve Gold tutarı 10.179,85 €/yıl geçim kanıtı eşiğine yakın veya altında; farkı kendi kaynağınla göstermen gerekebilir.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "PoliMi'nin İngilizce Computer Science and Engineering ve diğer bilgisayar programları dahil.",
+  "requirements": {
+    "note": "Birinci sınıf İngilizce MSc programına erken dönemde (1 Ekim – 1 Aralık 2026) başvurmuş ve başvuru ücretini ödemiş olmak. Geçerli İngilizce belgesi en geç 4 Mart 2027'ye kadar. Komisyon başarı, coğrafi köken, cinsiyet dengesi ve yaşa bakar; eşitlikte genç aday öne geçer."
+  },
+  "calls": [
+    { "cycle": "2027-28", "name": "Programa erken başvuru ve ücret", "open": "2026-10-01", "deadline": "2026-12-01", "status": "kesin" },
+    { "cycle": "2027-28", "name": "Burs başvurusu", "open": "2026-10-01", "deadline": "2026-12-15", "status": "kesin", "note": "15 Aralık 2026 saat 12:00 (İtalya). PoliMi Online Services üzerinden. Sonuç başvurudan 3–4 ay sonra." }
+  ],
+  "howToApply": ["PoliMi'nin İngilizce MSc programına 1 Aralık 2026'dan önce başvur ve ücreti öde.", "Online Services > Benefits and Agreements > Economic benefits yolundan burs formunu 15 Aralık 2026 12:00'ye kadar gönder."],
+  "notes": ["Askeri saldırıya veya iç savaşa maruz kalan ülkelerden gelenlere öncelik veriliyor.", "Yenileme için birinci yıl not ve kredi şartları var."],
+  "links": [
+    { "label": "PoliMi burs sayfası", "url": "https://www.polimi.it/en/prospective-students/how-much-does-it-cost/scholarships" }
+  ],
+  "sources": [
+    { "label": "PoliMi Merit-Based Call 2027–2028 (PDF)", "url": "https://www.polimi.it/fileadmin/user_upload/futuri_studenti/borse-di-studio/Merit_Based_Call_For_Applications_a.y._2027-2028.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

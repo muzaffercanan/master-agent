@@ -1,0 +1,36 @@
+{
+  "id": "eiffel",
+  "name": "France Excellence Eiffel bursu",
+  "provider": "Fransa Avrupa ve Dışişleri Bakanlığı, Campus France",
+  "category": "other",
+  "hostCountries": ["fr"],
+  "summary": "Fransız üniversite ve mühendislik okullarının aday gösterdiği yabancı öğrencilere yüksek lisans için ayda 1.200 €, gidiş-dönüş uçak, sağlık sigortası ve konut desteği. Fransız hükümeti bursiyeri olduğun için devlet kurumlarındaki ulusal diploma programlarında harç alınmaz. Öncelikli alanlardan biri 'Matematik ve Dijital Teknoloji'.",
+  "level": "full",
+  "tuition": "waived",
+  "tuitionNote": "Devlet kurumlarında ulusal diploma veya mühendis diploması için harç muafiyeti; özel okul ücretleri ve kurs ücretleri karşılanmaz.",
+  "stipend": { "amount": 1200, "currency": "EUR", "per": "month" },
+  "stipendNote": "1 Ocak 2026'dan beri yüksek lisans için 1.200 €/ay (doktora 2.000 €). M1'e başlayana 24, M2'ye 12, mühendislik programına 36 aya kadar.",
+  "extras": ["Gidiş-dönüş uçak bileti", "Sağlık sigortası", "Konut desteği / CROUS yurt seçeneği", "Kültürel etkinlikler"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Fransa'nın öğrenci vizesi geçim kanıtı kuralı bu araştırmada incelenmedi.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "'Matematik ve Dijital Teknoloji' öncelikli alanlar arasında.",
+  "ageMax": 29,
+  "requirements": {
+    "note": "Yalnızca Fransız kurumu aday gösterebilir: önce programa başvurup kurumun seni Eiffel'e önermesi gerekir. Yüksek lisansta en fazla 29 yaş teşvik edilir. Fransız çifte vatandaşlar başvuramaz."
+  },
+  "calls": [
+    { "cycle": "2027-28", "deadline": "2027-01-06", "status": "kesin", "note": "Çağrı Ekim 2026'da açıldı. 6 Ocak 2027, kurumların dosyaları Campus France'a ulaştırması için son gün. Okulların kendi iç son günleri daha erkendir; okula sor. Sonuçlar 12 Nisan 2027'den itibaren." }
+  ],
+  "howToApply": ["Fransız bir üniversite ya da mühendislik okulunun yüksek lisansına başvur.", "Okulun uluslararası ofisinden Eiffel adaylığı iste; dosyayı okul hazırlar ve Campus France'a gönderir."],
+  "notes": ["TEV ile Fransa Büyükelçiliği'nin ayrıca bir yüksek lisans bursu var (başvuru 9 Kasım 2026 – 8 Şubat 2027, GNO ≥ 3,00)."],
+  "links": [
+    { "label": "Campus France Eiffel sayfası", "url": "https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program" }
+  ],
+  "sources": [
+    { "label": "Eiffel 2027 yönetmeliği (PDF)", "url": "https://www.campusfrance.org/system/files/medias/documents/2026-10/reglementation_bourse_eiffel_2027_EN.pdf" },
+    { "label": "Campus France: 2027 takvimi ve yaş sınırı", "url": "https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

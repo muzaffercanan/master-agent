@@ -1,12 +1,14 @@
 // Parses raw JSON into a typed, cross-checked dataset. Pure (no fs / no Vite) so it runs in the
 // browser, in scripts/check.ts and in tests.
 import { z } from "zod";
-import { Country, CsrRow, Fields, Fx, University } from "../schema";
-import type { Country as TCountry, CsrRow as TCsrRow, Field, Fx as TFx, University as TUniversity } from "../schema";
+import { Country, CsrRow, Fields, Funding, Fx, University } from "../schema";
+import type { Country as TCountry, CsrRow as TCsrRow, Field, Funding as TFunding, FundingCall, Fx as TFx, Money, University as TUniversity } from "../schema";
 
 export interface RawDataset {
   countries: { file: string; json: unknown }[];
   universities: { file: string; json: unknown }[];
+  /** data/scholarships/*.json; optional so older callers keep working */
+  fundings?: { file: string; json: unknown }[];
   fields: unknown;
   fx: unknown;
   csr: unknown;
@@ -15,6 +17,7 @@ export interface RawDataset {
 export interface Dataset {
   countries: TCountry[];
   universities: TUniversity[];
+  fundings: TFunding[];
   fields: Record<string, Field>;
   fx: TFx;
   csr: TCsrRow[];
@@ -37,6 +40,8 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
 
   const countries = raw.countries.map(c => take(c.file, Country, c.json)).filter((x): x is TCountry => !!x);
   const universities = raw.universities.map(u => take(u.file, University, u.json)).filter((x): x is TUniversity => !!x);
+  const fundingFiles = raw.fundings ?? [];
+  const fundings = fundingFiles.map(f => take(f.file, Funding, f.json));
   const fields = take("fields.json", Fields, raw.fields) ?? {};
   const fx = take("fx.json", Fx, raw.fx) ?? { date: "1970-01-01", source: "", perEUR: { EUR: 1 } };
   const csr = take("tr/csrankings.json", z.array(CsrRow), raw.csr) ?? [];
@@ -72,8 +77,44 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
       if (ev.uni && !uniIds.has(ev.uni)) errors.push(`countries/${c.code}.json → takvim "${ev.t}": bilinmeyen üniversite "${ev.uni}"`);
     }
 
+  // ---- scholarships ----
+  const fundingIds = new Set<string>();
+  fundings.forEach((f, i) => {
+    if (!f) return;
+    const where = fundingFiles[i].file;
+    if (!where.endsWith(`${f.id}.json`)) errors.push(`${where}: dosya adı id ile (${f.id}) aynı olmalı`);
+    if (fundingIds.has(f.id)) errors.push(`${where}: id "${f.id}" tekrar ediyor`);
+    fundingIds.add(f.id);
+    for (const c of f.calls) checkCall(where, c, errors);
+    checkCurrency(where, [f.stipend], fx, errors);
+    checkAles(where, f.requirements?.ales?.min, errors);
+    const progIds = new Set<string>();
+    for (const p of f.programs) {
+      if (progIds.has(p.id)) errors.push(`${where}: program id "${p.id}" tekrar ediyor`);
+      progIds.add(p.id);
+      for (const k of p.fields) if (!(k in fields)) errors.push(`${where} → ${p.id}: bilinmeyen alan "${k}"`);
+      for (const c of p.calls) checkCall(`${where} → ${p.id}`, c, errors);
+      checkCurrency(`${where} → ${p.id}`, [p.stipend, p.selfFundedFee], fx, errors);
+    }
+  });
+  const refs = [
+    ...countries.flatMap(c => c.scholarships.map(s => ({ s, where: `countries/${c.code}.json` }))),
+    ...universities.flatMap(u => [...u.scholarships, ...u.programs.flatMap(p => p.scholarships)].map(s => ({ s, where: `universities/${u.country}/${u.id}.json` }))),
+  ];
+  for (const { s, where } of refs) if (s.ref && !fundingIds.has(s.ref)) errors.push(`${where} → burs "${s.name}": bilinmeyen burs kaydı "${s.ref}"`);
+  for (const c of countries) checkCurrency(`countries/${c.code}.json`, c.proofOfFunds?.amounts.map(a => a.money) ?? [], fx, errors);
+
   universities.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city, "tr") || a.short.localeCompare(b.short, "tr"));
-  return { dataset: { countries, universities, fields, fx, csr }, errors };
+  const okFundings = fundings.filter((x): x is TFunding => !!x).sort((a, b) => a.name.localeCompare(b.name, "tr"));
+  return { dataset: { countries, universities, fundings: okFundings, fields, fx, csr }, errors };
+}
+
+function checkCall(where: string, c: FundingCall, errors: string[]) {
+  if (c.open && c.deadline && c.deadline < c.open) errors.push(`${where}: ${c.cycle} çağrısında bitiş başlangıçtan önce`);
+}
+
+function checkCurrency(where: string, ms: (Money | undefined)[], fx: TFx, errors: string[]) {
+  for (const m of ms) if (m && !(m.currency in fx.perEUR)) errors.push(`${where}: fx.json'da ${m.currency} kuru yok`);
 }
 
 function checkIntake(where: string, i: { term: string; rounds: { open?: string; deadline?: string }[] }, errors: string[]) {

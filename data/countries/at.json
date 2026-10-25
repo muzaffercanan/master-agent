@@ -15,6 +15,22 @@
     { "label": "İngilizce", "value": "TU Wien: B2 (IELTS 6.5, TOEFL iBT 87 / yeni ölçek 4,5, Cambridge C1 Advanced 160).", "status": "kesin" },
     { "label": "Önceki eğitim uyumu", "value": "Lisans müfredatı Avusturya'daki karşılığıyla karşılaştırılır; eksikler ek ders olarak verilebilir (TU Wien'de en fazla 30 ECTS fark).", "status": "tahmin" }
   ],
+  "proofOfFunds": {
+    "kind": "own-funds",
+    "amounts": [
+      { "label": "24 yaş altı", "money": { "amount": 722.58, "currency": "EUR", "per": "month" } },
+      { "label": "24 yaş ve üstü", "money": { "amount": 1308.39, "currency": "EUR", "per": "month" } }
+    ],
+    "accepted": [
+      "Kendi adına, Avusturya'dan erişilebilen (yabancı) banka veya tasarruf hesabı",
+      "AB'de yaşayan birinin kefalet beyanı (Haftungserklärung)",
+      "Seyahat çeki",
+      "Burs onay belgesi"
+    ],
+    "note": "Bloke hesap şart değil, ama tutar 12 ay için önceden gösterilir. Kira 386,43 €/ayı aşarsa fark kadar ek para istenir; sağlık sigortası parası da gösterilmeli. Paranın kaynağı (son 6 ay banka dökümü, ebeveyn beyanı ve gelir belgesi) sorulabilir. Tutarlar 2026 için.",
+    "status": "kesin",
+    "source": { "label": "OeAD: oturum izni (öğrenci)", "url": "https://oead.at/en/to-austria/entry-and-residence/residence-permit-student-no-mobility-programme" }
+  },
   "regionalFees": [],
   "scholarships": [],
   "timeline": [],
@@ -22,7 +38,8 @@
     { "label": "oesterreich.gv.at: Studienbeitrag", "url": "https://www.oesterreich.gv.at/de/themen/bildung_und_ausbildung/hochschulen/universitaet/1/1/1/Seite.160356" },
     { "label": "mdw: Studienbeitrag ve ÖH", "url": "https://www.mdw.ac.at/StudienCenter/studienbeitrag/" },
     { "label": "TU Wien: akademik takvim", "url": "https://www.tuwien.at/en/studies/admission/academic-calendar" },
-    { "label": "TU Wien: İngilizce yeterlik", "url": "https://www.tuwien.at/en/studies/admission/masters-programmes/other-inter-national-bachelors-degree/competence-in-english" }
+    { "label": "TU Wien: İngilizce yeterlik", "url": "https://www.tuwien.at/en/studies/admission/masters-programmes/other-inter-national-bachelors-degree/competence-in-english" },
+    { "label": "OeAD: oturum izni ve geçim kanıtı", "url": "https://oead.at/en/to-austria/entry-and-residence/residence-permit-student-no-mobility-programme" }
   ],
   "verifiedAt": "2026-10-24"
 }

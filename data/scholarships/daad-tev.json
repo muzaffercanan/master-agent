@@ -1,0 +1,49 @@
+{
+  "id": "daad-tev",
+  "name": "TEV-DAAD Almanya Yüksek Lisans Bursu",
+  "provider": "DAAD ve Türk Eğitim Vakfı (TEV)",
+  "category": "de",
+  "hostCountries": ["de"],
+  "summary": "DAAD'ın Türkiye'den bilgisayar bilimi yüksek lisansı için açık olan tek bursu. Almanya'daki devlet veya devletçe tanınan bir üniversitede 1–2 yıllık yüksek lisans için ayda 992 €, sağlık-kaza-sorumluluk sigortası ve yol yardımı verir. Başvuru ve seçim TEV üzerinden yapılır; TEV'in GNO şartı 4 üzerinden en az 3,00'tür.",
+  "level": "partial",
+  "tuition": "not-covered",
+  "tuitionNote": "Burs öğrenim ücretini ödemez. Alman devlet üniversitelerinin çoğunda ücret zaten yok, dönem katkı payını sen ödersin; Baden-Württemberg ve TUM gibi ücretli yerlerde ücret sana kalır.",
+  "stipend": { "amount": 992, "currency": "EUR", "per": "month" },
+  "stipendNote": "Masrafların yarısını DAAD, yarısını TEV karşılar. Koşullara göre kira desteği ve Almanya'da en az 2 aylık dil kursu eklenebilir; program Almancaysa dil kursu zorunlu.",
+  "extras": ["Sağlık, kaza ve sorumluluk sigortası", "Yol yardımı", "Kira desteği (koşula bağlı)", "Dil kursu (koşula bağlı)"],
+  "blockedAccount": "replaces",
+  "blockedAccountNote": "DAAD bursu, Almanya Dışişleri'nin saydığı 'Alman kamu kaynaklı burs' kapsamındadır ve 992 €/ay bloke hesap tutarına eşittir; bloke hesap gerekmez.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Tıp ve sahne sanatları dışında tüm alanlar.",
+  "requirements": {
+    "gpa": { "min": 3.0, "scale": 4, "note": "TEV başvuru rehberi: 4 üzerinden en az 3,00; 0,01 puanlık esneklik bile yok." },
+    "english": { "moiAccepted": true, "note": "Program İngilizceyse ve lisansın %100 İngilizceyse, üniversite kabul ediyorsa ayrıca dil belgesi gerekmez." },
+    "note": "T.C. vatandaşı olmak ve lisansı Türkiye'de (KKTC hariç) bitirmiş olmak. Yurt dışında yüksek lisansa başlamış olanlar ve bahar/yaz başlangıçlı programlar başvuramaz; burs güz (Almanya'da kış dönemi) başlangıcı içindir."
+  },
+  "obligation": "DAAD'a göre TEV'in payı vakfa geri ödenir. TEV rehberine göre mezuniyetten sonra iki yıla kadar yurt dışında kalabilir, ardından Türkiye'ye dönüp burs süresinin en az iki katı kadar Türkiye'de kalırsan geri ödeme yükümlülüğü olmaz.",
+  "calls": [
+    { "cycle": "2027-28", "open": "2026-10-12", "deadline": "2027-02-08", "status": "kesin", "note": "TEV sayfalarından biri kapanışı 12:00, diğeri 17:00 diyor; 12:00'yi esas al. Kabul mektubu başvuruda zorunlu değil, sonra e-postayla gönderilebilir." }
+  ],
+  "howToApply": [
+    "Almanya'daki yüksek lisans programlarına ayrıca başvur (uni-assist veya okulun portalı).",
+    "TEV'in çevrim içi portalında hesap aç ve TEV-DAAD programını seç; belgeleri (transkript, dil belgesi, iki referans) son günden önce yükle.",
+    "Dosya değerlendirmesinden sonra mülakata çağrılabilirsin; TEV-DAAD mülakatı yüz yüze yapılabilir.",
+    "Asil veya yedek listeye girersen kabul mektubunu TEV'e ilet."
+  ],
+  "notes": [
+    "DAAD veritabanında Türkiye'den lisans mezunlarına açık diğer DAAD yüksek lisans bursları yalnızca mimarlık, güzel sanatlar/tasarım/film, müzik, sahne sanatları ve kamu politikası (Helmut-Schmidt) alanında. Genel 'tüm alanlar için yüksek lisans bursu' Türkiye için açık değil.",
+    "GNO'n 3,00'ün altındaysa TEV bursları kapalı; DAAD'ın yapay zekâ okulları (ELIZA, relAI, SECAI) ve Deutschlandstipendium'a bak."
+  ],
+  "links": [
+    { "label": "TEV yurt dışı bursları ve tarihler", "url": "https://www.tev.org.tr/burs/tr/15/Genel-Bilgiler" },
+    { "label": "TEV yurt dışı başvuru rehberi (PDF)", "url": "https://www.tev.org.tr/uploads/files/Yurt-Disi-Burslar-Basvuru-Rehberi.pdf" },
+    { "label": "DAAD burs veritabanı kaydı", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=1&intention=1&q=&page=1&detail=50016578" }
+  ],
+  "sources": [
+    { "label": "DAAD: DAAD-TEV Master's degree scholarships", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=1&intention=1&q=&page=1&detail=50016578" },
+    { "label": "TEV: 2026–2027 döneminde açılacak burslar", "url": "https://www.tev.org.tr/burs/tr/25/yurt-disi-burs-basvurulari-genel-bilgiler" },
+    { "label": "TEV başvuru rehberi: GNO ve geri ödeme", "url": "https://www.tev.org.tr/uploads/files/Yurt-Disi-Burslar-Basvuru-Rehberi.pdf" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

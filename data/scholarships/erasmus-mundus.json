@@ -1,0 +1,293 @@
+{
+  "id": "erasmus-mundus",
+  "name": "Erasmus Mundus Ortak Yüksek Lisans (EMJM) bursu",
+  "provider": "Avrupa Komisyonu (EACEA), program konsorsiyumları üzerinden",
+  "category": "eu",
+  "hostCountries": ["fi", "se", "es", "it", "nl", "si", "ee", "pt", "no", "dk", "fr", "at", "be", "de", "hr", "hu", "cz", "gr", "tr", "mk", "gb", "il", "jp"],
+  "hostNote": "Her program en az iki ülkede okutulur; ülkeler programdan programa değişir. Aşağıdaki listede bilgisayar bilimiyle ilgili programlar var.",
+  "summary": "Birkaç Avrupa üniversitesinin birlikte yürüttüğü iki yıllık (bazen 1–1,5 yıl) yüksek lisans programları. En iyi sıralanan adaylara AB bursu verilir: öğrenim ücreti (katılım bedeli) ve sigorta tamamen karşılanır, üstüne 24 aya kadar ayda 1.400 € ödenir. Ayrı bir burs başvurusu yoktur; programa başvururken burs için de değerlendirilirsin. Katalogda 218 program var; bilgisayar bilimine uygun olanlar aşağıda.",
+  "level": "full",
+  "tuition": "covered",
+  "tuitionNote": "Katılım bedeli (öğrenim ücreti, kayıt, sigorta) burstan karşılanır. Bursu alamazsan ücret ödersin: çoğu programda yıllık 8.000–9.000 €; Türkiye Erasmus+ program ülkesi sayıldığı için bazı programlarda 4.500 €.",
+  "stipend": { "amount": 1400, "currency": "EUR", "per": "month" },
+  "stipendNote": "Programın tamamı boyunca, en fazla 24 ay (toplam en fazla 33.600 €). Yol, vize ve yerleşme giderleri de bu aylıktan karşılanır; bazı programlar avans verip aylığı düşürür.",
+  "extras": ["Öğrenim ücreti (katılım bedeli)", "Tam sağlık sigortası", "Çift veya ortak diploma"],
+  "blockedAccount": "replaces",
+  "blockedAccountNote": "Aylık 1.400 € Almanya'nın bloke hesap tutarını (992 €/ay) aşar. Almanya Dışişleri, tanınmış bir burs kuruluşunun bursunu geçim kanıtı sayıyor; konsorsiyumun verdiği burs belgesiyle vize alınır. İtalya ve Avusturya'da bloke hesap zaten yok; burs belgesi geçim kanıtı olarak sunulur. Kesin kabulü vize randevusundan önce elçilikle teyit et.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Veri mühendisliği, yapay zekâ, yazılım, siber güvenlik, görüntü işleme ve robotik programları var.",
+  "calls": [],
+  "howToApply": [
+    "Aşağıdaki listeden ya da EACEA kataloğundan programı seç; her programın kendi başvuru portalı var.",
+    "Burs turunda başvur. Çoğu programda burs turu Kasım–Ocak arasında, kendi finansmanınla okuyacaklar için ayrı ve daha geç bir tur açılır.",
+    "Belgeler: diploma (son sınıftaysan mezuniyet tarihini gösteren yazı), transkript, İngilizce sınav sonucu (çoğunda IELTS 6.5 / B2–C1), CV, motivasyon mektubu, genelde iki referans. Bazı programlar video veya mülakat ister.",
+    "Sonuçlar genelde Mart–Nisan'da çıkar; burs kabul edilince vize sürecini hemen başlat."
+  ],
+  "notes": [
+    "Kural: bir konsorsiyum, burslarının en fazla %10'unu aynı uyruktan adaylara verebilir. Türkiye'den çok başvuru gelen programlarda rekabet sertleşir.",
+    "Daha önce Erasmus Mundus yüksek lisans bursu almış olan tekrar alamaz.",
+    "Öğrenciler en az iki farklı ülkede en az 30'ar ECTS okur; başvuru sırasında ikamet ettiğin ülke bu iki ülkeden biri sayılmaz (EDISS sayfasındaki kural).",
+    "Türkiye Erasmus+ programına katılan ülke olduğu için bursu alamayan Türk öğrenciler bazı programlarda AB öğrencisiyle aynı düşük ücreti öder (ör. DEAI: 4.500 €/yıl).",
+    "Burs yalnızca en iyi sıralanan adaylara verilir; GNO, ilgili dersler, motivasyon ve referans belirleyicidir. Resmi bir GNO alt sınırı çoğu programda yok.",
+    "Sona eren veya 2027'de burs vermeyen programlar: SE4GD (sona erdi), BDMA (yerini DEAI aldı), PIONEER (artık EM bursu yok), NeuroData (2027 alımı yalnızca kendi finansmanıyla). Erişilemeyip kontrol edilemeyenler: SECCLO, IPCV ai (görüntü işleme), RE_PLAY (oyun)."
+  ],
+  "programs": [
+    {
+      "id": "ediss",
+      "name": "Engineering of Data-intensive Intelligent Software Systems",
+      "short": "EDISS",
+      "fields": ["swe", "ai", "data"],
+      "countries": ["fi", "se", "es", "it"],
+      "partners": "1. yıl Åbo Akademi (Finlandiya). 2. yıl uzmanlığa göre Mälardalen (İsveç), Balear Adaları Üniversitesi (İspanya) veya L'Aquila (İtalya).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "name": "Erasmus Mundus ve EDISS burs turu", "open": "2026-11-16", "deadline": "2027-01-12", "status": "kesin", "note": "Kapanış 15:00 Helsinki saati. Başvuru Studyinfo.fi üzerinden." },
+        { "cycle": "2027-28", "name": "Ücret muafiyeti turu", "open": "2027-02-25", "deadline": "2027-03-11", "status": "kesin" },
+        { "cycle": "2027-28", "name": "Kendi finansmanı", "open": "2027-04-06", "deadline": "2027-04-15", "status": "kesin" }
+      ],
+      "requirements": "Bilgisayar bilimi veya yakın alanda lisans, İngilizce sınavı, motivasyon videosu (2 dk), akademik referanslar.",
+      "link": "https://www.master-ediss.eu/upcoming-application-rounds-ediss-intake-7/"
+    },
+    {
+      "id": "deai",
+      "name": "Data Engineering and Artificial Intelligence",
+      "short": "DEAI",
+      "fields": ["data", "ai"],
+      "countries": ["be", "es", "at", "it", "fr"],
+      "partners": "1. dönem ULB (Belçika), 2. dönem UPC (İspanya), 3. dönem TU Wien (Avusturya), Padova (İtalya) veya Lyon 1 (Fransa), 4. dönem tez.",
+      "scholarships": "yes",
+      "calls": [],
+      "stipend": { "amount": 1400, "currency": "EUR", "per": "month" },
+      "selfFundedFee": { "amount": 4500, "currency": "EUR", "per": "year" },
+      "requirements": "Bilgisayar bilimi ana dallı lisans (180 ECTS), İngilizce B2.",
+      "note": "BDMA'nın devamı; 2026–2031 dönemi için AB fonu aldı. 2027 başvuru tarihleri henüz yok: 21 Ekim 2026'da başvuru formu bakım için kapalıydı. Kendi finansmanı ücreti program ülkesi öğrencisi için 4.500 €/yıl, partner ülke için 9.000 €/yıl.",
+      "link": "https://deai.ulb.be/home/students/tuition-fees-scholarships/"
+    },
+    {
+      "id": "cybersure",
+      "name": "Cybersecurity and Assurance",
+      "short": "CYBERSURE",
+      "fields": ["sec"],
+      "countries": ["no", "fi", "dk", "ee", "fr", "se", "at"],
+      "partners": "NTNU (Norveç, Trondheim ve Gjøvik), Aalto, DTU, Tartu, EURECOM, KTH, TU Graz.",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-11-16", "deadline": "2027-01-04", "status": "kesin", "note": "Form 4 Ocak 2027 23:59'da (GMT+1) kapanır. İngilizce sınav sonucu en geç 18 Ocak 2027'de ofise ulaşmalı. Sonuçlar Mart 2027 ortası." }
+      ],
+      "stipend": { "amount": 16800, "currency": "EUR", "per": "year" },
+      "requirements": "IELTS Academic veya TOEFL iBT (16 Kasım 2024 ve sonrası alınmış). Kendi finansmanıyla gelecekler Norveç vize kurallarına göre finansman belgesi yükler.",
+      "link": "https://www.cybersure-master.eu/admission"
+    },
+    {
+      "id": "emai",
+      "name": "Erasmus Mundus Joint Master in Artificial Intelligence",
+      "short": "EMAI",
+      "fields": ["ai"],
+      "countries": ["es", "it", "nl", "si"],
+      "partners": "Pompeu Fabra (Barselona, koordinatör), Sapienza (Roma), Radboud (Nijmegen), Ljubljana.",
+      "scholarships": "yes",
+      "calls": [],
+      "selfFundedFee": { "amount": 9000, "currency": "EUR", "per": "year" },
+      "requirements": "BİT, mühendislik, fizik, matematik veya istatistik lisansı (180 ECTS); matematik, programlama ve bilgisayar bilimi derslerinden en az 12'şer ECTS. IELTS 6.5 ve her bölüm ≥ 6.5 (C1). CV en fazla 2 sayfa, motivasyon mektubu 600–800 kelime.",
+      "note": "2027 başvuruları Kasım 2026'da açılacak (tarih yayımlanmadı). 2026 alımında yaklaşık 19 tam burs ve 18 ücret muafiyeti verildi. AB öğrencilerine %50 indirim var; Türk öğrenci tam ücreti öder.",
+      "link": "https://www.upf.edu/web/emai/scholarships-fees"
+    },
+    {
+      "id": "aiss",
+      "name": "Artificial Intelligence for Sustainable Societies",
+      "short": "AISS",
+      "fields": ["ai", "data"],
+      "countries": ["ee", "pt", "fi"],
+      "partners": "Tallinn Üniversitesi (Estonya), Lusófona (Portekiz), Tampere (Finlandiya).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-12-02", "deadline": "2027-02-02", "status": "kesin", "note": "Eylül 2027 başlangıcı. Her alımda en iyi 10 adaya tam burs." }
+      ],
+      "link": "https://aissprogram.eu/"
+    },
+    {
+      "id": "codas",
+      "name": "Communications Engineering and Data Science",
+      "short": "CoDaS",
+      "fields": ["comm", "data"],
+      "countries": ["fi", "de", "fr", "pt"],
+      "partners": "Aalto (Finlandiya) ve Unite! ağından TU Braunschweig, Grenoble INP-UGA, Técnico Lisboa; her yıl farklı bir ülkede.",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-12-01", "deadline": "2027-01-05", "status": "kesin", "note": "Başvuru 5 Ocak 2027 15:00'te (GMT+2) kapanır; belgeler ve referanslar 12 Ocak 2027'ye kadar." }
+      ],
+      "selfFundedFee": { "amount": 8000, "currency": "EUR", "per": "year" },
+      "requirements": "Haberleşme veya veri ağırlıklı mühendislik lisansı; 1 Aralık 2024 ve sonrası alınmış İngilizce sınavı.",
+      "link": "https://www.unite-codas-master.eu/admission.html"
+    },
+    {
+      "id": "imlex",
+      "name": "Imaging and Light in Extended Reality",
+      "short": "IMLEX",
+      "fields": ["comp", "ai"],
+      "countries": ["fi", "fr", "be", "jp"],
+      "partners": "Doğu Finlandiya Üniversitesi (Joensuu), Jean Monnet (Saint-Étienne), KU Leuven, Toyohashi Teknoloji Üniversitesi (Japonya).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-12-02", "deadline": "2027-01-13", "status": "kesin", "note": "Studyinfo.fi üzerinden; en fazla 25 öğrenci seçilir. Başvuru ücreti yok." }
+      ],
+      "selfFundedFee": { "amount": 9000, "currency": "EUR", "per": "year" },
+      "link": "https://www.imlex.org/how-to-apply/"
+    },
+    {
+      "id": "imaging",
+      "name": "Erasmus Mundus Joint Master in Imaging",
+      "short": "Imaging",
+      "fields": ["comp", "ai"],
+      "countries": ["se", "fi", "it"],
+      "partners": "Mid Sweden University, Tampere, Politecnico di Milano.",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "name": "1. tur (AB dışı dahil)", "open": "2026-11-23", "deadline": "2027-01-12", "status": "kesin", "note": "Kısa listeye girenler 25 Şubat 2027'ye kadar PoliMi'ye ayrıca başvurmalı. İkinci tur yalnızca AB/AEA vatandaşlarına." }
+      ],
+      "stipend": { "amount": 1400, "currency": "EUR", "per": "month" },
+      "selfFundedFee": { "amount": 8000, "currency": "EUR", "per": "year" },
+      "note": "Yılda yaklaşık 15 burs. Kendi finansmanı ücreti AB vatandaşı için 2.000 €/yıl.",
+      "link": "https://www.emjm-imaging.eu/application-and-admission/"
+    },
+    {
+      "id": "multicom",
+      "name": "Data Science of Human Multimodal Communication",
+      "short": "MULTICOM",
+      "fields": ["data", "ai", "cogsci"],
+      "countries": ["es", "se", "de"],
+      "partners": "Murcia (İspanya), Lund (İsveç), FAU Erlangen-Nürnberg (Almanya).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-11-01", "status": "tahmin", "note": "Site, yeni başvuru döneminin 1 Kasım 2026'da açılmasını bekliyor; son gün yayımlanmadı." }
+      ],
+      "requirements": "Lisans diploması anabin'de listelenen bir kurumdan olmalı.",
+      "note": "Her dönem 10–15 burs; vize ve uçak bileti burs dışında.",
+      "link": "https://multicom-em.eu/how-to-apply/"
+    },
+    {
+      "id": "mir",
+      "name": "Marine and Maritime Intelligent Robotics",
+      "short": "MIR",
+      "fields": ["robo"],
+      "countries": ["fr", "no", "es", "pt"],
+      "partners": "1. yıl Toulon (Fransa); 2. yıl NTNU (Norveç), Jaume I (İspanya) veya IST Lizbon (Portekiz).",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "Yılda ortalama 24 Erasmus Mundus bursu ve yaklaşık 4 kendi finansmanlı yer. 2027 tarihleri sitede yok.",
+      "link": "https://www.master-mir.eu/scholarships/"
+    },
+    {
+      "id": "ifros",
+      "name": "Intelligent Field Robotic Systems",
+      "short": "IFROS",
+      "fields": ["robo", "ai"],
+      "countries": ["es", "hr", "hu"],
+      "partners": "Girona (İspanya), Zagreb (Hırvatistan), ELTE (Macaristan).",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "2027–2029 başvuruları henüz açılmadı; Eylül 2027 başlangıcı. Bursu kabul etmek için iade edilmeyen 500 € ödeniyor.",
+      "link": "https://ifrosmaster.org/ifros-applicants"
+    },
+    {
+      "id": "maths-disc",
+      "name": "Mathematical Modelling, Simulation and Data Science",
+      "short": "MATHS-DISC",
+      "fields": ["data", "comp", "or"],
+      "countries": ["it", "de", "pt", "fr"],
+      "partners": "Verona, Wuppertal, Lizbon, Grenoble Alpes.",
+      "scholarships": "yes",
+      "calls": [],
+      "stipend": { "amount": 1400, "currency": "EUR", "per": "month" },
+      "note": "Yılda 15 EMJM bursu. 2026 alımının son günü 30 Haziran 2026'ydı; 2027 tarihleri yok. Matematik ağırlıklı.",
+      "link": "https://www.mathsdisc.eu/study-programme/scholarships-maths-master-degree/"
+    },
+    {
+      "id": "cde",
+      "name": "Copernicus Master in Digital Earth",
+      "short": "CDE",
+      "fields": ["data", "other"],
+      "countries": ["at", "fr", "cz"],
+      "partners": "Salzburg (Avusturya), Bretagne Sud (Fransa), Palacký Olomouc (Çekya).",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "Uydu verisi ve coğrafi veri bilimi. 2027 tarihleri sitede yok.",
+      "link": "https://master-cde.eu/procedures-deadlines/"
+    },
+    {
+      "id": "smaccs",
+      "name": "MSc in Smart Cities and Communities",
+      "short": "SMACCs",
+      "fields": ["is", "other"],
+      "countries": ["be", "gr", "es", "fi"],
+      "partners": "Mons (Belçika), International Hellenic University (Yunanistan), Bask Ülkesi (İspanya), Vaasa (Finlandiya).",
+      "scholarships": "unknown",
+      "calls": [],
+      "stipend": { "amount": 1400, "currency": "EUR", "per": "month" },
+      "note": "Burs turunun son gününden önce başvuranlar otomatik olarak burs için değerlendirilir. 2027 tarihleri sitede bulunamadı.",
+      "link": "https://www.smaccs.eu/practical/scholarships/"
+    },
+    {
+      "id": "cybermacs",
+      "name": "Master of Applied Cybersecurity",
+      "short": "CyberMACS",
+      "fields": ["sec"],
+      "countries": ["tr", "de", "mk"],
+      "partners": "1. yıl Kadir Has (İstanbul, koordinatör); 2. yıl SRH Berlin (Almanya) veya Ss. Cyril and Methodius (Üsküp).",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "Proje Kasım 2028'e kadar fonlu. Resmi site (cybermacs.eu) 26 Ekim 2026'da açılmadı; 2027 tarihleri doğrulanamadı. İlk yıl Türkiye'de olduğu için Türkiye'de ikamet edenlere burs koşullarını konsorsiyuma sor.",
+      "link": "https://www.khas.edu.tr/en/cybermacs"
+    },
+    {
+      "id": "cyberus",
+      "name": "Erasmus Mundus Joint Master in Cybersecurity",
+      "short": "CYBERUS",
+      "fields": ["sec"],
+      "countries": ["fr"],
+      "partners": "Université Bretagne Sud (Fransa) koordinatörlüğünde.",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "2026 alımı yapılmadı. Site, 2027'de farklı bir adla ve biraz değişmiş bir programla yeniden açılacağını yazıyor.",
+      "link": "https://master-cyberus.eu/admission/schedule-and-selection-process"
+    },
+    {
+      "id": "emecs",
+      "name": "European Master in Embedded Computing Systems",
+      "short": "EMECS",
+      "fields": ["core", "robo"],
+      "countries": ["de", "gb", "it", "no"],
+      "partners": "RPTU Kaiserslautern-Landau, Southampton, Politecnico di Torino, NTNU.",
+      "scholarships": "unknown",
+      "calls": [],
+      "note": "Güz 2026'da öğrenci almadı. PoliTo yeni ortak olarak eklendi ve sitede başvuru platformunun Kasım başında açılacağı yazıyor; 2027 için burs olup olmadığı belli değil.",
+      "link": "https://emecs.eit.uni-kl.de/admission"
+    },
+    {
+      "id": "neurodata",
+      "name": "International Master in Brain and Data Science",
+      "short": "NeuroData",
+      "fields": ["data", "cogsci"],
+      "countries": ["il", "pt", "fi", "it", "nl", "hr"],
+      "partners": "Bar-Ilan (İsrail), IST Lizbon, Jyväskylä, Padova, Vrije Universiteit Amsterdam, Zagreb.",
+      "scholarships": "no",
+      "calls": [],
+      "note": "Son burslu dönem 2026–27'ydi. 2027 alımından itibaren yeniden fon alınana kadar yalnızca kendi finansmanıyla öğrenci alınacak.",
+      "link": "https://www.neurodata-master.org/programme-costs"
+    }
+  ],
+  "links": [
+    { "label": "EACEA Erasmus Mundus kataloğu", "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" },
+    { "label": "Erasmus+ öğrenci sayfası", "url": "https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters" }
+  ],
+  "sources": [
+    { "label": "EACEA katalog (218 program, başvurular çoğunlukla Ekim–Ocak)", "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" },
+    { "label": "EMAI: 1.400 €/ay, önceki EM bursu kuralı", "url": "https://www.upf.edu/web/emai/scholarships-fees" },
+    { "label": "CoDaS: uyruk başına %10 kuralı, 8.000 € program ücreti", "url": "https://www.unite-codas-master.eu/scholarship.html" },
+    { "label": "DEAI: 4.500 / 9.000 € kendi finansmanı ücreti", "url": "https://deai.ulb.be/home/students/tuition-fees-scholarships/" },
+    { "label": "SE4GD: Türkiye Erasmus+ program ülkesi, katılım bedelleri", "url": "https://se4gd.lutsoftware.com/scholarships/" },
+    { "label": "Almanya Dışişleri: burs geçim kanıtı yerine geçer", "url": "https://www.auswaertiges-amt.de/de/service/fragenkatalog-node/08-finanzierung-606220" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

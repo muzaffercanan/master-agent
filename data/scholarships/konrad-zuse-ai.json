@@ -1,0 +1,83 @@
+{
+  "id": "konrad-zuse-ai",
+  "name": "DAAD Konrad Zuse yapay zekâ okulları yüksek lisans bursları",
+  "provider": "DAAD ve BMFTR fonuyla ELIZA, relAI ve SECAI okulları",
+  "category": "de",
+  "hostCountries": ["de"],
+  "summary": "Almanya'daki üç 'Konrad Zuse School of Excellence' yapay zekâ alanında okuyan yüksek lisans öğrencilerine yaşam bursu veriyor. Burs öğrenim ücretini değil yaşam giderini karşılar; yüksek lisansa kabul ayrı bir başvurudur. Seçim büyük ölçüde akademik başarıya ve araştırma ilgisine göredir.",
+  "level": "partial",
+  "tuition": "not-covered",
+  "tuitionNote": "Okul ücretini ödemez. Dresden, Leipzig ve Darmstadt devlet üniversiteleri ücretsiz; relAI'nin bulunduğu TUM ise AB dışı öğrenciden ücret alıyor.",
+  "stipend": { "amount": 934, "currency": "EUR", "per": "month" },
+  "stipendNote": "SECAI tutarı 934 €/ay (gelirin 603 €'yu aşan kısmı burstan düşülür). ELIZA DAAD oranlarını uygular; relAI tutarı yıllık çağrıda yazar.",
+  "extras": ["Araştırma grubuna katılım ve tez danışmanlığı", "Aile ödeneği (koşula bağlı)", "Taşınma yardımı (ELIZA)"],
+  "blockedAccount": "partial",
+  "blockedAccountNote": "Alman kamu fonlu burs olduğu için geçim kanıtı sayılır; ancak SECAI'nin 934 €'su 992 €'nun 58 € altında, aradaki fark için ek kanıt gerekebilir. Burs genelde kabulden sonra verildiğinden vize zamanlamasını okula sor.",
+  "turkish": "yes",
+  "cs": "yes",
+  "csNote": "Doğrudan yapay zekâ, makine öğrenmesi ve ilgili bilgisayar bilimi programları için.",
+  "calls": [],
+  "howToApply": [
+    "Önce ilgili üniversitenin yüksek lisans programına başvur.",
+    "Okulun kendi burs çağrısına başvur: motivasyon mektubu, CV, transkript, (relAI için) C1 İngilizce ve araştırma ilgisi.",
+    "ELIZA'da araştırma odaklı yüksek lisans bursu doktoraya hızlı geçiş amaçlıdır; bir ELIZA araştırmacısının grubuna katılırsın."
+  ],
+  "notes": [
+    "Üçü de mükemmeliyet bursudur: lisans notları belirleyicidir. GNO'n sınırdaysa araştırma deneyimi veya güçlü projelerle telafi etmen gerekir."
+  ],
+  "programs": [
+    {
+      "id": "eliza",
+      "name": "ELIZA: Research-Oriented Master's Scholarships",
+      "short": "ELIZA",
+      "fields": ["ai"],
+      "countries": ["de"],
+      "partners": "TU Darmstadt koordinatörlüğünde ELIZA ağındaki Alman üniversiteleri ve araştırma kurumları.",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "deadline": "2027-04-25", "status": "kesin", "note": "Her yıl 25 Nisan ve 25 Ekim kesim tarihleri; karar ilgili dönem için verilir. 25 Ekim 2026 kesimi yeni geçti." }
+      ],
+      "requirements": "Makine öğrenmesi odaklı yapay zekâda doktoraya yatkınlık, lisans notları, araştırma deneyimi, motivasyon ve bir ELIZA araştırmacısıyla uyum. Tutar DAAD oranlarına göre.",
+      "link": "https://eliza.school/opportunities/research-oriented-masters-scholarships/"
+    },
+    {
+      "id": "relai",
+      "name": "relAI: Reliable AI scholarship for Master's students",
+      "short": "relAI",
+      "fields": ["ai"],
+      "countries": ["de"],
+      "partners": "Münih: TUM ve LMU (Munich Data Science Institute).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "open": "2026-12-01", "status": "tahmin", "note": "2026 çağrısı kapandı; site bir sonraki çağrının Aralık 2026'da açılmasını bekliyor (tarih doğrulanmadı)." }
+      ],
+      "requirements": "Bilgisayar bilimi, matematik, mühendislik veya ilgili alanda çok iyi lisans; İngilizce C1 (ya da ağırlıklı İngilizce eğitim belgesi); güvenilir yapay zekâ konularına ilgi. Yılda yaklaşık 15 burs (YL ve doktora birlikte).",
+      "link": "https://zuseschoolrelai.de/application/"
+    },
+    {
+      "id": "secai",
+      "name": "SECAI: Scholarships for Master's students in AI",
+      "short": "SECAI",
+      "fields": ["ai", "core", "data"],
+      "countries": ["de"],
+      "partners": "TU Dresden (Computer Science, Nanoelectronic Systems, CMS) ve Leipzig Üniversitesi (Data Science, Bioinformatics, Medical Informatics).",
+      "scholarships": "yes",
+      "calls": [
+        { "cycle": "2027-28", "deadline": "2027-06-30", "status": "kesin", "note": "Genel son gün her yıl 30 Haziran; olağanüstü başvurular daha erken seçilebilir. Başvuru e-postayla secai-office@tu-dresden.de." }
+      ],
+      "stipend": { "amount": 934, "currency": "EUR", "per": "month" },
+      "requirements": "Bu programlardan birinde okuyan veya kabul alacak, lisansı çok iyi derecede bitirmiş öğrenci. 24 aya kadar, yılda 20 burs.",
+      "link": "https://secai.org/students/scholarship_programs"
+    }
+  ],
+  "links": [
+    { "label": "DAAD veritabanı: SECAI", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000611" },
+    { "label": "DAAD veritabanı: relAI", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000612" }
+  ],
+  "sources": [
+    { "label": "SECAI burs programları", "url": "https://secai.org/students/scholarship_programs" },
+    { "label": "ELIZA araştırma odaklı YL bursu", "url": "https://eliza.school/opportunities/research-oriented-masters-scholarships/" },
+    { "label": "relAI başvuru sayfası", "url": "https://zuseschoolrelai.de/application/" }
+  ],
+  "verifiedAt": "2026-10-26"
+}

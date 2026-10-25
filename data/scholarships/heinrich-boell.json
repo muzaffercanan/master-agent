@@ -1,0 +1,33 @@
+{
+  "id": "heinrich-boell",
+  "name": "Heinrich Böll Vakfı öğrenci bursu",
+  "provider": "Heinrich-Böll-Stiftung (Yeşiller'in siyasi vakfı)",
+  "category": "de",
+  "hostCountries": ["de"],
+  "summary": "Almanya'da tam zamanlı yüksek lisans yapan Alman ve uluslararası öğrencilere burs. Ekoloji, demokrasi ve insan hakları gibi yeşil değerlere bağlılık ve sosyal/siyasi katılım beklenir. Lisansını kendi ülkesinde bitiren uluslararası adaylar özellikle teşvik ediliyor; başvuru sırasında hâlâ kendi ülkesinde yaşayan DAC ülkesi vatandaşlarına öncelik var (Türkiye OECD DAC listesinde).",
+  "level": "partial",
+  "tuition": "not-covered",
+  "stipendNote": "Tutar vakfın 'güncel destek' sayfasında; bu araştırmada doğrulanmadı.",
+  "extras": ["Seminer ve mentorluk programı"],
+  "blockedAccount": "unknown",
+  "blockedAccountNote": "Almanya'da tanınmış bir burs kuruluşu; tutarı doğrulanamadığı için bloke hesabı tamamen karşılayıp karşılamadığı belli değil.",
+  "turkish": "yes",
+  "cs": "yes",
+  "requirements": {
+    "otherLanguage": "Almanca B2 veya DSH 1",
+    "note": "Almanya'da devlet veya devletçe tanınan bir yükseköğretim kurumunda tam zamanlı yüksek lisansa kabul. Çok iyi notlar, sosyal katılım ve siyasete ilgi, vakfa başvurma gerekçesi."
+  },
+  "calls": [
+    { "cycle": "2027-28", "deadline": "2027-03-01", "status": "kesin", "note": "Her yıl 1 Mart ve 1 Eylül." },
+    { "cycle": "2027-28", "deadline": "2027-09-01", "status": "kesin", "note": "Her yıl 1 Mart ve 1 Eylül." }
+  ],
+  "howToApply": ["Vakfın çevrim içi başvuru portalından; belgeler ve güncel tutarlar vakfın sayfasında."],
+  "notes": ["Almanca B2 şartı İngilizce programlara gidenler için de geçerli."],
+  "links": [
+    { "label": "DAAD veritabanı kaydı", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000124" }
+  ],
+  "sources": [
+    { "label": "DAAD veritabanı: Heinrich Böll Foundation Student Scholarship", "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?status=3&origin=14&subjectGrps=&daad=&intention=1&q=&page=1&detail=10000124" }
+  ],
+  "verifiedAt": "2026-10-26"
+}
