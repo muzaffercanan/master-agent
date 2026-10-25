@@ -9,6 +9,12 @@ import { Timeline } from "../components/Timeline";
 import { TurkeyGuide } from "../content/TurkeyGuide";
 import { GermanyGuide } from "../content/GermanyGuide";
 import { NotFound } from "./NotFound";
+import { fmtMoney } from "../lib/money";
+import { hostsOf } from "../lib/scholarships";
+import { locative } from "../lib/text";
+
+/** scholarships open to Turkish citizens that can be used for study in the country */
+const fundingsIn = (code: string) => data.fundings.filter(f => f.turkish !== "no" && hostsOf(f).includes(code)).length;
 
 export function CountriesPage() {
   return (
@@ -116,7 +122,15 @@ export function CountryPage() {
           <div className="panel">
             <h3>Ulusal burslar</h3>
             <ScholarshipList items={c.scholarships} />
+            <Link className="small" to={`/burslar?host=${c.code}&tr=1`}>{locative(c.name)} geçerli bütün burslar ({fundingsIn(c.code)}) →</Link>
           </div>
+          {c.proofOfFunds && (
+            <div className="panel">
+              <h3>Geçim kanıtı (vize) <span className={`pill ${c.proofOfFunds.kind === "blocked-account" ? "bad" : "ok"}`}>{c.proofOfFunds.kind === "blocked-account" ? "Bloke hesap zorunlu" : "Bloke hesap yok"}</span></h3>
+              <p className="small">{c.proofOfFunds.amounts.map(a => `${a.label}: ${fmtMoney(a.money)}`).join(" · ")}</p>
+              <Link className="small" to="/burslar/bloke-hesap">Kabul edilen kanıtlar ve yerine geçen burslar →</Link>
+            </div>
+          )}
           {c.sources.length > 0 && (
             <div className="panel">
               <h3>Kaynaklar</h3>

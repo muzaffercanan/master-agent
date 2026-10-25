@@ -8,7 +8,7 @@ import { derive, type Derived } from "../lib/filters";
 import { isProfileEmpty } from "../lib/eligibility";
 import { Countdown, DeadlineBar, EligBadge, Flag, StatusPill } from "../components/bits";
 
-const calendar = buildCalendar(views, countries);
+const calendar = buildCalendar(views, countries, data.fundings);
 const HORIZON = 45;
 
 /** Deadlines of one school on one day, shown as a single row. */
@@ -68,7 +68,7 @@ export function OverviewPage() {
   const okCount = all.filter(d => d.check.overall === "ok").length;
 
   const general = calendar.filter(e => {
-    if (e.kind !== "general") return false;
+    if (e.kind === "application") return false;
     const c = countdown(e.s, e.e, T);
     return !c.past && c.days <= 90;
   });
@@ -162,7 +162,7 @@ export function OverviewPage() {
                   return (
                     <li key={e.uid}>
                       <span className="rk num">{e.e ? fmtRange(e.s, e.e) : fmt(e.s)}</span>
-                      <span><Flag c={e.country} /> {e.href ? <Link to={e.href}>{e.t}</Link> : e.t} <StatusPill k={e.k} /></span>
+                      <span>{e.country && <><Flag c={e.country} /> </>}{e.href ? <Link to={e.href}>{e.t}</Link> : e.t} <StatusPill k={e.k} /></span>
                       <span className={`deadline${c.soon ? " soon" : ""}`}>{c.text}</span>
                     </li>
                   );
@@ -171,7 +171,7 @@ export function OverviewPage() {
             ) : (
               <p className="muted small">90 gün içinde kayıtlı sınav veya burs tarihi yok.</p>
             )}
-            <Link to="/takvim">Bütün takvim →</Link>
+            <div className="btnrow"><Link to="/takvim">Bütün takvim →</Link><Link to="/burslar?open=1">Burslar →</Link></div>
           </div>
         </div>
       </div>

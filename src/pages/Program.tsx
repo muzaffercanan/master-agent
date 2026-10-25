@@ -3,7 +3,7 @@ import { data, viewByKey } from "../state/data";
 import { useStore } from "../state/store";
 import { checkRequirements } from "../lib/eligibility";
 import { yearlyCost } from "../lib/cost";
-import { LANG_LABEL, LEVEL_LABEL } from "../lib/text";
+import { LANG_LABEL, LEVEL_LABEL, locative } from "../lib/text";
 import { fmt } from "../lib/dates";
 import { CostBox, IntakeList, RequirementList, ScholarshipList } from "../components/details";
 import { EligBadge, ExtLinks, Flag, StaleBadge, StarButton } from "../components/bits";
@@ -80,6 +80,7 @@ export function ProgramPage() {
                 <ScholarshipList items={v.nationalScholarships} />
               </>
             )}
+            <Link className="small" to={`/burslar?host=${v.country.code}&tr=1`}>{locative(v.country.name)} geçerli bütün burslar →</Link>
           </div>
           <div className="panel">
             <h3>Bağlantılar</h3>

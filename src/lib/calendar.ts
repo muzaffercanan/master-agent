@@ -1,6 +1,7 @@
-// Turns country timelines and program/university intake rounds into one list of calendar events.
-import type { Country } from "../schema";
+// Turns country timelines, program/university intake rounds and scholarship calls into one list of calendar events.
+import type { Country, Funding } from "../schema";
 import type { ProgramView } from "./programs";
+import { allCalls, hostsOf } from "./scholarships";
 import { TERM_LABEL } from "./text";
 
 export interface CalEvent {
@@ -10,14 +11,42 @@ export interface CalEvent {
   t: string;
   d?: string;
   k: "kesin" | "tahmin";
-  country: Country;
+  /** absent for scholarships that span several countries */
+  country?: Country;
+  /** study countries of a scholarship event (for the country filter) */
+  hosts?: string[];
   href?: string;
   /** program keys this event applies to (for shortlist filtering) */
   keys: string[];
-  kind: "general" | "application";
+  kind: "general" | "application" | "scholarship";
 }
 
-export function buildCalendar(views: ProgramView[], countries: Country[]): CalEvent[] {
+/** One event per scholarship call; single-country schemes carry that country's flag. */
+export function scholarshipEvents(fundings: Funding[], countries: Country[]): CalEvent[] {
+  const byCode = new Map(countries.map(c => [c.code, c]));
+  return fundings.flatMap(f =>
+    allCalls(f).flatMap(({ call, program }, i) => {
+      if (!call.open && !call.deadline) return [];
+      const hosts = program ? program.countries : hostsOf(f);
+      const what = [program?.short, call.name].filter(Boolean).join(" · ");
+      return [{
+        uid: `fund-${f.id}-${i}`,
+        s: call.open ?? call.deadline!,
+        e: call.open && call.deadline ? call.deadline : undefined,
+        t: `${f.name}${what ? ` (${what})` : ""}: ${call.cycle}`,
+        d: call.open && !call.deadline ? "Açılış tarihi; son gün henüz bilinmiyor." : !call.open && call.deadline ? "Son başvuru günü." : undefined,
+        k: call.status,
+        country: hosts.length === 1 ? byCode.get(hosts[0]) : undefined,
+        hosts,
+        href: `/burs/${f.id}`,
+        keys: [],
+        kind: "scholarship" as const,
+      }];
+    }),
+  );
+}
+
+export function buildCalendar(views: ProgramView[], countries: Country[], fundings: Funding[] = []): CalEvent[] {
   const out: CalEvent[] = [];
   for (const c of countries)
     c.timeline.forEach((ev, i) =>
@@ -56,5 +85,6 @@ export function buildCalendar(views: ProgramView[], countries: Country[]): CalEv
       });
     }
   }
+  out.push(...scholarshipEvents(fundings, countries));
   return out.sort((a, b) => a.s.localeCompare(b.s));
 }

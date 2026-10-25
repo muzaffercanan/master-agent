@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { Country, Intake, Requirements, Scholarship } from "../schema";
 import type { CheckResult } from "../lib/eligibility";
 import type { CostSummary } from "../lib/cost";
@@ -108,7 +109,7 @@ export function ScholarshipList({ items }: { items: Scholarship[] }) {
       {items.map(s => (
         <div className="s" key={s.provider + s.name}>
           <b>
-            {s.link ? <a href={s.link} target="_blank" rel="noopener noreferrer">{s.name}</a> : s.name} <span className="muted small">· {s.provider}</span>
+            {s.ref ? <Link to={`/burs/${s.ref}`}>{s.name}</Link> : s.link ? <a href={s.link} target="_blank" rel="noopener noreferrer">{s.name}</a> : s.name} <span className="muted small">· {s.provider}</span>
           </b>
           {s.amount && <span className="num">{fmtMoney(s.amount)} · </span>}
           {s.coverage}

@@ -6,7 +6,11 @@ import { buildIcs } from "./ics";
 import { countdown, parseD, urgency, windowProgress } from "./dates";
 import { rankTier } from "./rank";
 import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
-import type { Country, Fx, Intake } from "../schema";
+import { DEFAULT_FUNDING_FILTERS, eurPerMonth, fundingCheck, hostsOf, matchFunding, nextCall, parseFundingFilters, serializeFundingFilters, sortFundings } from "./scholarships";
+import { scholarshipEvents } from "./calendar";
+import { locative } from "./text";
+import { fmtMoney } from "./money";
+import type { Country, Funding, Fx, Intake } from "../schema";
 import type { ProgramView } from "./programs";
 
 const ituTiers = { default: 80, tiers: [{ gpa: 2.75, ales: 80 }, { gpa: 2.6, ales: 85 }] };
@@ -158,6 +162,101 @@ describe("deadline progress", () => {
     expect(urgency(21)).toBe("urgent");
     expect(urgency(45)).toBe("near");
     expect(urgency(46)).toBe("calm");
+  });
+});
+
+describe("scholarships", () => {
+  const T = parseD("2026-10-26");
+  const base: Funding = {
+    id: "x", name: "X", provider: "P", category: "de", hostCountries: ["de"], summary: "", level: "partial", tuition: "not-covered",
+    extras: [], blockedAccount: "replaces", turkish: "yes", cs: "yes", calls: [], howToApply: [], notes: [], programs: [], links: [], sources: [{ label: "s", url: "https://a.b" }], verifiedAt: "2026-10-26",
+  };
+  const em: Funding = {
+    ...base, id: "em", name: "Erasmus Mundus", category: "eu", hostCountries: ["fi"], level: "full", blockedAccount: "replaces",
+    calls: [{ cycle: "2026-27", deadline: "2026-01-12", status: "kesin" }],
+    programs: [
+      { id: "a", name: "A", short: "A", fields: ["ai"], countries: ["fi", "se"], partners: "Åbo Akademi", scholarships: "yes", calls: [{ cycle: "2027-28", open: "2026-11-16", deadline: "2027-01-12", status: "kesin" }], link: "https://a.b" },
+      { id: "b", name: "B", short: "B", fields: ["data"], countries: ["it"], partners: "", scholarships: "no", calls: [{ cycle: "2027-28", deadline: "2026-12-01", status: "kesin" }], link: "https://a.b" },
+      { id: "c", name: "C", short: "C", fields: ["sec"], countries: ["no"], partners: "", scholarships: "unknown", calls: [{ cycle: "2027-28", open: "2026-11-01", status: "tahmin" }], link: "https://a.b" },
+    ],
+  };
+  it("next call skips past calls and programs without scholarships, and uses an opening date when no deadline is known", () => {
+    const n = nextCall(em, T);
+    expect(n?.date).toBe("2026-11-01");
+    expect(n?.kind).toBe("open");
+    expect(n?.program?.id).toBe("c");
+    expect(nextCall({ ...em, programs: em.programs.slice(0, 2) }, T)?.date).toBe("2027-01-12");
+    expect(nextCall(base, T)).toBeNull();
+  });
+  it("collects the study countries of all programs", () => {
+    expect(hostsOf(em).sort()).toEqual(["fi", "it", "no", "se"]);
+  });
+  it("filters by blocked account, full funding, country, search and open calls", () => {
+    const tev = { ...base, id: "tev", blockedAccount: "replaces" as const };
+    const ds = { ...base, id: "ds", name: "Deutschlandstipendium", blockedAccount: "partial" as const, level: "small" as const };
+    const se = { ...base, id: "se", name: "SI", turkish: "no" as const, hostCountries: ["se"], level: "full" as const };
+    const f = (p: Partial<typeof DEFAULT_FUNDING_FILTERS>) => [tev, ds, se, em].filter(x => matchFunding(x, { ...DEFAULT_FUNDING_FILTERS, ...p }, T)).map(x => x.id);
+    expect(f({ ba: true })).toEqual(["tev", "se", "em"]);
+    expect(f({ full: true, tr: true })).toEqual(["em"]);
+    expect(f({ host: "se" })).toEqual(["se", "em"]);
+    expect(f({ q: "åbo" })).toEqual(["em"]);
+    expect(f({ q: "DEUTSCHLAND" })).toEqual(["ds"]);
+    expect(f({ open: true })).toEqual(["em"]);
+    expect(f({ cat: "eu" })).toEqual(["em"]);
+  });
+  it("round-trips filters through the URL and drops unknown values", () => {
+    const ff = { ...DEFAULT_FUNDING_FILTERS, cat: "it" as const, host: "it", ba: true, open: true };
+    expect(serializeFundingFilters(ff).toString()).toBe("cat=it&host=it&ba=1&open=1");
+    expect(parseFundingFilters(serializeFundingFilters(ff))).toEqual(ff);
+    expect(parseFundingFilters(new URLSearchParams("cat=xx&host=Germany"))).toEqual(DEFAULT_FUNDING_FILTERS);
+  });
+  it("sorts schemes open to Turkish citizens and full scholarships first", () => {
+    const a = { ...base, id: "a", name: "A", turkish: "no" as const, level: "full" as const };
+    const b = { ...base, id: "b", name: "B", level: "small" as const };
+    const c = { ...base, id: "c", name: "C", level: "full" as const };
+    expect(sortFundings([a, b, c]).map(x => x.id)).toEqual(["c", "b", "a"]);
+    const fx: Fx = { date: "2026-10-23", source: "", perEUR: { EUR: 1 } };
+    const low = { ...base, id: "low", name: "Avicenna", stipend: { amount: 844, currency: "EUR" as const, per: "month" as const } };
+    const high = { ...base, id: "high", name: "TEV-DAAD", stipend: { amount: 992, currency: "EUR" as const, per: "month" as const } };
+    const none = { ...base, id: "none", name: "Böll" };
+    expect(sortFundings([none, low, high], fx).map(x => x.id)).toEqual(["high", "low", "none"]);
+  });
+  it("converts stipends to euros per month", () => {
+    const fx: Fx = { date: "2026-10-23", source: "", perEUR: { EUR: 1, HUF: 366.73 } };
+    expect(eurPerMonth({ amount: 43700, currency: "HUF", per: "month" }, fx)).toBeCloseTo(119.16, 1);
+    expect(eurPerMonth({ amount: 16800, currency: "EUR", per: "year" }, fx)).toBe(1400);
+    expect(eurPerMonth({ amount: 3500, currency: "EUR", per: "once" }, fx)).toBeNull();
+  });
+  it("checks the GPA floor against the profile", () => {
+    const tevGpa = { ...base, requirements: { gpa: { min: 3.0, scale: 4 as const } } };
+    expect(fundingCheck(tevGpa, { ...EMPTY_PROFILE, gpa: 2.75 }).overall).toBe("fail");
+    expect(fundingCheck(tevGpa, { ...EMPTY_PROFILE, gpa: 3.1 }).overall).toBe("ok");
+    expect(fundingCheck(base, EMPTY_PROFILE).overall).toBe("none");
+  });
+  it("turns calls into calendar events with a flag only for single-country schemes", () => {
+    const de = { code: "de", name: "Almanya", flag: "" } as Country;
+    const tev = { ...base, id: "tev", name: "TEV-DAAD", calls: [{ cycle: "2027-28", open: "2026-10-12", deadline: "2027-02-08", status: "kesin" as const }] };
+    const evs = scholarshipEvents([tev, em], [de]);
+    expect(evs.map(e => e.uid)).toEqual(["fund-tev-0", "fund-em-0", "fund-em-1", "fund-em-2"]);
+    expect(evs[0]).toMatchObject({ s: "2026-10-12", e: "2027-02-08", country: de, href: "/burs/tev", kind: "scholarship" });
+    expect(evs[2]).toMatchObject({ t: "Erasmus Mundus (A): 2027-28", country: undefined, hosts: ["fi", "se"] });
+    expect(evs[3].d).toBe("Açılış tarihi; son gün henüz bilinmiyor.");
+  });
+});
+
+describe("fmtMoney", () => {
+  it("keeps cents only when the source has them", () => {
+    expect(fmtMoney({ amount: 722.58, currency: "EUR", per: "month" })).toBe("€722,58/ay");
+    expect(fmtMoney({ amount: 11904, currency: "EUR", per: "year" })).toBe("€11.904/yıl");
+    expect(fmtMoney({ amount: 26.2, currency: "EUR", per: "semester" })).toBe("€26,20/dönem");
+    expect(fmtMoney({ amount: 16500, currency: "TRY", per: "month" })).toBe("16.500 ₺/ay");
+    expect(fmtMoney({ amount: 43700, currency: "HUF", per: "month" })).toBe("43.700 HUF/ay");
+  });
+});
+
+describe("locative", () => {
+  it("follows vowel harmony and hardening", () => {
+    expect(["Türkiye", "Almanya", "İtalya", "Avusturya", "Macaristan", "Irak", "Mısır"].map(locative)).toEqual(["Türkiye'de", "Almanya'da", "İtalya'da", "Avusturya'da", "Macaristan'da", "Irak'ta", "Mısır'da"]);
   });
 });
 

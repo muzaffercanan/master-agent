@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-import { countries, views } from "../state/data";
+import { countries, data, views } from "../state/data";
 import { useStore } from "../state/store";
 import { buildCalendar } from "../lib/calendar";
 import { buildIcs, downloadText } from "../lib/ics";
 import { Timeline } from "../components/Timeline";
 import { Flag } from "../components/bits";
 
-const all = buildCalendar(views, countries);
+const all = buildCalendar(views, countries, data.fundings);
 
 export function CalendarPage() {
   const [sp, setSp] = useSearchParams();
@@ -24,7 +24,7 @@ export function CalendarPage() {
   };
 
   const events = useMemo(
-    () => all.filter(e => (!c || e.country.code === c) && (!kind || e.kind === kind) && (!mine || e.kind === "general" || e.keys.some(k => shortlist.includes(k)))),
+    () => all.filter(e => (!c || e.country?.code === c || !!e.hosts?.includes(c)) && (!kind || e.kind === kind) && (!mine || e.kind !== "application" || e.keys.some(k => shortlist.includes(k)))),
     [c, kind, mine, shortlist],
   );
 
@@ -48,7 +48,8 @@ export function CalendarPage() {
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!kind} onClick={() => set("kind", "")}>Hepsi</button>
           <button type="button" className="chipbtn" aria-pressed={kind === "application"} onClick={() => set("kind", "application")}>Başvuru dönemleri</button>
-          <button type="button" className="chipbtn" aria-pressed={kind === "general"} onClick={() => set("kind", "general")}>Sınav ve burslar</button>
+          <button type="button" className="chipbtn" aria-pressed={kind === "scholarship"} onClick={() => set("kind", "scholarship")}>Burs çağrıları</button>
+          <button type="button" className="chipbtn" aria-pressed={kind === "general"} onClick={() => set("kind", "general")}>Sınavlar</button>
         </div>
         <label className="check"><input type="checkbox" checked={mine} onChange={e => set("sl", e.target.checked ? "1" : "")} /> Yalnızca kısa listemdeki okullar</label>
         <label className="check"><input type="checkbox" checked={past} onChange={e => set("past", e.target.checked ? "1" : "")} /> Geçmişi göster</label>

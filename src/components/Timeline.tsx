@@ -4,7 +4,8 @@ import { AYLAR, countdown, fmtShort, parseD, today } from "../lib/dates";
 import { Flag, StatusPill } from "./bits";
 
 export interface TlItem extends TimelineEvent {
-  country: Country;
+  /** absent for events that span several countries */
+  country?: Country;
   /** link to a program or school page */
   href?: string;
 }
@@ -36,7 +37,7 @@ export function Timeline({ events, compact, hidePast }: { events: TlItem[]; comp
                   <div key={i} className={`tl-item${c.past ? " past" : ""}${c.soon && !c.past ? " soon" : ""}`}>
                     <div className="d">{when}</div>
                     <div className="t">
-                      <Flag c={ev.country} /> {ev.href ? <Link to={ev.href}>{ev.t}</Link> : ev.t}
+                      {ev.country && <><Flag c={ev.country} /> </>}{ev.href ? <Link to={ev.href}>{ev.t}</Link> : ev.t}
                     </div>
                     <div className="s"><StatusPill k={ev.k} /><span className="left-pill">{c.text}</span></div>
                     {ev.d && <div className="x">{ev.d}</div>}
