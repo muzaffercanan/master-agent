@@ -6,7 +6,7 @@ import { yearlyCost } from "../lib/cost";
 import { LANG_LABEL, LEVEL_LABEL } from "../lib/text";
 import { fmt } from "../lib/dates";
 import { CostBox, IntakeList, RequirementList, ScholarshipList } from "../components/details";
-import { EligBadge, ExtLinks, StaleBadge, StarButton } from "../components/bits";
+import { EligBadge, ExtLinks, Flag, StaleBadge, StarButton } from "../components/bits";
 import { NotFound } from "./NotFound";
 
 export function ProgramPage() {
@@ -22,7 +22,7 @@ export function ProgramPage() {
     <>
       <div className="page-head">
         <nav className="crumbs" aria-label="Konum">
-          <Link to="/programlar">Programlar</Link>›<Link to={`/ulke/${v.country.code}`}><span className="flag">{v.country.flag}</span> {v.country.name}</Link>›<Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link>
+          <Link to="/programlar">Programlar</Link>›<Link to={`/ulke/${v.country.code}`}><Flag c={v.country} /> {v.country.name}</Link>›<Link to={`/okul/${v.uni.id}`}>{v.uni.short}</Link>
         </nav>
         <h1>{p.name}</h1>
         <p className="lede">{v.uni.name} · {v.uni.city}{v.uni.region ? `, ${v.uni.region}` : ""}</p>

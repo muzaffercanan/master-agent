@@ -5,6 +5,7 @@ import { useStore } from "../state/store";
 import { buildCalendar } from "../lib/calendar";
 import { buildIcs, downloadText } from "../lib/ics";
 import { Timeline } from "../components/Timeline";
+import { Flag } from "../components/bits";
 
 const all = buildCalendar(views, countries);
 
@@ -42,7 +43,7 @@ export function CalendarPage() {
       <div className="toolbar">
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!c} onClick={() => set("c", "")}>Tüm ülkeler</button>
-          {countries.map(k => <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}><span className="flag">{k.flag}</span> {k.name}</button>)}
+          {countries.map(k => <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}><Flag c={k} /> {k.name}</button>)}
         </div>
         <div className="chips">
           <button type="button" className="chipbtn" aria-pressed={!kind} onClick={() => set("kind", "")}>Hepsi</button>

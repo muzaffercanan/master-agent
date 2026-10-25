@@ -6,7 +6,7 @@ import { derive } from "../lib/filters";
 import { today, fmt } from "../lib/dates";
 import { TYPE_LABEL, LANG_LABEL } from "../lib/text";
 import { IntakeList, RequirementList, ScholarshipList } from "../components/details";
-import { ExtLinks, StaleBadge, WorldRank } from "../components/bits";
+import { ExtLinks, Flag, StaleBadge, WorldRank } from "../components/bits";
 import { ProgramRow } from "../components/ProgramRow";
 import { NotFound } from "./NotFound";
 
@@ -23,7 +23,7 @@ export function UniversityPage() {
     <>
       <div className="page-head">
         <nav className="crumbs" aria-label="Konum">
-          <Link to="/okullar">Okullar</Link>›<Link to={`/ulke/${country.code}`}><span className="flag">{country.flag}</span> {country.name}</Link>›<span>{uni.city}</span>
+          <Link to="/okullar">Okullar</Link>›<Link to={`/ulke/${country.code}`}><Flag c={country} /> {country.name}</Link>›<span>{uni.city}</span>
         </nav>
         <h1>{uni.name}</h1>
         <div className="btnrow">

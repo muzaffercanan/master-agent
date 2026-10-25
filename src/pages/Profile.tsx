@@ -4,6 +4,7 @@ import { useStore } from "../state/store";
 import { bavarian, type Profile } from "../lib/eligibility";
 import { downloadText } from "../lib/ics";
 import { countries } from "../state/data";
+import { Flag } from "../components/bits";
 
 const SUGGESTED_AREAS = ["Matematik", "Programlama", "Algoritma ve veri yapıları", "Bilgisayar sistemleri", "Yapay zekâ / ML", "İstatistik"];
 
@@ -71,7 +72,7 @@ export function ProfilePage() {
         </div>
         {de?.gpaConversion && profile.gpa != null && profile.gpaScale === 4 && (
           <p className="small">
-            Alman not sistemindeki karşılığın (Bavyera formülü, {de.flag} {de.name} kuralı): <b className="num">{bavarian(profile.gpa, de.gpaConversion.nMax, de.gpaConversion.nMin).toFixed(2)}</b>
+            Alman not sistemindeki karşılığın (Bavyera formülü, <Flag c={de} /> {de.name} kuralı): <b className="num">{bavarian(profile.gpa, de.gpaConversion.nMax, de.gpaConversion.nMin).toFixed(2)}</b>
           </p>
         )}
       </div>

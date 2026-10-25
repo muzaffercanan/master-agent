@@ -3,30 +3,32 @@
    Colors are only ever referenced through the tokens below.
    ========================================================================== */
 :root{
-  --bg:#F3F5F8;
+  --bg:#FAF7F2;
   --paper:#FFFFFF;
-  --sunk:#EBEEF3;
-  --ink:#111A26;
-  --ink-2:#344050;
-  --muted:#5B6778;
-  --line:#DFE4EA;
-  --line-2:#C7CFD9;
-  --accent:#1F4497;
+  --sunk:#F3EEE6;
+  --ink:#1B1F3B;
+  --ink-2:#3D4263;
+  --muted:#686779;
+  --line:#EAE3D8;
+  --line-2:#D8CEBF;
+  --accent:#3442B8;
   --accent-ink:#FFFFFF;
-  --accent-soft:#E7EDF9;
-  --accent-line:#B5C4E6;
-  --copper:#8F531D;
-  --copper-soft:#F6ECE1;
-  --ok:#14653F;
-  --ok-soft:#E0F1E8;
-  --warn:#86500A;
-  --warn-soft:#FBEDD8;
-  --bad:#A12A20;
-  --bad-soft:#F9E3E0;
-  --star:#B07D10;
-  --focus:#1F4497;
-  --shadow-1:0 1px 1px rgba(17,26,38,.03);
-  --shadow-2:0 1px 2px rgba(17,26,38,.05), 0 8px 20px -12px rgba(17,26,38,.22);
+  --accent-soft:#ECEEFC;
+  --accent-line:#C3C8F0;
+  --copper:#B43C0A;
+  --copper-soft:#FFEEE3;
+  --hot:#E0560F;
+  --hot-ink:#FFFFFF;
+  --ok:#166534;
+  --ok-soft:#DCF5E3;
+  --warn:#975406;
+  --warn-soft:#FEF0D6;
+  --bad:#B42318;
+  --bad-soft:#FDE6E2;
+  --star:#C68A0B;
+  --focus:#3442B8;
+  --shadow-1:0 1px 1px rgba(60,40,20,.04);
+  --shadow-2:0 1px 2px rgba(60,40,20,.06), 0 10px 24px -14px rgba(60,40,20,.28);
   --shadow-bar:0 1px 0 var(--line);
   --display:"Source Serif 4", Georgia, "Times New Roman", serif;
   --sans:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
@@ -38,28 +40,30 @@
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     color-scheme:dark;
-    --bg:#0C1219;
-    --paper:#131B26;
-    --sunk:#1A2431;
-    --ink:#E6EBF1;
-    --ink-2:#BCC7D4;
-    --muted:#91A0B1;
-    --line:#243040;
-    --line-2:#334153;
-    --accent:#8FADF6;
-    --accent-ink:#0B1424;
-    --accent-soft:#18243D;
-    --accent-line:#2F4372;
-    --copper:#DDA470;
-    --copper-soft:#2D2218;
-    --ok:#6BCB98;
-    --ok-soft:#13301F;
-    --warn:#E8A858;
-    --warn-soft:#33250F;
-    --bad:#F0877E;
-    --bad-soft:#3A1C19;
-    --star:#E2B74C;
-    --focus:#8FADF6;
+    --bg:#0E1018;
+    --paper:#171A26;
+    --sunk:#1F2332;
+    --ink:#ECEBF4;
+    --ink-2:#C6C5D8;
+    --muted:#9B9AB0;
+    --line:#282C3E;
+    --line-2:#373D53;
+    --accent:#A3ADFF;
+    --accent-ink:#10142E;
+    --accent-soft:#1E2249;
+    --accent-line:#373F80;
+    --copper:#FFA36E;
+    --copper-soft:#33200F;
+    --hot:#FF8240;
+    --hot-ink:#1F0D02;
+    --ok:#6EDC9A;
+    --ok-soft:#12301F;
+    --warn:#F5B454;
+    --warn-soft:#33260E;
+    --bad:#FF8A7E;
+    --bad-soft:#3A1A17;
+    --star:#F2C14E;
+    --focus:#A3ADFF;
     --shadow-1:none;
     --shadow-2:0 1px 2px rgba(0,0,0,.4), 0 10px 24px -14px rgba(0,0,0,.8);
     --shadow-bar:0 1px 0 var(--line);
@@ -67,28 +71,30 @@
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#0C1219;
-  --paper:#131B26;
-  --sunk:#1A2431;
-  --ink:#E6EBF1;
-  --ink-2:#BCC7D4;
-  --muted:#91A0B1;
-  --line:#243040;
-  --line-2:#334153;
-  --accent:#8FADF6;
-  --accent-ink:#0B1424;
-  --accent-soft:#18243D;
-  --accent-line:#2F4372;
-  --copper:#DDA470;
-  --copper-soft:#2D2218;
-  --ok:#6BCB98;
-  --ok-soft:#13301F;
-  --warn:#E8A858;
-  --warn-soft:#33250F;
-  --bad:#F0877E;
-  --bad-soft:#3A1C19;
-  --star:#E2B74C;
-  --focus:#8FADF6;
+  --bg:#0E1018;
+  --paper:#171A26;
+  --sunk:#1F2332;
+  --ink:#ECEBF4;
+  --ink-2:#C6C5D8;
+  --muted:#9B9AB0;
+  --line:#282C3E;
+  --line-2:#373D53;
+  --accent:#A3ADFF;
+  --accent-ink:#10142E;
+  --accent-soft:#1E2249;
+  --accent-line:#373F80;
+  --copper:#FFA36E;
+  --copper-soft:#33200F;
+  --hot:#FF8240;
+  --hot-ink:#1F0D02;
+  --ok:#6EDC9A;
+  --ok-soft:#12301F;
+  --warn:#F5B454;
+  --warn-soft:#33260E;
+  --bad:#FF8A7E;
+  --bad-soft:#3A1A17;
+  --star:#F2C14E;
+  --focus:#A3ADFF;
   --shadow-1:none;
   --shadow-2:0 1px 2px rgba(0,0,0,.4), 0 10px 24px -14px rgba(0,0,0,.8);
   --shadow-bar:0 1px 0 var(--line);
@@ -121,6 +127,8 @@ mark{background:color-mix(in srgb,var(--star) 30%,transparent);color:inherit;bor
 /* Flag emoji. Where the OS has no flag glyphs (Windows) the regional
    letters fall back to a small mono country code. */
 .flag{font-family:var(--mono);font-size:.78em;font-weight:500;letter-spacing:.02em;color:var(--muted);line-height:1;font-style:normal}
+.flagsvg{display:inline-block;width:1.3em;height:.87em;vertical-align:-.1em;border-radius:2px;flex:0 0 auto;overflow:hidden}
+.flagsvg .flagedge{stroke:var(--line-2);stroke-width:1.2}
 
 /* ---------- pills, chips ---------- */
 .pill{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:.68rem;line-height:1;padding:4px 7px;border-radius:4px;white-space:nowrap;border:1px solid transparent;font-weight:500;vertical-align:middle;letter-spacing:.01em}

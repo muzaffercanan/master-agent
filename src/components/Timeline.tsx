@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Country, TimelineEvent } from "../schema";
 import { AYLAR, countdown, fmtShort, parseD, today } from "../lib/dates";
-import { StatusPill } from "./bits";
+import { Flag, StatusPill } from "./bits";
 
 export interface TlItem extends TimelineEvent {
   country: Country;
@@ -36,7 +36,7 @@ export function Timeline({ events, compact, hidePast }: { events: TlItem[]; comp
                   <div key={i} className={`tl-item${c.past ? " past" : ""}${c.soon && !c.past ? " soon" : ""}`}>
                     <div className="d">{when}</div>
                     <div className="t">
-                      <span className="flag">{ev.country.flag}</span> {ev.href ? <Link to={ev.href}>{ev.t}</Link> : ev.t}
+                      <Flag c={ev.country} /> {ev.href ? <Link to={ev.href}>{ev.t}</Link> : ev.t}
                     </div>
                     <div className="s"><StatusPill k={ev.k} /><span className="left-pill">{c.text}</span></div>
                     {ev.d && <div className="x">{ev.d}</div>}

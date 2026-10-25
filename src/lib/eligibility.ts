@@ -128,3 +128,8 @@ export function checkRequirements(req: Requirements, p: Profile, country?: Count
 }
 
 const round1 = (x: number) => Math.round(x * 10) / 10;
+
+/** True when no grade or test score is filled in, so every eligibility check is "unknown". */
+export function isProfileEmpty(p: Profile): boolean {
+  return p.gpa == null && p.ales == null && p.ielts == null && p.toefl == null && p.yds == null && p.greQ == null;
+}

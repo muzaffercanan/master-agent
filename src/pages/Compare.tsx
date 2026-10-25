@@ -8,7 +8,7 @@ import { nextDeadline, offeredTerms } from "../lib/programs";
 import { fmt, today } from "../lib/dates";
 import { fmtAmount, fmtMoney } from "../lib/money";
 import { LANG_LABEL, TERM_LABEL } from "../lib/text";
-import { EligBadge } from "../components/bits";
+import { EligBadge, Flag } from "../components/bits";
 
 export function ComparePage() {
   const { compare, toggleCompare, clearCompare, profile } = useStore();
@@ -53,7 +53,7 @@ export function ComparePage() {
               {cols.map(c => (
                 <th key={c.v.key} className="cmp-col">
                   <Link to={`/program/${c.v.key}`}>{c.v.program.name}</Link>
-                  <div className="small muted"><span className="flag">{c.v.country.flag}</span> {c.v.uni.short} · {c.v.uni.city}</div>
+                  <div className="small muted"><Flag c={c.v.country} /> {c.v.uni.short} · {c.v.uni.city}</div>
                   <button type="button" className="btn sm" style={{ marginTop: 6 }} onClick={() => toggleCompare(c.v.key)}>Çıkar</button>
                 </th>
               ))}

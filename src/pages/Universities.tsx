@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { countries, data } from "../state/data";
 import { norm, TYPE_LABEL } from "../lib/text";
-import { StaleBadge, TermTags, WorldRank } from "../components/bits";
+import { Flag, StaleBadge, TermTags, WorldRank } from "../components/bits";
 
 export function UniversitiesPage() {
   const [sp, setSp] = useSearchParams();
@@ -31,7 +31,7 @@ export function UniversitiesPage() {
           <button type="button" className="chipbtn" aria-pressed={!c} onClick={() => set("c", "")}>Tümü <span className="n">{data.universities.length}</span></button>
           {countries.map(k => (
             <button key={k.code} type="button" className="chipbtn" aria-pressed={c === k.code} onClick={() => set("c", k.code)}>
-              <span className="flag">{k.flag}</span> {k.name} <span className="n">{data.universities.filter(u => u.country === k.code).length}</span>
+              <Flag c={k} /> {k.name} <span className="n">{data.universities.filter(u => u.country === k.code).length}</span>
             </button>
           ))}
         </div>
@@ -43,7 +43,7 @@ export function UniversitiesPage() {
         const cities = [...new Set(inC.map(u => u.city))];
         return (
           <section key={k.code} className="country-group">
-            <div className="city-title"><h3><span className="flag">{k.flag}</span> {k.name}</h3><span className="eyebrow">{inC.length} okul</span></div>
+            <div className="city-title"><h3><Flag c={k} /> {k.name}</h3><span className="eyebrow">{inC.length} okul</span></div>
             {cities.map(city => (
               <div key={city} className="city-group">
                 <span className="eyebrow" style={{ color: "var(--muted)" }}>{city}</span>

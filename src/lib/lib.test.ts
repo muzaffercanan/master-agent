@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { bavarian, checkRequirements, EMPTY_PROFILE, minAles } from "./eligibility";
+import { bavarian, checkRequirements, EMPTY_PROFILE, isProfileEmpty, minAles } from "./eligibility";
 import { nextDeadline, singleTermOnly } from "./programs";
 import { yearlyCost } from "./cost";
 import { buildIcs } from "./ics";
-import { countdown, parseD } from "./dates";
+import { countdown, parseD, urgency, windowProgress } from "./dates";
 import { rankTier } from "./rank";
 import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
 import type { Country, Fx, Intake } from "../schema";
@@ -140,5 +140,31 @@ describe("school tier filters", () => {
     const f = { ...DEFAULT_FILTERS, top: true, rank: 250 };
     expect(serializeFilters(f).toString()).toBe("top=1&rank=250");
     expect(parseFilters(serializeFilters(f))).toEqual(f);
+  });
+});
+
+describe("deadline progress", () => {
+  const T = parseD("2026-10-25");
+  it("measures the elapsed share of an application window", () => {
+    expect(windowProgress("2026-10-01", "2026-11-30", T)).toBeCloseTo(24 / 60);
+    expect(windowProgress("2026-11-01", "2026-11-30", T)).toBe(0);
+    expect(windowProgress("2026-09-01", "2026-10-01", T)).toBe(1);
+    expect(windowProgress(undefined, "2026-11-30", T)).toBeNull();
+    expect(windowProgress("2026-11-30", "2026-11-30", T)).toBeNull();
+  });
+  it("bands days left", () => {
+    expect(urgency(-1)).toBe("past");
+    expect(urgency(0)).toBe("urgent");
+    expect(urgency(21)).toBe("urgent");
+    expect(urgency(45)).toBe("near");
+    expect(urgency(46)).toBe("calm");
+  });
+});
+
+describe("isProfileEmpty", () => {
+  it("is true until a grade or score is entered", () => {
+    expect(isProfileEmpty(EMPTY_PROFILE)).toBe(true);
+    expect(isProfileEmpty({ ...EMPTY_PROFILE, ects: { Matematik: 30 } })).toBe(true);
+    expect(isProfileEmpty({ ...EMPTY_PROFILE, yds: 70 })).toBe(false);
   });
 });

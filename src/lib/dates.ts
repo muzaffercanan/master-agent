@@ -53,3 +53,20 @@ export function countdown(s: string | undefined, e: string | undefined, T: Date,
   if (e) return { text: toE === 0 ? "bugün bitiyor" : `${toE} gün kaldı`, past: false, soon: toE <= soonDays, days: toE };
   return { text: toE === 0 ? "bugün" : `${toE} gün sonra`, past: false, soon: toE <= soonDays, days: toE };
 }
+
+/** Share of an application window [open, deadline] already elapsed on T, 0–1; null without both ends. */
+export function windowProgress(open: string | undefined, deadline: string | undefined, T: Date): number | null {
+  if (!open || !deadline) return null;
+  const total = daysBetween(parseD(open), parseD(deadline));
+  if (total <= 0) return null;
+  return Math.min(1, Math.max(0, daysBetween(parseD(open), T) / total));
+}
+
+export type Urgency = "calm" | "near" | "urgent" | "past";
+/** Colour band for days left until a deadline: ≤21 urgent, ≤45 near. */
+export function urgency(daysLeft: number): Urgency {
+  if (daysLeft < 0) return "past";
+  if (daysLeft <= 21) return "urgent";
+  if (daysLeft <= 45) return "near";
+  return "calm";
+}

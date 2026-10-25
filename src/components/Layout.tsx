@@ -2,6 +2,8 @@ import { useEffect, useState, type FormEvent } from "react";
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { dataErrors } from "../data";
 import { useStore } from "../state/store";
+import { views } from "../state/data";
+import { isProfileEmpty } from "../lib/eligibility";
 
 const SUN = "M12 2.6v2M12 19.4v2M2.6 12h2M19.4 12h2M5.4 5.4l1.4 1.4M17.2 17.2l1.4 1.4M18.6 5.4l-1.4 1.4M6.8 17.2l-1.4 1.4";
 
@@ -31,7 +33,8 @@ function useTheme() {
 }
 
 export function Layout() {
-  const { shortlist, compare, tracker } = useStore();
+  const { shortlist, compare, tracker, profile } = useStore();
+  const [bandHidden, setBandHidden] = useState(false);
   const { dark, toggle } = useTheme();
   const nav = useNavigate();
   const loc = useLocation();
@@ -52,6 +55,7 @@ export function Layout() {
         <div className="wrap">
           <Link to="/" className="brand"><span className="mark">MA</span><span className="full">Master Atlası</span></Link>
           <nav className="mainnav" aria-label="Ana menü">
+            <NavLink to="/" end>Bugün</NavLink>
             <NavLink to="/programlar">Programlar</NavLink>
             <NavLink to="/okullar">Okullar</NavLink>
             <NavLink to="/ulkeler">Ülkeler</NavLink>
@@ -75,6 +79,17 @@ export function Layout() {
           </button>
         </div>
       </div>
+      {isProfileEmpty(profile) && !bandHidden && loc.pathname !== "/profil" && (
+        <div className="profile-band">
+          <div className="wrap">
+            <p>Profilin boş, bu yüzden programlarda <b>Eksik bilgi</b> görünüyor. GNO ve dil puanını gir; {views.length} programın hangisine uyduğunu gör.</p>
+            <div className="btnrow">
+              <Link className="btn sm primary" to="/profil">Profili doldur</Link>
+              <button type="button" className="btn sm ghost" onClick={() => setBandHidden(true)}>Şimdilik gizle</button>
+            </div>
+          </div>
+        </div>
+      )}
       {dataErrors.length > 0 && (
         <div className="data-errors" role="alert">
           <div className="wrap">

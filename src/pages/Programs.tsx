@@ -6,6 +6,7 @@ import { LANG_LABEL, LEVEL_LABEL, TERM_LABEL } from "../lib/text";
 import { countries, data, views } from "../state/data";
 import { useStore } from "../state/store";
 import { ProgramRow } from "../components/ProgramRow";
+import { Flag } from "../components/bits";
 
 type ListKey = "country" | "city" | "uni" | "field" | "level" | "lang" | "term";
 
@@ -125,7 +126,7 @@ export function ProgramsPage() {
             undefined,
             f.scope ? 1 : 0,
           )}
-          {group("Ülke", chips("country", countries.filter(c => countryCounts.has(c.code)).map(c => [c.code, <><span className="flag">{c.flag}</span> {c.name}</>, countryCounts.get(c.code)])), f.country.length ? () => set({ country: [], city: [], uni: [] }) : undefined, f.country.length)}
+          {group("Ülke", chips("country", countries.filter(c => countryCounts.has(c.code)).map(c => [c.code, <><Flag c={c} /> {c.name}</>, countryCounts.get(c.code)])), f.country.length ? () => set({ country: [], city: [], uni: [] }) : undefined, f.country.length)}
           {group("Şehir / bölge", chips("city", [...cityCounts.entries()].sort((a, b) => a[0].localeCompare(b[0], "tr")).map(([c, n]) => [c, c, n])), f.city.length ? () => set({ city: [], uni: [] }) : undefined, f.city.length, false)}
           {group(
             "Okul",

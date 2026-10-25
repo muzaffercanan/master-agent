@@ -3,7 +3,7 @@ import { viewByKey } from "../state/data";
 import { TRACK_STATUSES, useStore, type TrackEntry } from "../state/store";
 import { nextDeadline, type ProgramView } from "../lib/programs";
 import { fmt, today } from "../lib/dates";
-import { Countdown } from "../components/bits";
+import { Countdown, Flag } from "../components/bits";
 
 /** Document checklist derived from the program's requirements. */
 export function docsFor(v: ProgramView): string[] {
@@ -28,7 +28,7 @@ function TrackCard({ k, e }: { k: string; e: TrackEntry }) {
     <div className="panel trow">
       <div>
         <Link to={`/program/${k}`}><b>{v.program.name}</b></Link>
-        <div className="small muted"><span className="flag">{v.country.flag}</span> {v.uni.short} · {v.uni.city}</div>
+        <div className="small muted"><Flag c={v.country} /> {v.uni.short} · {v.uni.city}</div>
       </div>
       <div className="btnrow">
         <select value={e.status} onChange={x => setTrack(k, { status: x.target.value as TrackEntry["status"] })} aria-label="Durum">

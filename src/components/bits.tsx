@@ -1,7 +1,7 @@
 // Small presentational pieces shared by every page.
 import type { Intake, Money, Status } from "../schema";
 import type { CheckStatus } from "../lib/eligibility";
-import { countdown, daysBetween, fmt, parseD, today } from "../lib/dates";
+import { countdown, daysBetween, fmt, parseD, today, urgency, windowProgress } from "../lib/dates";
 import { fmtMoney } from "../lib/money";
 import { TERM_LABEL } from "../lib/text";
 import { offeredTerms } from "../lib/programs";
@@ -80,5 +80,44 @@ export function ExtLinks({ links }: { links: { label: string; url: string }[] })
         <a key={l.url + l.label} href={l.url} target="_blank" rel="noopener noreferrer">{l.label}</a>
       ))}
     </div>
+  );
+}
+
+// Five-point star for the Turkish flag, one point towards the hoist.
+const TR_STAR = Array.from({ length: 10 }, (_, k) => {
+  const a = Math.PI + (k * Math.PI) / 5;
+  const r = k % 2 ? 0.95 : 2.5;
+  return `${(16.9 + r * Math.cos(a)).toFixed(2)},${(10 + r * Math.sin(a)).toFixed(2)}`;
+}).join(" ");
+
+const FLAGS: Record<string, JSX.Element> = {
+  tr: <><rect width="30" height="20" fill="#E30A17" /><circle cx="10" cy="10" r="5" fill="#fff" /><circle cx="11.25" cy="10" r="4" fill="#E30A17" /><polygon points={TR_STAR} fill="#fff" /></>,
+  de: <><rect width="30" height="20" fill="#FFCE00" /><rect width="30" height="13.33" fill="#DD0000" /><rect width="30" height="6.67" fill="#000" /></>,
+  at: <><rect width="30" height="20" fill="#C8102E" /><rect y="6.67" width="30" height="6.67" fill="#fff" /></>,
+  it: <><rect width="30" height="20" fill="#fff" /><rect width="10" height="20" fill="#009246" /><rect x="20" width="10" height="20" fill="#CE2B37" /></>,
+};
+
+/** Country flag as inline SVG (Windows has no flag emoji); falls back to the country's text flag. */
+export function Flag({ c }: { c: { code: string; flag: string; name: string } }) {
+  const f = FLAGS[c.code];
+  if (!f) return <span className="flag">{c.flag}</span>;
+  return (
+    <svg className="flagsvg" viewBox="0 0 30 20" role="img" aria-label={c.name}>
+      {f}
+      <rect width="30" height="20" fill="none" className="flagedge" />
+    </svg>
+  );
+}
+
+/** Thin bar showing how much of the application window has passed, coloured by days left. */
+export function DeadlineBar({ open, deadline }: { open?: string; deadline: string }) {
+  const T = today();
+  const p = windowProgress(open, deadline, T);
+  if (p == null) return null;
+  const u = urgency(daysBetween(T, parseD(deadline)));
+  return (
+    <span className={`dbar ${u}`} title={`Başvuru penceresinin geçen kısmı: %${Math.round(p * 100)}`} aria-hidden="true">
+      <i style={{ width: `${Math.max(4, p * 100)}%` }} />
+    </span>
   );
 }

@@ -140,7 +140,7 @@ Güncel sayılar için `npm run check` çıktısına bak. Açık işler:
 - Türkiye'de incelenmeyen üniversiteler: `docs/research-notes.md` içinde listeli.
 - Bahar 2026-27 ilanları: Boğaziçi, Koç, Özyeğin, Sabancı işlendi. ODTÜ, İTÜ, Gazi, YTÜ, Atılım, Hacettepe ilan edince güncelle (Boğaziçi Bilgisayar Müh.'in bahar kontenjanı belirsiz).
 - Güz 2027-28 tarihleri çoğunlukla 2026 takviminin kaydırılmasıyla yazılmış `tahmin`'lerdir; ilan çıktıkça `kesin`'e çevir.
-- Bilinen küçük arayüz sorunları: detay sayfalarında üst menüde sekme seçili görünmüyor; mobilde uygunluk etiketi uzunsa "Takibe al" alt satıra iniyor; tema değişiminde 150 ms'lik geçiş; derleme 500 kB uyarısı veriyor; Windows'ta bayrak emojileri "DE/TR" harf kodu olarak görünüyor (`.flag` sınıfı).
+- Bilinen küçük arayüz sorunları: detay sayfalarında üst menüde sekme seçili görünmüyor; mobilde uygunluk etiketi uzunsa "Takibe al" alt satıra iniyor; tema değişiminde 150 ms'lik geçiş; derleme 500 kB uyarısı veriyor.
 - Düşünülen ama yapılmayan: kırık bağlantıları otomatik tespit eden CI, GitHub Pages ile yayın.
 
 ## 8. Arayüz kuralları
