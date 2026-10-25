@@ -7,9 +7,10 @@ Bu dosyayı her oturumun başında oku. Burada yazanlar, projenin kurulduğu uzu
 Türkiye ve yurt dışındaki yüksek lisans programlarını araştırmak için kullanıcının **yerel çalışan** web uygulaması. Vite 5 + React 18 + TypeScript, `react-router` (HashRouter), `zod`. Sunucu ve veritabanı yok: veri `data/**/*.json` dosyalarında, derleme anında yüklenir. Kullanıcıya ait veri (profil, kısa liste, karşılaştırma, takip) yalnızca tarayıcının `localStorage`'ında durur.
 
 Uygulama şunları yapabilmeli (kullanıcının istediği, bozulmamalı):
+
 - Türkiye ve yurt dışı ayrı ayrı; ülkeye, şehre/bölgeye ve okula göre gruplanıp filtrelenebilmeli.
 - Okul okul şartlara bakılabilmeli.
-- Şartlar liste halinde filtrelenebilmeli: başvuru tarihleri (her dönem ayrı; yalnızca tek dönem alan programlar belirtilmeli), başvuru koşulları (IELTS/TOEFL/YDS, GNO, ders/ECTS uyumu, GRE, ALES…), ücret var mı ve ne kadar, bölgesel/eyalet/şehir ücreti, burslar.
+- Şartlar liste halinde filtrelenebilmeli: başvuru tarihleri (her dönem ayrı ayrı ele alınmalı; yalnızca tek dönem alan programlar da belirtilmeli), başvuru koşulları (IELTS/TOEFL/YDS, GNO, ders/ECTS uyumu, GRE, ALES…), ücret var mı ve ne kadar, bölgesel/eyalet/şehir ücreti, burslar.
 - Kullanıcının profiline göre her yerde uygunluk etiketi çıkmalı.
 
 Kapsam: Türkiye, Almanya, İtalya, Avusturya. Yeni ülke eklenirse aynı şemayla eklenir.
@@ -27,14 +28,14 @@ Kapsam: Türkiye, Almanya, İtalya, Avusturya. Yeni ülke eklenirse aynı şemay
 
 Gerekli: Node.js 20+. Proje klasörü: `C:\Users\muzca\Desktop\muzo-genel\DEV\master-atlasi`. Windows'tasın; Bash ve PowerShell ikisi de var.
 
-| Komut | Ne yapar |
-|---|---|
-| `npm run dev` | Geliştirme sunucusu, `http://localhost:5173`. `.claude/launch.json` içinde `master-atlasi` adıyla tanımlı. |
-| `npm run check` | `data/` altındaki her JSON'u zod şemasına ve çapraz referanslara göre doğrular. |
-| `npm test` | `src/lib/lib.test.ts` (uygunluk, not dönüşümü, maliyet, tarih, takvim, `.ics`). |
-| `npm run typecheck` | `tsc --noEmit`. |
-| `npm run build` | check + typecheck + `vite build` (`dist/` git'te yok). |
-| `npm run links` | Verideki resmi bağlantıları dener. Sonuçlarına körü körüne güvenme (bkz. 6.4). |
+| Komut                 | Ne yapar                                                                                                              |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `npm run dev`       | Geliştirme sunucusu, `http://localhost:5173`. `.claude/launch.json` içinde `master-atlasi` adıyla tanımlı. |
+| `npm run check`     | `data/` altındaki her JSON'u zod şemasına ve çapraz referanslara göre doğrular.                               |
+| `npm test`          | `src/lib/lib.test.ts` (uygunluk, not dönüşümü, maliyet, tarih, takvim, `.ics`).                              |
+| `npm run typecheck` | `tsc --noEmit`.                                                                                                     |
+| `npm run build`     | check + typecheck + `vite build` (`dist/` git'te yok).                                                            |
+| `npm run links`     | Verideki resmi bağlantıları dener. Sonuçlarına körü körüne güvenme (bkz. 6.4).                              |
 
 **Her değişiklikten sonra**, bitirdim demeden önce şunlar geçmeli: `npm run check`, `npm run typecheck`, `npm test`. Arayüz değiştiyse ayrıca tarayıcıda gör (bkz. 8).
 
@@ -66,6 +67,7 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 ## 5. Veri kuralları (en önemli bölüm)
 
 ### 5.1 Şema ve dosyalar
+
 - **Önce şemayı güncelle** (`src/schema/index.ts`), sonra veriyi, sonra arayüzü. Şema dışı alan ekleme.
 - Okul dosyası: `data/universities/<ülke kodu>/<id>.json`. `id` yalnızca `a-z 0-9 -`. Ülke dosyasının adı ülke koduyla aynı olmalı (`de.json`); `check` bunu denetler.
 - Program `fields` değerleri `fields.json` anahtarlarından olmalı: `core, ai, data, sec, swe, is, game, bio, cogsci, comp, robo, comm, fin, or, other`.
@@ -73,6 +75,7 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 - Python ile toplu düzenleme yaparsan `PYTHONIOENCODING=utf-8` ayarla ve dosyayı `newline='\n'` ile yaz.
 
 ### 5.2 Dönemler (`intakes`)
+
 - `term`: `fall`, `spring` (Türkiye, İtalya), `winter`, `summer` (Almanya WiSe/SoSe, Avusturya). Ülkenin hangi dönem adlarını kullandığı `countries/<kod>.json` içinde `terms` alanında.
 - `offered`: `yes` / `no` / `unknown`. **Bir program o dönemde öğrenci almıyorsa `no` yaz** (arayüz üstünü çizer ve "tek dönem alanlar" filtresi buna dayanır). Bilmiyorsan `unknown`, uydurma.
 - Okul düzeyinde `intakes` varsayılandır; program kendi `intakes`'ini tanımlarsa okulunkini **tamamen** ezer. Bu yüzden program override'ında hem güz hem bahar kaydını yaz.
@@ -80,12 +83,14 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 - Tarih biçimi `YYYY-AA-GG`.
 
 ### 5.3 `kesin` ve `tahmin`
+
 - **`kesin`**: yayımlanmış, resmi ilan. **`tahmin`**: geçen yılın takvimi, üçüncü taraf kaynak veya kaynaklar çelişkili.
 - Resmi kaynaktan doğrulanmayan hiçbir tarihi `kesin` yazma. Çelişen kaynaklarda `tahmin` yaz ve `note` alanına hangi kaynağın ne dediğini yaz (JKU Linz ve UniBo örneklerine bak).
 - Bir ilan çıkınca `tahmin`'i `kesin`'e çevir ve tarihi güncelle.
 - Her okul kaydında `verifiedAt` var. Veriye dokunduğunda ve kaynağa gerçekten baktığında güncelle; bakmadan güncelleme. 90 günden eski kayıt arayüzde "doğrulanmadı" etiketi alır.
 
 ### 5.4 Şartlar ve ücretler
+
 - ALES eşiği GNO'ya bağlıysa kademe olarak yaz: `{default, tiers:[{gpa, ales}]}`, **büyük GNO'dan küçüğe sıralı** (`check` denetler). `notRequired: true` = ALES aranmıyor.
 - Almanya not tavanı `gpa.deMax` (Alman notu, düşük iyi). Dönüşüm ülke dosyasındaki `gpaConversion` ile yapılır: Bavyera formülü `1 + 3·(Nmax − GNO)/(Nmax − Nmin)`. Özyeğin için DHBW tablosu (Haziran 2026) "System 3": Nmax=4, Nmin=1, yani 2.75 → 2.25. Başka Türk üniversiteleri farklı sistemde olabilir (System 1'de en düşük geçer not 0.70); bağlayıcı değer uni-assist VPD'sinde çıkar.
 - Para: `{amount, currency, per}`; `per` = `semester | year | month | total | once`. Kullandığın para birimi `fx.json`'da olmalı. Yıllık maliyet EUR'a çevrilip gösterilir; kuru tarihli güncelle.
@@ -97,12 +102,15 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 ## 6. Doğrulama protokolü
 
 ### 6.1 Kaynak sırası
+
 1. Üniversitenin / enstitünün resmi ilan veya program sayfası, kontenjan tabloları, çağrı PDF'leri.
 2. Resmi kurumlar: ÖSYM, YÖK, TÜBİTAK, DAAD, uni-assist, Auswärtiges Amt, bakanlıklar, DHBW not tablosu.
 3. Üçüncü taraf (MastersPortal, mygermanuniversity, Collegedunia, blog vb.) **yalnızca ipucudur.** Bu sitelerden gelen sayıyı tek başına `kesin` yapma; sık sık eski ya da yanlış çıkıyorlar.
 
 ### 6.2 Kullanıcının getirdiği raporlar
+
 Kullanıcının Almanya raporu doğrulanınca şu hatalar çıktı. Yeni bir rapor geldiğinde aynı türden hataları ara:
+
 - Mannheim Data Science: AB dışı için GRE Quant ≥162 ve Verbal ≥151 **zorunlu**, seçim yalnızca GRE'ye göre. Raporda yoktu.
 - Stuttgart "AI and Data Science" **Almanca** öğretiliyor. Raporda İngilizce yazıyordu.
 - Stuttgart CS ve INFOTECH kış başvurusu 15 Ocak'ta kapanıyor ("Mayıs–Temmuz" yanlıştı); ikisi de "açık kabul" değil.
@@ -112,17 +120,20 @@ Kullanıcının Almanya raporu doğrulanınca şu hatalar çıktı. Yeni bir rap
 - Passau: anabin'de "H+" statüsü ve A1 Almanca (ilk yıl sonuna kadar) gerekiyor.
 
 ### 6.3 Kurallar
+
 - Çelişkili kaynakta erken (güvenli) tarihi göster ve çelişkiyi `note`'a yaz.
 - Bir sayfa yüklenmezse (PDF, bot engeli) o veriyi "doğrulanmadı" diye işaretle; eski/ezber sayıyla doldurma. `WebFetch` kısa özet verir ve hata yapabilir; kritik sayıları (ücret, son gün) sayfanın kendisinden teyit et.
 - PDF için: `curl` ile indirip `pypdf` ile metne çevirmek işe yarıyor (`PYTHONIOENCODING=utf-8`).
 - Kullanıcıya özet verirken doğrulanamayanları ayrıca say.
 
 ### 6.4 `npm run links` hakkında
+
 Betik, bot isteklerine 403/404 dönen siteleri "kırık" sanıyor (Boğaziçi, Gazi, KTÜ, BTÜ, Koç, Özyeğin, PoliMi, MastersPortal). Kırık raporu gelince bağlantıyı **uygulama içi tarayıcıda** (`mcp__Claude_Browser__*`) aç; açılıyorsa sorun yoktur. Gerçekten sorunlu olan: Hacettepe enstitü siteleri (portala yönleniyor) ve AGÜ `fbe.agu.edu.tr`.
 
 ## 7. Durum ve açık işler (24 Ekim 2026 itibarıyla)
 
 Güncel sayılar için `npm run check` çıktısına bak. Açık işler:
+
 - **İkinci Almanya raporu** ("Bilgisayar Mühendisi Profili İçin Kapsamlı Araştırma"): kullanıcı Claude sohbetinden `.md` olarak indirip yolunu verecek. Gelince 6.2'deki gibi kontrol edip ekle. (Downloads'taki "Almanya'da İngilizce Yüksek Lisans… Rehberi.md" birinci rapordur ve zaten işlendi.)
 - Almanya'da hâlâ doğrulanmamış: Frankfurt UAS kış son tarihi ve M.Eng. Information Technology programı, Mannheim Social Data Science şartları, RWTH dönem ücreti.
 - İtalya ve Avusturya yalnızca birkaç programla başladı (PoliMi, UniBo, TU Wien, JKU). Sapienza, Padova, PoliTo, TU Graz, Viyana Üniversitesi gibi okullar eklenebilir. PoliMi sitesi bot engelliyor; şartlar üçüncü taraftan geldi, doğrulanmalı.
