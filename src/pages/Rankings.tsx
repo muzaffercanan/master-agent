@@ -10,19 +10,22 @@ type View = "all" | "overall" | "cs";
 const VIEWS: [View, string][] = [["all", "Hepsi"], ["overall", "Genel"], ["cs", "Bilgisayar bilimi"]];
 const KIND_LABEL: Record<RankingSource["kind"], string> = { overall: "Genel sıralama", cs: "Bilgisayar bilimi" };
 
-/** One rank cell: tinted 1–100 / 101–200 / 201–500, plain beyond 500, a dash when the list leaves the school out. */
+/** "=143" and "301–325" with the tie mark and band dash set back, so the numbers carry the column. */
+function RankText({ r }: { r: string }) {
+  const m = r.match(/^(=?)(\d+)(?:–(\d+))?(\+?)$/);
+  if (!m) return <>{r}</>;
+  return <>{m[1] && <span className="eq">=</span>}{m[2]}{m[3] && <><span className="dash">–</span>{m[3]}</>}{m[4]}</>;
+}
+
+/** One heat-map tile: 1–100 / 101–200 / 201–500 tinted, beyond 500 outlined, a dash when the list leaves the school out. */
 function RankCell({ r, src, split }: { r?: string; src: RankingSource; split: boolean }) {
   const cls = `rk-cell${split ? " split" : ""}`;
   if (!r) {
     const why = src.listedTo ? `${src.short} listesinde yok (yalnızca ilk ${src.listedTo} yayımlanıyor)` : `${src.short} listesinde yok`;
-    return <td className={cls}><span className="rk-none" title={why} aria-label={why}>—</span></td>;
+    return <td className={cls}><span className="rk-v none" title={why} aria-label={why}>—</span></td>;
   }
-  const beyond = (rankPos(r) ?? 0) > 500;
-  return (
-    <td className={cls}>
-      <span className={`wrank ${beyond ? "beyond" : rankTier(r) ?? ""}`}>{r}</span>
-    </td>
-  );
+  const tier = (rankPos(r) ?? 0) > 500 ? "beyond" : rankTier(r) ?? "";
+  return <td className={cls}><span className={`rk-v ${tier}`} title={`${src.short} ${src.edition}: ${r}`}><RankText r={r} /></span></td>;
 }
 
 function RankTable({ table }: { table: RankingTable }) {
@@ -88,17 +91,24 @@ function RankTable({ table }: { table: RankingTable }) {
               </tr>
             </thead>
             <tbody>
-              {rows.map(r => (
+              {rows.map((r, n) => (
                 <tr key={r.entry.id}>
                   <th scope="row" className="rk-name">
-                    {r.entry.uni ? <Link to={`/okul/${r.entry.uni}`}><b>{r.entry.short}</b></Link> : <b>{r.entry.short}</b>}
-                    <span className="sub">{r.entry.city}{r.entry.uni && <> · <span className="rk-atlas">atlasta</span></>}</span>
-                    {r.entry.note && <span className="sub rk-note">{r.entry.note}</span>}
+                    <div className="rk-row">
+                      <span className="rk-i">{n + 1}</span>
+                      <div>
+                        {r.entry.uni ? <Link to={`/okul/${r.entry.uni}`}>{r.entry.short}</Link> : <b>{r.entry.short}</b>}
+                        <span className="sub">{r.entry.city}{r.entry.uni && <span className="rk-atlas" title="Bu okulun programları atlasta var">atlasta</span>}</span>
+                        {r.entry.note && <span className="sub rk-note">{r.entry.note}</span>}
+                      </div>
+                    </div>
                   </th>
                   {sources.map((s, i) => <RankCell key={s.id} r={r.ranks[i]} src={s} split={i > 0 && sources[i - 1].kind !== s.kind} />)}
-                  <td className="rk-med num">
-                    {r.median != null ? Math.round(r.median) : "—"}
-                    <span className="sub">{r.count}/{sources.length} liste</span>
+                  <td className="rk-med">
+                    <b>{r.median != null ? Math.round(r.median) : "—"}</b>
+                    <span className="rk-cover" title={`${sources.length} listenin ${r.count} tanesinde`} aria-label={`${sources.length} listenin ${r.count} tanesinde`}>
+                      {sources.map((s, i) => <i key={s.id} className={r.ranks[i] ? "on" : ""} />)}
+                    </span>
                   </td>
                 </tr>
               ))}
@@ -110,12 +120,13 @@ function RankTable({ table }: { table: RankingTable }) {
       )}
 
       <div className="rk-legend small muted" aria-label="Renk açıklaması">
-        <span><span className="wrank top">1–100</span></span>
-        <span><span className="wrank mid">101–200</span></span>
-        <span><span className="wrank low">201–500</span></span>
-        <span><span className="wrank beyond">501+</span></span>
-        <span><span className="rk-none">—</span> listede yok</span>
-        <span><span className="num">=</span> eşit sıra</span>
+        <span className="item"><span className="rk-v top">1–100</span></span>
+        <span className="item"><span className="rk-v mid">101–200</span></span>
+        <span className="item"><span className="rk-v low">201–500</span></span>
+        <span className="item"><span className="rk-v beyond">501+</span></span>
+        <span className="item"><span className="rk-v none">—</span> listede yok</span>
+        <span className="item"><span className="num">=</span> eşit sıra</span>
+        <span className="item"><span className="rk-cover"><i className="on" /><i className="on" /><i /></span> ortancanın dayandığı listeler</span>
       </div>
     </>
   );
@@ -160,7 +171,7 @@ export function RankingsPage() {
             <ul>
               <li>Genel sıralamalar okulun bütününü ölçer (tıp, fen, sosyal dahil). Bilgisayar bilimi için konu sıralamaları ve CSRankings daha anlamlıdır.</li>
               <li>Bantlı sıralar ("301–325") yayımlandığı gibi duruyor. Sıralama ve ortanca için bandın orta noktası kullanılır; "1401+" gibi açık bantlar alt sınırıyla sayılır.</li>
-              <li>Ortanca, yalnızca o an gösterilen listelerden hesaplanır. Listelerin yarısından azında yer alan okullar, ortancaları iyi olsa da sona alınır; yanındaki "n/9 liste" sayısına bak.</li>
+              <li>Ortanca, yalnızca o an gösterilen listelerden hesaplanır. Listelerin yarısından azında yer alan okullar, ortancaları iyi olsa da sona alınır; altındaki noktalara bak (her nokta bir liste).</li>
               <li>CSRankings itibar anketi kullanmaz; yalnızca seçici konferanslardaki yayınları sayar. Araştırma odaklı bir danışman arıyorsan en doğrudan gösterge odur.</li>
               <li>Sıralama, başvuru şartı veya ücret hakkında bir şey söylemez. Atlasta olan okulların şartları için okul adına tıkla.</li>
             </ul>

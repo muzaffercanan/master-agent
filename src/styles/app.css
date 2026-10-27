@@ -20,6 +20,17 @@
 .mainnav a:focus-visible{outline-offset:-2px}
 
 .searchbox{position:relative;flex:1 1 200px;max-width:330px;margin-left:auto}
+/* one row on desktop: the search box gives way before anything wraps */
+@media (min-width:1100px){
+  .topbar .wrap{flex-wrap:nowrap}
+  .searchbox{flex:1 1 150px;min-width:130px}
+}
+@media (min-width:1100px) and (max-width:1279px){
+  .mainnav a{padding:6px 8px;font-size:.85rem}
+  .brand{margin-right:0}
+  .mainnav{flex-shrink:0}
+  .searchbox{min-width:90px}
+}
 .searchbox input[type=search]{width:100%;font:inherit;font-size:.87rem;height:34px;padding:0 12px 0 33px;border:1px solid var(--line-2);border-radius:7px;background:var(--bg);color:var(--ink)}
 .searchbox input[type=search]::placeholder{color:var(--muted)}
 .searchbox input[type=search]:hover{border-color:color-mix(in srgb,var(--accent) 35%,var(--line-2))}
@@ -369,33 +380,54 @@ section.fund-group{padding:0;border:0;display:grid;grid-template-columns:minmax(
 /* ---------- rankings ---------- */
 .rk-toolbar input[type=search]{flex:1 1 220px;max-width:320px}
 .rk-wrap{margin-top:14px}
-.rk-table{min-width:980px}
-.rk-table th,.rk-table td{padding:7px 10px;vertical-align:middle}
-.rk-table thead th{background:var(--paper);border-bottom:1px solid var(--line-2)}
-.rk-table thead .rk-groups th.rk-group{text-align:center;color:var(--ink-2);border-bottom:1px solid var(--line)}
-.rk-table thead .rk-group.cs,.rk-table .split{border-left:1px solid var(--line-2)}
-.rk-table .rk-name{position:sticky;left:0;z-index:1;background:var(--paper);border-right:1px solid var(--line);min-width:180px;max-width:240px;text-align:left;white-space:normal;font-family:var(--sans);font-size:.87rem;letter-spacing:0;text-transform:none;color:var(--ink);font-weight:400}
-.rk-table thead .rk-name{z-index:2;vertical-align:bottom}
-.rk-table tbody tr:hover .rk-name{background:color-mix(in srgb,var(--sunk) 40%,var(--paper))}
-.rk-table .rk-name a{color:var(--ink);text-decoration-color:var(--line-2)}
-.rk-table .rk-name a:hover{color:var(--accent)}
-.rk-table .rk-name .sub{display:block;color:var(--muted);font-size:.78rem;margin-top:2px;font-weight:400}
-.rk-table .rk-note{max-width:34ch;line-height:1.35}
-.rk-atlas{color:var(--accent)}
-.rk-table .rk-src,.rk-table .rk-cell{text-align:center}
-.rk-table .rk-med{text-align:right;white-space:nowrap;border-left:1px solid var(--line-2)}
-.rk-table td.rk-med{color:var(--ink);font-size:.86rem}
-.rk-table td.rk-med .sub{font-family:var(--sans);font-size:.72rem}
-.rk-sort{display:inline-flex;align-items:center;gap:4px;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;padding:2px 0;cursor:pointer}
-.rk-sort:hover,.rk-sort[aria-pressed="true"]{color:var(--accent)}
-.rk-sort .arrow{font-size:.75rem;opacity:.55}
+.rk-table{min-width:980px;border-collapse:separate;border-spacing:0}
+.rk-table th,.rk-table td{padding:5px 6px;vertical-align:middle;border-bottom:1px solid var(--line)}
+.rk-table tbody tr:last-child > *{border-bottom:0}
+.rk-table tbody tr:hover{background:none}
+.rk-table tbody tr:hover > *{background:color-mix(in srgb,var(--accent) 5%,var(--paper))}
+/* header */
+.rk-table thead th{background:var(--paper);border-bottom:1px solid var(--line-2);padding-top:10px;padding-bottom:10px}
+.rk-table thead .rk-groups th.rk-group{text-align:left;padding:12px 12px 4px;border-bottom:0;color:var(--copper);font-size:.64rem;letter-spacing:.12em}
+.rk-table thead .rk-groups th.rk-group::after{content:"";display:block;height:1px;margin-top:7px;background:var(--line-2)}
+.rk-table .split,.rk-table thead .rk-group.cs{box-shadow:inset 1px 0 0 var(--line-2)}
+.rk-table .rk-src{padding-top:6px;text-align:center;min-width:86px}
+.rk-src-label{display:inline-grid;justify-items:center;gap:1px;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink)}
+.rk-src-label .ed{font-family:var(--mono);font-size:.64rem;font-weight:400;color:var(--muted);letter-spacing:.02em}
+.rk-sort{display:inline-flex;align-items:center;gap:3px;font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;background:none;border:0;border-radius:5px;padding:3px 5px;cursor:pointer}
+.rk-sort:hover{background:var(--sunk)}
+.rk-sort .arrow{font-size:.72rem;color:var(--accent);opacity:0;transition:opacity .12s}
+.rk-sort:hover .arrow{opacity:.5}
 .rk-sort[aria-pressed="true"] .arrow{opacity:1}
-.rk-src-label{display:inline-grid;justify-items:center;line-height:1.25}
-.rk-src-label .ed{font-size:.62rem;color:var(--muted);letter-spacing:.03em}
-.rk-table .wrank{font-size:.78rem;padding:2px 6px}
-.wrank.beyond{background:transparent;color:var(--muted);box-shadow:inset 0 0 0 1px var(--line-2)}
-.rk-none{color:var(--muted);font-family:var(--mono)}
-.rk-legend{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;margin-top:10px}
+.rk-sort[aria-pressed="true"],.rk-sort[aria-pressed="true"] .rk-src-label{color:var(--accent)}
+/* name column */
+.rk-table .rk-name{position:sticky;left:0;z-index:1;background:var(--paper);box-shadow:inset -1px 0 0 var(--line);min-width:220px;max-width:260px;padding:8px 14px 8px 10px;text-align:left;white-space:normal;font-family:var(--sans);font-size:.88rem;letter-spacing:0;text-transform:none;color:var(--ink);font-weight:400}
+.rk-table thead .rk-name{z-index:2;vertical-align:bottom;font-family:var(--mono);font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding-left:44px}
+.rk-row{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px;align-items:baseline}
+.rk-i{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.rk-table .rk-name a{color:var(--ink);font-weight:600;text-decoration:none}
+.rk-table .rk-name a:hover{color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent-line)}
+.rk-table .rk-name b{font-weight:600}
+.rk-table .rk-name .sub{display:flex;flex-wrap:wrap;align-items:center;gap:4px 7px;color:var(--muted);font-size:.76rem;margin-top:2px}
+.rk-atlas{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;line-height:1;padding:3px 5px;border-radius:3px;background:var(--accent-soft);color:var(--accent)}
+.rk-table .rk-note{display:block;max-width:36ch;line-height:1.35}
+/* rank tiles: equal width so the grid reads as a heat map */
+.rk-cell{text-align:center}
+.rk-v{display:block;min-width:74px;max-width:104px;margin:0 auto;padding:6px 4px;border-radius:5px;font-family:var(--mono);font-size:.8rem;font-variant-numeric:tabular-nums;line-height:1.2;white-space:nowrap}
+.rk-v .eq,.rk-v .dash{opacity:.55}
+.rk-v.top{background:var(--ok-soft);color:var(--ok);font-weight:500}
+.rk-v.mid{background:var(--warn-soft);color:var(--warn)}
+.rk-v.low{background:var(--sunk);color:var(--ink-2)}
+.rk-v.beyond{color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+.rk-v.none{color:var(--line-2)}
+/* median */
+.rk-table .rk-med{text-align:right;white-space:nowrap;box-shadow:inset 1px 0 0 var(--line-2);padding-right:14px;padding-left:14px;min-width:96px}
+.rk-table td.rk-med b{display:block;font-family:var(--mono);font-size:.98rem;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.rk-cover{display:inline-flex;gap:2px;margin-top:4px}
+.rk-cover i{width:5px;height:5px;border-radius:50%;background:var(--line-2)}
+.rk-cover i.on{background:var(--accent)}
+.rk-legend{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:10px}
+.rk-legend .rk-v{display:inline-block;min-width:0;padding:2px 7px;font-size:.72rem}
+.rk-legend .item{display:inline-flex;align-items:center;gap:6px}
 .rk-notes{margin-top:26px;padding:0;border:0}
 .rk-sources{list-style:none;padding-left:0 !important}
 .rk-sources li{display:grid;gap:2px}
@@ -403,6 +435,8 @@ section.fund-group{padding:0;border:0;display:grid;grid-template-columns:minmax(
 .rk-sources a:hover{color:var(--accent)}
 .rk-sources .sub{color:var(--muted);font-size:.8rem}
 @media (max-width:560px){
-  .rk-table .rk-name{min-width:118px;max-width:140px;padding-left:9px;padding-right:8px}
+  .rk-table .rk-name{min-width:132px;max-width:150px;padding-left:6px;padding-right:8px}
+  .rk-table thead .rk-name{padding-left:32px}
+  .rk-row{grid-template-columns:20px minmax(0,1fr);gap:6px}
   .rk-table .rk-note{display:none}
 }
