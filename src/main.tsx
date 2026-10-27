@@ -10,6 +10,7 @@ import { UniversityPage } from "./pages/University";
 import { ProgramPage } from "./pages/Program";
 import { CountriesPage, CountryPage } from "./pages/Country";
 import { CalendarPage } from "./pages/Calendar";
+import { RankingsPage } from "./pages/Rankings";
 import { BlockedAccountPage, ScholarshipPage, ScholarshipsPage } from "./pages/Scholarships";
 import { ProfilePage } from "./pages/Profile";
 import { ComparePage } from "./pages/Compare";
@@ -36,6 +37,7 @@ const router = createHashRouter([
       { path: "/burslar/bloke-hesap", element: <BlockedAccountPage /> },
       { path: "/burs/:id", element: <ScholarshipPage /> },
       { path: "/takvim", element: <CalendarPage /> },
+      { path: "/rankingler", element: <RankingsPage /> },
       { path: "/profil", element: <ProfilePage /> },
       { path: "/karsilastir", element: <ComparePage /> },
       { path: "/takip", element: <TrackerPage /> },

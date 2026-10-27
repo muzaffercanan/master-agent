@@ -46,6 +46,7 @@ data/
   countries/{tr,de,it,at}.json         ülke düzeyi bilgi, bölgesel ücretler, ulusal burslar, geçim kanıtı (proofOfFunds), takvim (sınavlar)
   universities/{ülke}/{okul-id}.json   okul + programları (okul başına bir dosya)
   scholarships/{id}.json               burs kayıtları (Funding): kapsam, bloke hesap, çağrılar, alt programlar (Erasmus Mundus)
+  rankings/{ülke}.json                 /rankingler tablosu: o ülkenin okulları × sıralama listeleri (THE, QS, ARWU, U.S. News, CS konu sıralamaları, CSRankings)
   fields.json                          alan sözlüğü
   fx.json                              kur (EUR bazlı, tarihli)
   tr/csrankings.json                   Türkiye araştırma gücü tablosu
@@ -143,6 +144,7 @@ Güncel sayılar için `npm run check` çıktısına bak. Açık işler:
 - Güz 2027-28 tarihleri çoğunlukla 2026 takviminin kaydırılmasıyla yazılmış `tahmin`'lerdir; ilan çıktıkça `kesin`'e çevir.
 - Bilinen küçük arayüz sorunları: detay sayfalarında üst menüde sekme seçili görünmüyor; mobilde uygunluk etiketi uzunsa "Takibe al" alt satıra iniyor; tema değişiminde 150 ms'lik geçiş; derleme 500 kB uyarısı veriyor.
 - Burslar (`/burslar`, 26 Ekim 2026): Erasmus Mundus programlarının çoğunun 2027 tarihleri Kasım–Aralık 2026'da yayımlanacak; çıkınca `programs[].calls`'a ekle. IYT, MAECI, Padova ve YLSY 2027 çağrıları henüz yok. Doğrulanamayanlar `docs/research-notes.md` → "Burslar ve geçim kanıtı".
+- Rankingler (`/rankingler`, 28 Ekim 2026): yalnızca Almanya. Sıralar yayımlandığı gibi metin olarak durur ("=143", "301–325"); en az bir listede ilk 500'deki kurumlar alındı. THE CS sütunu 2026 baskısı (2027 konu sıralaması henüz yok), QS CS de 2026; yenileri çıkınca `data/rankings/de.json`'u güncelle. CSRankings canlı veridir, değişir. İtalya/Avusturya/Türkiye için aynı şemayla `data/rankings/<kod>.json` eklenebilir.
 - Düşünülen ama yapılmayan: kırık bağlantıları otomatik tespit eden CI, GitHub Pages ile yayın.
 
 ## 8. Arayüz kuralları

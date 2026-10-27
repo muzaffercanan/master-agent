@@ -1,14 +1,16 @@
 // Parses raw JSON into a typed, cross-checked dataset. Pure (no fs / no Vite) so it runs in the
 // browser, in scripts/check.ts and in tests.
 import { z } from "zod";
-import { Country, CsrRow, Fields, Funding, Fx, University } from "../schema";
-import type { Country as TCountry, CsrRow as TCsrRow, Field, Funding as TFunding, FundingCall, Fx as TFx, Money, University as TUniversity } from "../schema";
+import { Country, CsrRow, Fields, Funding, Fx, RankingTable, University } from "../schema";
+import type { Country as TCountry, CsrRow as TCsrRow, Field, Funding as TFunding, FundingCall, Fx as TFx, Money, RankingTable as TRankingTable, University as TUniversity } from "../schema";
 
 export interface RawDataset {
   countries: { file: string; json: unknown }[];
   universities: { file: string; json: unknown }[];
   /** data/scholarships/*.json; optional so older callers keep working */
   fundings?: { file: string; json: unknown }[];
+  /** data/rankings/*.json; optional so older callers keep working */
+  rankings?: { file: string; json: unknown }[];
   fields: unknown;
   fx: unknown;
   csr: unknown;
@@ -18,6 +20,7 @@ export interface Dataset {
   countries: TCountry[];
   universities: TUniversity[];
   fundings: TFunding[];
+  rankings: TRankingTable[];
   fields: Record<string, Field>;
   fx: TFx;
   csr: TCsrRow[];
@@ -42,6 +45,8 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
   const universities = raw.universities.map(u => take(u.file, University, u.json)).filter((x): x is TUniversity => !!x);
   const fundingFiles = raw.fundings ?? [];
   const fundings = fundingFiles.map(f => take(f.file, Funding, f.json));
+  const rankingFiles = raw.rankings ?? [];
+  const rankings = rankingFiles.map(f => take(f.file, RankingTable, f.json));
   const fields = take("fields.json", Fields, raw.fields) ?? {};
   const fx = take("fx.json", Fx, raw.fx) ?? { date: "1970-01-01", source: "", perEUR: { EUR: 1 } };
   const csr = take("tr/csrankings.json", z.array(CsrRow), raw.csr) ?? [];
@@ -104,9 +109,31 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
   for (const { s, where } of refs) if (s.ref && !fundingIds.has(s.ref)) errors.push(`${where} → burs "${s.name}": bilinmeyen burs kaydı "${s.ref}"`);
   for (const c of countries) checkCurrency(`countries/${c.code}.json`, c.proofOfFunds?.amounts.map(a => a.money) ?? [], fx, errors);
 
+  // ---- rankings ----
+  rankings.forEach((t, i) => {
+    if (!t) return;
+    const where = rankingFiles[i].file;
+    if (!where.endsWith(`${t.country}.json`)) errors.push(`${where}: dosya adı ülke koduyla (${t.country}) aynı olmalı`);
+    if (!countryCodes.has(t.country)) errors.push(`${where}: ülke "${t.country}" için countries/${t.country}.json yok`);
+    const sourceIds = new Set<string>();
+    for (const s of t.sources) {
+      if (sourceIds.has(s.id)) errors.push(`${where}: sıralama id "${s.id}" tekrar ediyor`);
+      sourceIds.add(s.id);
+    }
+    const entryIds = new Set<string>();
+    for (const e of t.entries) {
+      if (entryIds.has(e.id)) errors.push(`${where}: kurum id "${e.id}" tekrar ediyor`);
+      entryIds.add(e.id);
+      if (e.uni && !uniIds.has(e.uni)) errors.push(`${where} → ${e.id}: bilinmeyen üniversite "${e.uni}"`);
+      for (const k of Object.keys(e.ranks)) if (!sourceIds.has(k)) errors.push(`${where} → ${e.id}: bilinmeyen sıralama "${k}"`);
+      for (const [k, r] of Object.entries(e.ranks)) if (!/^=?\d+(–\d+|\+)?$/.test(r)) errors.push(`${where} → ${e.id}: "${k}" sırası "${r}" biçimsiz (25, =143, 301–325 veya 1401+)`);
+    }
+  });
+
   universities.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city, "tr") || a.short.localeCompare(b.short, "tr"));
   const okFundings = fundings.filter((x): x is TFunding => !!x).sort((a, b) => a.name.localeCompare(b.name, "tr"));
-  return { dataset: { countries, universities, fundings: okFundings, fields, fx, csr }, errors };
+  const okRankings = rankings.filter((x): x is TRankingTable => !!x);
+  return { dataset: { countries, universities, fundings: okFundings, rankings: okRankings, fields, fx, csr }, errors };
 }
 
 function checkCall(where: string, c: FundingCall, errors: string[]) {

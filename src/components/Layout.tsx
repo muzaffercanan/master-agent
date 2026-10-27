@@ -62,6 +62,7 @@ export function Layout() {
             {/* a scholarship's own page (/burs/:id) keeps this tab lit */}
             <NavLink to="/burslar" className={({ isActive }) => (isActive || loc.pathname.startsWith("/burs/") ? "active" : "")}>Burslar</NavLink>
             <NavLink to="/takvim">Takvim</NavLink>
+            <NavLink to="/rankingler">Rankingler</NavLink>
             <NavLink to="/karsilastir">Karşılaştır{n(compare.length)}</NavLink>
             <NavLink to="/takip">Takip{n(Object.keys(tracker).length)}</NavLink>
             <NavLink to="/profil">Profil</NavLink>

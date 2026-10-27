@@ -319,6 +319,43 @@ export const Fx = z.object({
 
 export const CsrRow = z.object({ i: z.string(), a: z.number(), b: z.number(), p: z.number(), people: z.string() });
 
+/** One published league table (THE, QS, ARWU…), overall or for computer science. */
+export const RankingSource = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, "id yalnızca a-z 0-9 - içermeli"),
+  /** official title of the edition, e.g. "THE World University Rankings 2027" */
+  name: z.string(),
+  /** column header, e.g. "THE" */
+  short: z.string(),
+  /** edition as the publisher labels it: "2027", "2026-2027", "2016–2026" */
+  edition: z.string(),
+  kind: z.enum(["overall", "cs"]),
+  publisher: z.string(),
+  url: z.string().url(),
+  retrievedAt: DateStr,
+  /** deepest position the list publishes; a school missing from it ranks below this */
+  listedTo: z.number().int().positive().optional(),
+  note: z.string().optional(),
+});
+
+export const RankingEntry = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, "id yalnızca a-z 0-9 - içermeli"),
+  name: z.string(),
+  short: z.string(),
+  city: z.string(),
+  /** id of the school in data/universities, when the atlas covers it */
+  uni: z.string().optional(),
+  note: z.string().optional(),
+  /** source id → rank text as published: "25", "=143", "301–325", "1401+" */
+  ranks: z.record(z.string(), z.string()),
+});
+
+/** data/rankings/<country>.json: that country's schools across several rankings */
+export const RankingTable = z.object({
+  country: z.string(),
+  sources: z.array(RankingSource).min(1),
+  entries: z.array(RankingEntry),
+});
+
 export type Status = z.infer<typeof Status>;
 export type Term = z.infer<typeof Term>;
 export type Currency = z.infer<typeof Currency>;
@@ -342,3 +379,6 @@ export type Funding = z.infer<typeof Funding>;
 export type Field = z.infer<typeof Field>;
 export type Fx = z.infer<typeof Fx>;
 export type CsrRow = z.infer<typeof CsrRow>;
+export type RankingSource = z.infer<typeof RankingSource>;
+export type RankingEntry = z.infer<typeof RankingEntry>;
+export type RankingTable = z.infer<typeof RankingTable>;

@@ -1,0 +1,1050 @@
+{
+  "country": "de",
+  "sources": [
+    {
+      "id": "the",
+      "name": "THE World University Rankings 2027",
+      "short": "THE",
+      "edition": "2027",
+      "kind": "overall",
+      "publisher": "Times Higher Education",
+      "url": "https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking",
+      "retrievedAt": "2026-10-28",
+      "note": "Raporlayan (Reporter) kurumlar sıra almaz. Leipzig bu listede yok."
+    },
+    {
+      "id": "qs",
+      "name": "QS World University Rankings 2027",
+      "short": "QS",
+      "edition": "2027",
+      "kind": "overall",
+      "publisher": "QS Quacquarelli Symonds",
+      "url": "https://www.topuniversities.com/world-university-rankings",
+      "retrievedAt": "2026-10-28",
+      "note": "Almanya'dan 60 kurum listede."
+    },
+    {
+      "id": "arwu",
+      "name": "Academic Ranking of World Universities 2026",
+      "short": "ARWU",
+      "edition": "2026",
+      "kind": "overall",
+      "publisher": "ShanghaiRanking Consultancy",
+      "url": "https://www.shanghairanking.com/rankings/arwu/2026",
+      "retrievedAt": "2026-10-28",
+      "listedTo": 1000,
+      "note": "Nobel/Fields ödülü ve yayın ağırlıklı. İlk 1000 yayımlanır; HU Berlin, FU Berlin ve Charité listede yok."
+    },
+    {
+      "id": "usn",
+      "name": "U.S. News Best Global Universities 2026-2027",
+      "short": "U.S. News",
+      "edition": "2026-2027",
+      "kind": "overall",
+      "publisher": "U.S. News & World Report",
+      "url": "https://www.usnews.com/education/best-global-universities/germany",
+      "retrievedAt": "2026-10-28",
+      "note": "Almanya'dan 72 kurum sıralı."
+    },
+    {
+      "id": "the-cs",
+      "name": "THE World University Rankings 2026 by subject: computer science",
+      "short": "THE CS",
+      "edition": "2026",
+      "kind": "cs",
+      "publisher": "Times Higher Education",
+      "url": "https://www.timeshighereducation.com/world-university-rankings/2026/subject-ranking/computer-science",
+      "retrievedAt": "2026-10-28",
+      "note": "THE'nin 2027 konu sıralaması 28 Ekim 2026 itibarıyla yayımlanmadı; bu sütun 2026 baskısı."
+    },
+    {
+      "id": "qs-cs",
+      "name": "QS World University Rankings by Subject 2026: Computer Science and Information Systems",
+      "short": "QS CS",
+      "edition": "2026",
+      "kind": "cs",
+      "publisher": "QS Quacquarelli Symonds",
+      "url": "https://www.topuniversities.com/university-subject-rankings/computer-science-information-systems",
+      "retrievedAt": "2026-10-28",
+      "note": "QS konu sıralamalarının en güncel baskısı 2026. Almanya'dan 33 kurum listede."
+    },
+    {
+      "id": "gras-cs",
+      "name": "ShanghaiRanking Global Ranking of Academic Subjects 2026: Computer Science & Engineering",
+      "short": "Şanghay CS",
+      "edition": "2026",
+      "kind": "cs",
+      "publisher": "ShanghaiRanking Consultancy",
+      "url": "https://www.shanghairanking.com/rankings/gras/2026/RS0210",
+      "retrievedAt": "2026-10-28",
+      "listedTo": 500,
+      "note": "Yalnızca ilk 500 yayımlanır."
+    },
+    {
+      "id": "usn-cs",
+      "name": "U.S. News Best Global Universities for Computer Science 2026-2027",
+      "short": "U.S. News CS",
+      "edition": "2026-2027",
+      "kind": "cs",
+      "publisher": "U.S. News & World Report",
+      "url": "https://www.usnews.com/education/best-global-universities/germany/computer-science",
+      "retrievedAt": "2026-10-28",
+      "note": "Almanya'dan 33 kurum listede."
+    },
+    {
+      "id": "csr",
+      "name": "CSRankings (tüm alanlar, 2016–2026)",
+      "short": "CSRankings",
+      "edition": "2016–2026",
+      "kind": "cs",
+      "publisher": "Emery Berger (UMass Amherst)",
+      "url": "https://csrankings.org/#/index?all&world",
+      "retrievedAt": "2026-10-28",
+      "note": "Canlı veri; dünya sırası. Yalnızca seçici konferans yayınlarını sayar, itibar anketi yok. Eşit puanlı kurumlar aynı sırayı alır. Derece vermeyen Max Planck Society (32.) ve CISPA (93.) tabloya alınmadı."
+    }
+  ],
+  "entries": [
+    {
+      "id": "tum",
+      "name": "Technische Universität München",
+      "short": "TUM",
+      "city": "Münih",
+      "uni": "tum",
+      "ranks": {
+        "the": "25",
+        "qs": "25",
+        "arwu": "45",
+        "usn": "73",
+        "the-cs": "15",
+        "qs-cs": "26",
+        "gras-cs": "51–75",
+        "usn-cs": "30",
+        "csr": "41"
+      }
+    },
+    {
+      "id": "lmu",
+      "name": "Ludwig-Maximilians-Universität München",
+      "short": "LMU München",
+      "city": "Münih",
+      "uni": "lmu",
+      "ranks": {
+        "the": "41",
+        "qs": "61",
+        "arwu": "49",
+        "usn": "50",
+        "the-cs": "50",
+        "qs-cs": "=91",
+        "gras-cs": "201–300",
+        "usn-cs": "127",
+        "csr": "162"
+      }
+    },
+    {
+      "id": "heidelberg",
+      "name": "Ruprecht-Karls-Universität Heidelberg",
+      "short": "Heidelberg Üni.",
+      "city": "Heidelberg",
+      "uni": "heidelberg",
+      "ranks": {
+        "the": "=45",
+        "qs": "86",
+        "arwu": "59",
+        "usn": "=68",
+        "the-cs": "101–125",
+        "qs-cs": "201–250",
+        "gras-cs": "401–500",
+        "usn-cs": "=315",
+        "csr": "264"
+      }
+    },
+    {
+      "id": "bonn",
+      "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+      "short": "Bonn Üni.",
+      "city": "Bonn",
+      "uni": "bonn",
+      "ranks": {
+        "the": "89",
+        "qs": "=209",
+        "arwu": "69",
+        "usn": "=179",
+        "the-cs": "101–125",
+        "qs-cs": "201–250",
+        "gras-cs": "301–400",
+        "usn-cs": "=357",
+        "csr": "203"
+      }
+    },
+    {
+      "id": "rwth",
+      "name": "RWTH Aachen",
+      "short": "RWTH Aachen",
+      "city": "Aachen",
+      "uni": "rwth",
+      "ranks": {
+        "the": "90",
+        "qs": "104",
+        "arwu": "201–300",
+        "usn": "=223",
+        "the-cs": "62",
+        "qs-cs": "=114",
+        "gras-cs": "151–200",
+        "usn-cs": "124",
+        "csr": "115"
+      }
+    },
+    {
+      "id": "hu-berlin",
+      "name": "Humboldt-Universität zu Berlin",
+      "short": "HU Berlin",
+      "city": "Berlin",
+      "ranks": {
+        "the": "91",
+        "qs": "=140",
+        "usn": "51",
+        "the-cs": "251–300",
+        "qs-cs": "=149",
+        "gras-cs": "301–400",
+        "usn-cs": "292",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "charite",
+      "name": "Charité – Universitätsmedizin Berlin",
+      "short": "Charité",
+      "city": "Berlin",
+      "note": "Tıp üniversitesi; bilgisayar bilimi yüksek lisansı yok.",
+      "ranks": {
+        "the": "94"
+      }
+    },
+    {
+      "id": "tuebingen",
+      "name": "Eberhard Karls Universität Tübingen",
+      "short": "Tübingen Üni.",
+      "city": "Tübingen",
+      "uni": "tuebingen",
+      "ranks": {
+        "the": "=101",
+        "qs": "=230",
+        "arwu": "151–200",
+        "usn": "=193",
+        "the-cs": "=89",
+        "qs-cs": "251–300",
+        "gras-cs": "301–400",
+        "usn-cs": "=231",
+        "csr": "174"
+      }
+    },
+    {
+      "id": "fu-berlin",
+      "name": "Freie Universität Berlin",
+      "short": "FU Berlin",
+      "city": "Berlin",
+      "uni": "fu-berlin",
+      "ranks": {
+        "the": "=113",
+        "qs": "=98",
+        "usn": "63",
+        "the-cs": "176–200",
+        "qs-cs": "201–250",
+        "gras-cs": "301–400",
+        "usn-cs": "=374",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "hamburg",
+      "name": "Universität Hamburg",
+      "short": "Hamburg Üni.",
+      "city": "Hamburg",
+      "ranks": {
+        "the": "=129",
+        "qs": "=209",
+        "arwu": "201–300",
+        "usn": "=146",
+        "the-cs": "301–400",
+        "qs-cs": "301–350",
+        "gras-cs": "301–400",
+        "usn-cs": "=371",
+        "csr": "242"
+      }
+    },
+    {
+      "id": "goettingen",
+      "name": "Georg-August-Universität Göttingen",
+      "short": "Göttingen Üni.",
+      "city": "Göttingen",
+      "ranks": {
+        "the": "=133",
+        "qs": "=261",
+        "arwu": "151–200",
+        "usn": "187",
+        "the-cs": "301–400",
+        "qs-cs": "501–550",
+        "usn-cs": "=450",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "freiburg",
+      "name": "Albert-Ludwigs-Universität Freiburg",
+      "short": "Freiburg Üni.",
+      "city": "Freiburg",
+      "uni": "freiburg",
+      "ranks": {
+        "the": "=139",
+        "qs": "245",
+        "arwu": "101–150",
+        "usn": "=227",
+        "the-cs": "151–175",
+        "qs-cs": "351–400",
+        "usn-cs": "=422",
+        "csr": "226"
+      }
+    },
+    {
+      "id": "kit",
+      "name": "Karlsruher Institut für Technologie",
+      "short": "KIT",
+      "city": "Karlsruhe",
+      "uni": "kit",
+      "ranks": {
+        "the": "=143",
+        "qs": "110",
+        "arwu": "201–300",
+        "usn": "=299",
+        "the-cs": "=83",
+        "qs-cs": "110",
+        "gras-cs": "201–300",
+        "usn-cs": "=149",
+        "csr": "120"
+      }
+    },
+    {
+      "id": "koeln",
+      "name": "Universität zu Köln",
+      "short": "Köln Üni.",
+      "city": "Köln",
+      "ranks": {
+        "the": "=163",
+        "qs": "269",
+        "arwu": "151–200",
+        "usn": "=238",
+        "the-cs": "601–800",
+        "qs-cs": "601–650",
+        "usn-cs": "=878",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "tu-dresden",
+      "name": "Technische Universität Dresden",
+      "short": "TU Dresden",
+      "city": "Dresden",
+      "uni": "tu-dresden",
+      "ranks": {
+        "the": "=168",
+        "qs": "=185",
+        "arwu": "151–200",
+        "usn": "212",
+        "the-cs": "151–175",
+        "qs-cs": "201–250",
+        "gras-cs": "301–400",
+        "usn-cs": "=422",
+        "csr": "154"
+      }
+    },
+    {
+      "id": "tu-berlin",
+      "name": "Technische Universität Berlin",
+      "short": "TU Berlin",
+      "city": "Berlin",
+      "uni": "tu-berlin",
+      "ranks": {
+        "the": "=171",
+        "qs": "=158",
+        "arwu": "201–300",
+        "usn": "=252",
+        "the-cs": "73",
+        "qs-cs": "=76",
+        "gras-cs": "151–200",
+        "usn-cs": "=113",
+        "csr": "127"
+      }
+    },
+    {
+      "id": "wuerzburg",
+      "name": "Julius-Maximilians-Universität Würzburg",
+      "short": "Würzburg Üni.",
+      "city": "Würzburg",
+      "uni": "wuerzburg",
+      "ranks": {
+        "the": "182",
+        "qs": "430",
+        "arwu": "201–300",
+        "usn": "=249",
+        "the-cs": "151–175",
+        "qs-cs": "751–850",
+        "usn-cs": "=429",
+        "csr": "226"
+      }
+    },
+    {
+      "id": "goethe",
+      "name": "Goethe-Universität Frankfurt",
+      "short": "Goethe Üni.",
+      "city": "Frankfurt",
+      "uni": "goethe",
+      "ranks": {
+        "the": "193",
+        "qs": "=376",
+        "arwu": "151–200",
+        "usn": "=218",
+        "the-cs": "601–800",
+        "qs-cs": "501–550",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "muenster",
+      "name": "Universität Münster",
+      "short": "Münster Üni.",
+      "city": "Münster",
+      "ranks": {
+        "the": "=194",
+        "qs": "=370",
+        "arwu": "151–200",
+        "usn": "=218",
+        "the-cs": "401–500",
+        "qs-cs": "651–700",
+        "usn-cs": "=747",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "fau",
+      "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+      "short": "FAU",
+      "city": "Erlangen",
+      "uni": "fau",
+      "ranks": {
+        "the": "=201",
+        "qs": "=218",
+        "arwu": "201–300",
+        "usn": "=309",
+        "the-cs": "126–150",
+        "qs-cs": "301–350",
+        "gras-cs": "151–200",
+        "usn-cs": "=388",
+        "csr": "287"
+      }
+    },
+    {
+      "id": "jena",
+      "name": "Friedrich-Schiller-Universität Jena",
+      "short": "Jena Üni.",
+      "city": "Jena",
+      "ranks": {
+        "the": "217",
+        "qs": "=567",
+        "arwu": "401–500",
+        "usn": "=410",
+        "the-cs": "401–500",
+        "csr": "317"
+      }
+    },
+    {
+      "id": "mannheim",
+      "name": "Universität Mannheim",
+      "short": "Mannheim Üni.",
+      "city": "Mannheim",
+      "uni": "mannheim",
+      "ranks": {
+        "the": "=224",
+        "qs": "=425",
+        "arwu": "701–800",
+        "usn": "=795",
+        "the-cs": "201–250",
+        "qs-cs": "701–750",
+        "csr": "317"
+      }
+    },
+    {
+      "id": "ulm",
+      "name": "Universität Ulm",
+      "short": "Ulm Üni.",
+      "city": "Ulm",
+      "ranks": {
+        "the": "=239",
+        "qs": "=575",
+        "arwu": "401–500",
+        "usn": "=400",
+        "the-cs": "401–500",
+        "qs-cs": "751–850",
+        "usn-cs": "=637",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "potsdam",
+      "name": "Universität Potsdam",
+      "short": "Potsdam Üni.",
+      "city": "Potsdam",
+      "ranks": {
+        "the": "=247",
+        "qs": "=500",
+        "arwu": "301–400",
+        "usn": "=324",
+        "the-cs": "251–300",
+        "qs-cs": "751–850",
+        "gras-cs": "301–400",
+        "usn-cs": "=443",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "bochum",
+      "name": "Ruhr-Universität Bochum",
+      "short": "RUB Bochum",
+      "city": "Bochum",
+      "uni": "bochum",
+      "ranks": {
+        "the": "=261",
+        "qs": "=402",
+        "arwu": "301–400",
+        "usn": "=364",
+        "the-cs": "101–125",
+        "qs-cs": "451–500",
+        "gras-cs": "301–400",
+        "usn-cs": "=523",
+        "csr": "154"
+      }
+    },
+    {
+      "id": "konstanz",
+      "name": "Universität Konstanz",
+      "short": "Konstanz Üni.",
+      "city": "Konstanz",
+      "ranks": {
+        "the": "=275",
+        "qs": "=425",
+        "arwu": "401–500",
+        "usn": "=573",
+        "the-cs": "301–400",
+        "qs-cs": "751–850",
+        "csr": "317"
+      }
+    },
+    {
+      "id": "duesseldorf",
+      "name": "Heinrich-Heine-Universität Düsseldorf",
+      "short": "Düsseldorf Üni.",
+      "city": "Düsseldorf",
+      "ranks": {
+        "the": "=284",
+        "qs": "951–1000",
+        "arwu": "201–300",
+        "usn": "440",
+        "the-cs": "601–800",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "tu-darmstadt",
+      "name": "Technische Universität Darmstadt",
+      "short": "TU Darmstadt",
+      "city": "Darmstadt",
+      "uni": "tu-darmstadt",
+      "ranks": {
+        "the": "=284",
+        "qs": "250",
+        "arwu": "501–600",
+        "usn": "=651",
+        "the-cs": "75",
+        "qs-cs": "=156",
+        "gras-cs": "201–300",
+        "usn-cs": "200",
+        "csr": "74"
+      }
+    },
+    {
+      "id": "duisburg-essen",
+      "name": "Universität Duisburg-Essen",
+      "short": "Duisburg-Essen",
+      "city": "Essen",
+      "ranks": {
+        "the": "=292",
+        "qs": "801–850",
+        "arwu": "301–400",
+        "usn": "=314",
+        "the-cs": "251–300",
+        "gras-cs": "401–500",
+        "usn-cs": "=664",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "mainz",
+      "name": "Johannes Gutenberg-Universität Mainz",
+      "short": "Mainz Üni.",
+      "city": "Mainz",
+      "ranks": {
+        "the": "=296",
+        "qs": "=500",
+        "arwu": "201–300",
+        "usn": "=223",
+        "the-cs": "601–800",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "bayreuth",
+      "name": "Universität Bayreuth",
+      "short": "Bayreuth Üni.",
+      "city": "Bayreuth",
+      "ranks": {
+        "the": "301–325",
+        "qs": "472",
+        "arwu": "401–500",
+        "usn": "=762",
+        "the-cs": "301–400",
+        "gras-cs": "401–500",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "stuttgart",
+      "name": "Universität Stuttgart",
+      "short": "Stuttgart Üni.",
+      "city": "Stuttgart",
+      "uni": "stuttgart",
+      "ranks": {
+        "the": "301–325",
+        "qs": "=318",
+        "arwu": "301–400",
+        "usn": "=633",
+        "the-cs": "126–150",
+        "qs-cs": "251–300",
+        "gras-cs": "201–300",
+        "usn-cs": "=422",
+        "csr": "162"
+      }
+    },
+    {
+      "id": "hannover",
+      "name": "Leibniz Universität Hannover",
+      "short": "Hannover (LUH)",
+      "city": "Hannover",
+      "uni": "hannover",
+      "ranks": {
+        "the": "351–375",
+        "qs": "=470",
+        "arwu": "401–500",
+        "usn": "=578",
+        "the-cs": "201–250",
+        "qs-cs": "401–450",
+        "gras-cs": "301–400",
+        "usn-cs": "=530",
+        "csr": "264"
+      }
+    },
+    {
+      "id": "bremen",
+      "name": "Universität Bremen",
+      "short": "Bremen Üni.",
+      "city": "Bremen",
+      "ranks": {
+        "the": "351–375",
+        "qs": "=581",
+        "arwu": "501–600",
+        "usn": "587",
+        "the-cs": "301–400",
+        "qs-cs": "501–550",
+        "gras-cs": "301–400",
+        "usn-cs": "=547",
+        "csr": "287"
+      }
+    },
+    {
+      "id": "constructor",
+      "name": "Constructor University",
+      "short": "Constructor",
+      "city": "Bremen",
+      "note": "Özel üniversite (eski adı Jacobs University); öğrenim ücretli. U.S. News ve CSRankings eski adıyla listeliyor.",
+      "ranks": {
+        "the": "376–400",
+        "usn": "=1770",
+        "csr": "521"
+      }
+    },
+    {
+      "id": "hohenheim",
+      "name": "Universität Hohenheim",
+      "short": "Hohenheim Üni.",
+      "city": "Stuttgart",
+      "ranks": {
+        "the": "376–400",
+        "qs": "771–780",
+        "arwu": "701–800",
+        "usn": "=891"
+      }
+    },
+    {
+      "id": "marburg",
+      "name": "Philipps-Universität Marburg",
+      "short": "Marburg Üni.",
+      "city": "Marburg",
+      "ranks": {
+        "the": "376–400",
+        "qs": "951–1000",
+        "arwu": "301–400",
+        "usn": "=578",
+        "the-cs": "601–800",
+        "csr": "615"
+      }
+    },
+    {
+      "id": "giessen",
+      "name": "Justus-Liebig-Universität Gießen",
+      "short": "Gießen Üni.",
+      "city": "Gießen",
+      "ranks": {
+        "the": "401–450",
+        "qs": "=521",
+        "arwu": "401–500",
+        "usn": "=568"
+      }
+    },
+    {
+      "id": "saarland",
+      "name": "Universität des Saarlandes",
+      "short": "Saarland Üni.",
+      "city": "Saarbrücken",
+      "uni": "saarland",
+      "ranks": {
+        "the": "401–450",
+        "qs": "=588",
+        "arwu": "401–500",
+        "usn": "=1203",
+        "the-cs": "401–500",
+        "qs-cs": "301–350",
+        "gras-cs": "201–300",
+        "usn-cs": "=473",
+        "csr": "120"
+      }
+    },
+    {
+      "id": "kiel",
+      "name": "Christian-Albrechts-Universität zu Kiel",
+      "short": "Kiel Üni.",
+      "city": "Kiel",
+      "ranks": {
+        "the": "401–450",
+        "qs": "=620",
+        "arwu": "201–300",
+        "usn": "=386",
+        "the-cs": "801–1000",
+        "usn-cs": "=862",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "tu-dortmund",
+      "name": "Technische Universität Dortmund",
+      "short": "TU Dortmund",
+      "city": "Dortmund",
+      "ranks": {
+        "the": "451–500",
+        "qs": "=691",
+        "arwu": "601–700",
+        "usn": "=751",
+        "the-cs": "301–400",
+        "qs-cs": "401–450",
+        "gras-cs": "401–500",
+        "usn-cs": "=621",
+        "csr": "242"
+      }
+    },
+    {
+      "id": "regensburg",
+      "name": "Universität Regensburg",
+      "short": "Regensburg Üni.",
+      "city": "Regensburg",
+      "ranks": {
+        "the": "451–500",
+        "qs": "=696",
+        "arwu": "401–500",
+        "usn": "=588",
+        "the-cs": "501–600",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "leipzig",
+      "name": "Universität Leipzig",
+      "short": "Leipzig Üni.",
+      "city": "Leipzig",
+      "ranks": {
+        "qs": "=540",
+        "arwu": "201–300",
+        "usn": "=299",
+        "usn-cs": "=685",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "halle",
+      "name": "Martin-Luther-Universität Halle-Wittenberg",
+      "short": "Halle Üni.",
+      "city": "Halle",
+      "ranks": {
+        "qs": "801–850",
+        "arwu": "401–500",
+        "usn": "=629"
+      }
+    },
+    {
+      "id": "mhh",
+      "name": "Medizinische Hochschule Hannover",
+      "short": "MHH",
+      "city": "Hannover",
+      "note": "Tıp üniversitesi; bilgisayar bilimi yüksek lisansı yok.",
+      "ranks": {
+        "arwu": "501–600",
+        "usn": "=476"
+      }
+    },
+    {
+      "id": "luebeck",
+      "name": "Universität zu Lübeck",
+      "short": "Lübeck Üni.",
+      "city": "Lübeck",
+      "ranks": {
+        "arwu": "501–600",
+        "usn": "=701",
+        "csr": "287"
+      }
+    },
+    {
+      "id": "tu-braunschweig",
+      "name": "Technische Universität Braunschweig",
+      "short": "TU Braunschweig",
+      "city": "Braunschweig",
+      "uni": "tu-braunschweig",
+      "ranks": {
+        "the": "651–700",
+        "qs": "781–790",
+        "arwu": "701–800",
+        "usn": "=1002",
+        "the-cs": "401–500",
+        "qs-cs": "751–850",
+        "gras-cs": "401–500",
+        "usn-cs": "=661",
+        "csr": "317"
+      }
+    },
+    {
+      "id": "paderborn",
+      "name": "Universität Paderborn",
+      "short": "Paderborn Üni.",
+      "city": "Paderborn",
+      "ranks": {
+        "the": "601–650",
+        "qs": "1201–1400",
+        "usn": "=1424",
+        "the-cs": "251–300",
+        "qs-cs": "751–850",
+        "gras-cs": "401–500",
+        "usn-cs": "=692",
+        "csr": "317"
+      }
+    },
+    {
+      "id": "rptu",
+      "name": "RPTU Kaiserslautern-Landau",
+      "short": "RPTU",
+      "city": "Kaiserslautern",
+      "uni": "rptu",
+      "note": "U.S. News ve CSRankings eski Kaiserslautern kaydını kullanıyor (U.S. News ayrıca Koblenz-Landau'yu =1679 olarak listeliyor).",
+      "ranks": {
+        "the": "601–650",
+        "qs": "1401+",
+        "arwu": "701–800",
+        "usn": "=1863",
+        "the-cs": "251–300",
+        "qs-cs": "751–850",
+        "csr": "226"
+      }
+    },
+    {
+      "id": "passau",
+      "name": "Universität Passau",
+      "short": "Passau",
+      "city": "Passau",
+      "uni": "passau",
+      "ranks": {
+        "the": "601–650",
+        "qs": "1201–1400",
+        "the-cs": "501–600",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "siegen",
+      "name": "Universität Siegen",
+      "short": "Siegen Üni.",
+      "city": "Siegen",
+      "ranks": {
+        "the": "501–550",
+        "qs": "1201–1400",
+        "usn": "=1308",
+        "the-cs": "301–400",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "magdeburg",
+      "name": "Otto-von-Guericke-Universität Magdeburg",
+      "short": "Magdeburg Üni.",
+      "city": "Magdeburg",
+      "ranks": {
+        "the": "651–700",
+        "qs": "=646",
+        "arwu": "801–900",
+        "usn": "=991",
+        "the-cs": "601–800",
+        "usn-cs": "=830",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "oldenburg",
+      "name": "Carl von Ossietzky Universität Oldenburg",
+      "short": "Oldenburg Üni.",
+      "city": "Oldenburg",
+      "ranks": {
+        "qs": "1001–1200",
+        "arwu": "501–600",
+        "usn": "=1096",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "augsburg",
+      "name": "Universität Augsburg",
+      "short": "Augsburg Üni.",
+      "city": "Augsburg",
+      "ranks": {
+        "qs": "1401+",
+        "arwu": "601–700",
+        "usn": "=1298",
+        "csr": "348"
+      }
+    },
+    {
+      "id": "bielefeld",
+      "name": "Universität Bielefeld",
+      "short": "Bielefeld Üni.",
+      "city": "Bielefeld",
+      "ranks": {
+        "qs": "1001–1200",
+        "arwu": "801–900",
+        "usn": "=710",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "bauhaus-weimar",
+      "name": "Bauhaus-Universität Weimar",
+      "short": "Bauhaus Weimar",
+      "city": "Weimar",
+      "ranks": {
+        "csr": "393"
+      }
+    },
+    {
+      "id": "clausthal",
+      "name": "Technische Universität Clausthal",
+      "short": "TU Clausthal",
+      "city": "Clausthal-Zellerfeld",
+      "ranks": {
+        "the": "1001–1200",
+        "usn": "=2123",
+        "csr": "393"
+      }
+    },
+    {
+      "id": "hpi",
+      "name": "Hasso-Plattner-Institut",
+      "short": "HPI",
+      "city": "Potsdam",
+      "note": "Potsdam Üniversitesi'nin Digital Engineering fakültesi; dereceyi Potsdam Üniversitesi verir. Yalnızca CSRankings ayrı sıralıyor.",
+      "ranks": {
+        "csr": "186"
+      }
+    },
+    {
+      "id": "tuhh",
+      "name": "Technische Universität Hamburg",
+      "short": "TUHH",
+      "city": "Hamburg",
+      "ranks": {
+        "the": "551–600",
+        "qs": "721–730",
+        "usn": "=1410",
+        "the-cs": "601–800",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "chemnitz",
+      "name": "Technische Universität Chemnitz",
+      "short": "TU Chemnitz",
+      "city": "Chemnitz",
+      "ranks": {
+        "qs": "1001–1200",
+        "usn": "=1661",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "ilmenau",
+      "name": "Technische Universität Ilmenau",
+      "short": "TU Ilmenau",
+      "city": "Ilmenau",
+      "ranks": {
+        "usn": "=1950",
+        "the-cs": "601–800",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "kassel",
+      "name": "Universität Kassel",
+      "short": "Kassel Üni.",
+      "city": "Kassel",
+      "ranks": {
+        "qs": "1201–1400",
+        "arwu": "801–900",
+        "usn": "=1138",
+        "csr": "451"
+      }
+    },
+    {
+      "id": "wuppertal",
+      "name": "Bergische Universität Wuppertal",
+      "short": "Wuppertal Üni.",
+      "city": "Wuppertal",
+      "ranks": {
+        "the": "601–650",
+        "qs": "1001–1200",
+        "arwu": "901–1000",
+        "usn": "=932",
+        "csr": "451"
+      }
+    }
+  ]
+}

@@ -4,13 +4,13 @@ import { nextDeadline, singleTermOnly } from "./programs";
 import { yearlyCost } from "./cost";
 import { buildIcs } from "./ics";
 import { countdown, parseD, urgency, windowProgress } from "./dates";
-import { rankTier } from "./rank";
+import { median, rankingRows, rankTier, rankValue, sortRankingRows } from "./rank";
 import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
 import { DEFAULT_FUNDING_FILTERS, eurPerMonth, fundingCheck, hostsOf, matchFunding, nextCall, parseFundingFilters, serializeFundingFilters, sortFundings } from "./scholarships";
 import { scholarshipEvents } from "./calendar";
 import { locative } from "./text";
 import { fmtMoney } from "./money";
-import type { Country, Funding, Fx, Intake } from "../schema";
+import type { Country, Funding, Fx, Intake, RankingTable } from "../schema";
 import type { ProgramView } from "./programs";
 
 const ituTiers = { default: 80, tiers: [{ gpa: 2.75, ales: 80 }, { gpa: 2.6, ales: 85 }] };
@@ -123,6 +123,43 @@ describe("rankTier", () => {
     expect(rankTier("=201")).toBe("low");
     expect(rankTier("2001+")).toBe("low");
     expect(rankTier("Reporter")).toBeUndefined();
+  });
+});
+
+describe("ranking table", () => {
+  it("reads bands by their midpoint and open bands by their floor", () => {
+    expect(rankValue("25")).toBe(25);
+    expect(rankValue("=143")).toBe(143);
+    expect(rankValue("301–325")).toBe(313);
+    expect(rankValue("51–75")).toBe(63);
+    expect(rankValue("1401+")).toBe(1401);
+    expect(rankValue("Reporter")).toBeUndefined();
+  });
+  it("takes the median of what is there", () => {
+    expect(median([3, 1, 2])).toBe(2);
+    expect(median([1, 2, 3, 4])).toBe(2.5);
+    expect(median([])).toBeUndefined();
+  });
+  const table: RankingTable = {
+    country: "de",
+    sources: ["a", "b", "c"].map(id => ({ id, name: id, short: id, edition: "2026", kind: "overall" as const, publisher: "x", url: "https://x.org", retrievedAt: "2026-10-28" })),
+    entries: [
+      { id: "x", name: "X", short: "X", city: "", ranks: { a: "90", b: "301–325", c: "=40" } },
+      { id: "y", name: "Y", short: "Y", city: "", ranks: { a: "25", c: "1401+" } },
+      { id: "z", name: "Z", short: "Z", city: "", ranks: { b: "10" } },
+      { id: "w", name: "W", short: "W", city: "", ranks: {} },
+    ],
+  };
+  it("keeps rows ranked in at least one shown list and sorts missing values last", () => {
+    const rows = rankingRows(table, ["a", "c"]);
+    expect(rows.map(r => r.entry.id)).toEqual(["x", "y"]);
+    expect(rows[0].median).toBe(65);
+    expect(rows[1].median).toBe(713);
+    const all = rankingRows(table, ["a", "b", "c"]);
+    // z has the best median but sits in 1 of 3 lists, so it follows x and y
+    expect(sortRankingRows(all, "median").map(r => r.entry.id)).toEqual(["x", "y", "z"]);
+    expect(sortRankingRows(all, 0).map(r => r.entry.id)).toEqual(["y", "x", "z"]);
+    expect(sortRankingRows(all, 1).map(r => r.entry.id)).toEqual(["z", "x", "y"]);
   });
 });
 
