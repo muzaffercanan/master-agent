@@ -311,7 +311,7 @@ describe("application checklist", () => {
     ({ id, scope, phase: "hazirlik", title: id, detail: "", kind, links: [], pages: [] }) as ChecklistItem;
   const pv = (code: string, req: ProgramView["requirements"], extra: Partial<ProgramView> = {}) =>
     ({ key: `${code}/p`, uni: { short: code.toUpperCase() }, program: { name: "CS", languages: ["en"] }, country: { code }, intakes: [], requirements: req, costs: undefined, ...extra }) as unknown as ProgramView;
-  const ctx = (shortlist: ProgramView[], profile = EMPTY_PROFILE) => ({ shortlist, profile, countries: [] as Country[], T: new Date("2026-10-28") });
+  const ctx = (shortlist: ProgramView[], profile = EMPTY_PROFILE) => ({ shortlist, profile, countries: [] as Country[], fundings: [] as Funding[], T: new Date("2026-10-28") });
 
   it("puts all-country and multi-country steps in the common section", () => {
     expect(sectionOf(item("a", "all"))).toBe("common");
@@ -344,6 +344,25 @@ describe("application checklist", () => {
     expect(checklistHint("extraDocs", ["de", "it"], ctx(sl)).map(h => h.text)).toEqual(["DE CS: İngilizce deneme (essay)", "IT CS: Bitirme tezi veya eşdeğer araştırma yazısı"]);
     expect(checklistHint("moi", ["de", "it"], ctx(sl)).map(h => h.tone)).toEqual(["ok", "bad"]);
     expect(checklistHint("interview", ["de", "it"], ctx(sl))[0].text).toBe("DE CS: Online sınav.");
+  });
+  it("lists upcoming Erasmus Mundus scholarship deadlines, soonest first", () => {
+    const call = (deadline?: string, status: "kesin" | "tahmin" = "kesin") => ({ cycle: "2027-28", deadline, status });
+    const em = {
+      id: "erasmus-mundus",
+      programs: [
+        { short: "A", scholarships: "yes", calls: [call("2027-01-12"), call("2027-03-11")] },
+        { short: "B", scholarships: "yes", calls: [call("2026-12-01", "tahmin")] },
+        { short: "C", scholarships: "yes", calls: [call("2026-10-01")] },
+        { short: "D", scholarships: "no", calls: [call("2027-01-05")] },
+        { short: "E", scholarships: "unknown", calls: [] },
+      ],
+    } as unknown as Funding;
+    const lines = checklistHint("emCalls", ["em"], { ...ctx([]), fundings: [em] });
+    expect(lines.map(l => l.text)).toEqual([
+      "B: son başvuru 1 Aralık 2026 (tahmin)",
+      "A: son başvuru 12 Ocak 2027",
+      "2 programın 2027 burs tarihi henüz kayıtlı değil veya bursu belirsiz.",
+    ]);
   });
   it("says so when the shortlist has nothing for the country", () => {
     expect(checklistHint("gre", ["it"], ctx([pv("de", {})]))[0].tone).toBe("na");

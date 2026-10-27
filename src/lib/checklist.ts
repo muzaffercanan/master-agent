@@ -1,10 +1,10 @@
 // Application to-do list: which section an item belongs to, progress, and live hints drawn from
 // the user's shortlist, profile and country data.
-import type { Checklist, ChecklistItem, Country, HintKind } from "../schema";
+import type { Checklist, ChecklistItem, Country, Funding, HintKind } from "../schema";
 import type { Profile } from "./eligibility";
 import { bavarian, minAles } from "./eligibility";
 import { nextDeadline, type ProgramView } from "./programs";
-import { fmt, parseD } from "./dates";
+import { fmt, iso, parseD } from "./dates";
 import { fmtAmount, fmtMoney } from "./money";
 
 /** "common" holds steps for every country and steps shared by several (passport, military service). */
@@ -40,6 +40,8 @@ export interface HintCtx {
   shortlist: ProgramView[];
   profile: Profile;
   countries: Country[];
+  /** scholarship records; the Erasmus Mundus hint reads its programmes' calls */
+  fundings: Funding[];
   T: Date;
 }
 
@@ -190,6 +192,21 @@ export function checklistHint(kind: HintKind, codes: string[], ctx: HintCtx): Hi
       return iv.length
         ? iv.map(v => ({ text: `${name(v)}: ${v.requirements.interview}`, tone: "near" as const }))
         : [{ text: "Kısa listendeki programlarda kayıtlı mülakat veya sınav yok.", tone: "ok" }];
+    }
+    case "emCalls": {
+      const em = ctx.fundings.find(f => f.id === "erasmus-mundus");
+      if (!em) return [];
+      const today = iso(ctx.T);
+      const funded = em.programs.filter(p => p.scholarships !== "no");
+      const next = funded
+        .map(p => ({ p, c: p.calls.filter(c => c.deadline && c.deadline >= today).sort((a, b) => a.deadline!.localeCompare(b.deadline!))[0] }))
+        .filter((x): x is { p: (typeof funded)[number]; c: NonNullable<typeof x.c> } => !!x.c)
+        .sort((a, b) => a.c.deadline!.localeCompare(b.c.deadline!));
+      const lines: HintLine[] = next.slice(0, 6).map(({ p, c }) => ({ text: `${p.short}: son başvuru ${fmt(c.deadline!)}${c.status === "tahmin" ? " (tahmin)" : ""}`, tone: "near" }));
+      if (next.length > 6) lines.push({ text: `ve ${next.length - 6} program daha (Burslar sayfasında).`, tone: "na" });
+      const rest = funded.length - next.length;
+      if (rest) lines.push({ text: `${rest} programın 2027 burs tarihi henüz kayıtlı değil veya bursu belirsiz.`, tone: "na" });
+      return lines;
     }
     case "german": {
       if (!vs.length) return none;

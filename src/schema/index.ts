@@ -320,13 +320,13 @@ export const Fx = z.object({
 export const CsrRow = z.object({ i: z.string(), a: z.number(), b: z.number(), p: z.number(), people: z.string() });
 
 /** Live facts a checklist item can show, computed from the user's shortlist, profile and country data. */
-export const HintKind = z.enum(["shortlist", "english", "ales", "gre", "gpa", "ects", "pof", "advisor", "portal", "fees", "german", "extraDocs", "moi", "interview"]);
+export const HintKind = z.enum(["shortlist", "english", "ales", "gre", "gpa", "ects", "pof", "advisor", "portal", "fees", "german", "extraDocs", "moi", "interview", "emCalls"]);
 
 /** One step of the application to-do list (data/checklist.json). */
 export const ChecklistItem = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/, "id yalnızca a-z 0-9 - içermeli"),
-  /** "all" = every country; otherwise country codes the step belongs to */
-  scope: z.union([z.literal("all"), z.array(z.string().length(2)).min(1)]),
+  /** "all" = every country; otherwise country codes or track ids (e.g. "em") the step belongs to */
+  scope: z.union([z.literal("all"), z.array(z.string().regex(/^[a-z]{2,12}$/)).min(1)]),
   phase: z.string(),
   title: z.string(),
   detail: z.string(),
@@ -346,6 +346,8 @@ export const ChecklistItem = z.object({
 export const Checklist = z.object({
   verifiedAt: DateStr,
   phases: z.array(z.object({ id: z.string(), name: z.string(), desc: z.string() })).min(1),
+  /** sections that are not a country, e.g. Erasmus Mundus; shown after the country sections */
+  tracks: z.array(z.object({ id: z.string().regex(/^[a-z]{2,12}$/), name: z.string(), desc: z.string() })).default([]),
   items: z.array(ChecklistItem).min(1),
 });
 

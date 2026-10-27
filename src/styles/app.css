@@ -485,3 +485,4 @@ section.todo-sec{padding:0;border:0;display:grid;gap:14px}
   .todo{padding:12px 12px;gap:10px}
   .todo-meter .progress{width:70px}
 }
+.todo-sec-desc{font-size:.9rem;color:var(--ink-2);line-height:1.55;max-width:84ch;margin-top:-4px}

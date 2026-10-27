@@ -752,6 +752,231 @@
       "title": "Adres kaydı (Meldezettel)",
       "detail": "Taşındıktan sonra 3 gün içinde Meldeamt'ta adresini kaydettir.",
       "when": "taşındıktan sonra 3 gün içinde"
+    },
+    {
+      "id": "em-rules",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "kind": "info",
+      "title": "Burs kuralları (Programme Guide 2026)",
+      "detail": "Burs ayda 1.400 €, programın tamamı boyunca ödenir; yol, vize, yerleşme ve geçim giderlerine katkıdır. Burslu öğrenciden öğrenim ücreti ve zorunlu katılım ücreti alınamaz, sigorta konsorsiyumdan karşılanır. Seçilen projeler başvuru ücreti alamaz. Daha önce EMJM bursu almış biri tekrar alamaz. Bir konsorsiyum bursların en fazla %10'unu aynı uyruktan adaylara verebilir; Türkiye'den çok başvuru alan programlarda bu rekabeti sertleştirir.",
+      "links": [
+        {
+          "label": "Erasmus+ Programme Guide 2026: EMJM",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/erasmus-mundus-joint-masters"
+        }
+      ]
+    },
+    {
+      "id": "em-mobility",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "kind": "info",
+      "title": "Hareketlilik kuralı: Türkiye zorunlu dönem ülkelerinden biri olamaz",
+      "detail": "Her öğrenci en az iki farklı ülkede birer dönem okur; bu iki ülke kayıt sırasında ikamet ettiğin ülkeden farklı olmalı ve en az biri AB üyesi ya da programa katılan bir ülke olmalı. Türkiye'de oturuyorsan Türk ortaklı bir programda Türkiye'deki dönem bu iki zorunlu dönemden biri sayılmaz; uzmanlık yolunu seçerken buna bak. Zorunlu dönemler uzaktan eğitimle yapılamaz.",
+      "links": [
+        {
+          "label": "Erasmus+ Programme Guide 2026: EMJM",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/erasmus-mundus-joint-masters"
+        }
+      ]
+    },
+    {
+      "id": "em-choose",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "when": "Ekim–Kasım",
+      "title": "Programları seç ve 2027 burs durumunu kontrol et",
+      "detail": "EACEA kataloğundan ve Burslar sayfasındaki bilgisayar bilimi listesinden programları seç. Her program için bak: 2027 alımında Erasmus Mundus bursu veriyor mu (bazıları vermiyor ya da sona erdi), hangi üniversitelerde hangi uzmanlık yolları var, ilk yıl nerede, giriş şartları (alan, AKTS, dil puanı), burs turunun son günü ve saat dilimi. Programın sitesindeki SSS'yi oku; çoğu sorunun cevabı orada.",
+      "hint": "emCalls",
+      "pages": [
+        {
+          "label": "Burslar: Erasmus Mundus",
+          "path": "/burs/erasmus-mundus"
+        }
+      ],
+      "links": [
+        {
+          "label": "EACEA Erasmus Mundus kataloğu",
+          "url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en"
+        }
+      ]
+    },
+    {
+      "id": "em-count",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "kind": "info",
+      "title": "Kaç programa başvurabilirsin",
+      "detail": "Programme Guide 2026'da bir başvuru sınırı yok. Eski dönemde (2014–2020) en fazla 3 programa burs başvurusu yapılabiliyordu; Erasmus Mundus Association bu sınırın kaldırıldığını EACEA'dan teyit ettiğini yazıyor, ama bazı siteler hâlâ \"en fazla 3\" diyor. Her programın kendi kuralına bak. %10 uyruk sınırı yüzünden tek programa güvenme; her biri için ayrı, özenli dosya hazırlayabileceğin kadar programa başvur.",
+      "links": [
+        {
+          "label": "EMA: başvuru sınırı",
+          "url": "https://www.em-a.eu/post/application-limit"
+        }
+      ]
+    },
+    {
+      "id": "em-residence",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "when": "başvurudan 1 ay önce",
+      "title": "İkamet belgesi (proof of residence) hazırla",
+      "detail": "Birçok program, hareketlilik kuralını uygulamak için nerede oturduğunu belgelemeni istiyor; pasaport ikamet belgesi yerine geçmiyor. e-Devlet'ten Yerleşim Yeri (ve Diğer Adres) Belgesi alabilirsin; program İngilizce istiyorsa yeminli tercüme ettir. Bazı programlar belgenin son 12 ay içinde düzenlenmiş olmasını, bazıları kendi formlarını ya da son 5 yılın ikamet geçmişini istiyor.",
+      "links": [
+        {
+          "label": "e-Devlet",
+          "url": "https://www.turkiye.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "em-language",
+      "scope": [
+        "em"
+      ],
+      "phase": "hazirlik",
+      "when": "Kasım–Aralık",
+      "title": "Dil sınavı sonucunu burs turunun son gününe yetiştir",
+      "detail": "Çoğu program dil belgesini başvuru anında istiyor; burs turları Ocak'ta kapandığı için IELTS/TOEFL'a en geç Aralık başında gir. Bazı programlar İngilizce eğitim belgesini (MOI) kabul ediyor, bazıları sonucun sonradan gönderilmesine izin veriyor; programın sayfasında yazıyor. Almanya başvurularından daha erken bir son tarih bu."
+    },
+    {
+      "id": "em-refs",
+      "scope": [
+        "em"
+      ],
+      "phase": "belgeler",
+      "when": "Kasım ortası",
+      "title": "Referansları Kasım'da iste",
+      "detail": "Programlar genelde iki referans istiyor ve çoğu, hocaya portal üzerinden yükleme linki gönderiyor. Son günler Aralık sonu–Ocak başına denk geliyor, bu da hocaların tatil dönemi; Kasım ortasında iste, son tarihi açıkça yaz. Birden fazla programa başvuruyorsan hocaya program listesini ve her birinin son gününü tek bir e-postada ver."
+    },
+    {
+      "id": "em-motivation",
+      "scope": [
+        "em"
+      ],
+      "phase": "belgeler",
+      "when": "son başvurudan 1 ay önce",
+      "title": "Konsorsiyuma özel motivasyon mektubu (ve istenirse video)",
+      "detail": "Mektupta neden bu konsorsiyum, hangi uzmanlık yolu ve hangi üniversite sırası, iki ülkede okumanın sana ne katacağı ve sonraki hedefin açık olsun; genel bir mektup burs puanında öne geçmez. Bazı programlar kısa bir motivasyon videosu istiyor (EDISS 2 dakika). Bazıları belirli sorulara cevap veya araştırma ilgisi metni istiyor."
+    },
+    {
+      "id": "em-cv",
+      "scope": [
+        "em"
+      ],
+      "phase": "belgeler",
+      "title": "CV'yi programın istediği biçimde hazırla (çoğu zaman Europass)",
+      "detail": "Erasmus Mundus programlarının bir kısmı Europass CV'yi zorunlu tutuyor ya da bekliyor; istemeyenlere normal akademik CV'n yeter. Europass sitesinde ücretsiz hazırlanır.",
+      "links": [
+        {
+          "label": "Europass CV",
+          "url": "https://europass.europa.eu"
+        }
+      ]
+    },
+    {
+      "id": "em-apply",
+      "scope": [
+        "em"
+      ],
+      "phase": "basvuru",
+      "when": "Ekim–Ocak",
+      "title": "Her programa kendi portalından, burs turunda başvur",
+      "detail": "Burs için değerlendirilmek istiyorsan burs turunda (Erasmus Mundus scholarship round) başvur; kendi finansmanınla okuyacaklar için daha geç bir tur açılır ama o turda AB bursu yoktur. Son gün çoğunlukla belli bir saat ve saat dilimiyle verilir (EDISS: 15.00 Helsinki saati). Portallar son günlerde yavaşlar; birkaç gün önce gönder. Başvuruda uzmanlık yolu veya üniversite tercih sırası isteniyorsa bilinçli seç.",
+      "hint": "emCalls"
+    },
+    {
+      "id": "em-interview",
+      "scope": [
+        "em"
+      ],
+      "phase": "basvuru",
+      "when": "Şubat–Mart",
+      "title": "Ön elemeden sonra mülakata hazırlan",
+      "detail": "Bazı programlar kısa listeye kalanlarla çevrim içi mülakat yapıyor. Motivasyon mektubundaki her cümleyi savunabilmeli, uzmanlık yolu tercihini ve kariyer hedefini net anlatabilmelisin."
+    },
+    {
+      "id": "em-results",
+      "scope": [
+        "em"
+      ],
+      "phase": "kabul",
+      "when": "Mart–Nisan",
+      "title": "Sonuçları ve yedek listeyi takip et, süresinde cevap ver",
+      "detail": "Sonuçlar genelde Mart–Nisan'da çıkar: burslu kabul, yedek liste (reserve list), burssuz kabul ya da ret. Burslu adaylardan vazgeçen olursa yedek listeden yaz aylarına kadar çağrı gelebilir. Teklifi kabul etmek için verilen süre kısa olabilir; kaçırma. Burssuz kabulde ücreti kontrol et: Türkiye programa katılan ülke olduğu için bazı programlar Türk öğrenciden AB öğrencisi ücretini alıyor.",
+      "pages": [
+        {
+          "label": "Burslar: Erasmus Mundus",
+          "path": "/burs/erasmus-mundus"
+        }
+      ]
+    },
+    {
+      "id": "em-agreement",
+      "scope": [
+        "em"
+      ],
+      "phase": "kabul",
+      "title": "Öğrenci sözleşmesini (Student Agreement) imzala",
+      "detail": "Kayıtta konsorsiyumla bir öğrenci sözleşmesi imzalanır: hareketlilik yolu, burs ödemesi, sigorta, kurallar. Burs aylık ödenir; ödemenin hangi hesaba ve ne zaman başlayacağını sor, ilk ay için yanında para bulundur.",
+      "links": [
+        {
+          "label": "Erasmus+ Programme Guide 2026: EMJM",
+          "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-1/erasmus-mundus-joint-masters"
+        }
+      ]
+    },
+    {
+      "id": "em-docs-enrol",
+      "scope": [
+        "em"
+      ],
+      "phase": "kabul",
+      "title": "Kayıt için diploma onayını (apostil, DoV) ilk yılın ülkesine göre hazırla",
+      "detail": "Kayıtta ilk yılın üniversitesi diplomanın onaylı ya da apostilli kopyasını, bazı ülkelerde tercümesini veya İtalya'da DoV/CIMEA belgesini isteyebilir. Ne istendiğini kabul e-postasından ya da konsorsiyumdan öğren; apostil ve tercüme haftalar sürebilir."
+    },
+    {
+      "id": "em-visa",
+      "scope": [
+        "em"
+      ],
+      "phase": "kabul",
+      "when": "kabulden hemen sonra",
+      "title": "İlk yılın ülkesi için vizeye başvur; burs belgesi geçim kanıtıdır",
+      "detail": "Vize ilk okuyacağın ülkeye göre alınır; ikinci yılın ülkesi için oturma izni ya da vize süreci yeniden başlar. Konsorsiyumun verdiği burs belgesi geçim kanıtı sayılır (Almanya bloke hesap istemez). Konsorsiyumdan kabul ve burs mektubunu, sigorta belgesini iste; randevuyu hemen al. O ülkenin vize ve varış adımları için listedeki ülke bölümlerine bak.",
+      "pages": [
+        {
+          "label": "Bloke hesap ve geçim kanıtı",
+          "path": "/burslar/bloke-hesap"
+        }
+      ]
+    },
+    {
+      "id": "em-moves",
+      "scope": [
+        "em"
+      ],
+      "phase": "varis",
+      "title": "Her ülke değişiminde kayıt ve oturum işlerini tekrarla",
+      "detail": "Her yeni ülkede adres kaydı, oturma izni, banka ve telefon işleri baştan yapılır. İkinci yılın ülkesindeki başvuruları (oturma izni randevusu, yurt) ilk yılın baharında başlat; bazı ülkelerde randevular aylar sürüyor."
+    }
+  ],
+  "tracks": [
+    {
+      "id": "em",
+      "name": "Erasmus Mundus",
+      "desc": "Birkaç Avrupa üniversitesinin ortak yürüttüğü yüksek lisanslar (EMJM). Başvuru AB'ye değil, her programın konsorsiyumuna yapılır; programa başvururken burs için de değerlendirilirsin. Burs turları çoğunlukla Ekim–Ocak arasında kapanır, yani takvimi Almanya ve Türkiye başvurularından erkendir. Ortak adımlar burada da geçerli; aşağıdakiler Erasmus Mundus'a özgü işler."
     }
   ]
 }

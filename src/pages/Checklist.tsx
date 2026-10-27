@@ -77,9 +77,11 @@ export function ChecklistPage() {
   if (!list) return <p className="empty">Yapılacaklar listesi yüklenemedi.</p>;
 
   const codes = countries.map(c => c.code);
-  const sections: { id: SectionId; name: string; country?: Country }[] = [
+  const sections: { id: SectionId; name: string; country?: Country; desc?: string }[] = [
     { id: "common", name: "Ortak adımlar" },
     ...countries.filter(c => list.items.some(i => sectionOf(i) === c.code)).map(c => ({ id: c.code, name: c.name, country: c })),
+    // non-country tracks (Erasmus Mundus) come after the countries
+    ...list.tracks.map(t => ({ id: t.id, name: t.name, desc: t.desc })),
   ];
   const sel = sections.some(s => s.id === sp.get("u")) ? sp.get("u")! : "";
   const hideDone = sp.get("gizle") === "1";
@@ -92,6 +94,7 @@ export function ChecklistPage() {
     shortlist: shortlist.map(k => viewByKey.get(k)).filter((v): v is ProgramView => !!v),
     profile,
     countries: data.countries,
+    fundings: data.fundings,
     T,
   };
   const all = progress(list.items, checklist);
@@ -141,6 +144,7 @@ export function ChecklistPage() {
               <h2 id={`todo-h-${s.id}`}>{s.country && <Flag c={s.country} />} {s.name}</h2>
               <Bar {...p} />
             </div>
+            {s.desc && <p className="todo-sec-desc">{s.desc}</p>}
             {shown.length === 0 && <p className="small muted">Bu bölümde yapılacak iş kalmadı.</p>}
             {list.phases.map((ph, n) => {
               const its = shown.filter(i => i.phase === ph.id);

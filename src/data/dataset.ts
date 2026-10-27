@@ -137,12 +137,14 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
   const checklist = raw.checklist === undefined ? null : take("checklist.json", Checklist, raw.checklist);
   if (checklist) {
     const phases = new Set(checklist.phases.map(p => p.id));
+    const tracks = new Set(checklist.tracks.map(t => t.id));
+    for (const t of tracks) if (countryCodes.has(t)) errors.push(`checklist.json: iz "${t}" bir ülke koduyla çakışıyor`);
     const ids = new Set<string>();
     for (const it of checklist.items) {
       if (ids.has(it.id)) errors.push(`checklist.json: madde id "${it.id}" tekrar ediyor`);
       ids.add(it.id);
       if (!phases.has(it.phase)) errors.push(`checklist.json → ${it.id}: bilinmeyen aşama "${it.phase}"`);
-      if (it.scope !== "all") for (const c of it.scope) if (!countryCodes.has(c)) errors.push(`checklist.json → ${it.id}: bilinmeyen ülke "${c}"`);
+      if (it.scope !== "all") for (const c of it.scope) if (!countryCodes.has(c) && !tracks.has(c)) errors.push(`checklist.json → ${it.id}: bilinmeyen ülke veya iz "${c}"`);
     }
   }
 
