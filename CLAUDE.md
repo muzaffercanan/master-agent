@@ -15,6 +15,8 @@ Uygulama şunları yapabilmeli (kullanıcının istediği, bozulmamalı):
 
 Kapsam: Türkiye, Almanya, İtalya, Avusturya. Yeni ülke eklenirse aynı şemayla eklenir.
 
+**Türkiye'de yalnızca şu 10 okul tutulur** (kullanıcının kararı, 28 Ekim 2026): Bilkent, ODTÜ, Hacettepe, TOBB ETÜ, Boğaziçi, Galatasaray, İTÜ, Koç, Özyeğin, Sabancı. Diğer Türk üniversitelerini ekleme; rehber metninde örnek olarak da anma.
+
 ## 2. Kullanıcı ve iletişim
 
 - **Her zaman Türkçe konuş.** Kod, dosya adı ve commit mesajı hariç kullanıcıya dönük her metin Türkçe. Arayüz metinleri de Türkçe.
@@ -130,7 +132,7 @@ Kullanıcının Almanya raporu doğrulanınca şu hatalar çıktı. Yeni bir rap
 
 ### 6.4 `npm run links` hakkında
 
-Betik, bot isteklerine 403/404 dönen siteleri "kırık" sanıyor (Boğaziçi, Gazi, KTÜ, BTÜ, Koç, Özyeğin, PoliMi, MastersPortal). Kırık raporu gelince bağlantıyı **uygulama içi tarayıcıda** (`mcp__Claude_Browser__*`) aç; açılıyorsa sorun yoktur. Gerçekten sorunlu olan: Hacettepe enstitü siteleri (portala yönleniyor) ve AGÜ `fbe.agu.edu.tr`.
+Betik, bot isteklerine 403/404 dönen siteleri "kırık" sanıyor (Boğaziçi, Koç, Özyeğin, PoliMi, MastersPortal). Kırık raporu gelince bağlantıyı **uygulama içi tarayıcıda** (`mcp__Claude_Browser__*`) aç; açılıyorsa sorun yoktur. Gerçekten sorunlu olan: Hacettepe enstitü siteleri (portala yönleniyor).
 
 ## 7. Durum ve açık işler (24 Ekim 2026 itibarıyla)
 
@@ -139,8 +141,7 @@ Güncel sayılar için `npm run check` çıktısına bak. Açık işler:
 - **İkinci Almanya raporu** ("Bilgisayar Mühendisi Profili İçin Kapsamlı Araştırma"): kullanıcı Claude sohbetinden `.md` olarak indirip yolunu verecek. Gelince 6.2'deki gibi kontrol edip ekle. (Downloads'taki "Almanya'da İngilizce Yüksek Lisans… Rehberi.md" birinci rapordur ve zaten işlendi.)
 - Almanya'da hâlâ doğrulanmamış: Frankfurt UAS kış son tarihi ve M.Eng. Information Technology programı, Mannheim Social Data Science şartları, RWTH dönem ücreti.
 - İtalya ve Avusturya yalnızca birkaç programla başladı (PoliMi, UniBo, TU Wien, JKU). Sapienza, Padova, PoliTo, TU Graz, Viyana Üniversitesi gibi okullar eklenebilir. PoliMi sitesi bot engelliyor; şartlar üçüncü taraftan geldi, doğrulanmalı.
-- Türkiye'de incelenmeyen üniversiteler: `docs/research-notes.md` içinde listeli.
-- Bahar 2026-27 ilanları: Boğaziçi, Koç, Özyeğin, Sabancı işlendi. ODTÜ, İTÜ, Gazi, YTÜ, Atılım, Hacettepe ilan edince güncelle (Boğaziçi Bilgisayar Müh.'in bahar kontenjanı belirsiz).
+- Bahar 2026-27 ilanları: Boğaziçi, Koç, Özyeğin, Sabancı işlendi. ODTÜ, İTÜ, Hacettepe, Bilkent, TOBB ETÜ, Galatasaray ilan edince güncelle (Boğaziçi Bilgisayar Müh.'in bahar kontenjanı belirsiz).
 - Güz 2027-28 tarihleri çoğunlukla 2026 takviminin kaydırılmasıyla yazılmış `tahmin`'lerdir; ilan çıktıkça `kesin`'e çevir.
 - Bilinen küçük arayüz sorunları: detay sayfalarında üst menüde sekme seçili görünmüyor; mobilde uygunluk etiketi uzunsa "Takibe al" alt satıra iniyor; tema değişiminde 150 ms'lik geçiş; derleme 500 kB uyarısı veriyor.
 - Burslar (`/burslar`, 26 Ekim 2026): Erasmus Mundus programlarının çoğunun 2027 tarihleri Kasım–Aralık 2026'da yayımlanacak; çıkınca `programs[].calls`'a ekle. IYT, MAECI, Padova ve YLSY 2027 çağrıları henüz yok. Doğrulanamayanlar `docs/research-notes.md` → "Burslar ve geçim kanıtı".
