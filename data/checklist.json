@@ -48,7 +48,7 @@
       "scope": "all",
       "phase": "hazirlik",
       "title": "İngilizce sınavına gir (IELTS Academic veya TOEFL iBT)",
-      "detail": "Programların istediği en yüksek puanı hedefle. IELTS ve TOEFL sonuçları 2 yıl geçerli. Sonucun gelmesi zaman alır; ilk son başvurudan en az 1–2 ay önce sınava gir ki gerekirse tekrar girebilesin. Bazı okullar yalnızca birini kabul eder (örneğin Koç IELTS kabul etmiyor). Türkiye'de YDS/YÖKDİL de çoğu yerde geçer.",
+      "detail": "Programların istediği en yüksek puanı hedefle. IELTS ve TOEFL sonuçları 2 yıl geçerli. Sonucun gelmesi zaman alır; ilk son başvurudan en az 1–2 ay önce sınava gir ki gerekirse tekrar girebilesin. Bazı okullar yalnızca birini kabul eder (örneğin Koç IELTS kabul etmiyor). Türkiye'de YDS/YÖKDİL de çoğu yerde geçer. TOEFL'da sınav ücretine 4 ücretsiz resmi skor raporu dahil; alıcı okulları sınavdan önceki gün saat 22.00'ye kadar ETS hesabından seçmelisin, sonrasında her rapor 25 $. Okulun ETS kurum kodunu başvuru sayfasından al.",
       "when": "son başvurudan 2–3 ay önce",
       "hint": "english",
       "links": [
@@ -59,6 +59,10 @@
         {
           "label": "TOEFL iBT",
           "url": "https://www.ets.org/toefl"
+        },
+        {
+          "label": "TOEFL skor gönderimi",
+          "url": "https://www.ets.org/toefl/test-takers/ibt/scores/send-scores.html"
         }
       ]
     },
@@ -82,15 +86,30 @@
       "scope": "all",
       "phase": "hazirlik",
       "title": "İngilizce resmi transkript, diploma ve Diploma Eki al",
-      "detail": "Özyeğin öğrenci işlerinden İngilizce, imzalı ve mühürlü transkript, diploma (henüz basılmadıysa geçici mezuniyet belgesi) ve Diploma Eki (Diploma Supplement) iste. Birkaç asıl nüsha al; bazı okullar kayıtta asıl veya onaylı kopya istiyor.",
-      "when": "şimdi"
+      "detail": "Özyeğin öğrenci işlerinden İngilizce, imzalı ve mühürlü transkript, diploma (henüz basılmadıysa geçici mezuniyet belgesi) ve Diploma Eki (Diploma Supplement) iste. Diploma Eki önemli: uni-assist not dönüşümünde 4.2 bölümündeki en düşük geçer notu kullanıyor. uni-assist transkriptin tercihen e-Devlet'ten alınmasını istiyor. Transkriptte not sistemi yazmıyorsa not sistemini açıklayan resmi bir yazı da iste (Heidelberg istiyor). Birkaç asıl nüsha al; bazı okullar kayıtta asıl veya onaylı kopya istiyor.",
+      "when": "şimdi",
+      "links": [
+        {
+          "label": "uni-assist: Türkiye belgeleri",
+          "url": "https://uni-assist.de/en/tools/info-country-by-country/details-country/country/tr"
+        }
+      ]
+    },
+    {
+      "id": "c-moi",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "İngilizce eğitim belgesi (MOI) al",
+      "detail": "Özyeğin'de eğitim dili İngilizce. Öğrenci işlerinden \"eğitim dili İngilizcedir\" yazısı (Medium of Instruction) iste. Bazı programlar bunu dil sınavının yerine kabul ediyor, bazıları kesinlikle kabul etmiyor (Saarland gibi). Kabul etmeyen bir program varsa sınava yine gir.",
+      "when": "şimdi",
+      "hint": "moi"
     },
     {
       "id": "c-courses",
       "scope": "all",
       "phase": "hazirlik",
       "title": "Ders içeriklerini (course descriptions) topla",
-      "detail": "Almanya ve İtalya'da lisans derslerinin hedef programla uyumuna (alan başına AKTS) bakılıyor. Aldığın her dersin İngilizce tanımını ve AKTS'sini ders kataloğundan indir; matematik, programlama, teorik bilgisayar bilimi, sistemler gibi alanlara göre topla ve profiline gir.",
+      "detail": "Almanya ve İtalya'da lisans derslerinin hedef programla uyumuna (alan başına AKTS) bakılıyor. Aldığın her dersin İngilizce tanımını ve AKTS'sini ders kataloğundan indir; matematik, programlama, teorik bilgisayar bilimi, sistemler gibi alanlara göre topla ve profiline gir. Bazı okullar ders tanımlarının okul sitesindeki asıllarının linkini de istiyor (TU Dresden); linkleri bir listede tut.",
       "when": "şimdi",
       "hint": "ects"
     },
@@ -110,7 +129,7 @@
       "scope": "all",
       "phase": "hazirlik",
       "title": "Referans verecek hocaları belirle ve erkenden iste",
-      "detail": "2–3 kişi seç: ders aldığın ve seni tanıyan hocalar, tercihen bitirme projesi danışmanın. Son tarihten en az 4–6 hafta önce yüz yüze veya kısa bir e-postayla iste. Hocaya CV'ni, transkriptini, program listesini, son tarihleri ve her programı neden istediğini anlatan birkaç satırı gönder. Birçok portal mektubu hocaya kendi linkiyle e-postayla ister; hocaya bu e-postanın geleceğini önceden söyle, son tarihten 1 hafta önce nazikçe hatırlat. Çalıştığın yerdeki yöneticinden mesleki referans da alabilirsin, ama akademik referansın yerine geçmez.",
+      "detail": "2–3 kişi seç: ders aldığın ve seni tanıyan hocalar, tercihen bitirme projesi danışmanın. Son tarihten en az 4–6 hafta önce yüz yüze veya kısa bir e-postayla iste. Hocaya CV'ni, transkriptini, program listesini, son tarihleri ve her programı neden istediğini anlatan birkaç satırı gönder. Birçok portal mektubu hocaya kendi linkiyle e-postayla ister; hocaya bu e-postanın geleceğini önceden söyle, son tarihten 1 hafta önce nazikçe hatırlat. Çalıştığın yerdeki yöneticinden mesleki referans da alabilirsin, ama akademik referansın yerine geçmez. Hocaların kurumsal e-posta adreslerini ve unvanlarını not et; bazı portallar mektubu yalnızca kurumsal adresten kabul ediyor (Bochum iki öğretim üyesinin kurumsal adresini istiyor).",
       "when": "son başvurudan 6 hafta önce"
     },
     {
@@ -136,7 +155,7 @@
       "scope": "all",
       "phase": "hazirlik",
       "title": "Başvuru bütçesini çıkar",
-      "detail": "Sınav ücretleri (IELTS/TOEFL, ALES, GRE), başvuru ücretleri, uni-assist, tercüme ve noter, kurye, vize ücreti ve yurt dışı için geçim kanıtı. Bunları baştan topla, sürpriz olmasın.",
+      "detail": "Sınav ücretleri (IELTS/TOEFL, ALES, GRE), başvuru ücretleri, uni-assist, tercüme ve noter, kurye, vize ücreti ve yurt dışı için geçim kanıtı. Bunları baştan topla, sürpriz olmasın. Başvuru ücretleri, uni-assist ve ETS için internetten yurt dışı ödemeye açık, limiti yeten bir kredi kartın olsun; bazı portallar ödeme gelmeden başvuruyu işleme almıyor.",
       "hint": "fees"
     },
     {
@@ -157,8 +176,14 @@
       "scope": "all",
       "phase": "belgeler",
       "title": "Akademik CV hazırla",
-      "detail": "1–2 sayfa, ters kronolojik: eğitim (GNO ile), projeler (GitHub linkleriyle), iş deneyimi, staj, dil puanları, beceriler. Europass şart değil; programın özel bir biçim isteyip istemediğine bak. PDF olarak kaydet.",
-      "when": "son başvurudan 2 ay önce"
+      "detail": "1–2 sayfa, ters kronolojik: eğitim (GNO ile), projeler (GitHub linkleriyle), iş deneyimi, staj, dil puanları, beceriler. PDF olarak kaydet. Europass CV genel bir şart değil: atlastaki programların hiçbiri Europass istemiyor. Bazı Erasmus Mundus programları ve PoliMi'nin doktora başvuruları Avrupa formatında CV istiyor; böyle bir program ya da burs seçersen Europass sitesinde ücretsiz hazırlarsın (normal CV'n hazırsa yarım saatlik iş). Heidelberg gibi bazı Alman okulları \"tablo halinde CV\" (tabellarischer Lebenslauf) istiyor: tarihli satırlar, düz metin değil.",
+      "when": "son başvurudan 2 ay önce",
+      "links": [
+        {
+          "label": "Europass CV",
+          "url": "https://europass.europa.eu"
+        }
+      ]
     },
     {
       "id": "c-sop",
@@ -167,6 +192,22 @@
       "title": "Niyet mektubunu (SoP / motivation letter) yaz",
       "detail": "Her programa özel yaz: neden bu alan, neden bu program (dersler, laboratuvarlar, hocalar), neden hazırsın (projeler, işin), sonra ne yapacaksın. Programın kelime veya sayfa sınırına uy. Bir taslağı tüm programlara uyarlayabilirsin ama okul adı ve içerik her birinde değişmeli. Birine okut.",
       "when": "son başvurudan 1–2 ay önce"
+    },
+    {
+      "id": "c-extra",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "Programa özel ek belgeleri hazırla",
+      "detail": "Bazı programlar standart paketin dışında belge istiyor: deneme (essay; TUM), akademik yazı örneği (Bochum, Mannheim), bitirme tezi veya özeti (Würzburg, Passau), öz beyan ya da uygunluk formları (FU Berlin, TU Berlin), not hesaplama formu veya Excel tablosu (TUM, Würzburg), ders özeti (UniBo). Bunlar en çok zaman alan işler; listeyi erkenden çıkar. Bitirme projesi raporunun İngilizce bir sürümünü hazırda tut.",
+      "when": "son başvurudan 2 ay önce",
+      "hint": "extraDocs"
+    },
+    {
+      "id": "c-work",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "İş deneyimi belgesi al",
+      "detail": "Çalıştığın şirketten İngilizce, imzalı bir yazı iste: görevin, başlangıç tarihi, çalışma biçimi (tam/yarı zamanlı) ve kullandığın teknolojiler. Bazı programlar ilgili iş deneyimini puanlıyor (Saarland iş deneyimi bilgisi istiyor); niyet mektubunda da kanıt olarak işe yarar."
     },
     {
       "id": "c-portfolio",
@@ -189,13 +230,21 @@
       "scope": "all",
       "phase": "basvuru",
       "title": "Her başvuruyu Takip'e al ve gönderdikten sonra işaretle",
-      "detail": "Takip sayfası her program için belge listesini şartlardan çıkarıyor. Gönderdikten sonra onay e-postasını ve başvuru numarasını not et. Son güne bırakma; portallar son gün yavaşlıyor.",
+      "detail": "Takip sayfası her program için belge listesini şartlardan çıkarıyor. Gönderdikten sonra onay e-postasını ve başvuru numarasını not et. Son güne bırakma; portallar son gün yavaşlıyor. Her portalın hesap bilgisini bir şifre yöneticisinde tut; okullar e-postayla belge eksiği bildiriyor, spam klasörü dahil e-postanı düzenli kontrol et.",
       "pages": [
         {
           "label": "Takip",
           "path": "/takip"
         }
       ]
+    },
+    {
+      "id": "c-interview",
+      "scope": "all",
+      "phase": "basvuru",
+      "title": "Mülakata veya seçme sınavına hazırlan",
+      "detail": "Bazı programlar başvurudan sonra çevrim içi mülakat, yazılı test ya da ev ödevi istiyor. Davet e-postası kısa süre önce gelebilir. Niyet mektubundaki projeleri anlatmaya, temel algoritma ve matematik sorularına ve \"neden bu program\" sorusuna hazır ol; kamera, mikrofon ve sessiz bir yer ayarla.",
+      "hint": "interview"
     },
     {
       "id": "c-decide",
@@ -332,6 +381,24 @@
       ]
     },
     {
+      "id": "c-exit-fee",
+      "scope": [
+        "de",
+        "it",
+        "at"
+      ],
+      "phase": "kabul",
+      "title": "Yurt dışı çıkış harcı",
+      "detail": "GİB'e göre öğrenciler yurt dışı çıkış harcından muaf değil; muafiyet listesindeki gruplardan biri değilsen her çıkışta ödenir. Yurt dışında oturma izni olanlar muaf, yani oturma iznini aldıktan sonraki çıkışlarda belgeni göstererek ödemezsin. Tutar her yıl güncelleniyor; çıkıştan önce GİB'den bak.",
+      "kind": "info",
+      "links": [
+        {
+          "label": "GİB: yurt dışı çıkış harcı (2025 broşürü)",
+          "url": "https://gib.gov.tr/sites/default/files/fileadmin/beyannamerehberi/2025/2025_yurtdisicikisharci.pdf"
+        }
+      ]
+    },
+    {
       "id": "de-aps",
       "scope": [
         "de"
@@ -353,6 +420,21 @@
         {
           "label": "anabin",
           "url": "https://anabin.kmk.org"
+        }
+      ]
+    },
+    {
+      "id": "de-lise",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "Lise diploması ve YKS yerleştirme sonucu (isteyen okullar için)",
+      "detail": "Bazı Alman okulları yüksek lisans başvurusunda da üniversiteye giriş yeterliliğini görmek istiyor (atlasta FAU ve Würzburg). uni-assist Türkiye için lise diplomasını ve YKS/ÖSYM \"Yerleştirme Sonuçları\" belgesini istiyor. Türkçe belgeler için yeminli tercüme (Türkçe \"yeminli tercüman\" mühürlü) gerekir.",
+      "links": [
+        {
+          "label": "uni-assist: Türkiye belgeleri",
+          "url": "https://uni-assist.de/en/tools/info-country-by-country/details-country/country/tr"
         }
       ]
     },
@@ -424,7 +506,13 @@
       ],
       "phase": "basvuru",
       "title": "Onaylı kopya ve tercüme isteniyor mu, kontrol et",
-      "detail": "Çoğu başvuruda belgeler PDF olarak yüklenir; bazı okullar kabulden sonra veya kayıtta onaylı kopya (beglaubigte Kopie) ister. Belgen yalnızca Türkçe ise yeminli tercüme gerekir; İngilizce asıl belge çoğu zaman yeterlidir."
+      "detail": "Çoğu başvuruda belgeler PDF olarak yüklenir; bazı okullar kabulden sonra veya kayıtta onaylı kopya (beglaubigte Kopie) ister. Belgen yalnızca Türkçe ise tercüme gerekir: uni-assist Türkiye'den gelen tercümeleri yalnızca yeminli tercüman yaparsa ve mühürde Türkçe \"yeminli tercüman\" ibaresi varsa kabul ediyor (yalnızca İngilizce veya Almanca mühür geçmiyor). İngilizce asıl belge çoğu zaman yeterlidir.",
+      "links": [
+        {
+          "label": "uni-assist: Türkiye belgeleri",
+          "url": "https://uni-assist.de/en/tools/info-country-by-country/details-country/country/tr"
+        }
+      ]
     },
     {
       "id": "de-pof",

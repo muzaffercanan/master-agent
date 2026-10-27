@@ -320,7 +320,7 @@ export const Fx = z.object({
 export const CsrRow = z.object({ i: z.string(), a: z.number(), b: z.number(), p: z.number(), people: z.string() });
 
 /** Live facts a checklist item can show, computed from the user's shortlist, profile and country data. */
-export const HintKind = z.enum(["shortlist", "english", "ales", "gre", "gpa", "ects", "pof", "advisor", "portal", "fees", "german"]);
+export const HintKind = z.enum(["shortlist", "english", "ales", "gre", "gpa", "ects", "pof", "advisor", "portal", "fees", "german", "extraDocs", "moi", "interview"]);
 
 /** One step of the application to-do list (data/checklist.json). */
 export const ChecklistItem = z.object({

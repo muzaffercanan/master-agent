@@ -336,6 +336,15 @@ describe("application checklist", () => {
     const sl = [pv("de", { portal: "TUMonline (+ uni-assist VPD)" }), pv("de", { portal: "uni-assist" }), pv("de", { portal: "KIT başvuru portalı" })];
     expect(checklistHint("portal", ["de"], ctx(sl)).map(h => h.text.split(":")[0])).toEqual(["Önce uni-assist VPD, sonra okulun portalı", "uni-assist üzerinden", "Okulun kendi portalı"]);
   });
+  it("lists program-specific extra documents, MOI acceptance and interviews", () => {
+    const sl = [
+      pv("de", { documents: ["Transkript", "CV", "İngilizce deneme (essay)"], english: { moiAccepted: true }, interview: "Online sınav." }),
+      pv("it", { documents: ["Bitirme tezi veya eşdeğer araştırma yazısı"], english: { moiAccepted: false } }),
+    ];
+    expect(checklistHint("extraDocs", ["de", "it"], ctx(sl)).map(h => h.text)).toEqual(["DE CS: İngilizce deneme (essay)", "IT CS: Bitirme tezi veya eşdeğer araştırma yazısı"]);
+    expect(checklistHint("moi", ["de", "it"], ctx(sl)).map(h => h.tone)).toEqual(["ok", "bad"]);
+    expect(checklistHint("interview", ["de", "it"], ctx(sl))[0].text).toBe("DE CS: Online sınav.");
+  });
   it("says so when the shortlist has nothing for the country", () => {
     expect(checklistHint("gre", ["it"], ctx([pv("de", {})]))[0].tone).toBe("na");
     expect(checklistHint("gre", ["de"], ctx([pv("de", { gre: { policy: "required" } })]))[0].text).toBe("Zorunlu: DE CS.");

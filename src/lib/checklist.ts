@@ -165,6 +165,32 @@ export function checklistHint(kind: HintKind, codes: string[], ctx: HintCtx): Hi
       const sum = [...byCur.entries()].map(([c, a]) => fmtAmount(a, c as Parameters<typeof fmtAmount>[1])).join(" + ");
       return [{ text: `${paid.length} programda kayıtlı başvuru ücreti toplamı: ${sum}. Diğer ${vs.length - paid.length} programda kayıt yok.`, tone: "near" }];
     }
+    case "extraDocs": {
+      if (!vs.length) return none;
+      // documents beyond the standard pack (transcript, diploma, CV, letters, language certificate, VPD)
+      const STANDARD = /^(transkript|diploma|cv|ingilizce cv|niyet mektubu|ingilizce niyet mektubu|motivasyon mektubu|ders içerikleri|ingilizce belgesi|ingilizce sertifikası|uni-assist vpd|transkript ve diploma)$/i;
+      const lines = vs
+        .map(v => ({ v, extra: (v.requirements.documents ?? []).filter(d => !STANDARD.test(d.toLocaleLowerCase("tr"))) }))
+        .filter(x => x.extra.length)
+        .map(x => ({ text: `${name(x.v)}: ${x.extra.join("; ")}`, tone: "near" as const }));
+      return lines.length ? lines : [{ text: "Kısa listendeki programlarda standart paket dışında kayıtlı belge yok; yine de her programın belge listesine bak.", tone: "ok" }];
+    }
+    case "moi": {
+      if (!vs.length) return none;
+      const yes = vs.filter(v => v.requirements.english?.moiAccepted === true);
+      const no = vs.filter(v => v.requirements.english?.moiAccepted === false);
+      const lines: HintLine[] = [];
+      if (yes.length) lines.push({ text: `MOI kabul ediyor: ${list(yes)}.`, tone: "ok" });
+      if (no.length) lines.push({ text: `MOI kabul etmiyor, sınav sonucu şart: ${list(no)}.`, tone: "bad" });
+      return lines.length ? lines : [{ text: "Kısa listendeki programlar için MOI bilgisi kayıtlı değil; program sayfasına bak.", tone: "na" }];
+    }
+    case "interview": {
+      if (!vs.length) return none;
+      const iv = vs.filter(v => v.requirements.interview);
+      return iv.length
+        ? iv.map(v => ({ text: `${name(v)}: ${v.requirements.interview}`, tone: "near" as const }))
+        : [{ text: "Kısa listendeki programlarda kayıtlı mülakat veya sınav yok.", tone: "ok" }];
+    }
     case "german": {
       if (!vs.length) return none;
       const de = vs.filter(v => v.program.languages.includes("de") || v.requirements.otherLanguage);
