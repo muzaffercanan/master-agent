@@ -15,6 +15,7 @@ import { BlockedAccountPage, ScholarshipPage, ScholarshipsPage } from "./pages/S
 import { ProfilePage } from "./pages/Profile";
 import { ComparePage } from "./pages/Compare";
 import { TrackerPage } from "./pages/Tracker";
+import { ChecklistPage } from "./pages/Checklist";
 import { NotFound } from "./pages/NotFound";
 import { ErrorPage } from "./pages/ErrorPage";
 import "./styles/base.css";
@@ -41,6 +42,7 @@ const router = createHashRouter([
       { path: "/profil", element: <ProfilePage /> },
       { path: "/karsilastir", element: <ComparePage /> },
       { path: "/takip", element: <TrackerPage /> },
+      { path: "/yapilacaklar", element: <ChecklistPage /> },
       { path: "*", element: <NotFound /> },
     ],
   },

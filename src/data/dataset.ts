@@ -1,8 +1,8 @@
 // Parses raw JSON into a typed, cross-checked dataset. Pure (no fs / no Vite) so it runs in the
 // browser, in scripts/check.ts and in tests.
 import { z } from "zod";
-import { Country, CsrRow, Fields, Funding, Fx, RankingTable, University } from "../schema";
-import type { Country as TCountry, CsrRow as TCsrRow, Field, Funding as TFunding, FundingCall, Fx as TFx, Money, RankingTable as TRankingTable, University as TUniversity } from "../schema";
+import { Checklist, Country, CsrRow, Fields, Funding, Fx, RankingTable, University } from "../schema";
+import type { Checklist as TChecklist, Country as TCountry, CsrRow as TCsrRow, Field, Funding as TFunding, FundingCall, Fx as TFx, Money, RankingTable as TRankingTable, University as TUniversity } from "../schema";
 
 export interface RawDataset {
   countries: { file: string; json: unknown }[];
@@ -11,6 +11,8 @@ export interface RawDataset {
   fundings?: { file: string; json: unknown }[];
   /** data/rankings/*.json; optional so older callers keep working */
   rankings?: { file: string; json: unknown }[];
+  /** data/checklist.json; optional so older callers keep working */
+  checklist?: unknown;
   fields: unknown;
   fx: unknown;
   csr: unknown;
@@ -21,6 +23,7 @@ export interface Dataset {
   universities: TUniversity[];
   fundings: TFunding[];
   rankings: TRankingTable[];
+  checklist: TChecklist | null;
   fields: Record<string, Field>;
   fx: TFx;
   csr: TCsrRow[];
@@ -130,10 +133,23 @@ export function parseDataset(raw: RawDataset): { dataset: Dataset; errors: strin
     }
   });
 
+  // ---- application checklist ----
+  const checklist = raw.checklist === undefined ? null : take("checklist.json", Checklist, raw.checklist);
+  if (checklist) {
+    const phases = new Set(checklist.phases.map(p => p.id));
+    const ids = new Set<string>();
+    for (const it of checklist.items) {
+      if (ids.has(it.id)) errors.push(`checklist.json: madde id "${it.id}" tekrar ediyor`);
+      ids.add(it.id);
+      if (!phases.has(it.phase)) errors.push(`checklist.json → ${it.id}: bilinmeyen aşama "${it.phase}"`);
+      if (it.scope !== "all") for (const c of it.scope) if (!countryCodes.has(c)) errors.push(`checklist.json → ${it.id}: bilinmeyen ülke "${c}"`);
+    }
+  }
+
   universities.sort((a, b) => a.country.localeCompare(b.country) || a.city.localeCompare(b.city, "tr") || a.short.localeCompare(b.short, "tr"));
   const okFundings = fundings.filter((x): x is TFunding => !!x).sort((a, b) => a.name.localeCompare(b.name, "tr"));
   const okRankings = rankings.filter((x): x is TRankingTable => !!x);
-  return { dataset: { countries, universities, fundings: okFundings, rankings: okRankings, fields, fx, csr }, errors };
+  return { dataset: { countries, universities, fundings: okFundings, rankings: okRankings, checklist, fields, fx, csr }, errors };
 }
 
 function checkCall(where: string, c: FundingCall, errors: string[]) {

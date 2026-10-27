@@ -1,4 +1,4 @@
-// User state kept in localStorage: profile, shortlist, compare list, application tracker.
+// User state kept in localStorage: profile, shortlist, compare list, application tracker, to-do list.
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { EMPTY_PROFILE, type Profile } from "../lib/eligibility";
 
@@ -16,10 +16,12 @@ interface UserState {
   shortlist: string[]; // program keys "uni/prog"
   compare: string[];
   tracker: Record<string, TrackEntry>;
+  /** ticked to-do items by id (data/checklist.json) */
+  checklist: Record<string, boolean>;
 }
 
 const KEY = "mla_v2_user";
-const EMPTY: UserState = { profile: EMPTY_PROFILE, shortlist: [], compare: [], tracker: {} };
+const EMPTY: UserState = { profile: EMPTY_PROFILE, shortlist: [], compare: [], tracker: {}, checklist: {} };
 
 function load(): UserState {
   try {
@@ -39,6 +41,7 @@ interface Store extends UserState {
   clearCompare: () => void;
   setTrack: (key: string, patch: Partial<TrackEntry>) => void;
   removeTrack: (key: string) => void;
+  setChecked: (id: string, done: boolean) => void;
   exportJson: () => string;
   importJson: (text: string) => void;
 }
@@ -79,6 +82,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           const tracker = { ...s.tracker };
           delete tracker[key];
           return { ...s, tracker };
+        }),
+      setChecked: (id, done) =>
+        setState(s => {
+          const checklist = { ...s.checklist };
+          if (done) checklist[id] = true;
+          else delete checklist[id];
+          return { ...s, checklist };
         }),
       exportJson: () => JSON.stringify({ version: 2, ...state }, null, 2),
       importJson: text => {

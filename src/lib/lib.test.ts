@@ -4,13 +4,14 @@ import { nextDeadline, singleTermOnly } from "./programs";
 import { yearlyCost } from "./cost";
 import { buildIcs } from "./ics";
 import { countdown, parseD, urgency, windowProgress } from "./dates";
+import { checklistHint, progress, sectionOf } from "./checklist";
 import { median, rankingRows, rankTier, rankValue, sortRankingRows } from "./rank";
 import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
 import { DEFAULT_FUNDING_FILTERS, eurPerMonth, fundingCheck, hostsOf, matchFunding, nextCall, parseFundingFilters, serializeFundingFilters, sortFundings } from "./scholarships";
 import { scholarshipEvents } from "./calendar";
 import { locative } from "./text";
 import { fmtMoney } from "./money";
-import type { Country, Funding, Fx, Intake, RankingTable } from "../schema";
+import type { ChecklistItem, Country, Funding, Fx, Intake, RankingTable } from "../schema";
 import type { ProgramView } from "./programs";
 
 const ituTiers = { default: 80, tiers: [{ gpa: 2.75, ales: 80 }, { gpa: 2.6, ales: 85 }] };
@@ -302,5 +303,41 @@ describe("isProfileEmpty", () => {
     expect(isProfileEmpty(EMPTY_PROFILE)).toBe(true);
     expect(isProfileEmpty({ ...EMPTY_PROFILE, ects: { Matematik: 30 } })).toBe(true);
     expect(isProfileEmpty({ ...EMPTY_PROFILE, yds: 70 })).toBe(false);
+  });
+});
+
+describe("application checklist", () => {
+  const item = (id: string, scope: ChecklistItem["scope"], kind: ChecklistItem["kind"] = "task") =>
+    ({ id, scope, phase: "hazirlik", title: id, detail: "", kind, links: [], pages: [] }) as ChecklistItem;
+  const pv = (code: string, req: ProgramView["requirements"], extra: Partial<ProgramView> = {}) =>
+    ({ key: `${code}/p`, uni: { short: code.toUpperCase() }, program: { name: "CS", languages: ["en"] }, country: { code }, intakes: [], requirements: req, costs: undefined, ...extra }) as unknown as ProgramView;
+  const ctx = (shortlist: ProgramView[], profile = EMPTY_PROFILE) => ({ shortlist, profile, countries: [] as Country[], T: new Date("2026-10-28") });
+
+  it("puts all-country and multi-country steps in the common section", () => {
+    expect(sectionOf(item("a", "all"))).toBe("common");
+    expect(sectionOf(item("b", ["de", "it"]))).toBe("common");
+    expect(sectionOf(item("c", ["de"]))).toBe("de");
+  });
+  it("counts only tasks toward progress", () => {
+    const items = [item("a", "all"), item("b", "all"), item("i", "all", "info")];
+    expect(progress(items, { a: true, i: true })).toEqual({ done: 1, total: 2 });
+  });
+  it("compares the highest English bar in the shortlist with the profile", () => {
+    const sl = [pv("de", { english: { ielts: 6.5 } }), pv("de", { english: { ielts: 7 } }), pv("tr", { english: { ielts: 7.5 } })];
+    expect(checklistHint("english", ["de"], ctx(sl, { ...EMPTY_PROFILE, ielts: 7 }))[0]).toEqual({ text: "En yüksek IELTS şartı 7; seninki 7, yetiyor.", tone: "ok" });
+    expect(checklistHint("english", ["de", "tr"], ctx(sl, { ...EMPTY_PROFILE, ielts: 7 }))[0].tone).toBe("bad");
+    expect(checklistHint("english", ["de"], ctx(sl))[0].tone).toBe("na");
+  });
+  it("applies GPA tiers to the ALES bar", () => {
+    const sl = [pv("tr", { ales: { min: { default: 80, tiers: [{ gpa: 2.75, ales: 80 }, { gpa: 2.6, ales: 85 }] } } })];
+    expect(checklistHint("ales", ["tr"], ctx(sl, { ...EMPTY_PROFILE, gpa: 2.65, ales: 82 }))[0]).toEqual({ text: "En yüksek ALES şartı 85; seninki 82, 3 eksik.", tone: "bad" });
+  });
+  it("tells a VPD-then-portal route apart from a plain uni-assist one", () => {
+    const sl = [pv("de", { portal: "TUMonline (+ uni-assist VPD)" }), pv("de", { portal: "uni-assist" }), pv("de", { portal: "KIT başvuru portalı" })];
+    expect(checklistHint("portal", ["de"], ctx(sl)).map(h => h.text.split(":")[0])).toEqual(["Önce uni-assist VPD, sonra okulun portalı", "uni-assist üzerinden", "Okulun kendi portalı"]);
+  });
+  it("says so when the shortlist has nothing for the country", () => {
+    expect(checklistHint("gre", ["it"], ctx([pv("de", {})]))[0].tone).toBe("na");
+    expect(checklistHint("gre", ["de"], ctx([pv("de", { gre: { policy: "required" } })]))[0].text).toBe("Zorunlu: DE CS.");
   });
 });

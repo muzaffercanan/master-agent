@@ -64,7 +64,8 @@ export function Layout() {
             <NavLink to="/takvim">Takvim</NavLink>
             <NavLink to="/rankingler">Rankingler</NavLink>
             <NavLink to="/karsilastir">Karşılaştır{n(compare.length)}</NavLink>
-            <NavLink to="/takip">Takip{n(Object.keys(tracker).length)}</NavLink>
+            {/* the to-do list lives under Takip, so it keeps this tab lit */}
+            <NavLink to="/takip" className={({ isActive }) => (isActive || loc.pathname === "/yapilacaklar" ? "active" : "")}>Takip{n(Object.keys(tracker).length)}</NavLink>
             <NavLink to="/profil">Profil</NavLink>
           </nav>
           <form className="searchbox" onSubmit={submit} role="search">

@@ -319,6 +319,36 @@ export const Fx = z.object({
 
 export const CsrRow = z.object({ i: z.string(), a: z.number(), b: z.number(), p: z.number(), people: z.string() });
 
+/** Live facts a checklist item can show, computed from the user's shortlist, profile and country data. */
+export const HintKind = z.enum(["shortlist", "english", "ales", "gre", "gpa", "ects", "pof", "advisor", "portal", "fees", "german"]);
+
+/** One step of the application to-do list (data/checklist.json). */
+export const ChecklistItem = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, "id yalnızca a-z 0-9 - içermeli"),
+  /** "all" = every country; otherwise country codes the step belongs to */
+  scope: z.union([z.literal("all"), z.array(z.string().length(2)).min(1)]),
+  phase: z.string(),
+  title: z.string(),
+  detail: z.string(),
+  /** rough timing, e.g. "son başvurudan 2 ay önce" */
+  when: z.string().optional(),
+  /** only applies to some applicants, e.g. "Erkek adaylar" */
+  condition: z.string().optional(),
+  /** "info" = a fact to know, not a box to tick */
+  kind: z.enum(["task", "info"]).default("task"),
+  hint: HintKind.optional(),
+  /** official pages */
+  links: z.array(Link).default([]),
+  /** pages inside the atlas, e.g. { label: "Burslar", path: "/burslar" } */
+  pages: z.array(z.object({ label: z.string(), path: z.string().startsWith("/") })).default([]),
+});
+
+export const Checklist = z.object({
+  verifiedAt: DateStr,
+  phases: z.array(z.object({ id: z.string(), name: z.string(), desc: z.string() })).min(1),
+  items: z.array(ChecklistItem).min(1),
+});
+
 /** One published league table (THE, QS, ARWU…), overall or for computer science. */
 export const RankingSource = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/, "id yalnızca a-z 0-9 - içermeli"),
@@ -379,6 +409,9 @@ export type Funding = z.infer<typeof Funding>;
 export type Field = z.infer<typeof Field>;
 export type Fx = z.infer<typeof Fx>;
 export type CsrRow = z.infer<typeof CsrRow>;
+export type ChecklistItem = z.infer<typeof ChecklistItem>;
+export type Checklist = z.infer<typeof Checklist>;
+export type HintKind = z.infer<typeof HintKind>;
 export type RankingSource = z.infer<typeof RankingSource>;
 export type RankingEntry = z.infer<typeof RankingEntry>;
 export type RankingTable = z.infer<typeof RankingTable>;

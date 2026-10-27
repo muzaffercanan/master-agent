@@ -48,6 +48,7 @@ data/
   countries/{tr,de,it,at}.json         ülke düzeyi bilgi, bölgesel ücretler, ulusal burslar, geçim kanıtı (proofOfFunds), takvim (sınavlar)
   universities/{ülke}/{okul-id}.json   okul + programları (okul başına bir dosya)
   scholarships/{id}.json               burs kayıtları (Funding): kapsam, bloke hesap, çağrılar, alt programlar (Erasmus Mundus)
+  checklist.json                       /yapilacaklar: başvuru adımları (aşama, ülke, ipucu türü); ipuçları src/lib/checklist.ts'te kısa liste + profilden hesaplanır
   rankings/{ülke}.json                 /rankingler tablosu: o ülkenin okulları × sıralama listeleri (THE, QS, ARWU, U.S. News, CS konu sıralamaları, CSRankings)
   fields.json                          alan sözlüğü
   fx.json                              kur (EUR bazlı, tarihli)
@@ -66,7 +67,7 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 - Mantık `src/lib/` içinde saf fonksiyonlardır ve testlidir. Arayüz hesap yapmaz, `lib`'i çağırır.
 - `ProgramView` (`src/lib/programs.ts`) bir programı okul/ülke varsayılanlarıyla birleştirir: `intakes`, `requirements`, `costs` program düzeyinde yoksa okuldan miras alınır; ülke burslarına `nationalScholarships` olarak ayrıca erişilir.
 - Filtreler URL'de saklanır (`src/lib/filters.ts`: `parseFilters` / `serializeFilters`). Yeni filtre eklersen ikisini birden güncelle, yoksa link paylaşımı bozulur.
-- `localStorage` anahtarları: `mla_v2_user` (profil, kısa liste, karşılaştırma, takip), `mla_theme`. Bu yapıyı değiştirirsen eski veriyi sessizce silme; geriye uyumlu oku.
+- `localStorage` anahtarları: `mla_v2_user` (profil, kısa liste, karşılaştırma, takip, yapılacaklar işaretleri), `mla_theme`. Bu yapıyı değiştirirsen eski veriyi sessizce silme; geriye uyumlu oku.
 
 ## 5. Veri kuralları (en önemli bölüm)
 

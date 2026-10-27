@@ -1,0 +1,669 @@
+{
+  "verifiedAt": "2026-10-28",
+  "phases": [
+    {
+      "id": "hazirlik",
+      "name": "Hazırlık",
+      "desc": "Son başvurudan 6 ay veya daha önce. Sınavlar ve belgeler en uzun süren işler."
+    },
+    {
+      "id": "belgeler",
+      "name": "Belge dosyası",
+      "desc": "Son başvurudan 1–3 ay önce. Her programda tekrar kullanacağın dosyalar."
+    },
+    {
+      "id": "basvuru",
+      "name": "Başvuru",
+      "desc": "Başvuru penceresi açıkken. Her program için ayrı ayrı."
+    },
+    {
+      "id": "kabul",
+      "name": "Kabul sonrası",
+      "desc": "Kabul mektubu gelince. Vize ve oturum işleri haftalar sürer."
+    },
+    {
+      "id": "varis",
+      "name": "Varıştan sonra",
+      "desc": "Şehre taşındıktan sonraki ilk günler ve haftalar."
+    }
+  ],
+  "items": [
+    {
+      "id": "c-shortlist",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "Hedef program listesini netleştir",
+      "detail": "Kısa listene 8–12 program ekle: 2–3 iddialı, 3–4 hedef, 2–3 güvenli. Her programın dönemini (güz/kış/bahar/yaz) ve son başvuru tarihini kontrol et; tek dönem alan programları kaçırma.",
+      "when": "şimdi",
+      "hint": "shortlist",
+      "pages": [
+        {
+          "label": "Programlar",
+          "path": "/programlar"
+        }
+      ]
+    },
+    {
+      "id": "c-english",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "İngilizce sınavına gir (IELTS Academic veya TOEFL iBT)",
+      "detail": "Programların istediği en yüksek puanı hedefle. IELTS ve TOEFL sonuçları 2 yıl geçerli. Sonucun gelmesi zaman alır; ilk son başvurudan en az 1–2 ay önce sınava gir ki gerekirse tekrar girebilesin. Bazı okullar yalnızca birini kabul eder (örneğin Koç IELTS kabul etmiyor). Türkiye'de YDS/YÖKDİL de çoğu yerde geçer.",
+      "when": "son başvurudan 2–3 ay önce",
+      "hint": "english",
+      "links": [
+        {
+          "label": "IELTS",
+          "url": "https://ielts.org"
+        },
+        {
+          "label": "TOEFL iBT",
+          "url": "https://www.ets.org/toefl"
+        }
+      ]
+    },
+    {
+      "id": "c-gre",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "GRE gerekiyor mu, kontrol et",
+      "detail": "Almanya'da birkaç program AB dışı adaylardan GRE istiyor (Mannheim Data Science'ta zorunlu, seçim yalnızca GRE'ye göre). Türkiye'de GRE, ALES yerine kabul edilebiliyor. Gerekiyorsa sınava 2–3 ay çalış.",
+      "when": "son başvurudan 3 ay önce",
+      "hint": "gre",
+      "links": [
+        {
+          "label": "GRE",
+          "url": "https://www.ets.org/gre"
+        }
+      ]
+    },
+    {
+      "id": "c-transcript",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "İngilizce resmi transkript, diploma ve Diploma Eki al",
+      "detail": "Özyeğin öğrenci işlerinden İngilizce, imzalı ve mühürlü transkript, diploma (henüz basılmadıysa geçici mezuniyet belgesi) ve Diploma Eki (Diploma Supplement) iste. Birkaç asıl nüsha al; bazı okullar kayıtta asıl veya onaylı kopya istiyor.",
+      "when": "şimdi"
+    },
+    {
+      "id": "c-courses",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "Ders içeriklerini (course descriptions) topla",
+      "detail": "Almanya ve İtalya'da lisans derslerinin hedef programla uyumuna (alan başına AKTS) bakılıyor. Aldığın her dersin İngilizce tanımını ve AKTS'sini ders kataloğundan indir; matematik, programlama, teorik bilgisayar bilimi, sistemler gibi alanlara göre topla ve profiline gir.",
+      "when": "şimdi",
+      "hint": "ects"
+    },
+    {
+      "id": "c-gpa",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "Alman not karşılığını öğren",
+      "detail": "Alman okulları GNO'nu Bavyera formülüyle Alman notuna çevirir (1.0 en iyi). Programların not tavanını bununla karşılaştır. Bağlayıcı değer uni-assist VPD'sinde çıkar.",
+      "kind": "info",
+      "hint": "gpa"
+    },
+    {
+      "id": "c-refs",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "Referans verecek hocaları belirle ve erkenden iste",
+      "detail": "2–3 kişi seç: ders aldığın ve seni tanıyan hocalar, tercihen bitirme projesi danışmanın. Son tarihten en az 4–6 hafta önce yüz yüze veya kısa bir e-postayla iste. Hocaya CV'ni, transkriptini, program listesini, son tarihleri ve her programı neden istediğini anlatan birkaç satırı gönder. Birçok portal mektubu hocaya kendi linkiyle e-postayla ister; hocaya bu e-postanın geleceğini önceden söyle, son tarihten 1 hafta önce nazikçe hatırlat. Çalıştığın yerdeki yöneticinden mesleki referans da alabilirsin, ama akademik referansın yerine geçmez.",
+      "when": "son başvurudan 6 hafta önce"
+    },
+    {
+      "id": "c-passport",
+      "scope": [
+        "de",
+        "it",
+        "at"
+      ],
+      "phase": "hazirlik",
+      "title": "Pasaportunu kontrol et",
+      "detail": "Vize ve oturum izni için pasaportun öğrenimin en azından ilk yılını rahatça kapsamalı. Süresi kısa ise şimdi yenile; randevu ve basım haftalar sürebilir.",
+      "when": "şimdi",
+      "links": [
+        {
+          "label": "e-Devlet pasaport randevusu",
+          "url": "https://www.turkiye.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "c-budget",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "Başvuru bütçesini çıkar",
+      "detail": "Sınav ücretleri (IELTS/TOEFL, ALES, GRE), başvuru ücretleri, uni-assist, tercüme ve noter, kurye, vize ücreti ve yurt dışı için geçim kanıtı. Bunları baştan topla, sürpriz olmasın.",
+      "hint": "fees"
+    },
+    {
+      "id": "c-scholarships",
+      "scope": "all",
+      "phase": "hazirlik",
+      "title": "Burs son tarihlerini takvime ekle",
+      "detail": "Burs son tarihleri çoğu zaman program son tarihinden önce gelir (DAAD, Erasmus Mundus). Uygun olanları seç ve takvime ekle; bazı burslar ayrı niyet mektubu ve referans ister.",
+      "pages": [
+        {
+          "label": "Burslar",
+          "path": "/burslar"
+        }
+      ]
+    },
+    {
+      "id": "c-cv",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "Akademik CV hazırla",
+      "detail": "1–2 sayfa, ters kronolojik: eğitim (GNO ile), projeler (GitHub linkleriyle), iş deneyimi, staj, dil puanları, beceriler. Europass şart değil; programın özel bir biçim isteyip istemediğine bak. PDF olarak kaydet.",
+      "when": "son başvurudan 2 ay önce"
+    },
+    {
+      "id": "c-sop",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "Niyet mektubunu (SoP / motivation letter) yaz",
+      "detail": "Her programa özel yaz: neden bu alan, neden bu program (dersler, laboratuvarlar, hocalar), neden hazırsın (projeler, işin), sonra ne yapacaksın. Programın kelime veya sayfa sınırına uy. Bir taslağı tüm programlara uyarlayabilirsin ama okul adı ve içerik her birinde değişmeli. Birine okut.",
+      "when": "son başvurudan 1–2 ay önce"
+    },
+    {
+      "id": "c-portfolio",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "GitHub ve LinkedIn profilini düzenle",
+      "detail": "En iyi 2–3 projeyi öne çıkar, README'leri düzgün olsun. CV'deki linklerin çalıştığını kontrol et. Zorunlu değil ama değerlendiricilerin çoğu bakar.",
+      "kind": "task"
+    },
+    {
+      "id": "c-scan",
+      "scope": "all",
+      "phase": "belgeler",
+      "title": "Belgeleri tarayıp düzenle",
+      "detail": "Pasaport, transkript, diploma, Diploma Eki, dil sınavı sonucu, CV, ders içerikleri: renkli, okunur PDF'ler. Dosya adları açık olsun (soyad_transkript.pdf). Portalların boyut sınırına göre sıkıştır. Asılları bir dosyada sakla.",
+      "when": "son başvurudan 1 ay önce"
+    },
+    {
+      "id": "c-submit",
+      "scope": "all",
+      "phase": "basvuru",
+      "title": "Her başvuruyu Takip'e al ve gönderdikten sonra işaretle",
+      "detail": "Takip sayfası her program için belge listesini şartlardan çıkarıyor. Gönderdikten sonra onay e-postasını ve başvuru numarasını not et. Son güne bırakma; portallar son gün yavaşlıyor.",
+      "pages": [
+        {
+          "label": "Takip",
+          "path": "/takip"
+        }
+      ]
+    },
+    {
+      "id": "c-decide",
+      "scope": "all",
+      "phase": "kabul",
+      "title": "Kabulleri karşılaştır, yerini zamanında onayla",
+      "detail": "Kabul mektubundaki onay son tarihine ve depozito olup olmadığına bak. Gitmeyeceğin yerlere haber ver; yedek listedekilere yer açılır.",
+      "pages": [
+        {
+          "label": "Karşılaştır",
+          "path": "/karsilastir"
+        }
+      ]
+    },
+    {
+      "id": "tr-ales",
+      "scope": [
+        "tr"
+      ],
+      "phase": "hazirlik",
+      "title": "ALES'e gir (veya GRE)",
+      "detail": "Tezli programlarda ALES Sayısal puanı istenir, sonuç 5 yıl geçerli. Bazı okullarda eşik GNO'ya göre değişiyor (İTÜ: GNO 2.75 altıysa daha yüksek ALES). Bahar başvuruları için ALES sonucunun Kasım'da elinde olması gerekir.",
+      "hint": "ales",
+      "links": [
+        {
+          "label": "ÖSYM",
+          "url": "https://www.osym.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "tr-yds",
+      "scope": [
+        "tr"
+      ],
+      "phase": "hazirlik",
+      "title": "YDS / e-YDS / YÖKDİL veya TOEFL ile İngilizce şartını karşıla",
+      "detail": "YDS 5 yıl geçerli. Bazı okulların kendi sınavı da var (ODTÜ EPE, Boğaziçi BUEPT, İTÜ YDY). Boğaziçi ve İTÜ'ye dil belgesi olmadan başvurulabiliyor ama kayıttan önce getirmek gerekiyor. TÜBİTAK 2210-A için YDS 80 gerekir.",
+      "hint": "english",
+      "links": [
+        {
+          "label": "ÖSYM",
+          "url": "https://www.osym.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "tr-advisor",
+      "scope": [
+        "tr"
+      ],
+      "phase": "hazirlik",
+      "title": "Danışman adaylarına yaz",
+      "detail": "İTÜ Bilgisayar Mühendisliği'nde bir öğretim üyesinden kabul mektubu zorunlu; Hacettepe Bilgisayar da istiyor. Diğerlerinde zorunlu değil ama 1–2 hocaya kısa, somut bir e-posta (ilgi alanın, CV, bir proje) kabul şansını artırır. Başvurudan 1–2 ay önce yaz.",
+      "when": "son başvurudan 1–2 ay önce",
+      "hint": "advisor"
+    },
+    {
+      "id": "tr-edevlet",
+      "scope": [
+        "tr"
+      ],
+      "phase": "belgeler",
+      "title": "e-Devlet belgelerini indir",
+      "detail": "Barkodlu mezun belgesi (YÖK), ALES ve YDS sonuç belgeleri (ÖSYM). Çoğu enstitü barkodlu belgeyi asıl yerine kabul ediyor.",
+      "links": [
+        {
+          "label": "e-Devlet",
+          "url": "https://www.turkiye.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "tr-portal",
+      "scope": [
+        "tr"
+      ],
+      "phase": "basvuru",
+      "title": "Enstitünün başvuru sisteminden başvur",
+      "detail": "Her enstitünün kendi sistemi ve takvimi var; bazıları program başına ücret alıyor (ODTÜ, TOBB ETÜ). Tercih sayısı sınırına dikkat et (Hacettepe Bilişim en fazla 3 program).",
+      "hint": "shortlist"
+    },
+    {
+      "id": "tr-interview",
+      "scope": [
+        "tr"
+      ],
+      "phase": "basvuru",
+      "title": "Bilimsel değerlendirmeye veya mülakata hazırlan",
+      "detail": "Hacettepe Bilgisayar'ın yazılı sınavı bütün lisans müfredatını kapsıyor; 100 üzerinden en az 50 gerekir. Algoritmalar, veri yapıları, ayrık matematik, olasılık, işletim sistemleri ve ilgilendiğin alanın temellerini tekrar et. ODTÜ Bilgisayar'da mülakat yok.",
+      "when": "başvurudan sonraki 2–3 hafta"
+    },
+    {
+      "id": "tr-enroll",
+      "scope": [
+        "tr"
+      ],
+      "phase": "kabul",
+      "title": "Kesin kaydı süresinde yap",
+      "detail": "Kesin kayıt süresi genelde birkaç gündür. Asıl belgeleri ve fotoğrafı hazır tut. Aynı anda yalnızca bir tezli programa kayıtlı olunabilir."
+    },
+    {
+      "id": "tr-2210",
+      "scope": [
+        "tr"
+      ],
+      "phase": "kabul",
+      "title": "TÜBİTAK 2210 bursuna başvur",
+      "detail": "Başvuru için bir yüksek lisans programına kayıtlı olmak gerekir (en geç 3. dönem). 2210-A için ALES ≥80 ve YDS ≥80. Yılda iki çağrı var.",
+      "links": [
+        {
+          "label": "TÜBİTAK 2210",
+          "url": "https://www.tubitak.gov.tr/tr/burslar/lisansustu/egitim-burs-programlari/2210/icerik-burs-miktari-ve-odeme-kosullari"
+        }
+      ]
+    },
+    {
+      "id": "tr-askerlik",
+      "scope": [
+        "tr",
+        "de",
+        "it",
+        "at"
+      ],
+      "phase": "kabul",
+      "title": "Askerlik tecili durumunu kontrol et",
+      "condition": "Erkek adaylar",
+      "detail": "Türkiye'de lisansüstü kayıtta öğrenci tecili genelde okul bildirimiyle işlenir; e-Devlet'te askerlik durum belgesinden kontrol et. Yurt dışında okuyacaksan tecil için konsolosluk veya eğitim müşavirliği üzerinden başvurman gerekebilir. Yaş sınırları için kaynaklar çelişkili; askerlik şubesinden teyit et.",
+      "links": [
+        {
+          "label": "e-Devlet",
+          "url": "https://www.turkiye.gov.tr"
+        }
+      ]
+    },
+    {
+      "id": "de-aps",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "APS sertifikası gerekmiyor",
+      "detail": "APS yalnızca Çin, Hindistan ve Vietnam'dan alınan diplomalar için isteniyor. Türk diploması için gerekmez.",
+      "kind": "info"
+    },
+    {
+      "id": "de-anabin",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "anabin'de üniversitenin statüsüne bak",
+      "detail": "anabin veri tabanında Özyeğin Üniversitesi'nin \"H+\" (tanınan kurum) olduğunu kontrol et ve ekran görüntüsünü sakla. Bazı okullar (Passau gibi) bunu şart olarak yazıyor.",
+      "links": [
+        {
+          "label": "anabin",
+          "url": "https://anabin.kmk.org"
+        }
+      ]
+    },
+    {
+      "id": "de-route",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "Her program için başvuru yolunu öğren",
+      "detail": "Bazı okullar uni-assist üzerinden, bazıları kendi portalından (TUM, KIT, RWTH gibi) başvuru alır; bazıları önce uni-assist'ten VPD ister, sonra kendi portalından başvuru. Her programın sayfasında yazıyor; karıştırma.",
+      "hint": "portal"
+    },
+    {
+      "id": "de-vpd",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "Gerekiyorsa uni-assist VPD'sini erkenden iste",
+      "detail": "VPD (ön değerlendirme belgesi) Alman not karşılığını resmi olarak hesaplar ve birçok okul bunu başvuruda ister. İşlem haftalar sürebilir; son başvurudan en az 6–8 hafta önce belgeleri yükle.",
+      "when": "son başvurudan 8 hafta önce",
+      "links": [
+        {
+          "label": "uni-assist",
+          "url": "https://www.uni-assist.de/en/"
+        }
+      ]
+    },
+    {
+      "id": "de-german",
+      "scope": [
+        "de"
+      ],
+      "phase": "hazirlik",
+      "title": "Almanca şartı olan programları ayıkla",
+      "detail": "Bazı programlar İngilizce görünse de Almanca öğretiliyor (Stuttgart AI and Data Science) ya da ilk yılda Almanca kursu istiyor (Passau: A1). Uzun vadede iş için B1 öneriliyor.",
+      "hint": "german"
+    },
+    {
+      "id": "de-ects-form",
+      "scope": [
+        "de"
+      ],
+      "phase": "belgeler",
+      "title": "Programın kendi ders eşleştirme formunu doldur",
+      "detail": "Bazı programlar alan başına AKTS'yi gösteren kendi tablolarını ister (modül eşleştirme). Ders tanımlarını ve AKTS'leri buna göre yerleştir; dersin adı tutmasa da içeriği tutuyorsa açıkla.",
+      "hint": "ects"
+    },
+    {
+      "id": "de-fees",
+      "scope": [
+        "de"
+      ],
+      "phase": "basvuru",
+      "title": "uni-assist ücretini öde",
+      "detail": "uni-assist bir dönemde ilk program için 75 €, aynı dönemdeki her ek program için 30 € alıyor; sonuç ne olursa olsun ödenir ve ödeme gelmeden başvuru incelenmez. Programa değil, seçtiğin her programa göre sayılır.",
+      "links": [
+        {
+          "label": "uni-assist ücretleri",
+          "url": "https://uni-assist.de/en/how-to-apply/pay-all-fees/handling-fees"
+        }
+      ]
+    },
+    {
+      "id": "de-copies",
+      "scope": [
+        "de"
+      ],
+      "phase": "basvuru",
+      "title": "Onaylı kopya ve tercüme isteniyor mu, kontrol et",
+      "detail": "Çoğu başvuruda belgeler PDF olarak yüklenir; bazı okullar kabulden sonra veya kayıtta onaylı kopya (beglaubigte Kopie) ister. Belgen yalnızca Türkçe ise yeminli tercüme gerekir; İngilizce asıl belge çoğu zaman yeterlidir."
+    },
+    {
+      "id": "de-pof",
+      "scope": [
+        "de"
+      ],
+      "phase": "kabul",
+      "title": "Bloke hesabı aç (veya geçim kanıtının yerine geçen bursu belgele)",
+      "detail": "Vize için yıllık geçim kanıtı gösterilir. Bloke hesap açılışı ve paranın yatması günler sürer; vize randevusundan önce onay belgesi elinde olmalı. Tam burs veya taahhütname bloke hesabın yerine geçebilir.",
+      "hint": "pof",
+      "pages": [
+        {
+          "label": "Bloke hesap ve geçim kanıtı",
+          "path": "/burslar/bloke-hesap"
+        }
+      ]
+    },
+    {
+      "id": "de-insurance",
+      "scope": [
+        "de"
+      ],
+      "phase": "kabul",
+      "title": "Sağlık sigortasını ayarla",
+      "detail": "Vize için geliş tarihinden itibaren geçerli bir sağlık sigortası gerekir. Üniversiteye kayıt için genelde Alman kamu sağlık sigortası (gesetzliche Krankenversicherung) belgesi istenir; öğrenci tarifesi var."
+    },
+    {
+      "id": "de-visa",
+      "scope": [
+        "de"
+      ],
+      "phase": "kabul",
+      "title": "Ulusal (D tipi) öğrenci vizesi için randevu al",
+      "detail": "Türkiye'de Almanya vize başvuruları yetkili aracı kurum (iDATA) üzerinden randevuyla yapılıyor. Randevular dolabiliyor ve işlem haftalar sürüyor; kabul mektubu gelir gelmez randevu al. Tipik belgeler: kabul mektubu, geçim kanıtı, sağlık sigortası, pasaport, biyometrik fotoğraf, form. Güncel liste ve ücret için resmi sayfaya bak.",
+      "when": "kabulden hemen sonra",
+      "links": [
+        {
+          "label": "Almanya'nın Türkiye temsilcilikleri",
+          "url": "https://tuerkei.diplo.de"
+        }
+      ]
+    },
+    {
+      "id": "de-housing",
+      "scope": [
+        "de"
+      ],
+      "phase": "kabul",
+      "title": "Yurt (Studierendenwerk) ve oda başvurusu yap",
+      "detail": "Büyük şehirlerde yurt bekleme listeleri aylar sürebiliyor; kabul gelir gelmez başvur. Özel ilanlarda depozito dolandırıcılığına dikkat et; görmediğin daireye para gönderme.",
+      "when": "kabulden hemen sonra",
+      "links": [
+        {
+          "label": "Studierendenwerke",
+          "url": "https://www.studierendenwerke.de"
+        }
+      ]
+    },
+    {
+      "id": "de-enroll",
+      "scope": [
+        "de"
+      ],
+      "phase": "kabul",
+      "title": "Kayıt (Immatrikulation) ve dönem katkı payı",
+      "detail": "Kayıt için dönem katkı payını (Semesterbeitrag) yatır, sağlık sigortası belgesini ve istenen asıl belgeleri gönder. Bazı okullar kaydı ilk haftalarda yüz yüze tamamlıyor."
+    },
+    {
+      "id": "de-anmeldung",
+      "scope": [
+        "de"
+      ],
+      "phase": "varis",
+      "title": "Adres kaydı (Anmeldung)",
+      "detail": "Taşındıktan sonra 2 hafta içinde Bürgeramt'ta adresini kaydettir. Ev sahibinden Wohnungsgeberbestätigung belgesini al. Banka hesabı ve oturum izni için bu kayıt gerekir.",
+      "when": "taşındıktan sonra 2 hafta içinde"
+    },
+    {
+      "id": "de-residence",
+      "scope": [
+        "de"
+      ],
+      "phase": "varis",
+      "title": "Oturma iznine başvur (Ausländerbehörde)",
+      "detail": "Vizen bitmeden yabancılar dairesinden öğrenci oturma izni al. Randevular geç veriliyor; Anmeldung'dan hemen sonra randevu iste.",
+      "when": "vize bitmeden"
+    },
+    {
+      "id": "it-dov",
+      "scope": [
+        "it"
+      ],
+      "phase": "hazirlik",
+      "title": "Diploma değerlendirmesi: DoV veya CIMEA belgesi",
+      "detail": "İtalya'da diplomanın değerlendirilmesi için konsolosluktan Dichiarazione di Valore (DoV) ya da CIMEA'dan karşılaştırılabilirlik belgesi istenir. Hangisinin gerektiğini okul Universitaly ön kaydında bildirir. CIMEA çevrim içi ve haftalar sürebilir.",
+      "links": [
+        {
+          "label": "CIMEA",
+          "url": "https://www.cimea.it"
+        }
+      ]
+    },
+    {
+      "id": "it-apply",
+      "scope": [
+        "it"
+      ],
+      "phase": "basvuru",
+      "title": "Okulun kendi portalından başvur",
+      "detail": "PoliMi ve UniBo gibi okullar AB dışı adaylar için kendi portallarında ön değerlendirme yapar; birkaç başvuru turu olabilir. AB dışı adaylar için turlar genelde daha erken kapanıyor."
+    },
+    {
+      "id": "it-universitaly",
+      "scope": [
+        "it"
+      ],
+      "phase": "kabul",
+      "title": "Universitaly ön kaydını (pre-enrolment) yap",
+      "detail": "AB dışı öğrenciler için vize başvurusundan önce zorunlu. Kabul aldığın programı Universitaly'de seç; okul onaylayınca konsolosluk görür. Okulun kendi ön kayıt son tarihi var.",
+      "links": [
+        {
+          "label": "Universitaly",
+          "url": "https://www.universitaly.it"
+        }
+      ]
+    },
+    {
+      "id": "it-pof",
+      "scope": [
+        "it"
+      ],
+      "phase": "kabul",
+      "title": "Geçim kanıtını hazırla",
+      "detail": "Bloke hesap yok; yıllık tutarı kendi ya da ailenin hesabında göster ve paranın kaynağını belgele. Burs da geçim kanıtı sayılır.",
+      "hint": "pof"
+    },
+    {
+      "id": "it-visa",
+      "scope": [
+        "it"
+      ],
+      "phase": "kabul",
+      "title": "D tipi öğrenci vizesine başvur",
+      "detail": "Universitaly ön kaydı onaylandıktan sonra İtalya konsolosluğunun yetkili başvuru merkezinden randevu al. Konaklama kanıtı, sağlık sigortası, geçim kanıtı ve DoV/CIMEA belgesi istenir. Güncel liste için konsolosluğa bak.",
+      "when": "ön kayıt onaylanınca"
+    },
+    {
+      "id": "it-dsu",
+      "scope": [
+        "it"
+      ],
+      "phase": "kabul",
+      "title": "Bölgesel burs (DSU) için ISEE parificato hazırla",
+      "detail": "Bölgesel burslar aile gelirine göre verilir ve AB dışı öğrenciden ailenin gelir ve varlık belgelerini (apostilli ve tercümeli) ister. Belgeleri Türkiye'de toplamak zaman alır; başvurular yaz aylarında kapanır.",
+      "pages": [
+        {
+          "label": "Burslar",
+          "path": "/burslar"
+        }
+      ]
+    },
+    {
+      "id": "it-codice",
+      "scope": [
+        "it"
+      ],
+      "phase": "kabul",
+      "title": "Codice fiscale al",
+      "detail": "İtalyan vergi numarası; kira, banka, telefon ve kayıt için gerekir. Konsolosluktan veya İtalya'ya varınca Agenzia delle Entrate'den alınabilir."
+    },
+    {
+      "id": "it-permesso",
+      "scope": [
+        "it"
+      ],
+      "phase": "varis",
+      "title": "Oturma izni (permesso di soggiorno) başvurusu",
+      "detail": "İtalya'ya girişten sonra 8 iş günü içinde postaneden başvuru kitiyle başvur, sonra Questura randevusuna git.",
+      "when": "girişten sonra 8 iş günü içinde"
+    },
+    {
+      "id": "at-apply",
+      "scope": [
+        "at"
+      ],
+      "phase": "basvuru",
+      "title": "Üniversitenin kendi portalından başvur",
+      "detail": "TU Wien ve JKU gibi okullar başvuruyu kendi sistemlerinden alır. AB dışı adaylar için son tarih AB'lilerden erken olabilir; belgelerin onay (apostil) ve tercüme isteğini programın sayfasından kontrol et."
+    },
+    {
+      "id": "at-pof",
+      "scope": [
+        "at"
+      ],
+      "phase": "kabul",
+      "title": "Geçim kanıtını hazırla",
+      "detail": "Bloke hesap şart değil ama 12 aylık tutar önceden gösterilir; kira belli bir tutarı aşarsa fark kadar ek para istenir.",
+      "hint": "pof"
+    },
+    {
+      "id": "at-residence",
+      "scope": [
+        "at"
+      ],
+      "phase": "kabul",
+      "title": "Öğrenci oturma iznine (Aufenthaltsbewilligung Studierende) başvur",
+      "detail": "Türk vatandaşları ilk başvuruyu Avusturya'ya girmeden önce Türkiye'deki Avusturya temsilciliğinde yapar. Kabul mektubu, geçim kanıtı, sağlık sigortası ve konaklama belgesi istenir. İşlem haftalar sürer; kabulden hemen sonra başla.",
+      "when": "kabulden hemen sonra",
+      "links": [
+        {
+          "label": "OeAD: giriş ve oturum",
+          "url": "https://oead.at/en/to-austria/entry-and-residence"
+        }
+      ]
+    },
+    {
+      "id": "at-fee",
+      "scope": [
+        "at"
+      ],
+      "phase": "kabul",
+      "title": "Öğrenim ücreti ve ÖH katkı payını yatır",
+      "detail": "Devlet üniversitelerinde AB dışı öğrenciler dönem başına öğrenim ücreti öder; buna ÖH öğrenci birliği katkı payı eklenir. Tutarlar okul sayfasında.",
+      "pages": [
+        {
+          "label": "Ülkeler: Avusturya",
+          "path": "/ulke/at"
+        }
+      ]
+    },
+    {
+      "id": "at-melde",
+      "scope": [
+        "at"
+      ],
+      "phase": "varis",
+      "title": "Adres kaydı (Meldezettel)",
+      "detail": "Taşındıktan sonra 3 gün içinde Meldeamt'ta adresini kaydettir.",
+      "when": "taşındıktan sonra 3 gün içinde"
+    }
+  ]
+}

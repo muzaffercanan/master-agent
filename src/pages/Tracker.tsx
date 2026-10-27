@@ -4,6 +4,7 @@ import { TRACK_STATUSES, useStore, type TrackEntry } from "../state/store";
 import { nextDeadline, type ProgramView } from "../lib/programs";
 import { fmt, today } from "../lib/dates";
 import { Countdown, Flag } from "../components/bits";
+import { TrackTabs } from "./Checklist";
 
 /** Document checklist derived from the program's requirements. */
 export function docsFor(v: ProgramView): string[] {
@@ -63,6 +64,7 @@ export function TrackerPage() {
         <div className="eyebrow">Başvuru süreci</div>
         <h1>Takip</h1>
         <p className="lede">Her program için durum, belge kontrol listesi ve notlar. Belge listesi programın şartlarından otomatik çıkarılır.</p>
+        <TrackTabs />
       </div>
       {!entries.length && <div className="empty">Takipte program yok. Bir programın sayfasında ya da listede "Takibe al" düğmesine bas.</div>}
       {TRACK_STATUSES.map(s => {
