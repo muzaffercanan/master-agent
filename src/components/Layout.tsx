@@ -33,7 +33,7 @@ function useTheme() {
 }
 
 export function Layout() {
-  const { shortlist, compare, tracker, profile } = useStore();
+  const { shortlist, compare, tracker, profile, notes } = useStore();
   const [bandHidden, setBandHidden] = useState(false);
   const { dark, toggle } = useTheme();
   const nav = useNavigate();
@@ -66,6 +66,7 @@ export function Layout() {
             <NavLink to="/karsilastir">Karşılaştır{n(compare.length)}</NavLink>
             {/* the to-do list lives under Takip, so it keeps this tab lit */}
             <NavLink to="/takip" className={({ isActive }) => (isActive || loc.pathname === "/yapilacaklar" ? "active" : "")}>Takip{n(Object.keys(tracker).length)}</NavLink>
+            <NavLink to="/notlar">Notlar{n(notes.filter(x => !x.deleted).length)}</NavLink>
             <NavLink to="/profil">Profil</NavLink>
           </nav>
           <form className="searchbox" onSubmit={submit} role="search">

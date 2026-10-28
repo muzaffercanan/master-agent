@@ -9,6 +9,7 @@ import { IntakeList, RequirementList, ScholarshipList } from "../components/deta
 import { ExtLinks, Flag, StaleBadge, WorldRank } from "../components/bits";
 import { ProgramRow } from "../components/ProgramRow";
 import { NotFound } from "./NotFound";
+import { LinkedNotes } from "./Notes";
 
 export function UniversityPage() {
   const { id } = useParams();
@@ -70,6 +71,7 @@ export function UniversityPage() {
               <p className="hint">CSRankings verisi ve bölüm sayfalarından. Başvurmadan önce hâlâ bölümde olduklarını kontrol et.</p>
             </div>
           )}
+          <LinkedNotes link={`okul:${uni.id}`} />
           <div className="panel">
             <h3>Resmi sayfalar</h3>
             <ExtLinks links={[...uni.links, ...uni.sources]} />

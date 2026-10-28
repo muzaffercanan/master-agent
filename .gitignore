@@ -4,3 +4,5 @@ Thumbs.db
 node_modules/
 .env
 dist/
+# personal notes written by the dev server (scripts/notes-plugin.ts)
+notes/

@@ -8,6 +8,7 @@ import { fmt } from "../lib/dates";
 import { CostBox, IntakeList, RequirementList, ScholarshipList } from "../components/details";
 import { EligBadge, ExtLinks, Flag, StaleBadge, StarButton } from "../components/bits";
 import { NotFound } from "./NotFound";
+import { LinkedNotes } from "./Notes";
 
 export function ProgramPage() {
   const { uni, prog } = useParams();
@@ -82,6 +83,7 @@ export function ProgramPage() {
             )}
             <Link className="small" to={`/burslar?host=${v.country.code}&tr=1`}>{locative(v.country.name)} geçerli bütün burslar →</Link>
           </div>
+          <LinkedNotes link={v.key} />
           <div className="panel">
             <h3>Bağlantılar</h3>
             <ExtLinks links={[...p.links, ...v.uni.links]} />

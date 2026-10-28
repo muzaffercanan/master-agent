@@ -16,6 +16,7 @@ import { ProfilePage } from "./pages/Profile";
 import { ComparePage } from "./pages/Compare";
 import { TrackerPage } from "./pages/Tracker";
 import { ChecklistPage } from "./pages/Checklist";
+import { NotesPage } from "./pages/Notes";
 import { NotFound } from "./pages/NotFound";
 import { ErrorPage } from "./pages/ErrorPage";
 import "./styles/base.css";
@@ -43,6 +44,7 @@ const router = createHashRouter([
       { path: "/karsilastir", element: <ComparePage /> },
       { path: "/takip", element: <TrackerPage /> },
       { path: "/yapilacaklar", element: <ChecklistPage /> },
+      { path: "/notlar", element: <NotesPage /> },
       { path: "*", element: <NotFound /> },
     ],
   },

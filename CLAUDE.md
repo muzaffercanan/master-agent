@@ -67,7 +67,8 @@ docs/research-notes.md                araştırma yöntemi ve açık işler
 - Mantık `src/lib/` içinde saf fonksiyonlardır ve testlidir. Arayüz hesap yapmaz, `lib`'i çağırır.
 - `ProgramView` (`src/lib/programs.ts`) bir programı okul/ülke varsayılanlarıyla birleştirir: `intakes`, `requirements`, `costs` program düzeyinde yoksa okuldan miras alınır; ülke burslarına `nationalScholarships` olarak ayrıca erişilir.
 - Filtreler URL'de saklanır (`src/lib/filters.ts`: `parseFilters` / `serializeFilters`). Yeni filtre eklersen ikisini birden güncelle, yoksa link paylaşımı bozulur.
-- `localStorage` anahtarları: `mla_v2_user` (profil, kısa liste, karşılaştırma, takip, yapılacaklar işaretleri), `mla_theme`. Bu yapıyı değiştirirsen eski veriyi sessizce silme; geriye uyumlu oku.
+- `localStorage` anahtarları: `mla_v2_user` (profil, kısa liste, karşılaştırma, takip, yapılacaklar işaretleri, notlar), `mla_theme`. Bu yapıyı değiştirirsen eski veriyi sessizce silme; geriye uyumlu oku.
+- **Notlar (`/notlar`)** kullanıcının kendi yazdıklarıdır; kaybolmamaları kullanıcı için önemli. `mla_v2_user.notes` içinde durur ve dev sunucusu (`scripts/notes-plugin.ts`, `/__notes`) üzerinden `notes/notlar.json`'a yazılır; okunabilir kopyası `notes/notlar.md`, günlük yedekleri `notes/yedek/`. İki kopya not not birleşir (`src/lib/notes.ts` → `mergeNotes`: sonraki düzenleme kazanır, silinen not "tombstone" olarak kalır). `notes/` git'te yok (`.gitignore`). Bu klasörü ve dosyaları **asla silme veya üzerine yazma**; test notu açarsan arayüzden sil.
 
 ## 5. Veri kuralları (en önemli bölüm)
 

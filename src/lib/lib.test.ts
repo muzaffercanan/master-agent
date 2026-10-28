@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { mergeNotes, noteTitle, notesDiffer, notesMarkdown, visibleNotes, type Note } from "./notes";
 import { bavarian, checkRequirements, EMPTY_PROFILE, isProfileEmpty, minAles } from "./eligibility";
 import { nextDeadline, singleTermOnly } from "./programs";
 import { yearlyCost } from "./cost";
@@ -9,7 +10,7 @@ import { median, rankingRows, rankTier, rankValue, sortRankingRows } from "./ran
 import { DEFAULT_FILTERS, matchesSchoolTier, parseFilters, serializeFilters } from "./filters";
 import { DEFAULT_FUNDING_FILTERS, eurPerMonth, fundingCheck, hostsOf, matchFunding, nextCall, parseFundingFilters, serializeFundingFilters, sortFundings } from "./scholarships";
 import { scholarshipEvents } from "./calendar";
-import { locative } from "./text";
+import { locative, norm } from "./text";
 import { fmtMoney } from "./money";
 import type { ChecklistItem, Country, Funding, Fx, Intake, RankingTable } from "../schema";
 import type { ProgramView } from "./programs";
@@ -367,5 +368,38 @@ describe("application checklist", () => {
   it("says so when the shortlist has nothing for the country", () => {
     expect(checklistHint("gre", ["it"], ctx([pv("de", {})]))[0].tone).toBe("na");
     expect(checklistHint("gre", ["de"], ctx([pv("de", { gre: { policy: "required" } })]))[0].text).toBe("Zorunlu: DE CS.");
+  });
+});
+
+describe("notes", () => {
+  const n = (id: string, updated: string, extra: Partial<Note> = {}): Note => ({ id, title: id, body: "", created: "2026-10-01T10:00:00Z", updated, ...extra });
+  it("merges two copies note by note, later edit wins", () => {
+    const local = [n("a", "2026-10-28T10:00:00Z", { body: "yeni" }), n("b", "2026-10-20T10:00:00Z")];
+    const disk = [n("a", "2026-10-27T10:00:00Z", { body: "eski" }), n("c", "2026-10-21T10:00:00Z")];
+    const m = mergeNotes(local, disk);
+    expect(m.map(x => x.id).sort()).toEqual(["a", "b", "c"]);
+    expect(m.find(x => x.id === "a")!.body).toBe("yeni");
+  });
+  it("keeps deletions as tombstones so they do not come back", () => {
+    const m = mergeNotes([n("a", "2026-10-28T10:00:00Z", { deleted: true })], [n("a", "2026-10-27T10:00:00Z")]);
+    expect(m[0].deleted).toBe(true);
+    expect(visibleNotes(m, "", norm)).toEqual([]);
+    expect(mergeNotes([n("a", "t", { deleted: true })], [n("a", "t")])[0].deleted).toBe(true);
+  });
+  it("detects whether a merge changes anything", () => {
+    const base = [n("a", "2026-10-28T10:00:00Z")];
+    expect(notesDiffer(base, [n("a", "2026-10-27T10:00:00Z")])).toBe(false);
+    expect(notesDiffer(base, [n("a", "2026-10-29T10:00:00Z")])).toBe(true);
+    expect(notesDiffer(base, [n("b", "2026-10-01T10:00:00Z")])).toBe(true);
+  });
+  it("searches and sorts pinned first", () => {
+    const list = [n("a", "2026-10-28T10:00:00Z", { body: "Münih bloke hesap" }), n("b", "2026-10-20T10:00:00Z", { pinned: true }), n("c", "2026-10-27T10:00:00Z")];
+    expect(visibleNotes(list, "", norm).map(x => x.id)).toEqual(["b", "a", "c"]);
+    expect(visibleNotes(list, "munih", norm).map(x => x.id)).toEqual(["a"]);
+  });
+  it("names untitled notes from their first line", () => {
+    expect(noteTitle(n("a", "t", { title: " ", body: "İlk satır\nikinci" }))).toBe("İlk satır");
+    expect(noteTitle(n("a", "t", { title: "", body: "" }))).toBe("Başlıksız not");
+    expect(notesMarkdown([n("a", "2026-10-28T10:00:00Z", { body: "x" }), n("b", "t", { deleted: true })])).toContain("## a");
   });
 });
