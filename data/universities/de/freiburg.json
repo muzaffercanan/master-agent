@@ -117,11 +117,21 @@
           "note": "İsteğe bağlı belge olarak GRE kabul ediliyor ('üç bölüm de önemli')."
         },
         "gpa": {
-          "note": "Asgari not yazmıyor; DAAD kaydı 'mükemmel' bir lisans ortalaması bekliyor."
+          "deMax": 2.9,
+          "note": "Kabul yönetmeliği (2022, İngilizce çeviri): Alman notuyla en az 2,9."
         },
         "ects": {
-          "areas": [],
-          "note": "Bilgisayar bilimi, matematik veya yakın alan lisansı ve çok iyi matematik + teorik bilgisayar bilimi (biçimsel diller, otomata, hesaplanabilirlik, karmaşıklık, graf kuramı, algoritma tasarımı ve analizi). Kabul kurulu yönetmelikteki özel şartlara bakıyor."
+          "areas": [
+            {
+              "area": "Bilgisayar bilimi",
+              "min": 40
+            },
+            {
+              "area": "Matematik ve teorik bilgisayar bilimi",
+              "min": 40
+            }
+          ],
+          "note": "İki alanın toplamı en az 120 ECTS, her biri en az 40. Eksik en fazla 30 ECTS ise ilk iki dönemde verilecek derslerle kabul. Teorik bilgisayar bilimi: biçimsel diller, otomata, hesaplanabilirlik, karmaşıklık, graf kuramı, algoritma analizi."
         },
         "portal": "campus.uni-freiburg.de"
       },

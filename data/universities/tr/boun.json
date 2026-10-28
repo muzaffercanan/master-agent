@@ -119,7 +119,7 @@
             }
           ],
           "status": "kesin",
-          "note": "Genel bahar penceresi 14–21 Aralık 2026. 2025-26 bahar ilanında Bilgisayar Müh. kontenjanı yoktu; 2026-27 kontenjanları henüz ilan edilmedi."
+          "note": "Genel bahar penceresi 14–21 Aralık 2026. 2025-26 baharında Bilgisayar Müh. 30 (+3 hazırlık) kişi almıştı (ALES SAY 85); 2026-27 kontenjanları henüz ilan edilmedi."
         },
         {
           "term": "fall",
@@ -137,7 +137,8 @@
       ],
       "requirements": {
         "ales": {
-          "min": 70
+          "min": 70,
+          "note": "Güz 2026-27 ilanı: SAY 70 veya GRE Q 153. Bahar 2025-26 ilanında daha yüksekti: SAY 85 veya GRE Q 165 ve ALES × GNO en az 225. Bahar 2026-27 ilanında yeniden kontrol et."
         },
         "gpa": {
           "min": 2.5,
@@ -147,7 +148,8 @@
           "note": "TOEFL 79 / IELTS 6.5 / BUEPT C",
           "toefl": 79,
           "ielts": 6.5
-        }
+        },
+        "interview": "Ön değerlendirmeyi geçenler bölümde sözlü sınav / mülakata çağrılır (bahar 2025-26 ilanında 20 Ocak 2026); ön değerlendirme sonucu e-postayla bildirilir."
       }
     },
     {

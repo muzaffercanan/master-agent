@@ -107,8 +107,11 @@
           ],
           "note": "CS yolu: en az 25 kredi matematik, 60 kredi bilgisayar; programlama, yazılım müh., veritabanları ve BT güvenliği / dağıtık sistemler / ağlar konularından en az ikisi. Matematik yolu: en az 75 kredi matematik (15'i bilgisayardan olabilir)."
         },
-        "interview": "Seçme mülakatı (programa uygunluğu görmek için; Zulassungsordnung'da ayrıntı).",
-        "portal": "TU Braunschweig çevrimiçi başvuru"
+        "interview": "Seçme mülakatı puanın %49'u (lisans notu %51). Nota göre kontenjanın 2 katı aday çağrılır; yaklaşık 15 dakika, video görüşme. Vize gereken AB dışı adaylar için kış: 1 Mayıs – 15 Haziran, yaz: 1 Kasım – 15 Aralık.",
+        "portal": "TU Braunschweig çevrimiçi başvuru",
+        "documents": [
+          "Alan yeterliliği özeti: en fazla 1 sayfa (A4, Arial 10) + modül tanımları"
+        ]
       },
       "quota": "Kontenjanlı (besondere Zugangsvoraussetzungen)",
       "notes": "Bilgisayar ve matematik bölümlerinin ortak programı; mühendislik, biyoloji/kimya/eczacılık, tıp, görüntü ve sinyal işleme gibi uygulama alanlarından biri seçiliyor. İlk dönemde farklı lisanslar için denkleştirme dersleri var.",

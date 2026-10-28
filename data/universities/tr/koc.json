@@ -233,12 +233,14 @@
   ],
   "requirements": {
     "ales": {
-      "min": 80
+      "min": 80,
+      "note": "Enstitünün genel şart sayfası (Ekim 2026) tezli YL için ALES 75 / GRE 155 ve TOEFL iBT yeni ölçekte 4 (21 Ocak 2026 öncesi sınavlarda 80) yazıyor; program şartı ayrıca kontrol edilmeli. Güvenli değer olarak 80 tutuldu."
     },
     "english": {
       "note": "TOEFL 80 / YDS 80",
       "yds": 80,
       "toefl": 80
-    }
+    },
+    "interview": "Umut vadeden adaylar karar öncesi mülakata çağrılır."
   }
 }

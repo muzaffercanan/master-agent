@@ -117,7 +117,8 @@
         },
         "english": {
           "note": "ODTÜ EPE / eşdeğeri"
-        }
+        },
+        "note": "Mülakat yok; bölüm komisyonu dosyaya bakıp 'komisyon puanı' (%20) verir."
       }
     },
     {
@@ -223,7 +224,8 @@
         },
         "english": {
           "note": "ODTÜ EPE / eşdeğeri"
-        }
+        },
+        "interview": "ALES ve GNO sıralamasına göre mülakata çağrı; mülakat ve bilimsel değerlendirme puanın %25'i. Mülakata gelmeyen reddedilir."
       }
     },
     {
@@ -314,7 +316,8 @@
         },
         "english": {
           "note": "EPE 65"
-        }
+        },
+        "interview": "Ön elemeyi (ALES %50 + GNO %50) geçenlere çevrim içi mülakat (güz 2026-27 için 8 Nisan 2026)."
       }
     },
     {

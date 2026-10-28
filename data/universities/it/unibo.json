@@ -48,7 +48,7 @@
         "english": { "note": "Resmi sayfa programa göre IELTS 5.5–6.5 aralığı veriyor; bu program için çağrı belgesinden doğrula." },
         "ects": { "areas": [], "note": "Bilgisayar bilimi, mühendislik veya matematik gibi listelenen bir alanda lisans gerekli." },
         "documents": ["Transkript", "Diploma", "CV", "Lisans derslerinin özeti (syllabus, en fazla 4–5 sayfa)", "İngilizce belgesi"],
-        "interview": "Kişisel yeterlik değerlendirmesi (dosya + gerekirse görüşme).",
+        "gpa": { "note": "Kişisel yeterlik dosya üzerinden değerlendiriliyor: 110/110 (veya yabancı eşdeğeri) otomatik yeterli; diğerlerinde akademik başarı göstergesi en az 26/30 ve en az 18 bilgisayar bilimi kredisi, ya da en az 25,5/30 ve en az 48 kredi. Sınırdaki adayları kurul ayrıca inceliyor. Program sayfasında mülakat veya yazılı sınav geçmiyor (önceki kayıttaki 'gerekirse görüşme' resmi sayfada yok)." },
         "otherLanguage": "Resmi sayfaya göre İtalyanca belgesi veya İtalyanca ders alma taahhüdü isteniyor; çağrıdan kontrol et.",
         "portal": "UniBo Studenti Online + Universitaly ön kaydı"
       },

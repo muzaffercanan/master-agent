@@ -188,7 +188,10 @@
           "areas": [],
           "note": "Bilgisayar bilimi profili: Programlama 8, Veri Yapıları ve Algoritmalar 7, Veritabanları 6, Yazılım Müh. 6, Bilgisayar Mimarisi 6, İşletim Sistemleri 6, Ağ ve Güvenlik 6, Hesaplama Kuramı I ve II 6+6, Matematiksel Mantık 6, Ayrık Yapılar 6, Analiz 8, Lineer Cebir 6, Olasılık 6 CP. Matematik ve fizik lisansları için ayrı profiller var."
         },
-        "portal": "RWTHonline (International Office)"
+        "portal": "RWTHonline (International Office)",
+        "documents": [
+          "Modül tanımları + hangi dersin hangi şartı karşıladığını sayfa numarasıyla gösteren, kendi hazırladığın kapak sayfası"
+        ]
       },
       "notes": "Açık kabul (NC yok); eleme GRE ve ders eşleşmesiyle.",
       "scholarships": [],

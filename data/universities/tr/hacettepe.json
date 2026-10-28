@@ -105,7 +105,8 @@
       "scholarships": [],
       "links": [],
       "requirements": {
-        "advisorLetter": "required"
+        "advisorLetter": "required",
+        "interview": "Giriş sınavı puanın %30'u (ALES %50, GNO %20; FBE 2026-27 güz tablosu). Bölüm SSS'sine göre yazılı (tüm lisans müfredatı) ve sözlü sınav."
       }
     },
     {
@@ -141,7 +142,8 @@
         "english": {
           "note": "YDS 55",
           "yds": 55
-        }
+        },
+        "interview": "Tezli: mülakat %30 (ALES %50, yabancı dil %10, lisans notu %10). Tezsiz: mülakat %70, lisans notu %30."
       }
     },
     {
@@ -178,7 +180,8 @@
         "english": {
           "note": "YDS 55",
           "yds": 55
-        }
+        },
+        "interview": "Tezli: mülakat %30 (ALES %50, yabancı dil %10, lisans notu %10). Tezsiz: mülakat %70, lisans notu %30."
       }
     },
     {
@@ -211,7 +214,8 @@
         "english": {
           "note": "YDS 60",
           "yds": 60
-        }
+        },
+        "interview": "Tezli: mülakat %30 (ALES %50, yabancı dil %20). Tezsiz: mülakat %70, lisans notu %30."
       }
     },
     {
@@ -243,7 +247,8 @@
         "english": {
           "note": "YDS 70",
           "yds": 70
-        }
+        },
+        "interview": "Tezli: mülakat %30 (ALES %50, yabancı dil %10, lisans notu %10). Tezsiz: mülakat %70, lisans notu %30."
       }
     },
     {
@@ -276,7 +281,8 @@
         "english": {
           "note": "aranmıyor"
         },
-        "note": "ALES yok; %30 GNO + %70 mülakat"
+        "note": "ALES yok; %30 GNO + %70 mülakat",
+        "interview": "Mülakat puanın %70'i (lisans notu %30)."
       }
     },
     {
@@ -309,7 +315,8 @@
         "english": {
           "note": "aranmıyor"
         },
-        "note": "ALES yok; %30 GNO + %70 mülakat"
+        "note": "ALES yok; %30 GNO + %70 mülakat",
+        "interview": "Mülakat puanın %70'i (lisans notu %30)."
       }
     },
     {
@@ -342,7 +349,8 @@
         "english": {
           "note": "aranmıyor"
         },
-        "note": "ALES yok; %30 GNO + %70 mülakat"
+        "note": "ALES yok; %30 GNO + %70 mülakat",
+        "interview": "Mülakat puanın %70'i (lisans notu %30)."
       }
     },
     {
@@ -375,7 +383,8 @@
         "english": {
           "note": "aranmıyor"
         },
-        "note": "ALES yok; %30 GNO + %70 mülakat"
+        "note": "ALES yok; %30 GNO + %70 mülakat",
+        "interview": "Mülakat puanın %70'i (lisans notu %30)."
       }
     },
     {
@@ -408,7 +417,8 @@
         "english": {
           "note": "aranmıyor"
         },
-        "note": "ALES yok; %30 GNO + %70 mülakat"
+        "note": "ALES yok; %30 GNO + %70 mülakat",
+        "interview": "Mülakat puanın %70'i (lisans notu %30)."
       }
     },
     {

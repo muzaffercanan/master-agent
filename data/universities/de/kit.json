@@ -145,7 +145,8 @@
         "gpa": {
           "note": "Asgari not yok ama sıralamada en çok ağırlık nottaki: 190 puanın 70'i lisans notundan, kalanı teorik (20), pratik (50), bilgisayar müh. (10) ve matematik (40) kredilerinden."
         },
-        "portal": "KIT başvuru portalı (doğrudan)"
+        "portal": "KIT başvuru portalı (doğrudan)",
+        "interview": "Dört kredi alanından birinde eksik varsa (diğer üçünde asgari kredi tutuyorsa) seçime İngilizce uygunluk mülakatıyla girilebilir; istisnai durumda Zoom."
       },
       "quota": "Yılda 100 kişi (kontenjanlı, sıralamayla)",
       "notes": "Tamamen İngilizce program. Zorunlu ders yok; dokuz uzmanlık alanından ikisi seçiliyor (veri bilimi, kriptografi ve güvenlik, robotik, insan merkezli makine zekâsı …). KIT'in Almanca 'Informatik M.Sc.' programı ayrıdır.",

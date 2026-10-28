@@ -316,5 +316,8 @@
         }
       }
     }
-  ]
+  ],
+  "requirements": {
+    "interview": "Tezli ve tezsiz programlarda adaylar yazılı sınava ve/veya mülakata çağrılabilir (İngilizce)."
+  }
 }

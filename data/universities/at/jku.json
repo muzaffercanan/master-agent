@@ -52,8 +52,18 @@
           "note": "Kaynaklar çelişkili: 31 Mart 2027 (StudyU) ve 30 Nisan 2027 (MastersPortal). Erken olan tarih gösteriliyor."
         }
       ],
+      "requirements": {
+        "english": { "note": "B2." },
+        "ects": {
+          "areas": [],
+          "note": "Lisans, JKU Informatik (veya listelenen JKU lisansları) ile içerik ve kapsamca denk sayılırsa yalnızca 6 ECTS makine öğrenmesi gerekir; seçmelilerle tamamlanır. Denk sayılmazsa ilgili yapay zekâ ön bilgisiyle kabul edilip yüksek lisans sırasında ek 40 ECTS alınır. Mülakat veya giriş sınavı program sayfasında geçmiyor."
+        }
+      },
       "scholarships": [],
-      "links": [{ "label": "MastersPortal kaydı", "url": "https://www.mastersportal.com/studies/282006/artificial-intelligence.html" }]
+      "links": [
+        { "label": "Program sayfası", "url": "https://www.jku.at/en/degree-programs/types-of-degree-programs/masters-degree-programs/ma-artificial-intelligence/" },
+        { "label": "MastersPortal kaydı", "url": "https://www.mastersportal.com/studies/282006/artificial-intelligence.html" }
+      ]
     }
   ]
 }

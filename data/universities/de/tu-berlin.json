@@ -224,11 +224,12 @@
           ],
           "note": "Saf CS lisansında 18 CP işletme/iktisat şartı çoğu zaman eksik kalır; transkripti kontrol et."
         },
-        "note": "Kontenjanlı; iki aşamalı seçim. Giriş ve kabul yönetmeliği (ZZO) 2 Mart 2026'da yenilendi (TU-AMBl. 4/2026). Geçmiş dönemlerin kesme puanları TU Berlin'in 'Past selection cut-off criteria' sayfasında.",
+        "note": "Kontenjanlı; iki aşamalı seçim: önce giriş şartları, sonra sıralama (lisans notu %60, lisans derslerinin programa uygunluğu %40). Mülakat veya sınav yok. Giriş ve kabul yönetmeliği (ZZO) 2 Mart 2026'da yenilendi (TU-AMBl. 4/2026). Geçmiş dönemlerin kesme puanları TU Berlin'in 'Past selection cut-off criteria' sayfasında.",
         "documents": [
           "uni-assist VPD (zorunlu)",
           "Transkript ve diploma",
-          "İngilizce belgesi"
+          "İngilizce belgesi",
+          "Kredi belgeleri ve modül tanımları (Fakülte IV sistemine yüklenir)"
         ],
         "portal": "uni-assist VPD + TU Berlin portalı (tuPORT)"
       },

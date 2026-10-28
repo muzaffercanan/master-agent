@@ -111,7 +111,11 @@
             }
           ],
           "note": "Teorik (otomata, biçimsel diller, karar verilebilirlik, mantık, modelleme ve anlambilim), uygulamalı (algoritmalar, işletim sistemleri, ağlar, güvenlik, derleyici, yazılım müh., paralel programlama) ve teknik bilgisayar bilimi (sayısal devreler) içeriği kontrol ediliyor. Belgelerden netleşmezse yazılı giriş sınavı; en fazla 30 CP eksik varsa ilk iki dönemde telafi dersi şartıyla kabul."
-        }
+        },
+        "interview": "Giriş yetkinlikleri diploma ve Diploma Supplement'tan net anlaşılmazsa yazılı sınav.",
+        "documents": [
+          "'Annex Computer Science' ve 'Annex Computer Science study courses' ekleri"
+        ]
       },
       "notes": "Üç uzmanlıktan biri seçiliyor: Data Science & Engineering, Visual Computing, Distributed Computing. Kabul not yerine ders içeriğine bakıyor; raporda en güçlü hedef olarak geçiyordu.",
       "scholarships": [],

@@ -124,9 +124,11 @@
         "documents": [
           "uni-assist VPD",
           "Transkript ve diploma",
-          "İngilizce veya Almanca C1 belgesi"
+          "İngilizce veya Almanca C1 belgesi",
+          "Modül el kitabı / ders tanımları (eşdeğerliği göstermek için)"
         ],
-        "portal": "uni-assist VPD + LUH başvuru portalı"
+        "portal": "uni-assist VPD + LUH başvuru portalı",
+        "note": "Kontenjan dolarsa sıralama yalnızca lisans notuna göre; mülakat veya sınav yok. Yönetmeliğe göre başvuru hem çevrim içi hem yazılı (kâğıt) olarak yapılmalı."
       },
       "quota": "Kontenjanlı; aday fazlaysa üniversitenin kendi seçimi",
       "notes": "Seçmeli derslerin yaklaşık %35'i İngilizce, %65'i Almanca (DAAD); program yalnızca İngilizce derslerle tamamlanabiliyor ama seçenek dar. TU Wien ile çift diploma seçeneği var.",

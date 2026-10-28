@@ -80,7 +80,9 @@
       ],
       "requirements": {
         "gpa": {
-          "note": "Resmi sayfada asgari not yok; 'yeterli akademik başarı' kanıtı isteniyor. Raporda yaklaşık %75 / 3.0 ve sınıfın ilk %10'u öneriliyordu."
+          "min": 3.0,
+          "scale": 4,
+          "note": "Başvuru rehberi: CGPA en az %75 veya 3,00/4 ve mezuniyet sınıfının ilk %10'u. Bu asgari şartlar kabulü garanti etmiyor."
         },
         "english": {
           "ielts": 7,
@@ -89,12 +91,16 @@
         "documents": [
           "Kişisel beyan",
           "İlgili iş deneyimi bilgisi",
-          "2 akademik referans",
-          "Transkript",
-          "Diploma",
+          "2 referans (referans verenin dolduracağı değerlendirme formu)",
+          "Tüm derslerin notlu onaylı listesi",
+          "Son 3 diploma",
           "İngilizce belgesi (C1)"
         ],
-        "portal": "Doğrudan üniversiteye"
+        "portal": "Doğrudan üniversiteye",
+        "gre": {
+          "policy": "no",
+          "note": "AEA (EHEA), İsviçre veya İngiltere dışından diplomayla başvuranlara GRE General veya GATE zorunlu (asgari puan yok). Türkiye AEA üyesi."
+        }
       },
       "costs": {
         "tuition": {

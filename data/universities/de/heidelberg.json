@@ -111,10 +111,27 @@
           "note": "Bölüm sayfasındaki liste (B2, IELTS 6.5, TOEFL iBT 90, CAE, İngilizce lisans) Eylül 2024 öncesi yönetmeliğe ait; yeni yönetmelikte değişmiş olabilir."
         },
         "ects": {
-          "areas": [],
-          "note": "Eylül 2024'ten beri program kontenjanlı ve seçimli; güncel ölçütler yalnızca Almanca yönetmelikte (bakılmadı). Eski yönetmelikte: 'özellikle başarılı' bir CS/matematik/fen/mühendislik lisansı ve algoritmalar, pratik bilgisayar, teorik bilgisayar, bilgisayar mimarisi, matematik alanlarından toplam 32 CP aranıyordu."
+          "areas": [
+            {
+              "area": "Bilgisayar bilimi (pratik, teknik, algoritmalar ve veri yapıları, işletim sistemleri ve ağlar, yazılım müh., teorik, veritabanları)",
+              "min": 56
+            },
+            {
+              "area": "Matematik (lineer cebir, analiz, ileri matematik)",
+              "min": 16
+            }
+          ],
+          "note": "Kontenjanlı ve seçimli. Ön eleme: not (en fazla 10) + alan bilgisi (15) + kişisel beyan (10) = 35 puan; sonra mülakat (15). Lisansın en az yarısı bilgisayar bilimi ve bitirme tezi bilgisayar biliminde olmalı."
         },
-        "portal": "heiCO"
+        "portal": "heiCO",
+        "gpa": {
+          "deMax": 2.3,
+          "note": "Seçme yönetmeliği (20 Mart 2024): en az 2,3. Not puanı 1,0–1,2 → 10 … 1,9–2,0 → 5, 2,1–2,3 → 3."
+        },
+        "interview": "Ön elemede sıralamaya göre kontenjanın en az 3 katı aday yaklaşık 8 dakikalık seçme mülakatına çağrılır (yüz yüze veya video, en fazla 3 kişilik grup); mülakat 50 puanın 15'i.",
+        "documents": [
+          "Kişisel beyan: seçme kurulunun önceden belirlediği soruların yanıtları"
+        ]
       },
       "quota": "Kontenjanlı (2024'ten beri)",
       "notes": "Uzmanlık seçilebiliyor (bilgi sistemleri müh., bilgisayar müh., karmaşık/dağıtık sistemlerde analiz-modelleme-simülasyon). Uygulama alanı olarak matematik, iktisat, hesaplamalı dilbilim, fizik, tıp bilişimi vb.",
